@@ -1,0 +1,14 @@
+<div class="html-dialog">
+    <img class="modal-close-button" src="images/close.png" data-ng-click="close()"/>
+    <div class="modal-header">
+        <h3 class="modal-title">{{title}}</h3>
+    </div>
+    <div class="modal-body html-body">
+        <html-to-compile html="html">test</html-to-compile>
+
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-info blue-button" data-ng-click="close()" data-ng-show="bottomExternalLink === null" translate>dialog-close-ok</button>
+        <a target="_blank" href="{{bottomExternalLink}}" class="btn btn-info"  data-ng-show="bottomExternalLink !== null" translate>dialog-register-now-label</a>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<script type="text/ng-template"  id="scene_node_item.html">
+    <ul data-ng-if="child.show">
+        <input type="checkbox" data-ng-model="child.visible" data-ng-click="changeVisibility(child)">
+        <a data-ng-click="selectChild(child)" class="title">
+            <i data-ng-show="!child.isReferencePoint" class="fa fa-cubes"></i>
+            <i data-ng-show="child.isReferencePoint" class="fa fa-circle"></i>
+            {{child.name}}
+        </a>
+        <div class="property-item">
+            x:<input type="number" data-ng-model="child.node.position.x"> y:<input type="number" data-ng-model="child.node.position.y"> z:<input type="number" data-ng-model="child.node.position.z">
+        </div>
+        <!--<div class="property-item">
+            <span>rotation</span> x:<input type="number" data-ng-model="child.node.rotation.x"> y:<input type="number" data-ng-model="child.node.rotation.y"> z:<input type="number" data-ng-model="child.node.rotation.z">
+        </div>-->
+        <!--<div class="property-item">
+            <span>scale</span><input type="number" data-ng-model="child.node.scale.x"> <input type="number" data-ng-model="child.node.scale.y"> <input type="number" data-ng-model="child.node.scale.z">
+        </div>-->
+        <li data-ng-repeat="child in child.children" data-ng-include="'scene_node_item.html'">
+        </li>
+    </ul>
+</script>
+
+<div class="scene-inspector scrollable">
+    <!--<input class="scene-inspector-search form-control" type="text"></input>-->
+    <ul>
+        <li data-ng-repeat="child in children" data-ng-include="'scene_node_item.html'">
+        </li>
+    </ul>
+</div>

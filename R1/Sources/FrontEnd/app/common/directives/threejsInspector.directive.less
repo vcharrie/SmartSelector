@@ -1,0 +1,42 @@
+.scene-inspector {
+  position: relative;
+
+  ul {
+    -webkit-padding-start: 3px;
+    list-style-type: none;
+  }
+  li {
+    -webkit-padding-start: 3px;
+  }
+
+  .scene-inspector-search {
+    margin: 10px;
+  }
+
+  .title {
+    cursor: pointer;
+  }
+
+  .property-item {
+    margin-left: 5px;
+    padding-left: 10px;
+    font-size: 0.8em;
+    border-left: 1px solid @lightGreyColor;
+
+    input[type=number] {
+      border-radius: 4px;
+      background-color: @lightGreyColor;
+      padding: 0 3px 0 3px;
+      margin: 3px;
+      resize:none;
+      border: 0;
+      width: 50px;
+      cursor:row-resize;
+    }
+
+    span {
+      width: 50px;
+      display: inline-block;
+    }
+  }
+}

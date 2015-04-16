@@ -1,0 +1,56 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 1.7.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
+
+#: directive/views/family-discount-editor.view.html:60
+msgid "Cancel"
+msgstr "Отмена"
+
+#: directive/views/family-discount-editor.view.html:15
+msgid "Code"
+msgstr "Код"
+
+#: directive/views/family-discount-editor.view.html:52
+msgid "Communication with server error: discounts not saved"
+msgstr "Ошибка соединения с сервером: скидки не были сохранены"
+
+#: directive/views/family-discount-editor.view.html:16
+msgid "Description"
+msgstr "Описание"
+
+#: directive/views/family-discount-editor.view.html:18
+msgid "Discount"
+msgstr "Скидка"
+
+#: directive/views/family-discount-editor.view.html:56
+msgid "Discounts saved"
+msgstr "Скидки успеøно сохранены"
+
+#: directive/views/family-discount-editor.view.html:64
+msgid "Submit"
+msgstr "Подтвердить"
+
+#: directive/views/family-discount-editor.view.html:17
+msgid "Validity start"
+msgstr "Действительна с"
+
+#: directive/views/family-discount-editor.view.html:50
+msgid "some dates are not valid: please enter date in \"dd-MM-yyyy\" format"
+msgstr "Некорректный формат дат: пожалуйста, введите даты в формате \"дд-мм-гггг\""
+
+#: directive/views/family-discount-editor.view.html:47
+msgid "some numbers are not valid: please enter numbers between 0 and 100"
+msgstr "Некорректный формат чисел: пожалуйста, введите числа от 0 до 100"
+
+msgid "No family available"
+msgstr "Нет доступных семейств"

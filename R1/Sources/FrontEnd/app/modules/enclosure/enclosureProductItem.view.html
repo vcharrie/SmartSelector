@@ -1,0 +1,9 @@
+<div class="enc-product-item" data-ng-class="{'enc-product-item-selected' : part.isSelected}">
+    <div class="enc-product-item-image">
+        <img data-ng-src="{{part.part.image}}" data-image-hover-tooltip/>
+    </div>
+    <div class="enc-product-item-part">
+        <a class="enc-product-item-part-title" data-ng-href="{{part.part.dataSheetUrl}}" target="_blank"><span data-ng-show="multiplepart.quantity > 1">{{part.quantity}} x </span>{{part.part.partCode}}</a>
+        <div class="enc-product-item-part-description">{{part.part.longName}} </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+{
+  "characteristics": [
+    {
+      "name": "Voltage",
+      "tooltipDesc": "Insert tooltip desc",
+      "unit": "V",
+      "selectedValue": "INDIFFERENT_CHARACTERISTIC_VALUE",
+      "values": [
+        "220...240 three phases",
+        "380...415",
+        "440"
+      ]
+    },
+    {
+      "name": "Motor rated power",
+      "tooltipDesc": "kW",
+      "unit": "V",
+      "selectedValue": "INDIFFERENT_CHARACTERISTIC_VALUE",
+      "values": [
+        "0,06",
+        "0,09",
+        "0,12"
+      ]
+    }
+  ]
+}

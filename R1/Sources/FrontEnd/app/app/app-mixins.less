@@ -1,0 +1,150 @@
+// ===========================
+// Application reusable mixins 
+// ===========================
+
+// It's best to use Boostrap gradient mixins instead, still kept here just in case...
+
+//.gradient(@start, @end, @offset: 100%) {
+//  background: @start;
+//  background: -moz-linear-gradient(top, @start 0%, @end @offset); /* FF3.6+ */
+//  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @start), color-stop(@offset, @end)); /* Chrome, Safari4+ */
+//  background: -webkit-linear-gradient(top, @start 0%, @end @offset); /* Chrome10+, Safari5.1+ */
+//  background: -o-linear-gradient(top, @start 0%, @end @offset); /* Opera 11.10+ */
+//  background: -ms-linear-gradient(top, @start 0%, @end @offset); /* IE10+ */
+//  background: linear-gradient(to bottom, @start 0%, @end @offset); /* W3C */
+//  @c-start: argb(@start);
+//  @c-end: argb(@end);
+//  filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr='@{c-start}', endColorstr='@{c-end}', GradientType=0)"; /* IE6-9 */
+//}
+//
+//.gradient-no-ie(@start, @end, @offset: 100%, @fallback) {
+//  background: @fallback;
+//  background: -moz-linear-gradient(top, @start 0%, @end @offset); /* FF3.6+ */
+//  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @start), color-stop(@offset, @end)); /* Chrome, Safari4+ */
+//  background: -webkit-linear-gradient(top, @start 0%, @end @offset); /* Chrome10+, Safari5.1+ */
+//  background: -o-linear-gradient(top, @start 0%, @end @offset); /* Opera 11.10+ */
+//  background: -ms-linear-gradient(top, @start 0%, @end @offset); /* IE10+ */
+//  background: linear-gradient(to bottom, @start 0%, @end @offset); /* W3C */
+//}
+
+//.breadcrumbs(@parentBgColor, @bgColor, @bgActiveColor, @fontColor, @fontActiveColor, @height: 50px, @minWidth: 100px, @margin: 5px, @arrowWidth: 15px, @arrowOffset: 3px, @borderRadius: 7px) {
+//  .box-sizing(border-box);
+//  margin-left: 0;
+//  text-align: right;
+//
+//  li {
+//    .box-sizing(border-box);
+//    border-radius: @borderRadius;
+//    vertical-align: top;
+//    display: inline-block;
+//    line-height: @height;
+//    height: @height;
+//    min-width: @minWidth;
+//    margin: 0 @margin @margin 0;
+//    position: relative;
+//    background: @bgColor;
+//    padding-left: @arrowWidth;
+//    text-align: center;
+//
+//    // ie8 and below fix
+//    .lt-ie9 & {
+//      padding-left: 0;
+//    }
+//
+//    a, span {
+//      display: block;
+//      padding: 0 @margin;
+//      color: @fontColor;
+//    }
+//
+//    &:not(:first-child):before {
+//      border-radius: @borderRadius;
+//      content: "";
+//      position: absolute;
+//      left: 0;
+//      border-style: solid;
+//      border-width: (@height / 2) 0 (@height / 2) @arrowWidth;
+//      border-color: transparent transparent transparent @parentBgColor;
+//      z-index: 0;
+//    }
+//
+//    &:not(:last-child):after {
+//      border-radius: @borderRadius;
+//      content: "";
+//      position: absolute;
+//      top: 0;
+//      right: (-@arrowWidth + @arrowOffset);
+//      border-style: solid;
+//      border-width: (@height / 2) 0 (@height / 2) @arrowWidth;
+//      border-color: transparent transparent transparent @bgColor;
+//      z-index: 10;
+//    }
+//
+//    &:last-child {
+//      padding-right: (@arrowWidth / 2);
+//      margin-right: 0;
+//    }
+//
+//    &:first-child {
+//      padding-left: (@arrowWidth / 2);
+//    }
+//
+//    &.active, &:hover {
+//      background: @bgActiveColor;
+//
+//      &:after {
+//        border-left-color: @bgActiveColor;
+//      }
+//    }
+//
+//    a:hover, &.active a, &.disabled a, span:hover, &.active span, &.disabled span {
+//      color: @fontActiveColor;
+//      text-decoration: none;
+//    }
+//
+//    &.disabled {
+//      .opacity(30);
+//
+//      a {
+//        cursor: default;
+//      }
+//    }
+//
+//    &.disabled, &.disabled:hover {
+//      background: @bgColor;
+//
+//      &:after {
+//        border-left-color: @bgColor;
+//      }
+//    }
+//  }
+//}
+
+//.table(@color, @columnWidth: auto, @margin: 5px, @borderRadius: 6px) {
+//  border-radius: @borderRadius;
+//  border: 3px solid @color;
+//  padding: @margin;
+//
+//  > table {
+//    border-collapse: collapse;
+//    border-style: hidden;
+//    border-spacing: @margin;
+//    width: 100%;
+//  }
+//
+//  th {
+//    font-weight: bold;
+//    color: @color;
+//  }
+//
+//  td, th {
+//    width: @columnWidth;
+//    border: 1px solid @color;
+//    text-align: left;
+//    vertical-align: top;
+//  }
+//
+//  td + td {
+//    padding: 0 @margin;
+//  }
+//}

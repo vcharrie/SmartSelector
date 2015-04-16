@@ -1,0 +1,67 @@
+<div class="distribution-configuration">
+    <img class="modal-close-button" src="images/close.png" data-ng-click="close()" />
+    <div class="modal-header">
+        <h3 class="modal-title">
+            {{modalTitle}}
+        </h3>
+    </div>
+    <div class="modal-body" data-ng-show="compatibleDistributionRange()">
+        <div class="distribution-configuration-ranges-selection-area">
+                <span data-ng-click="onLeftArrowButtonClick()" data-ng-class="{arrowDisabled : leftArrowDisabled()}" class="arrow-button" data-ng-show="ranges.length > displayedRangeItemsCount"><i class="fa fa-angle-left"></i></span>
+                <div class="rangeItem" data-ng-repeat="range in ranges" data-ng-if="$index >= firstRangeItemIndex && $index <= lastRangeItemIndex"  data-ng-click="selectRangeItem(range)" data-ng-class="{incompatible :  !range.isCompatible}" data-ng-mouseover="range.isHighlighted = true" data-ng-mouseleave="range.isHighlighted = false">
+                    <img class="catalog-picture" data-ng-class="{selected : selectedRangeItem===range, incompatible: !range.isCompatible, hovered: range.isHighlighted}" data-ng-src="{{baseUri}}{{range.pictureUrl}}"/>
+                    <span class="catalog-label" data-ng-class="{incompatible :  !range.isCompatible}">{{range.rangeName|translate}}</span>
+                </div>
+                <span data-ng-click="onRightArrowButtonClick()" data-ng-class="{arrowDisabled : rightArrowDisabled()}" class="arrow-button" data-ng-show="ranges.length > displayedRangeItemsCount"><i class="fa fa-angle-right"></i></span>
+        </div>
+
+        <div class="distribution-configuration-area">
+            <div class="distribution-configuration-panel distribution-configuration-central-panel">
+                <div data-ng-show="productsLoaded">
+                    <div class="product-configuration-top-panel">
+                        <characteristics-selection range="selectedRangeItem" on-products-list-changed="onProductsListChanged" fill-products-list="fillProductsList" hide-clear-button="true" default-product-pack="defaultProductPack"></characteristics-selection>
+                    </div>
+
+                    <div class="loading-indicator-bottom" data-ng-show="!productLoaded">
+                        <span><i class="fa fa-circle-o-notch fa-spin"></i></span>
+                    </div>
+                </div>
+                <div class="loading-indicator" data-ng-show="!productsLoaded">
+                    <span><i class="fa fa-circle-o-notch fa-spin"></i></span>
+                </div>
+            </div>
+
+
+            <div class="distribution-configuration-bom-panel distribution-configuration-central-panel">
+                <div class="distribution-configuration-product-list" data-ng-show="productLoaded">
+                    <ul class="list-group">
+                        <li class="list-group-item" data-ng-repeat="prod in filteredProductsList | orderBy:'getUnitPrice()'">
+                            <product-item product="prod" context="'readonly'"></product-item>
+                        </li>
+                    </ul>
+                </div>
+                <div class="distribution-advanced-configuration-area" data-ng-show="productsList.length > 0">
+                    <div class="distribution-advanced-configuration-area-left">
+                        <a data-ng-click="selectAlternativeProduct()" data-ng-show="productsList.length > 1 && productLoaded">
+                            <span translate>device-configuration-select-alternative-product</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-body" data-ng-show="!compatibleDistributionRange()">
+        <span class="distribution-warning" translate>no compatible distribution</span>
+    </div>
+    <div class="modal-footer">
+        <button data-ng-show="ranges.length > 0" class="btn btn-primary" data-ng-disabled="!productLoaded || productsList.length === 0" data-ng-click="validate()">
+            {{validationLabel}}
+        </button>
+        <button class="btn btn-default" data-ng-click="close()" translate>
+            CANCEL
+        </button>
+        <button data-ng-show="ranges.length > 0" class="btn btn-default" data-ng-click="clearSelectedValues()" translate>
+            configure-eq-clear
+        </button>
+    </div>
+</div>

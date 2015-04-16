@@ -1,0 +1,84 @@
+<section id="se-bom-ui">
+	<div id="bom-spinner">
+		<span us-spinner="{color:'#009530'}" spinner-key="spinner-1"
+			spinner-start-active="true"></span>
+	</div>
+	<div class="fixed-header">
+		<div class="print-section">
+			<span class="actions" ng-click="exportXLS()"
+				ng-show="bom.model.content.contents.length>0"><span class="fa-stack"><i class="fa fa-file-excel-o fa-2x"></i></span> </span> 
+			<span
+				class="actions" ng-click="exportCSV()"
+				ng-show="bom.model.content.contents.length>0"><span class="fa-stack"> <i class="fa fa-file-text-o fa-2x"></i></span> </span> 
+			<span class="actions"
+				ng-click="print()" translate><span class="fa-stack">
+  				<i class="fa fa-file-o fa-stack-2x"></i>
+  				<i class="fa fa-search fa-stack-1x"></i>
+			</span></span>
+		</div>
+		<div class="se-bom-ui-scrollable-table">
+			<table class="sortable se-bom-ui-table-prices" id="se-bom-table-header">
+
+			</table>
+		</div>
+		
+	</div>
+	<div class="bom-scrollable">
+		<div>
+			<div ng-class="{'se-bom-ui-scrollable-table':heightInPixels}"
+				id="se-bom-ui-scrollable-table-id">
+				<!--                 <div class="se-bom-ui-products-list" data-ng-if="groupingByTag"> -->
+				<!--                     <div bom-by-tag-table></div> -->
+				<!--                 </div> -->
+				<div class="se-bom-ui-products-list">
+
+					<div id="se-bom-table-id" class="se-bom-ui-scrollable-table">
+						<table class="sortable se-bom-ui-table-prices" id="se-bom-table">
+
+						</table>
+					</div>
+
+					<div class="se-bom-ui-basket-subtotal" ng-show="false">
+						<span ng-show="bom.header.messages['Subtotal']"
+							class="se-bom-ui-basket-price-label">{{bom.header.messages[Subtotal]}}</span>
+						<span ng-hide="bom.header.messages['Subtotal']"
+							class="se-bom-ui-basket-price-label" translate>bom-subtotal-label</span>
+						<span ng-if="bom.getTotalPrice() !==0">{{bom.getTotalPrice()|formatPrice}}
+							{{bom.getCurrency()}}</span> <span ng-if="bom.getTotalPrice() ===0">N/A</span>
+					</div>
+				</div>
+
+			</div>
+
+
+		</div>
+
+	</div>
+	<div id="se-bom-informations">
+		<div class="se-bom-ui-essential" ng-show="bom.header.displayTotal">
+			<div class="se-bom-ui-totalprice-area">
+				<h3>
+					<span ng-show="bom.header.messages['Total (VAT excluded)']"
+						class="se-bom-ui-totalprice-label">{{bom.header.messages['Total
+						(VAT excluded)']}}</span> <span
+						ng-hide="bom.header.messages['Total (VAT excluded)']"
+						class="se-bom-ui-totalprice-label" translate>bom-total-label</span>
+					<span ng-if="bom.getTotalPrice() !==0">{{bom.getTotalPrice()|formatPrice}}
+						{{bom.getCurrency()}}</span> <span ng-if="bom.getTotalPrice() ===0">N/A</span>
+				</h3>
+			</div>
+			<div
+				ng-show="bom.header.messages['All prices and discounts are only indicative information']"
+				class="se-bom-ui-indicative-information-label-1">
+				{{bom.header.messages['All prices and discounts are only indicative
+				information']}}</div>
+			<div ng-show="isUndefined(bom.header.messages['All prices and discounts are only indicative information'])"
+				class="se-bom-ui-indicative-information-label-1" translate>
+				bom-indicative-information-label-1</div>
+			<div ng-show="bom.header.messages['Free information']"
+				class="se-bom-ui-indicative-information-label-1">
+				{{bom.header.messages['Free information']}}</div>
+		</div>
+	</div>
+</section>
+

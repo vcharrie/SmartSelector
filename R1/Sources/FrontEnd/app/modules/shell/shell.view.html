@@ -1,0 +1,87 @@
+﻿<div class="app-shell" data-ng-controller="shell">
+    <header class="app-header" data-ng-include="'modules/shell/header.view.html'"></header>
+    <section class="app-main" data-ng-class="{'app-main-landing-page':isLandingPage(), 'app-main-bottom-extended':!(goBackward || goForward)}">
+
+        <nav class="app-navigation" data-ng-show="!isLandingPage()">
+            <div class="navigation-tabs">
+                <ul>
+                    <!--<li class="navigation-tab-element navigation-first-tab-element" data-ng-class="{active:isActive('/project-context')}" >
+                        <a class="navigation-tab-link" href="#/project-context" translate>shell-project-context</a>
+                    </li>-->
+
+                    <li class="navigation-tab-element">
+
+                        <!--<div class="shell-current-switchboard-bar"
+                             data-ng-class="{active: oneIsActive('/switchboard-organisation','/enclosure','/bom')}">
+                                <div class="shell-switchboard-name">
+                                    <button class="btn btn-primary dropdown-toggle open-save shell-switchboard-selection-button" data-toggle="dropdown">
+                                        <a>
+                                            {{switchboardSmartStatus()}}
+                                            {{switchboardName()}}
+                                        </a>
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu open-save-local-dropdown-menu shell-switchboard-selection-dropdown-menu">
+                                        <li class="active" data-ng-repeat="switchboardPack in switchboardPacks() | filter: additionalItemSwitchboardPackFilter">
+                                            <a class="open-save has-tooltip" data-ng-click="selectSwitchboard(switchboardPack)" data-toggle="tooltip" title="{{switchboardPack.switchboard.name}}">
+                                                <span data-ng-if="switchboardPack.switchboard.getSmartStatus() == 'SMART'" translate>smart-panel-status-indicator</span>
+                                                {{switchboardPack.switchboard.name}}
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                        </div>-->
+
+                        <ul class="shell-current-switchboard-workflow">
+                            <li class="navigation-tab-element" data-ng-class="{active:isActive('/project-context')}" >
+                                <a class="navigation-tab-link" href="#/project-context" translate>shell-project-context</a>
+                            </li>
+                            <li class="navigation-tab-element" data-ng-class="{active:isActive('/enclosure')}" >
+                                <a class="navigation-tab-link" href="#/enclosure" translate>shell-device-configuration</a>
+                            </li>
+                            <li class="navigation-tab-element" data-ng-class="{active:isActive('/bom')}" >
+                                <a class="navigation-tab-link" href="#/bom" translate>shell-complete-bom</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <!--
+                    <li class="navigation-tab-element" data-ng-class="{active:isActive('/full-bom')}" >
+                        <a class="navigation-tab-link" href="#/full-bom" translate>shell-bom-plus</a>
+                    </li>-->
+                </ul>
+            </div>
+        </nav>
+
+        <section class="app-content" data-ng-class="{'app-content-top-extended':isLandingPage()}" data-ng-view="data-ng-view">
+
+        </section>
+        <!--<div class="app-wizard" data-ng-show="goBackward || goForward" >-->
+            <!--<div class="app-wizard-container" >-->
+                <!--<button type="button" data-ng-if="goBackward" class="btn btn-sm btn-info btn-go-backward" data-ng-disabled="goBackward.disabled()" data-ng-click="goBackward.go()">-->
+                    <!--<i class="fa fa-chevron-left"></i>-->
+                    <!--&nbsp{{goBackward.label|translate}}-->
+                <!--</button>-->
+                <!--<button type="button" data-ng-if="goForward" class="btn btn-sm btn-info btn-go-forward" data-ng-disabled="goForward.disabled()" data-ng-click="goForward.go()">-->
+                    <!--{{goForward.label|translate}}&nbsp-->
+                    <!--<i class="fa fa-chevron-right"></i>-->
+                <!--</button>-->
+            <!--</div>-->
+        <!--</div>-->
+    </section>
+
+    <section class="connection-lost-section" data-ng-show="connectionLost">
+        <div class="connection-lost-background"/>
+        <div class="connection-lost-controls-container">
+            <div class="connection-lost-controls">
+                <span class="connection-lost-label" translate>shell-internet-connection-lost-label</span>
+                <div class="loading-indicator">
+                    <span><i class="fa fa-circle-o-notch fa-spin"></i></span>
+                </div>
+                <button class="connection-lost-download btn btn-default" data-ng-show="showSaveButton" data-ng-click="saveProjectWhileConnectionLost()" translate>shell-internet-connection-lost-button</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="app-footer" data-ng-include="'modules/shell/footer.view.html'"></footer>
+</div>

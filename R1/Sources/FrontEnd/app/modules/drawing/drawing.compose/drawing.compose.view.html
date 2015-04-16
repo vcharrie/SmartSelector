@@ -1,0 +1,42 @@
+<section class="app-view drawings drawing-compose">
+    <div class="content">
+        <div class="row vertical-fill">
+            <div class="col-md-4 vertical-fill" >
+                <div class="drawing-module-container composition-script">
+                    <textarea ng-model="compositionScript">
+                    </textarea>
+                </div>
+                <div class="drawing-module-container composition-status">
+                    <textarea ng-model="compositionStatus">
+                    </textarea>
+                </div>
+            </div>
+            <div class="col-md-5 vertical-fill">
+                <div class="drawing-module-container">
+                    <label><input type="checkbox" data-ng-model="showReferencePoints"/>Show ref points</label>
+                    <label><input type="checkbox" data-ng-model="withTexture" data-ng-change="reload()"/>With texture</label>
+                    <button data-ng-click="toggleCamera()" type="button" class="btn btn-default pull-right"><i class="fa fa-camera"></i> Toggle camera </button>
+                    <button data-ng-click="toggleBackgroundColor()" type="button" class="btn btn-default pull-right"><i class="fa fa-adjust"></i> Toggle bg color </button>
+                    <se-viewer3d></se-viewer3d>
+                    <div class="hint-message" data-ng-show="isLoading">
+                        <span><i class="fa fa-circle-o-notch fa-spin"></i> Loading 3D model...</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 vertical-fill">
+                <div class="drawing-module-container symbol-checkboxes">
+                    <div class="scrollable">
+                        <p class="text-center"><strong>Select material types to display</strong></p>
+                        <div data-ng-show="isLoading">
+                            <i class="fa fa-circle-o-notch fa-spin"></i> &nbsp; Loading...
+                        </div>
+                        <layers viewer="viewer3d"></layers>
+                    </div>
+                </div>
+                <div class="drawing-module-container details-inspector">
+                    <threejs-inspector class="scrollable" viewer="viewer3d" simplify-tree="true" show-reference-points="showReferencePoints"></threejs-inspector>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

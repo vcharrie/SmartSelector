@@ -1,0 +1,69 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+
+#: app/views/bom-ui.view.html
+msgid "bom-discount-label"
+msgstr "Discount"
+
+#: app/views/bom-ui.view.html
+msgid "bom-indicative-information-label-1"
+msgstr "All prices and discounts are only indicative information"
+
+#: app/views/bom-ui.view.html
+msgid "bom-indicative-information-label-2"
+msgstr " "
+
+#: app/views/bom-ui.view.html
+msgid "bom-price-label"
+msgstr "Price"
+
+#: app/views/bom-ui.view.html
+msgid "bom-product-label"
+msgstr "Description"
+
+#: app/views/bom-ui.view.html
+msgid "bom-quantity-label"
+msgstr "Quantity"
+
+#: app/views/bom-ui.view.html
+msgid "bom-reference-label"
+msgstr "Reference"
+
+#: app/views/bom-ui.view.html
+msgid "bom-subtotal-label"
+msgstr "Sub total"
+
+#: app/views/bom-ui.view.html
+msgid "bom-title"
+msgstr "Bill of materials"
+
+#: app/views/bom-ui.view.html
+msgid "bom-total-label"
+msgstr "Total (VAT excluded)"
+
+#: app/views/bom-ui.view.html
+msgid "bom-unit-net-price-label"
+msgstr "Unit net price"
+
+#: app/views/bom-ui.view.html
+msgid "bom-unit-price-label"
+msgstr "Unit price"
+
+msgid "Others"
+msgstr "Others"
+
+msgid "Export to XLS"
+msgstr "Export to XLS"
+
+msgid "Export to CSV"
+msgstr "Export to CSV"
+
+msgid "Not Available"
+msgstr "N/A"
+
+msgid "printable version"
+msgstr "printable version"

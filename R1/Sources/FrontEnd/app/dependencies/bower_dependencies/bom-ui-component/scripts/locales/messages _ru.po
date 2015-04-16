@@ -1,0 +1,56 @@
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "bom-title"
+msgstr "Спецификация"
+
+msgid "bom-product-label"
+msgstr "Описание"
+
+msgid "bom-quantity-label"
+msgstr "Количество"
+
+msgid "bom-unit-price-label"
+msgstr "Цена/ед."
+
+msgid "bom-price-label"
+msgstr "Цена"
+
+msgid "bom-total-label"
+msgstr "Итого (без НДС)"
+
+msgid "bom-subtotal-label"
+msgstr "Подытог"
+
+msgid "bom-reference-label"
+msgstr "Референс"
+
+msgid "bom-indicative-information-label-1"
+msgstr "Расчетная стоимость получена в тарифных ценах."
+
+msgid "bom-indicative-information-label-2"
+msgstr " "
+
+msgid "bom-discount-label"
+msgstr "Скидка"
+
+msgid "bom-unit-net-price-label"
+msgstr "Цена со скидкой/ед."
+
+msgid "Others"
+msgstr "другие"
+
+msgid "Export to XLS"
+msgstr "Экспорт в XLS"
+
+msgid "Export to CSV"
+msgstr "Экспорт в CSV"
+
+msgid "Not Available"
+msgstr "Н/Д"
+
+msgid "printable version"
+msgstr "версия для печати"

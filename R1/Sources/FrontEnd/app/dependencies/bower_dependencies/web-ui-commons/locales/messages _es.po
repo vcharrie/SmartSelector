@@ -1,0 +1,141 @@
+msgid ""
+msgstr ""
+"Language: es\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: app/js/jobFunction.js
+msgid "Accounting"
+msgstr "Contabilidad"
+
+#: app/js/jobFunction.js
+msgid "Administrative/Clerical"
+msgstr "Administrativo"
+
+#: app/js/jobFunction.js
+msgid "Business Development/Acquisitions"
+msgstr "Desarrollo de Negocios/Adquisiciones"
+
+#: app/js/jobFunction.js
+msgid "Construction"
+msgstr "Construcción"
+
+#: app/js/jobFunction.js
+msgid "Consultant"
+msgstr "Consultor"
+
+#: app/js/jobFunction.js
+msgid "Customer Service / Client Care"
+msgstr "Atención al Cliente"
+
+#: app/js/jobFunction.js
+msgid "Distribution/Supply Chain/Logistics"
+msgstr "Distribución/Logística/Supply Chain"
+
+#: app/js/jobFunction.js
+msgid "Education"
+msgstr "Educación"
+
+#: app/js/jobFunction.js
+msgid "Electrician"
+msgstr "Instalador electricista"
+
+#: app/js/jobFunction.js
+msgid "Energy Management"
+msgstr "Gestión de Energía"
+
+#: app/js/jobFunction.js
+msgid "Engineering"
+msgstr "Ingeniería"
+
+#: app/js/jobFunction.js
+msgid "Executive"
+msgstr "Ejecutivo"
+
+#: app/js/jobFunction.js
+msgid "Facilities/Installation/Maintenance/Repair"
+msgstr "Mantenimiento"
+
+#: app/js/jobFunction.js
+msgid "Finance"
+msgstr "Finanzas"
+
+#: app/js/jobFunction.js
+msgid "Human Resources /Training"
+msgstr "Recursos Humanos/Formación"
+
+#: app/js/jobFunction.js
+msgid "IT"
+msgstr "Sistemas de Información"
+
+#: app/js/jobFunction.js
+msgid "Installation/Maintenance/Repair"
+msgstr "Instalación"
+
+#: app/js/jobFunction.js
+msgid "Investor Relations"
+msgstr "Inversiones"
+
+#: app/js/jobFunction.js
+msgid "Legal"
+msgstr "Dpto. Legal"
+
+#: app/js/jobFunction.js
+msgid "Manufacturing / Production / Operations"
+msgstr "Producción/Operaciones"
+
+#: app/js/jobFunction.js
+msgid "Marketing"
+msgstr "Marketing"
+
+#: app/js/jobFunction.js
+msgid "Medical"
+msgstr "Servicios Médicos"
+
+#: app/js/jobFunction.js
+msgid "Other"
+msgstr "Otro"
+
+#: app/js/jobFunction.js
+msgid "Project Management"
+msgstr "Gestión de Proyectos"
+
+#: app/js/jobFunction.js
+msgid "Purchasing - Procurement"
+msgstr "Compras/Aprovisionamiento"
+
+#: app/js/jobFunction.js
+msgid "Quality Assurance / Quality Control"
+msgstr "Calidad"
+
+#: app/js/jobFunction.js
+msgid "Research & Development / Science"
+msgstr "Investigación y Desarrollo"
+
+#: app/js/jobFunction.js
+msgid "Reseller/VAR"
+msgstr "Revendedor"
+
+#: app/js/jobFunction.js
+msgid "Safety"
+msgstr "Seguridad"
+
+#: app/js/jobFunction.js
+msgid "Sales"
+msgstr "Ventas"
+
+#: app/js/jobFunction.js
+msgid "Security / Protective Services"
+msgstr "Servicios de Protección/Seguridad"
+
+#: app/js/jobFunction.js
+msgid "Strategy - Planning"
+msgstr "Estrategia/Planificación"
+
+#: app/js/jobFunction.js
+msgid "System Integrator"
+msgstr "Integrador de Sistemas"
+
+#: app/js/jobFunction.js
+msgid "Telecommunications"
+msgstr "Telecomunicaciones"

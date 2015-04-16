@@ -1,0 +1,31 @@
+{
+  "name": "bom-ui-component",
+  "version": "2.1.9",
+  "main": [
+    "dist/bom-ui-component-all-min.js",
+    "dist/bom-ui-component.css"
+  ],
+  "dependencies": {
+    "angular": ">=1.2",
+    "json3": "^3.3.0",
+    "es5-shim": "^4.0.0",
+    "bootstrap": "^3.2.0",
+    "angular-animate": ">=1.2",
+    "angular-cookies": ">=1.2",
+    "angular-resource": ">=1.2",
+    "angular-route": ">=1.2",
+    "angular-sanitize": ">=1.2",
+    "angular-touch": ">=1.2",
+    "font-awesome": "~4.1.0",
+    "angular-gettext": "~1.1.4",
+    "angular-underscore-module": "~1.0.1",
+    "underscore": "~1.7.0",
+    "jquery-ui": "~1.11.2",
+    "angular-spinner": "~0.6.1"
+  },
+  "devDependencies": {
+    "angular-mocks": ">=1.2",
+    "angular-scenario": ">=1.2"
+  },
+  "appPath": "directive"
+}

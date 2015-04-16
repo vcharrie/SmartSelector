@@ -1,0 +1,37 @@
+﻿<section class="app-view fill">
+    <div class="panel vertical-fill">
+        <div class="bom-panel vertical-fill">
+
+            <!--<span class="bom-add-item svg-button" data-ng-click="addItemToPriceList()">-->
+                <!--<i class="fa fa-plus bom-add-item-plus-icon"></i>-->
+                <!--<span class="add-item-label" translate>bom-add-item-to-price-list</span>-->
+            <!--</span>-->
+
+            <div class="bom-default-discount-apply">
+
+                <button class="btn btn-default btn-add-item" data-ng-click="addItemToPriceList()">
+                    <i class="fa fa-plus bom-add-item-plus-icon"></i>
+                    <span class="svg-button" translate>bom-add-item-to-price-list</span>
+                </button>
+                <div class="bom-btn-separator"></div>
+                <button data-ng-if="discountAvailable()" class="btn btn-default btn-discount" data-ng-click="editDiscount()" translate>bom-edit-discount-label</button>
+                <button class="btn btn-default btn-modify" data-ng-click="newPriceList()">
+                    <i class="fa fa-pencil fa-lg"></i>
+                    <span class="svg-button" translate>bom-modify-price-list</span>
+                </button>
+                <span class="label-price" translate>{{selectedPricelistLocalizedName()}}</span>
+
+            </div>
+            <div data-ng-if="!(!isProductListEmpty()|| !isItemsListEmpty())" class="bom-empty-content">
+                <div class="bom-warning-box">
+                    <p class="text-warning" data-ng-show="isProductListEmpty" translate>bom-full-no-product</p>
+                </div>
+            </div>
+            <div data-ng-if="!isProductListEmpty()|| !isItemsListEmpty()" class="bom-pace-products-lists-scrollable-area">
+                <bom-directive grouping-by-tag="true" scrollable="true"></bom-directive>
+            </div>
+
+
+        </div>
+    </div>
+</section>

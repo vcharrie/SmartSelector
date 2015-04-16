@@ -1,0 +1,14 @@
+{
+  "name": "jquery-mousewheel-stop-propagation",
+  "homepage": "https://github.com/basselin/jquery-mousewheel-stop-propagation",
+  "version": "1.2.0",
+  "_release": "1.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.2.0",
+    "commit": "00a027820cbf9808c2436c6edf0883388ebb97c6"
+  },
+  "_source": "https://github.com/basselin/jquery-mousewheel-stop-propagation.git",
+  "_target": ">=1.2.0",
+  "_originalSource": "jquery-mousewheel-stop-propagation"
+}

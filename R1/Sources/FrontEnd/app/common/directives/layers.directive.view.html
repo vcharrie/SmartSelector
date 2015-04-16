@@ -1,0 +1,5 @@
+<div data-ng-repeat="layer in layers" class="threejs-layers-directive" data-ng-show="!isLoading">
+    <label for="{{layer.name}}"><input type="checkbox" name="layer[]" id="{{layer.name}}" value="{{layer.name}}" data-ng-model="layer.selected" />
+        {{layer.translationKey}}
+    </label>
+</div>

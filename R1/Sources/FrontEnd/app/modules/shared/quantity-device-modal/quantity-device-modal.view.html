@@ -1,0 +1,26 @@
+<div>
+    <img class="modal-close-button" src="images/close.png" data-ng-click="onCloseButtonClick()" />
+    <div class="modal-header">
+        <h3 class="modal-title" translate>quantity-device-title</h3>
+    </div>
+    <div class="modal-body">
+        <div class="quantity-container">
+            <p translate>quantity-device-change</p>
+            <div>
+                <span class="clickable-icon quantity-button fa-stack fa-lg" data-ng-click="decrementQuantity()">
+                    <i class="icon-plus-minus-subtract"></i>
+                </span>
+                <input class="form-control product-item-quantity" type="text" maxlength="2" value="1" data-ng-model="quantity"/>
+                <span class="clickable-icon quantity-button fa-stack fa-lg" data-ng-click="incrementQuantity()">
+                    <i class="icon-plus-minus-add"></i>
+                </span>
+                <button class="btn btn-default btn-validate-quantity" data-ng-click="validateQuantity(quantity)" translate>dialog-warning-ok</button>
+            </div>
+
+        </div>
+        <div class="split-device-container">
+            <p class="text-center" translate>split-device-message</p>
+            <button class="btn btn-default btn-split-device" data-ng-click="onSplitDevices()" translate>split-device-button</button>
+        </div>
+    </div>
+</div>

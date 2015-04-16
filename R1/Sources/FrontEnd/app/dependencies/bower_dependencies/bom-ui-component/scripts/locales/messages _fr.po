@@ -1,0 +1,56 @@
+msgid ""
+msgstr ""
+"Language: fr\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "bom-title"
+msgstr "Liste de matériels"
+
+msgid "bom-product-label"
+msgstr "Description"
+
+msgid "bom-quantity-label"
+msgstr "Quantité"
+
+msgid "bom-unit-price-label"
+msgstr "Prix unitaire"
+
+msgid "bom-price-label"
+msgstr "Prix"
+
+msgid "bom-total-label"
+msgstr "Total (HT)"
+
+msgid "bom-subtotal-label"
+msgstr "Sous total"
+
+msgid "bom-reference-label"
+msgstr "Référence"
+
+msgid "bom-indicative-information-label-1"
+msgstr "Tous les prix et discounts sont donnés à titre indicatif"
+
+msgid "bom-indicative-information-label-2"
+msgstr " "
+
+msgid "bom-discount-label"
+msgstr "Remise"
+
+msgid "bom-unit-net-price-label"
+msgstr "Prix net unitaire"
+
+msgid "Others"
+msgstr "Autres"
+
+msgid "Export to XLS"
+msgstr "Export XLS"
+
+msgid "Export to CSV"
+msgstr "Export CSV"
+
+msgid "Not Available"
+msgstr "N/D"
+
+msgid "printable version"
+msgstr "version imprimable"

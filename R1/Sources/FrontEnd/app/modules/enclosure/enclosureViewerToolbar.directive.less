@@ -1,0 +1,42 @@
+.enclosure-viewer-toolbar {
+
+  @button-width: 37px;
+  @button-height: 32px;
+
+  .navigation-cross {
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    width: 3*@button-width;
+    height: 3*@button-height;
+
+    .up {
+      position: absolute;
+      left: @button-width;
+    }
+    .down {
+      position: absolute;
+      left: @button-width;
+      bottom: 2px;
+    }
+    .middle-left {
+      position: absolute;
+      top: @button-height;
+    }
+    .middle-center {
+      position: absolute;
+      top: @button-height;
+      left: @button-width;
+    }
+    .middle-right {
+      position: absolute;
+      top: @button-height;
+      left: 2*@button-width;
+    }
+  }
+
+  .enclosure-layers-dropdown-menu {
+    min-width: 210px;
+  }
+
+}

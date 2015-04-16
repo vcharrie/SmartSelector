@@ -1,0 +1,34 @@
+.alternative-product-selected .product-item{
+  background-color : @skyBlueColor;
+  color : @whiteColor;
+}
+
+.alternative-product-selection{
+  height: 100%;
+
+  .modal-body {
+    max-height : auto;
+    height: 80%;
+    @media screen and (min-height: 750px) {
+      height: 83%;
+    }
+    @media screen and (min-height: 1000px) {
+      height: 85%;
+    }
+
+    .product-price{
+      position : absolute;
+      right: 10px;
+      z-index: 1;
+    }
+  }
+}
+
+.modal-information-zone {
+  background-color: #ededed;
+  padding:20px;
+  margin: -20px -20px 20px -20px;
+  color:gray;
+  font-size: 12px;
+  font-style: italic;
+}

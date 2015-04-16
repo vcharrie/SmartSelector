@@ -1,0 +1,69 @@
+<div class="auxiliaries-selection">
+    <img class="modal-close-button" src="images/close.png" data-ng-click="close()" />
+    <div class="modal-header">
+        <h3 class="modal-title" translate>
+            auxiliaries-selection-title
+        </h3>
+    </div>
+    <div class="modal-body">
+        <div class="auxiliaries-selection-main-device-area">
+            <product-item product="mainProductPack" context="'readonly'"></product-item>
+        </div>
+
+        <div class="auxiliaries-selection-area">
+            <div class="auxiliaries-sections-panel auxiliaries-central-panel">
+                <div class="auxiliaries-section-tab-container" data-ng-repeat="section in auxiliaryAvailableSections">
+                    <!-- data-ng-repeat creates a child scope => to get to characteristics-selection scope, we must get to the parent scope-->
+                    <div class="auxiliaries-section-tab" data-ng-class="{'active': section === auxiliarySelectedSection}" data-ng-click="selectSection(section)">
+                        <div class="auxiliaries-section-tab-title">
+                        <p>{{section|translate}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="auxiliaries-configure-panel auxiliaries-central-panel">
+                <characteristics-selection
+                        range="auxiliaryRange"
+                        auxiliaries="yes"
+                        on-products-list-changed="onAuxiliariesListChanged"
+                        fill-products-list="fillProductsList"
+                        main-product-pack="mainProductPack"
+                        auxiliary-selected-section="auxiliarySelectedSection"
+                        hide-clear-button="true"
+                        default-product-pack="null"
+                        data-ng-show="filtersLoaded">
+                </characteristics-selection>
+                <div class="loading-indicator" data-ng-show="!filtersLoaded">
+                    <span><i class="fa fa-circle-o-notch fa-spin"></i></span>
+                </div>
+            </div>
+
+            <div class="auxiliaries-bom-panel auxiliaries-central-panel">
+                <div class="proposed-auxiliaries-list" data-ng-show="!auxiliariesLoading">
+                    <ul class="list-group">
+                        <li class="list-group-item" data-ng-repeat="aux in filteredAuxiliariesList">
+                            <div data-ng-class="{'selected-auxiliary' : aux === selectedAuxiliary}">
+                                <product-item data-ng-if="selectedAuxiliary.product.name !== ''" product="aux" context="'readonly'" is-selected="isSelected" select-product="selectAuxiliary"></product-item>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="auxiliaries-loading-indicator" data-ng-if="auxiliariesLoading">
+                    <span><i class="fa fa-circle-o-notch fa-spin"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" data-ng-disabled="!auxiliariesList[0].parts[0].part" data-ng-click="validate()" translate>
+            dialog-warning-ok
+        </button>
+        <button class="btn btn-default" data-ng-click="close()" translate>
+            CANCEL
+        </button>
+        <button class="btn btn-default" data-ng-click="clearSelectedValues()" translate>
+            configure-eq-clear
+        </button>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+{
+  "name": "Edit-profile",
+  "version": "0.0.1",
+  "ignore": [
+    "bower.json"
+  ],
+  "dependencies": {
+    "angular-gettext": "~1.1.0",
+    "web-ui-commons": "http://pace.schneider-electric.com/Downloads/web-ui-commons-sources-0.0.1.zip"
+  },
+  "devDependencies": {
+    "bootstrap": ">= 3.0.3",
+    "angular-mocks": "~1.2.0"
+  },
+  "_cacheHeaders": {
+    "Last-Modified": "Mon, 06 Oct 2014 12:10:11 GMT",
+    "Content-Length": "25391",
+    "Content-Type": "application/zip"
+  },
+  "_source": "http://pace.schneider-electric.com/Downloads/edit-profile-0.0.1.zip",
+  "_target": "*",
+  "_originalSource": "http://pace.schneider-electric.com/Downloads/edit-profile-0.0.1.zip"
+}

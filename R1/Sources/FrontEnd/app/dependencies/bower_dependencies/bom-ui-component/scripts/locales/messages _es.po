@@ -1,0 +1,56 @@
+msgid ""
+msgstr ""
+"Language: es\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "bom-title"
+msgstr "Listado materiales"
+
+msgid "bom-product-label"
+msgstr "Descripción"
+
+msgid "bom-quantity-label"
+msgstr "Cantidad"
+
+msgid "bom-unit-price-label"
+msgstr "Precio unitario"
+
+msgid "bom-price-label"
+msgstr "Precio total"
+
+msgid "bom-total-label"
+msgstr "Total (sin IVA)"
+
+msgid "bom-subtotal-label"
+msgstr "Subtotal"
+
+msgid "bom-reference-label"
+msgstr "Referencia"
+
+msgid "bom-indicative-information-label-1"
+msgstr "Los descuentos indicados en este software, por el usuario, no compromete a Schneider Electric."
+
+msgid "bom-indicative-information-label-2"
+msgstr " "
+
+msgid "bom-discount-label"
+msgstr "Descuento"
+
+msgid "bom-unit-net-price-label"
+msgstr "Precio neto unitario"
+
+msgid "Others"
+msgstr "Otros"
+
+msgid "Export to XLS"
+msgstr "Exportar listado a Excel"
+
+msgid "Export to CSV"
+msgstr "Exportar listado a CSV"
+
+msgid "Not Available"
+msgstr "Sin dato"
+
+msgid "printable version"
+msgstr "versión imprimible"

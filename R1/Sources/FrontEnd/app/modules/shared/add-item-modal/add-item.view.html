@@ -1,0 +1,58 @@
+<div class="add-item">
+    <img class="modal-close-button" src="images/close.png" data-ng-click="close()" />
+    <div class="modal-header">
+        <h3 class="modal-title" translate>add-item-modal-title</h3>
+    </div>
+
+    <div class="modal-body">
+
+        <span class="add-item-btn svg-button" data-ng-click="addItem()">
+            <i class="fa fa-plus add-item-btn-plus-icon"></i>
+            <span class="add-item-label" translate>add-item-to-price-list</span>
+        </span>
+
+        <span class="delete-all-item svg-button" data-ng-click="deleteAllItems()">
+            <i class="fa fa-trash-o fa-lg"></i>
+            <span translate>delete-all-additional-item</span>
+        </span>
+
+        <div class="header-name" translate>additional-item-name</div>
+        <!--<div class="header-type">Type</div>-->
+        <div class="header-price" translate>additional-item-price</div>
+        <hr class="add-item-separator">
+
+        <form name="additionalItemsForm" novalidate>
+            <div class="table-content">
+                <table class="add-item-table">
+                    <tr class="add-item-row" ng-repeat="item in additionalItems">
+                        <td class="name-cell">
+                            <div ng-form="{{item.name}}">
+                                <input type="text" id="test" class="add-item-input" ng-model="item.name" data-ng-keydown="onKeyDown(additionalItemsForm)" custom-autofocus required/>
+                            </div>
+                        </td>
+                        <!--<td class="type-cell">-->
+                            <!--<input type="text" class="add-item-input" ng-model="item.type"/>-->
+                        <!--</td>-->
+                        <td class="price-cell">
+                            <div ng-form="{{item.price}}">
+                                <input type="number" class="add-item-input" ng-model="item.price" data-ng-keydown="onKeyDown(additionalItemsForm)" required/>
+                            </div>
+
+                        </td>
+                        <td>
+                            <button data-ng-click="deleteItem(item)" class="item-trash" data-ng-keydown="onKeyDown(additionalItemsForm)" tabindex="-1">
+                                <i class="fa fa-trash-o fa-lg"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+
+    <div class="modal-footer">
+        <button class="btn btn-primary" data-ng-click="validate()" data-ng-disabled="additionalItemsForm.$invalid" translate>add-item-validate</button>
+        <button class="btn btn-default" data-ng-click="close()" translate>CANCEL</button>
+
+    </div>
+</div>

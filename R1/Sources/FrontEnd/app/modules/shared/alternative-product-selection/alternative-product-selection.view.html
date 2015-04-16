@@ -1,0 +1,29 @@
+<div class="alternative-product-selection">
+    <img class="modal-close-button" src="images/close.png" data-ng-click="close()" />
+    <div class="modal-header">
+        <h3 class="modal-title" translate>
+            alternative-product-selection-title
+        </h3>
+    </div>
+    <div class="modal-body">
+        <div class="modal-information-zone" translate>
+            alternative-product-selection-information
+        </div>
+        <div class="alternative-product-list">
+            <ul class="list-group">
+                <li class="list-group-item" data-ng-repeat="prod in productsList">
+                    <div class="product-price">{{prod.getPrice()|formatPrice}} {{currency}}</div>
+                    <product-item product="prod" context="'readonly'" data-ng-class="{'alternative-product-selected' : (prod === selectedProduct)}" data-ng-click="highlightProduct(prod)"></product-item>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" data-ng-disabled="false" data-ng-click="validate()" translate>
+            dialog-warning-ok
+        </button>
+        <button class="btn btn-default" data-ng-click="close()" translate>
+            CANCEL
+        </button>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="blmBrowser">
+    <img class="modal-close-button" src="images/close.png" data-ng-click="close()"/>
+
+    <div class="modal-header">
+        <h3 class="modal-title">
+            <img class="blm-browser-modal-header-icon" src="images/project_icon.png"/>
+            <span data-ng-if="browserMode === 'select-mode'"  translate>blm-browser-title</span>
+            <span data-ng-if="browserMode === 'save-mode'"  translate>blm-browser-save-title</span>
+            <span data-ng-if="browserMode === 'save-mode' && projectName && projectName.length > 0"  translate> : {{projectName}}</span>
+            <!--<span data-ng-show="!projectsLoaded"><i class="fa fa-circle-o-notch fa-spin"></i></span>-->
+        </h3>
+    </div>
+
+    <blm-web-sdk blm-web-sdk-mode="{{browserMode}}" blm-web-site-url="{{blmWebSiteUrl}}" token="token()" unique-user-id="userId()" select-file-callback="onSpimObjectSelected(file)" select-folder-callback = "onSpimObjectSelected(folder,name,type)"></blm-web-sdk>
+
+</div>

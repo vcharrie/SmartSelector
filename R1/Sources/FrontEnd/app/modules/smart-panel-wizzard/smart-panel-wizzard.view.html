@@ -1,0 +1,193 @@
+<div class="wizzard">
+    <img class="modal-close-button" src="images/close.png" data-ng-click="close()" />
+    <div class="modal-header">
+        <h3 class="modal-title" translate>
+            smart-panel-wizard-title
+        </h3>
+    </div>
+    <div class="modal-body smart-panel-wizzard-bom-panel" data-ng-if="!isBusy && !errorMessage">
+
+        <div data-ng-if="currentStep=='select'" class="smart-panel-wizzard-meta-ranges-selection-area">
+            <div class="modal-information-zone" translate>
+                smart-panel-wizard-select-items
+            </div>
+
+            <div class="smart-panel-wizzard-product-list">
+                <div class="list-group table">
+                    <div class="list-group-item-header table-row">
+                        <div class="table-cell table-header" translate>smart-panel-wizard-level-to-convert</div>
+                    </div>
+                    <div class="list-group-item table-row">
+                        <div class="level-item"><input type="checkbox" data-ng-change="checkAll(1)" data-ng-model="level[1]" data-ng-indeterminate="level[1] === -1" data-ng-disabled="levels[1] === undefined"><label data-ng-class="{false:'level-label', true:'level-label-disabled'}[levels[1] === undefined]" translate>switchboard-organisation-level-1-header</label></div>
+                        <div class="level-item"><input type="checkbox" data-ng-change="checkAll(2)" data-ng-model="level[2]" data-ng-indeterminate="level[2] === -1" data-ng-disabled="levels[2] === undefined"><label data-ng-class="{false:'level-label', true:'level-label-disabled'}[levels[2] === undefined]" translate>switchboard-organisation-level-2-header</label></div>
+                        <div class="level-item"><input type="checkbox" data-ng-change="checkAll(3)" data-ng-model="level[3]" data-ng-indeterminate="level[3] === -1" data-ng-disabled="levels[3] === undefined"><label data-ng-class="{false:'level-label', true:'level-label-disabled'}[levels[3] === undefined]" translate>switchboard-organisation-level-3-header</label></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="smart-panel-wizzard-product-list">
+                <div class="list-group table" data-ng-if="levels[1]">
+                    <div class="colSelect"></div>
+                    <div class="colProduct"></div>
+                    <div class="colConversion"></div>
+                    <div class="colProduct"></div>
+                    <div class="list-group-item-header table-row">
+                        <div class="table-cell table-header" translate>switchboard-organisation-level-1-short-header</div>
+                        <div class="table-cell table-header" translate>smart-panel-wizard-original-products</div>
+                        <div class="table-cell table-header">&NonBreakingSpace;</div>
+                        <div class="table-cell table-header" translate>smart-panel-wizard-converted-products</div>
+                    </div>
+                    <div class="list-group-item table-row" data-ng-repeat="productPair in convertibleDataMap.smartified" data-ng-class="{'conversion-disabled' : productPair.before.disabled, 'not-convert' : !productPair.before.convert}" data-ng-if="productPair.before">
+                        <div class="table-cell select-product" data-ng-show="productPair.before.level == 1">
+                            <span class="product-quantity" data-ng-show="productPair.before.quantity>1">{{productPair.before.quantity}} x </span>
+                            <br/>
+                            <input type="checkbox" ng-model="productPair.before.convert" data-ng-change="updateLevelCheckbox(1)" data-ng-if="!productPair.before.disabled">
+                        </div>
+                        <product-item data-ng-show="productPair.before.level == 1" data-ng-class="{'not-convert-cell' : !productPair.before.convert}" class="table-cell product-cell" product="productPair.before" context="'readonly'" is-selected="isSelected" select-product="selectAuxiliary"></product-item>
+                        <div data-ng-show="productPair.before.level == 1" data-ng-class="{'not-convert-cell' : !productPair.before.convert}" class="table-cell convert-icon">
+                            <div class="disabled-product-info" data-ng-if="productPair.before.disabled">Can't be converted, but can be useful for additional products calculation.</div>
+                            <i class="fa fa-caret-right" data-ng-show="productPair.before.convert"></i>
+                        </div>
+                        <product-item data-ng-show="productPair.before.level == 1" data-ng-class="{'not-convert-cell' : !productPair.before.convert}" class="table-cell product-cell" product="productPair.after" context="'readonly'" is-selected="isSelected" select-product="selectAuxiliary"></product-item>
+                    </div>
+                </div>
+                <div class="list-group table" data-ng-if="levels[2]">
+                    <div class="colSelect"></div>
+                    <div class="colProduct"></div>
+                    <div class="colConversion"></div>
+                    <div class="colConvertedProduct"></div>
+                    <div class="list-group-item-header table-row">
+                        <div class="table-cell table-header" translate>switchboard-organisation-level-2-short-header</div>
+                        <div class="table-cell table-header" translate>smart-panel-wizard-original-products</div>
+                        <div class="table-cell table-header">&NonBreakingSpace;</div>
+                        <div class="table-cell table-header" translate>smart-panel-wizard-converted-products</div>
+                    </div>
+                    <div class="list-group-item table-row" data-ng-repeat="productPair in convertibleDataMap.smartified" data-ng-class="{'conversion-disabled' : productPair.before.disabled, 'not-convert' : !productPair.before.convert}" data-ng-if="productPair.before">
+                        <div class="table-cell select-product" data-ng-show="productPair.before.level == 2">
+                            <span class="product-quantity" data-ng-show="productPair.before.quantity>1">{{productPair.before.quantity}} x </span>
+                            <br/>
+                            <input type="checkbox" ng-model="productPair.before.convert" data-ng-change="updateLevelCheckbox(2)" data-ng-if="!productPair.before.disabled">
+                        </div>
+                        <product-item data-ng-show="productPair.before.level == 2" data-ng-class="{'not-convert-cell' : !productPair.before.convert}" class="table-cell product-cell" product="productPair.before" context="'readonly'" is-selected="isSelected" select-product="selectAuxiliary"></product-item>
+                        <div data-ng-show="productPair.before.level == 2" data-ng-class="{'not-convert-cell' : !productPair.before.convert}" class="table-cell convert-icon">
+                            <div class="disabled-product-info" data-ng-if="productPair.before.disabled">Can't be converted, but can be useful for additional products calculation.</div>
+                            <i class="fa fa-caret-right" data-ng-show="productPair.before.convert"></i>
+                        </div>
+                        <product-item data-ng-show="productPair.before.level == 2" data-ng-class="{'not-convert-cell' : !productPair.before.convert}" class="table-cell product-cell" product="productPair.after" context="'readonly'" is-selected="isSelected" select-product="selectAuxiliary"></product-item>
+                    </div>
+                </div>
+                <div class="list-group table" data-ng-if="levels[3]">
+                    <div class="colSelect"></div>
+                    <div class="colProduct"></div>
+                    <div class="colConversion"></div>
+                    <div class="colConvertedProduct"></div>
+                    <div class="list-group-item-header table-row">
+                        <div class="table-cell table-header" translate>switchboard-organisation-level-3-short-header</div>
+                        <div class="table-cell table-header" translate>smart-panel-wizard-original-products</div>
+                        <div class="table-cell table-header">&NonBreakingSpace;</div>
+                        <div class="table-cell table-header" translate>smart-panel-wizard-converted-products</div>
+                    </div>
+                    <div class="list-group-item table-row" data-ng-repeat="productPair in convertibleDataMap.smartified" data-ng-class="{'conversion-disabled' : productPair.before.disabled, 'not-convert' : !productPair.before.convert}" data-ng-if="productPair.before">
+                        <div class="table-cell select-product" data-ng-show="productPair.before.level == 3">
+                            <span class="product-quantity" data-ng-show="productPair.before.quantity>1">{{productPair.before.quantity}} x </span>
+                            <br/>
+                            <input type="checkbox" ng-model="productPair.before.convert" data-ng-change="updateLevelCheckbox(3)" data-ng-if="!productPair.before.disabled">
+                        </div>
+                        <product-item data-ng-show="productPair.before.level == 3" data-ng-class="{'not-convert-cell' : !productPair.before.convert}" class="table-cell product-cell" product="productPair.before" context="'readonly'" is-selected="isSelected" select-product="selectAuxiliary"></product-item>
+                        <div  data-ng-show="productPair.before.level == 3" data-ng-class="{'not-convert-cell' : !productPair.before.convert}" class="table-cell convert-icon">
+                            <div class="disabled-product-info" data-ng-if="productPair.before.disabled">Can't be converted, but can be useful for additional products calculation.</div>
+                            <i class="fa fa-caret-right" data-ng-show="productPair.before.convert"></i>
+                        </div>
+                        <product-item  data-ng-show="productPair.before.level == 3" data-ng-class="{'not-convert-cell' : !productPair.before.convert}" class="table-cell product-cell" product="productPair.after" context="'readonly'" is-selected="isSelected" select-product="selectAuxiliary"></product-item>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div data-ng-if="currentStep=='addedProducts'" class="smart-panel-wizzard-additional-products-area">
+            <div class="modal-information-zone" translate>
+                smart-panel-wizard-automatically-added-items
+            </div>
+
+            <div class="smart-panel-wizzard-product-list">
+                <div class="list-group table">
+                    <div class="colProduct"></div>
+                    <div class="list-group-item-header table-row">
+                        <div class="table-cell table-header">&NonBreakingSpace;</div>
+                        <div class="table-cell table-header" translate>smart-panel-wizard-new-products</div>
+                    </div>
+                    <div class="list-group-item table-row" data-ng-repeat="product in convertibleDataMap.additional">
+                        <div data-ng-class="{'select-product' : product.quantity>1}" class="table-cell">
+                            <span class="product-quantity" data-ng-show="product.quantity>1">{{product.quantity}} x </span>
+                        </div>
+                        <product-item class="table-cell product-cell" product="product" context="'readonly'" is-selected="isSelected" select-product="selectAuxiliary"></product-item>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div data-ng-if="currentStep=='updateEnclosure'" class="smart-panel-wizzard-additional-products-area">
+            <div class="modal-information-zone" translate>
+                update-enclosure-intro
+            </div>
+
+            <div class="smart-panel-wizzard-update-enclosure-text" translate>
+                smart-panel-wizzard-update-enclosure-text
+            </div>
+
+            <div class="smart-panel-wizzard-update-enclosure-text" data-ng-if="isFirstConvert()">
+                <span class="smart-panel-wizzard-update-enclosure-text-emphasis" translate>
+                    smart-panel-wizard-new-sw-name-explanation
+                </span>
+                <span>
+                    {{futureSwitchboardName}}
+                </span>
+            </div>
+
+            <div class="smart-panel-wizzard-update-enclosure-text" data-ng-if="isFirstConvert()">
+                <span class="smart-panel-wizzard-update-enclosure-text-emphasis" translate>
+                    smart-panel-wizard-old-sw-name-explanation
+                </span>
+                <span>
+                    {{backupedSwitchboardName}}
+                </span>
+                <div translate>
+                    smart-panel-wizard-old-sw-disabled-explanation
+                </div>
+            </div>
+
+            <div class="smart-panel-wizzard-update-enclosure-text" data-ng-if="!isFirstConvert()">
+                <span class="smart-panel-wizzard-update-enclosure-text-emphasis" translate>
+                    smart-panel-wizard-update-sw-name-explanation
+                </span>
+                <span>
+                    {{backupedSwitchboardName}}
+                </span>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal-body" data-ng-if="isBusy">
+        <div class="wizzard-loading-indicator loading-indicator">
+            <span><i class="fa fa-circle-o-notch fa-spin"></i> {{busyReason}}</span>
+        </div>
+    </div>
+    <div class="modal-body" data-ng-if="errorMessage && !isBusy">
+        <div class="wizzard-loading-indicator loading-indicator">
+            <span><i class="fa fa-warning" data-ng-if="errorBlocking"></i> {{errorMessage}}</span>
+        </div>
+    </div>
+    <div class="modal-footer">
+
+        <button class="btn btn-default" data-ng-click="previous()" data-ng-disabled="isBusy">
+            {{cancelLabel}}
+            <!--{{'CANCEL' | translate}}-->
+        </button>
+
+        <button class="btn btn-primary" data-ng-click="validate()" data-ng-disabled="isBusy || (errorMessage && errorBlocking)">
+            {{validationLabel}}
+        </button>
+    </div>
+</div>

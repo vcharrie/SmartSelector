@@ -1,0 +1,68 @@
+@import "drawing.explore/drawing.explore.less";
+@import "drawing.compose/drawing.compose.less";
+@import "drawing.test/drawing.test.less";
+@import "drawing.panelling/drawing.panelling.less";
+
+.full-screen {
+  width: 100%;
+  background-color: white;
+}
+
+.app-main-title {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  color: black
+}
+
+.app-main-drawings
+{
+  position: absolute;
+  top: 105px;
+  bottom: 20px;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.drawing-module-container {
+  height: 100%;
+  padding: 4px;
+  border: 1px solid @lightGreyColor;
+  border-radius: 4px;
+}
+
+.hint-message {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 320px;
+  height: 0;
+  text-align: center;
+}
+
+.hint-message-bottom {
+  margin: auto;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.drawings {
+	.content {
+		position: absolute;
+		top: 20px;
+		bottom: 0px;
+		left: 20px;
+		right: 20px;
+	}
+  .enclosuer-viewer-toolbar {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+  }
+}

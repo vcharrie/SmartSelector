@@ -1,0 +1,94 @@
+<section class="app-view drawings drawing-test">
+    <div class="content">
+        <a data-ng-show="false" id="dlep"></a>
+        <div class="row vertical-fill" >
+            <div class="col-md-8 vertical-fill">
+                <div class="vertical-fill enclosure">
+                    <div class="enclosure-toolbar">
+                        <span>Range</span>
+                        <div class="btn-group">
+                            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <span>{{selectedRange}}</span>
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li data-ng-repeat="range in ranges">
+                                    <a href="" data-ng-click="$parent.selectedRange = range">
+                                        {{range}}
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <span>Installation</span>
+                        <div class="btn-group">
+                            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <span>{{selectedInstallation}}</span>
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li data-ng-repeat="installation in installations">
+                                    <a href="" data-ng-click="$parent.selectedInstallation = installation">
+                                        {{installation}}
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <span>Door</span>
+                        <div class="btn-group">
+                            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <span>{{selectedDoor}}</span>
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li data-ng-repeat="door in doors">
+                                    <a href="" data-ng-click="$parent.selectedDoor = door">
+                                        {{door}}
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <span>Device reference (optional)</span>
+                        <input ng-model="deviceReference" type="text"/>
+
+                        <button ng-click="fillWithDevice()" class="btn btn-default pull-right"><i class="fa fa-play"></i> Start test</button>
+                    </div>
+                    <div class="enclosure-container">
+                        <div class="scrollable">
+                            <div class="enclosure-item" ng-repeat="enclosure in enclosures" ng-click="load3D(enclosure)" ng-class="{'selected': enclosure.isSelected}">
+                                <p class="title">{{enclosure.range}} {{enclosure.rows}} x {{enclosure.modulesWidth}}</p>
+                                <p class="references">{{enclosure.references}}</p>
+                                <img ng-src="{{enclosure.picture}}"/>
+                                <div ng-show="!enclosure.picture" class="indicator">
+                                    <span><i class="fa fa-circle-o-notch fa-spin"></i> Loading...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hint-message" ng-show="enclosures.length === 0">
+                        <span><i class="fa fa-info"></i> Press start test to run automatic test</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 drawing-module-container">
+                <button data-ng-show="selectedEnclosure !== null" data-ng-click="toggleCamera()" type="button" class="btn btn-default pull-right"><i class="fa fa-camera"></i> Toggle camera </button>
+                <button data-ng-show="selectedEnclosure !== null" data-ng-click="saveCompositionScript()" type="button" class="btn btn-default pull-right"> Get script </button>
+                <se-viewer3d></se-viewer3d>
+                <div class="hint-message" data-ng-show="isLoading">
+                    <span><i class="fa fa-circle-o-notch fa-spin"></i> Loading 3D model...</span>
+                </div>
+                <div class="hint-message" ng-show="selectedEnclosure === null">
+                    <span><i class="fa fa-info"></i> Select an item to open 3D view</span>
+                </div>
+                <div class="hint-message-bottom">
+                    <span ng-repeat="symbol in selectedEnclosure.symbols">
+                        {{symbol.name}}
+                    </span>
+                    <div>{{dimensions}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

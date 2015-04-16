@@ -1,0 +1,15 @@
+<section class="app-view fill">
+    <div class="panel-with-internal-padding vizualize-panel-outter fill">
+        <!-- Configuration-->
+        <button type="button" class="btn btn-lg btn-default link-button link-basket-button" data-ng-disabled="!hasElectricalProducts()" data-ng-if="displaySelection" data-ng-click="onDisplayBasketButtonClick()">
+            <i class="fa fa-shopping-cart pull-left"></i> <!--{{"configue-eq-display-basket"|translate}}-->
+            <notification-badge class="badge-top" auto-hide="true" content="newProductCount"></notification-badge>
+            <notification-badge class="badge-bottom" auto-hide="false" content="totalProductCount"></notification-badge>
+        </button>
+        <div data-ng-show="displaySelection" class="product-configuration-panel basket-panel" data-ng-include="'modules/product-configuration/product-configuration.view.html'"></div>
+
+        <!--Basket-->
+        <button type="button" class="btn btn-sm  btn-info link-button link-configuration-button" data-ng-if="displayBasket" data-ng-click="onDisplaySelectionButtonClick()" translate>configue-eq-back-to-selection</button>
+        <div data-ng-show="displayBasket" class="product-configuration-panel basket-panel" data-ng-include="'modules/basket/basket.view.html'"></div>
+    </div>
+</section>

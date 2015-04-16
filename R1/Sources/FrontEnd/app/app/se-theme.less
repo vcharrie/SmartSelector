@@ -1,0 +1,405 @@
+// =======================
+// SE theme for  Bootstrap
+// =======================
+
+// Bootstrap overrides
+// -------------------
+.page-header {
+  padding-bottom: 0;
+  margin: @appMediumMargin 0;
+}
+
+h1, h2, h3 {
+  margin: @appMediumMargin 0;
+}
+
+// Buttons
+// -------
+// Helper mixin to quickly retheme the different button variants
+.button-active-variant(@background; @border) {
+  &:hover, &:focus {
+    #gradient > .vertical(@background, darken(@background, 5%));
+    background-color: darken(@background, 5%);
+    border-color: darken(@border, 5%);
+  }
+}
+
+.btn {
+//  .box-shadow(~"inset 0 1px 0 rgba(255,255,255,.25), 0 1px 2px rgba(0,0,0,.05)");
+
+  &:active, &.active {
+    .box-shadow(none);
+  }
+}
+
+.btn-default {
+  &:hover, &:focus  {
+    #gradient > .vertical(@whiteColor, darken(@whiteColor, 5%));
+    background-color: darken(@whiteColor, 5%);
+    border-color: @seedingGreenColor;
+    color: @anthraciteGreyColor;
+  }
+}
+
+.btn-success {
+  &:hover, &:focus, &:active, &.active, .open .dropdown-toggle& {
+    #gradient > .vertical(@ladyFernGreenColor, darken(@ladyFernGreenColor, 5%));
+    background-color: darken(@ladyFernGreenColor, 2%);
+    border-color: @darkGreenColor;
+  }
+}
+
+.btn-primary { .button-active-variant(@btn-primary-bg; @btn-primary-border); }
+.btn-warning { .button-active-variant(@btn-warning-bg; @btn-warning-border); }
+.btn-danger  { .button-active-variant(@btn-danger-bg; @btn-danger-border); }
+.btn-info  { .button-active-variant(@btn-info-bg; @btn-info-border); }
+
+.btn-default, .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger {
+  &:active, &.active, .open .dropdown-toggle& {
+    #gradient > .vertical(@anthraciteGreyColor, @darkGreyColor);
+    background-color: @darkGreyColor;
+    color: @whiteColor;
+
+    .caret {
+      border-top-color: @whiteColor;
+      border-bottom-color: @whiteColor;
+    }
+  }
+}
+
+// Additional button variant
+.btn-invert {
+  background-color: @darkGreyColor;
+  border-color: @lightGreyColor;
+  color: @lightGreyColor;
+
+  &:hover, &:focus {
+    #gradient > .vertical(@darkGreyColor, darken(@darkGreyColor, 5%));
+    background-color: darken(@darkGreyColor, 2%);
+    color: @whiteColor;
+  }
+
+  &:active, &.active, .open .dropdown-toggle& {
+    #gradient > .vertical(@lightGreyColor, @whiteColor);
+    background-color: @whiteColor;
+    color: @darkGreyColor;
+
+    .caret {
+      border-top-color: @darkGreyColor;
+      border-bottom-color: @darkGreyColor;
+    }
+  }
+
+  .caret {
+    border-top-color: @whiteColor;
+    border-bottom-color: @whiteColor;
+  }
+}
+
+// Fix caret vertical alignment for default button size
+.btn .caret {
+  margin-top: -2px;
+}
+
+// Additional button type for login button
+.btn-login {
+  color: @ladyFernGreenColor;
+  background: transparent;
+
+  .caret {
+    color: @anthraciteGreyColor;
+    margin-left: 4px;
+  }
+}
+
+// Dropdowns
+// ---------
+.btn-group.open .dropdown-toggle {
+  .box-shadow(none);
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  #gradient > .vertical(@anthraciteGreyColor, @darkGreyColor);
+  background-color: @darkGreyColor;
+  color: @whiteColor;
+}
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+  background: @ladyFernGreenColor;
+  color: @whiteColor;
+}
+
+.dropdown-menu  {
+  overflow-y: auto;
+  max-height: 125px;
+
+  @media screen and (min-height: 768px) {
+    max-height: 250px;
+  }
+}
+
+// Dialogs
+// -------
+.modal {
+  overflow-y: inherit;
+}
+
+.modal-backdrop.in {
+  .opacity(0.2);
+}
+
+.modal-content {
+  border-radius: 2px;
+  background-color: @appModalBackgroundColor;
+  overflow: hidden;
+}
+
+.modal-header {
+  background-color: @anthraciteGreyColor;
+}
+
+.modal-close-button {
+    .pull-right;
+    cursor: pointer;
+    font-size: medium;
+    padding: 5px;
+    margin-top: 6px;
+    margin-right: 5px;
+    width: 37px;
+}
+
+.modal-title {
+  font-size: @appTitleFontSize;
+  font-weight: bold;
+  font-family: @appTitleFontFamily;
+  color: @ladyFernGreenColor;
+}
+
+.modal-footer {
+  background-color: @appModalBackgroundColor;
+  border: none;
+  padding: 20px;
+  text-align: center;
+
+  > .btn {
+    min-width: 120px;
+    margin-right: 25px;
+  }
+
+  > .blue-button {
+    background-color: @skyBlueColor;
+    color: @whiteColor;
+    font-weight: bold;
+    border: 1px solid @mediumGreyColor;
+  }
+}
+
+.extended-modal-dialog .modal-dialog {
+  position: relative;
+  width: 1000px;
+  height: 95%;
+  margin: auto;
+  top: 20px;
+}
+
+.extended-elastic-modal-dialog .modal-dialog {
+  position: relative;
+  width: 1000px;
+  max-height: 95%;
+  margin: auto;
+  top: 20px;
+}
+
+.narrow-modal-dialog .modal-dialog {
+  width: 500px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-dialog {
+    margin-top: (@appHeaderHeight + @appNavHeight + @appContentMargin);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+    .modal-dialog {
+        width:900px;
+    }
+}
+
+//a class for placing 'caret' to the right of the button
+.dropdown-btn-selected-value {
+    width:90%;
+    display: inline-block;
+}
+
+// Panels
+// ------
+.panel {
+  .box-shadow(none);
+  margin-bottom: @appContentMargin;
+}
+
+.panel-body, .panel-heading, .panel-footer {
+  padding: @appContentMargin;
+}
+
+// Wells
+// -----
+.well {
+  padding: @appContentMargin;
+  margin-bottom: @appContentMargin;
+  border-color: @lightGreyColor;
+//  color: @appTextColor;
+}
+
+// List groups
+// -----------
+a.list-group-item.active .list-group-item-text,
+a.list-group-item.active:hover .list-group-item-text,
+a.list-group-item.active:focus .list-group-item-text {
+  color: @whiteColor;
+}
+
+// Progress bars
+// -------------
+.progress {
+  margin-bottom: @appContentMargin;
+  border: 1px solid transparent;
+}
+
+.progress, .progress-bar {
+  border-radius: 10px;
+  .box-shadow(none);
+}
+
+// Additional class for smaller progress bars
+.progress-small {
+  height: 12px;
+}
+
+// Forms
+// -----
+.has-warning, .has-error, .has-success {
+  .form-control:focus {
+    .box-shadow(none);
+  }
+}
+
+.form-control:focus {
+  .box-shadow(none) !important;
+}
+
+// Typography
+// ----------
+// Override Bootstrap default darkening on hover
+.text-primary {
+  &:hover {
+    color: @brand-primary;
+  }
+}
+.text-warning {
+  &:hover {
+    color: @state-warning-text;
+  }
+}
+.text-danger {
+  &:hover {
+    color: @state-danger-text;
+  }
+}
+.text-success {
+  &:hover {
+    color: @state-success-text;
+  }
+}
+.text-info {
+  &:hover {
+    color: @state-info-text;
+  }
+}
+
+// Toastr
+// ------
+.toast {
+  font-family: @appTextFontFamily;
+  font-weight: normal;
+}
+
+.toast-info {
+  background-color: @ladyFernGreenColor;
+}
+
+.toast-bottom-right {
+  bottom: (@appFooterHeight + @appMediumMargin);
+}
+
+//info icons
+.info-icon {
+  color: @skyBlueColor;
+  cursor: pointer;
+  font-size: 16px;
+//  position: absolute;
+
+  > .info-icon-tooltip {
+    position: absolute;
+    left: 25px;
+    top: -5px;
+    border-radius: 3px;
+    background-color: @blueColor;
+    padding: 5px;
+    z-index: 1;
+    opacity: 0;
+    display: none;
+    font-size: 14px;
+    font-family: 'Arial MT', Helvetica, Arial, sans-serif;
+
+    > .info-icon-tooltip-label {
+      max-width: 400px;
+      display: inline-block;
+      color: @whiteColor;
+      white-space: normal;
+    }
+  }
+
+  .info-icon-arrow-container {
+    width: 0px;
+    vertical-align: middle;
+    left: 10px;
+    top: 1px;
+    position: relative;
+    z-index: 2;
+    display:inline-block;
+    opacity: 0;
+
+    .info-icon-arrow-left {
+      width: 0;
+      height: 0;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-right: 9px solid @blueColor;
+      margin-top: -9px;
+      margin-left: -7px;
+      z-index: 1;
+      position: relative;
+    }
+    .info-icon-arrow-left-border {
+      width: 0;
+      height: 0;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-right: 8px solid @blueColor;
+      margin-top: -16px;
+      margin-left: -8px;
+    }
+  }
+
+  &:hover {
+    > .info-icon-arrow-container {
+      opacity: 1;
+    }
+    > .info-icon-tooltip {
+      opacity: 1;
+      display: inline-block;
+    }
+  }
+}

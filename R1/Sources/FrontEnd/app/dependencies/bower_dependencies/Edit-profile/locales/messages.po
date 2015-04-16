@@ -1,0 +1,109 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: directive/template/edit-profile.html
+msgid "An email had been sent to your address for verification."
+msgstr ""
+
+#: directive/template/edit-profile.html
+msgid "Company Name"
+msgstr ""
+
+#: directive/template/edit-profile.html
+msgid "Connect with:"
+msgstr ""
+
+#: directive/template/edit-profile.html
+msgid "Country"
+msgstr ""
+
+#: directive/template/edit-profile.html
+msgid "Email"
+msgstr ""
+
+#: directive/template/edit-profile.html
+msgid "Fields are mandatory"
+msgstr ""
+
+#: directive/template/edit-profile.html
+msgid "Given name"
+msgstr ""
+
+#: directive/template/edit-profile.html
+msgid "Job function"
+msgstr ""
+
+#: directive/template/edit-profile.html
+msgid "Language"
+msgstr ""
+
+#: directive/template/edit-profile.html
+msgid "Partner ID"
+msgstr ""
+
+#: directive/template/edit-profile.html
+msgid "Please enter a valid email address"
+msgstr ""
+
+#: directive/template/edit-profile.html
+msgid "Please enter your Partner Id"
+msgstr ""
+
+#: directive/template/edit-profile.html
+msgid "Please enter your company name"
+msgstr ""
+
+#: directive/template/edit-profile.html
+msgid "Please enter your given name"
+msgstr ""
+
+#: directive/template/edit-profile.html
+msgid "Please enter your surname"
+msgstr ""
+
+#: directive/template/edit-profile.html
+msgid "Send verification mail again."
+msgstr ""
+
+#: directive/template/edit-profile.html
+msgid "Submit"
+msgstr ""
+
+#: directive/template/edit-profile.html
+msgid "Surname"
+msgstr ""
+
+#: directive/template/edit-profile.html
+msgid "This field is required"
+msgstr ""
+
+#: directive/template/edit-profile.html
+msgid "You have to enter a valid email."
+msgstr ""
+
+#: directive/template/edit-profile.html
+msgid "Your account"
+msgstr ""
+
+#: directive/template/edit-profile.html
+msgid "Your company"
+msgstr ""
+
+#: directive/template/edit-profile.html
+msgid "Your job"
+msgstr ""
+
+#: directive/src/edit-profile.js
+msgid "Error loading profile"
+msgstr ""
+
+#: directive/src/edit-profile.js
+msgid "Profile successfully updated"
+msgstr ""
+
+#: directive/src/edit-profile.js
+msgid "Error saving profile"
+msgstr ""

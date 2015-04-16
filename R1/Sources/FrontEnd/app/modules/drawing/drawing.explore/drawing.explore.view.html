@@ -1,0 +1,87 @@
+<section class="app-view drawings drawing-explore">
+    <div class="content">
+        <div class="row vertical-fill">
+            <div class="col-md-2 vertical-fill" >
+                <div class="drawing-module-container">
+                    <div class="menu-header">
+                        <div class="menu-buttons btn-group">
+                            <button class="btn btn-default" data-ng-click="setMode('reference')" data-ng-class="{'active': mode === 'reference'}">Reference</button>
+                            <button class="btn btn-default" data-ng-click="setMode('drawing')" data-ng-class="{'active': mode === 'drawing'}">Symbol</button>
+                        </div>
+                        <input class="form-control" type="text" data-ng-model="searchReference"/>
+                    </div>
+                    <div class="menu-content">
+                        <div data-ng-if="isLoaded" data-ng-repeat="item in items | filter: searchReference | orderBy:'name'">
+                            <span data-ng-show="(!showOnlyMissingRefPoints && !showOnlyRefWithoutSymbols) || (showOnlyMissingRefPoints && !item.hasReferencePoint()) || (showOnlyRefWithoutSymbols && !item.hasSymbol()) ">
+                                <i data-ng-show="!item.hasReferencePoint()" class="fa fa-warning missingRefPointsWarning" title="Missing reference points"></i>
+                                <i data-ng-show="!item.hasSymbol()" class="fa fa-warning misingSymbolWarning" title="Missing symbols"></i>
+                                <a data-ng-click="selectItem(item)">
+                                    {{item.name}}<br>
+                                    <div class="menu-item-description" tooltip="{{item.description}}">{{item.description}}</div>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="hint-message" data-ng-show="!isLoaded">
+                        <span><i class="fa fa-circle-o-notch fa-spin"></i> Loading...</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7 vertical-fill" >
+                <div class="drawing-module-container">
+                    <div class="display-options">
+                        <div class="display-option">
+                            <label><input type="checkbox" data-ng-model="withTexture" data-ng-change="selectItem(currentItem)"/>With texture</label>
+                        </div>
+                        <div class="display-option">
+                            <label><input type="checkbox" data-ng-model="showReferencePoints" data-ng-change="selectItem(currentItem)"/>Show reference points</label>
+                        </div>
+                        <div class="display-option">
+                            <label><input type="checkbox" data-ng-model="showOnlyMissingRefPoints"/>Show only symbols without ref points</label>
+                        </div>
+                        <div class="display-option">
+                            <label><input type="checkbox" data-ng-model="showOnlyRefWithoutSymbols"/>Show only references with missing or invalid symbols</label>
+                        </div>
+                        <div class="btn-group">
+                            <button data-ng-click="toggleCamera()" type="button" class="btn btn-default"><i class="fa fa-camera"></i> Toggle camera </button>
+                            <button data-ng-click="downloadCollada()" type="button" class="btn btn-default"><i class="fa fa-download"></i> Download collada </button>
+                        </div>
+                    </div>
+
+                    <se-viewer3d></se-viewer3d>
+
+                    <div class="hint-message" data-ng-show="isLoading">
+                        <span><i class="fa fa-circle-o-notch fa-spin"></i> Loading 3D model...</span>
+                    </div>
+                    <div class="hint-message" ng-show="currentItem === null">
+                        <span><i class="fa fa-info"></i> Select a commercial reference to open 3D view</span>
+                    </div>
+
+                    <h3 class="model-title">{{currentItem.name}} {{currentItem.description}}</h3>
+                    <div class="model-dimensions">{{dimensions}}</div>
+                </div>
+            </div>
+            <div class="col-md-3 vertical-fill" >
+                <div class="drawing-module-container details-refpoint">
+                    <div class="scrollable">
+                        <div data-ng-repeat="symbol in currentItem.symbols" data-ng-show="!isLoading">
+                            <i data-ng-show="!symbol.fileExists" class="fa fa-warning misingSymbolWarning" title="Invalid symbol"></i>
+                            <span class="currentModel">{{symbol.name}} ({{symbol.referencePoints[0].typology}})</span>
+                            <div data-ng-repeat="referencePoint in symbol.referencePoints">
+                                <div class="refpoint">
+                                    <span data-ng-style="setStyle(referencePoint.type)">&nbsp;</span>
+                                    <span>{{referencePoint.type}}</span>
+                                    <span>({{referencePoint.position.x}}, {{referencePoint.position.y}}, {{referencePoint.position.z}})</span>
+                                    <span>{{getId(referencePoint)}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="drawing-module-container details-inspector">
+                    <threejs-inspector viewer="viewer3d" simplify-tree="true"></threejs-inspector>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

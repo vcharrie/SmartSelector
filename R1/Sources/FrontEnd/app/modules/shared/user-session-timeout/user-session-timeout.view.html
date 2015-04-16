@@ -1,0 +1,29 @@
+<div class="user-session-timeout">
+    <img class="modal-close-button" src="images/close.png" data-ng-click="close()"/>
+
+    <div class="modal-header">
+        <h3 class="modal-title">
+            <img class="user-session-timeout-header-icon" src="images/project_icon.png">
+            <span data-ng-if="editMode==='OpenBackup'" translate>user-session-timeout-open-backup-title</span>
+            <span data-ng-if="editMode==='Reload'" translate>user-session-timeout-reload-title</span>
+        </h3>
+    </div>
+    <div class="modal-body">
+        <div data-ng-if="editMode==='OpenBackup'" class="user-session-timeout-info-area" translate>
+            user-session-timeout-open-backup-text
+        </div>
+        <div data-ng-if="editMode==='Reload'" class="user-session-timeout-info-area" translate>
+                user-session-timeout-reload-text
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        <div data-ng-if="editMode==='OpenBackup'">
+            <button class="btn btn-info pull-right blue-button btn-footer" data-ng-click="validate(true)" translate>blm-open-project</button>
+            <button class="btn btn-info pull-right blue-button btn-footer" data-ng-click="validate(false)" translate>CANCEL</button>
+        </div>
+        <div data-ng-if="editMode==='Reload'">
+            <button class="btn btn-info pull-right blue-button btn-footer" data-ng-click="validate(true)" translate>OK</button>
+        </div>
+    </div>
+</div>

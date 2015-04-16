@@ -1,0 +1,109 @@
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: directive/template/edit-profile.html
+msgid "An email had been sent to your address for verification."
+msgstr "На ваш email отправлено письмо для подтверждения."
+
+#: directive/template/edit-profile.html
+msgid "Company Name"
+msgstr "Название Огранизации"
+
+#: directive/template/edit-profile.html
+msgid "Connect with:"
+msgstr "Связаться с"
+
+#: directive/template/edit-profile.html
+msgid "Country"
+msgstr "Cтрана"
+
+#: directive/template/edit-profile.html
+msgid "Email"
+msgstr "Email"
+
+#: directive/template/edit-profile.html
+msgid "Fields are mandatory"
+msgstr "Поля обязательны для заполнения"
+
+#: directive/template/edit-profile.html
+msgid "Given name"
+msgstr "Имя"
+
+#: directive/template/edit-profile.html
+msgid "Job function"
+msgstr "Род деятельности"
+
+#: directive/template/edit-profile.html
+msgid "Language"
+msgstr "Язык"
+
+#: directive/template/edit-profile.html
+msgid "Partner ID"
+msgstr "ID Партнера"
+
+#: directive/template/edit-profile.html
+msgid "Please enter a valid email address"
+msgstr "Пожалуйста, введите корректный email"
+
+#: directive/template/edit-profile.html
+msgid "Please enter your Partner Id"
+msgstr "Пожалуйста, введите ваш ID Партнера"
+
+#: directive/template/edit-profile.html
+msgid "Please enter your company name"
+msgstr "Вожалуйста, введите название вашей организации"
+
+#: directive/template/edit-profile.html
+msgid "Please enter your given name"
+msgstr "Пожалуйста, введите ваше имя"
+
+#: directive/template/edit-profile.html
+msgid "Please enter your surname"
+msgstr "Пожалуйста, введите вашу фамилию"
+
+#: directive/template/edit-profile.html
+msgid "Send verification mail again."
+msgstr "Отправить письмо подтверждения еще раз"
+
+#: directive/template/edit-profile.html
+msgid "Submit"
+msgstr "Подтвердить"
+
+#: directive/template/edit-profile.html
+msgid "Surname"
+msgstr "Фамилия"
+
+#: directive/template/edit-profile.html
+msgid "This field is required"
+msgstr "Данное поле обязательно для заполнения"
+
+#: directive/template/edit-profile.html
+msgid "You have to enter a valid email."
+msgstr "Необходимо ввести корректный email адрес"
+
+#: directive/template/edit-profile.html
+msgid "Your company"
+msgstr "Ваша организация"
+
+#: directive/template/edit-profile.html
+msgid "Your job"
+msgstr "Ваша должность"
+
+#: directive/template/edit-profile.html
+msgid "Your account"
+msgstr ""
+
+#: directive/src/edit-profile.js
+msgid "Error loading profile"
+msgstr ""
+
+#: directive/src/edit-profile.js
+msgid "Profile successfully updated"
+msgstr ""
+
+#: directive/src/edit-profile.js
+msgid "Error saving profile"
+msgstr ""

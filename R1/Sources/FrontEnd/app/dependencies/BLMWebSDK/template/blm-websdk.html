@@ -1,0 +1,58 @@
+<div class="blmBrowser">
+    <!-- <img class="modal-close-button" src="images/close.png" data-ng-click="close()"/> -->
+
+    <!--<form>-->
+    <!--Token(Url decoded): <input type="text" name="userToken" style="width:50%;"-->
+    <!--ng-model="userToken" required>-->
+    <!--<button ng-click="setUserToken()">Access BLM</button>-->
+    <!--</form>-->
+    <div class="se-header-breadcrumb-zone-container">
+        <div class="se-header-breadcrumb-zone">
+            <ol class="breadcrumb">
+                <li><span class="se-header-breadcrumb-zone-toolname">
+                </span> <a class="hoverHand" ng-click="backToHome()"><span
+                        class="se-header-breadcrumb-zone-path">{{'BLM_HOME_FOLDER'|translate}}</span></a></li>
+                <li ng-repeat="entity in historyEntities"><a
+                        class="se-header-breadcrumb-zone-path hoverHand"
+                        ng-click="breadCrumbClicked(entity, $index)"
+                        ng-class="{'active':$last}">{{entity.title}}</a></li>
+
+            </ol>
+        </div>
+        <div class="se-header-breadcrumb-zone-add-folder">
+
+            <button class="se-header-breadcrumb-zone-add-folder-btn btn btn-info" data-ng-click="toggleFolderCreationMode()">{{'BLM_NEW_FOLDER_BUTTON'|translate}}</button>
+            <form class="se-header-breadcrumb-zone-add-folder-form" data-ng-if="folderCreationMode" data-ng-submit="addFolder">
+                <input id="addFolderText" data-ng-class="se-header-breadcrumb-zone-add-folder-name" type="text" placeholder="{{'BLM_NEW_FOLDER_PLACEHOLDER'|translate}}"
+                       data-ng-model="$parent.folderName" data-ng-keydown="isEnterDown()" data-ng-blur="addFolderTextLostFocus()"/>
+            </form>
+
+        </div>
+    </div>
+    <div class="blm-modal-body">
+        <div class="blm-browser-regular-area">
+            <div ng-show="showActivityIndicator" class="ai-circled ai-indicator ai-dark-spin"
+                 style="position: absolute; z-index: 2000000000; left: 48%; top: 48%;"></div>
+            <div class="blm-browser-regular-area-project-container">
+                <div ng-repeat="spimEntity in spimEntities|orderBy:['-objectType','-createdDate']">
+                    <spim-entity-browser class="hoverHand" spim-object="spimEntity"
+                                         blm-web-sdk-mode="{{blmWebSdkMode}}"  user-id="{{userId}}"   spim-object-select-callback="select(spimEntity)" spim-object-delete-callback="delete(spimEntity)"
+                                         spim-object-update-callback="update(spimEntity)"></spim-entity-browser>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blm-modal-body-select">
+
+        <span class="blm-modal-body-error-message" data-ng-show="errorMessage!==''">{{errorMessage|translate}}</span>
+        <!--<a class="blm-modal-body-select-blm-link" data-ng-href="{{blmWebSiteUrl}}" target="_blank">{{"blm-web-site-url-text" | translate}}</a>-->
+
+        <button data-ng-if="blmWebSdkMode==='select-mode'" class="btn btn-info pull-right blue-button" data-ng-disabled="!showSelectBtn"
+                data-ng-click="entitySelected()" translate>blm-open-project
+        </button>
+        <button data-ng-if="blmWebSdkMode==='save-mode'" class="btn btn-info pull-right blue-button" data-ng-disabled="!showSelectBtn"
+                data-ng-click="entitySelected()" translate>blm-save-project
+        </button>
+    </div>
+</div>

@@ -1,0 +1,170 @@
+.enclosure-modification {
+  height: 100%;
+
+  .modal-header {
+    .modal-title.no-solution-found-title {
+      color: @redColor;
+    }
+  }
+
+  .modal-body {
+    height: 80%;
+    overflow-y: visible;
+
+    @media screen and (min-height: 750px) {
+      height: 83%;
+    }
+    @media screen and (min-height: 1000px) {
+      height: 85%;
+    }
+
+    .enclosure-modification-body{
+      height : 400px;
+
+      .help-button {
+        float: right;
+        margin-right: 25px;
+        color: @skyBlueColor;
+        font-size: 25px;
+        cursor: pointer;
+      }
+
+      .enclosure-modification-center {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 180px;
+        text-align: center;
+      }
+
+      .enclosure-modification-error-message-container{
+
+        .enclosure-modification-error-message {
+          margin-top: 10px;
+          color: @redColor;
+        }
+
+        .info-icon{
+        }
+      }
+
+      .enclosure-modification-legend-message-container{
+        margin-top: 10px;
+
+        .enclosure-modification-legend-message-label-title {
+          font-weight: bold;
+        }
+      }
+
+      .enclosure-modification-characteristics-section {
+        display: inline-block;
+        width:49%;
+        vertical-align: top;
+        padding-right: 10px;
+        position: relative;
+        margin-top: 15px;
+
+        .enclosure-modification-section-title {
+          font-weight: bold;
+          font-size: 16px;
+          margin-bottom: 10px;
+          display: inline-block;
+        }
+
+        .enclosure-modification-characteristics-section-table{
+          background-color: @whiteColor;
+          border: 1px solid @lightGreyColor;
+
+          > div {
+            display: inline-flex;
+            width: 100%;
+
+            .enclosure-modification-characteristics-section-table-header{
+              width: 32%;
+              display: inline-block;
+              font-weight: bold;
+
+              background-color: grey;
+              color: @whiteColor;
+              font-weight: bold;
+              padding: 5px;
+            }
+
+            .enclosure-modification-characteristics-section-table-header-caret{
+               width: 4%;
+             }
+          }
+
+          .enclosure-modification-characteristics-section-table-row {
+
+            .enclosure-modification-characteristics-section-table-cell {
+              display: inline-block;
+              width: 32%;
+              height: 100%;
+              margin: auto;
+              padding: 5px;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              vertical-align: middle;
+
+              > button {
+                width: 100%;
+              }
+              > ul {
+                margin-left: 3px;
+                width: 96%;
+                top: 40px;
+                max-height: 125px;
+              }
+
+              > p {
+                margin: 0px;
+              }
+
+              .drop-up {
+                bottom: 40px;
+                top: auto;
+              }
+            }
+
+            .enclosure-modification-characteristics-section-table-right-caret {
+              display: table-cell;
+              width: 4%;
+              height: 100%;
+              margin: auto;
+              color: @spruceGreenColor;
+            }
+          }
+
+          .enclosure-modification-characteristics-section-table-row:first-child .enclosure-modification-characteristics-section-table-cell{
+            border-top: none;
+          }
+        }
+      }
+
+      .enclosure-modification-top-label {
+        margin-bottom: 10px;
+        font-style:italic;
+      }
+
+      .enclosure-modification-top-label-highlighted {
+        color: @redColor;
+        font-weight: bold;
+      }
+
+      .enclosure-characteristic-current-value{
+        color: @mediumGreyColor;
+      }
+    }
+  }
+
+  .modal-footer {
+    float: right;
+
+    .enclosure-modification-solution-still-not-found-label {
+      opacity: 0;
+      font-weight: bold;
+      color: @redColor;
+    }
+  }
+}

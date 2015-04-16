@@ -1,0 +1,195 @@
+.device-configuration {
+  height: 100%;
+
+  .modal-body {
+    height: 80%;
+    @media screen and (min-height: 750px) {
+      height: 83%;
+    }
+    @media screen and (min-height: 1000px) {
+      height: 85%;
+    }
+  }
+
+  .modal-footer {
+    float: right;
+  }
+}
+
+.device-configuration-meta-ranges-selection-area {
+
+
+  .device-configuration-meta-range-tabs-bar {
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+    background-color: @spruceGreenColor;
+    margin-bottom: 0px;
+
+    .device-configuration-meta-range-tab {
+      border-right: 1px solid grey;
+      float: left;
+      padding: 10px;
+
+      a {
+        cursor: pointer;
+        color: @whiteColor;
+      }
+    }
+
+    .device-configuration-meta-range-tab:hover, .selectedMetaRange{
+      background-color: @whiteColor;
+
+      a {
+        color: @spruceGreenColor;
+        background-color: @whiteColor;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.device-configuration-ranges-selection-area .product-item{
+  border: none;
+  border-bottom: 1px solid @lightGreyColor;
+  box-shadow: 0 6px 3px -3px @lightGreyColor;
+  border-radius: 0px;
+  margin-left: -@appBigMargin;
+  margin-right: -@appBigMargin;
+
+  background-color: white;
+  margin-top: -@appBigMargin;
+  height: 100px;
+  padding-top: @appBigMargin;
+
+  .product-part {
+    float: left;
+  }
+  .product-description {
+    margin-left: @appMediumMargin;
+  }
+}
+
+.device-configuration-product-list {
+  max-height: 85%;
+  overflow-y: auto;
+
+  .list-group-item {
+    padding: 0px;
+  }
+}
+
+.device-configuration-central-panel {
+  height: 100%;
+  float: left;
+  background: @ultraLightGrey2Color;
+}
+
+.device-configuration-panel {
+  overflow-y: auto;
+  padding: 18px;
+  width: 40%;
+
+  .caract-select, .product-configuration-dropdown-menu {
+    min-width: 300px;
+  }
+  .dropdown-btn-selected-value, .dropdown-btn-possible-value {
+    max-width: 270px;
+    white-space: @whiteColor;
+  }
+
+  .caract-line {
+    margin-bottom: 15px;
+  }
+
+  .dropdown-menu {
+    max-height: 130px;
+    width: 300px;
+  }
+}
+
+.device-configuration-bom-panel {
+
+  background-color: @whiteColor;
+  border-left: 1px solid @lightGreyColor;
+  overflow-y: auto;
+  width: 60%;
+
+  .product-item {
+    border: none;
+  }
+  .product-description {
+    width: 100%;
+  }
+  .product-part {
+    margin-top: @appSmallMargin;
+    margin-bottom: @appSmallMargin;
+    border-bottom: 1px solid @auxiliariesProductSeparator;
+    .part-information-description {
+      max-width: 440px;
+    }
+    .div-image {
+      margin-left: @appMediumMargin}
+  }
+
+  .device-advanced-configuration-area {
+    div a {
+      max-width: 180px;
+      overflow: hidden;
+      word-wrap: normal;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .device-advanced-configuration-area-left {
+    bottom: 0px;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    background: white;
+  }
+
+  .device-advanced-configuration-area-right {
+    bottom: 0px;
+    position: absolute;
+    right:0px;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    background: white;
+  }
+}
+
+.two-lines-ellipsed-text {
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+.device-configuration-area {
+  position: absolute;
+  top: 200px;
+  bottom: 5px;
+  left: 0px;
+  right: 0px;
+  border-bottom: 1px solid @lightGreyColor;
+  box-shadow: 0 0px 10px 0px @lightGreyColor;
+}
+
+.device-configuration-add-more {
+  width: auto;
+  display: inline-block;
+  margin-right: 25px;
+  margin-left: 20px;
+}
+
+.device-configuration-add-more input{
+  margin: 0px;
+}

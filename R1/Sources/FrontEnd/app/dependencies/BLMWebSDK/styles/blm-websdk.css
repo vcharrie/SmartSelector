@@ -1,0 +1,212 @@
+.blm-modal-body {
+    height: 400px;
+    overflow: none;
+}
+
+.blm-modal-body-select {
+    height: 40px;
+    margin-right: 30px;
+    overflow: none;
+
+}
+
+.blm-modal-body-select-blm-link {
+    margin-left: 30px;
+}
+
+.blm-modal-body-error-message {
+    margin-left: 30px;
+    color: red;
+}
+
+.blm-browser-input {
+    margin-left: 30px
+}
+
+.blm-browser-regular-area {
+
+    display: inline-block;
+    height: 400px;
+    width: 100%;
+    overflow: none;
+}
+
+/*.blm-browser-text-input {*/
+/*display: inline-block;*/
+/*margin-left: 30px;*/
+/*width: @blmBrowserTextareaWidth;*/
+/*resize: none;*/
+/*border-radius: 0px;*/
+/*}*/
+
+.blm-browser-regular-area {
+
+    display: inline-block;
+    height: 400px;
+    width: 100%;
+    overflow: none;
+}
+
+.blm-browser-regular-area-project-container {
+    margin-top: 20px;
+    height: 370px;
+    overflow: auto;
+}
+
+.blm-browser-modal-header-icon {
+    position: relative;
+    bottom: 5px;
+}
+
+.blm-browser-modal-folder-file-icon {
+    font-size: larger;
+}
+
+.blm-spim-object {
+    margin-left: 100px;
+    //width: 80%;
+    //font-size: 17px;
+    padding-bottom: 2px;
+}
+
+.blm-spim-workspace {
+    padding-top: 2px;
+    color: #000000;
+}
+
+.blm-spim-misc-file {
+    color: #808080;
+}
+
+.blm-spim-eqq-file {
+    color: #000000;
+}
+
+.fileSelected {
+    font-weight: bold;
+}
+
+/* breadcrumb zone */
+.se-header-breadcrumb-zone {
+    background-color: #f7f7f7;
+    height: 30px;
+    display: inline-block;
+}
+
+.se-header-breadcrumb-zone-add-folder {
+
+    float: right;
+}
+.se-header-breadcrumb-zone-add-folder-name{
+    z-index:-1;
+}
+
+.se-header-breadcrumb-zone-toolname {
+    color: #333333;
+    font-weight: bold;
+}
+
+.se-header-breadcrumb-zone-path {
+    color: #009530;
+}
+
+.se-header-breadcrumb-zone .active {
+    color: #333333;
+}
+
+.hoverHand {
+    cursor: pointer;
+}
+
+.ai-indicator,
+.ai-indicator *,
+.ai-indicator *:before,
+.ai-indicator *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*   position: absolute;
+       z-index: 2000000000;
+       left: 49%;
+       top: 49%; */
+}
+
+.ai-circled {
+    height: 32px;
+    width: 32px;
+    position: relative;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 100%;
+    -webkit-animation: ai-clockwise .6s linear infinite;
+    animation: ai-clockwise .6s linear infinite;
+}
+
+@-webkit-keyframes ai-clockwise {
+    to {
+        -webkit-transform: rotate(360deg) translateZ(0);
+        transform: rotate(360deg) translateZ(0);
+    }
+}
+
+@keyframes ai-clockwise {
+    to {
+        -webkit-transform: rotate(360deg) translateZ(0);
+        -ms-transform: rotate(360deg) translateZ(0);
+        transform: rotate(360deg) translateZ(0);
+    }
+}
+
+.ai-dark-spin {
+    border-color: rgba(44, 62, 80, .5) rgba(44, 62, 80, .5) #2c3e50 #2c3e50;
+}
+
+.ai-dark-parent > * {
+    background: #2c3e50;
+}
+
+/*add folder layout*/
+.se-header-breadcrumb-zone-container {
+    height: 30px;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 36px;
+    background-color: #ededed;
+}
+
+.blm-spim-object.blm-spim-workspace i.fa-pencil, .blm-spim-object.blm-spim-workspace i.fa-trash-o {
+    color: #4fa600;
+    margin-left : 5px;
+}
+.blm-spim-object.blm-spim-workspace i.fa-pencil.not-editable-icon , .blm-spim-object.blm-spim-workspace i.fa-trash-o.not-editable-icon  {
+    color: #cbcbcb;
+    margin-left : 5px;
+}
+.not-browsable-folder
+{
+    color: #cbcbcb;
+}
+
+.blm-spim-object.blm-spim-workspace .blm-spim-object-clickable:hover {
+    cursor: pointer;
+}
+
+.se-header-breadcrumb-zone-add-folder {
+    display:inline-block;
+    width: 200px;
+}
+
+.se-header-breadcrumb-zone-add-folder-btn {
+    margin-right : 5px;
+    margin-top : 1px;
+    display: inline-block;
+    float: right;
+}
+
+.se-header-breadcrumb-zone-add-folder-form {
+    margin-top : 8px;
+    margin-right : 5px;
+    display: inline-block;
+    position: relative;
+    float: right;
+}

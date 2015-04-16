@@ -1,0 +1,41 @@
+<section class="app-view fill">
+    <div class="panel panel-default vertical-fill">
+        <div class="content-wrapper jsonconfiguration vertical-fill admin-page">
+            <div class="page-header">
+                <a href='#/admin'><i class="fa fa-chevron-left"></i></a>
+                <h2>JSON configuration management</h2>
+            </div>
+            <div class="content">
+                <div class="content-left">
+                    <div class="menu-header">
+                        <p>Choose object :</p>
+                    </div>
+                    <div class="menu-content">
+                        <p data-ng-repeat="object in objectList">
+                            <a href="" data-ng-click="selectObject(object)">{{object.parameterId}}</a>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="content-center">
+                    <div class="menu-header">{{'Version : '+ objectVersion}}</div>
+                    <textarea data-ng-model="jsonString"></textarea>
+                </div>
+
+                <div class="content-right">
+                    <div class="menu-header">
+                        <span>{{'JSON : '}}<i data-ng-show="!wellFormed" class="fa fa-thumbs-o-down error"></i><i data-ng-show="wellFormed" class="fa fa-thumbs-o-up ok"></i></span>
+                        <button class="btn btn-default" href="" data-ng-click="saveSelectedObject()" data-ng-disabled="!wellFormed"><i class="fa fa-floppy-o"></i>{{' Save'}}</button>
+                    </div>
+                    <div class="menu-content">
+                        <div class="error">
+                            {{error}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

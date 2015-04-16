@@ -1,0 +1,236 @@
+.treeview-panel {
+  overflow-y: scroll;
+  position: absolute;
+  top : 75px;
+  bottom: 0px;
+  right: 0px;
+  left: 20px;
+}
+
+
+.button-banner {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.add-incomer-devices-button-banner {
+  .clickable-icon {
+    width: 3em;
+    color: @ladyFernGreenColor;
+    font-size: medium;
+    padding: 0px;
+  }
+
+  .network-zoom-icon {
+    font-size: x-large;
+    color: @skyBlueColor;
+    margin-right: 5px;
+  }
+}
+
+.level1 {
+  margin: 20px;
+}
+
+.level2 {
+  margin: 20px 0px 20px 200px;
+}
+
+.level3 {
+  margin: 20px 0px 20px 200px;
+}
+
+.distribution {
+}
+
+.distribution-group {
+  margin : 20px 0px;
+}
+.hide {
+  visibility: hidden;
+}
+
+.network-first-level {
+  position: relative;
+  width: 1006px;
+  left: 0px;
+  margin-top: 20px;
+
+  &.network-distribution {
+
+    & > .product-item {
+      background-color: @ladyFernGreen30pColor;
+    }
+  }
+}
+
+.network-second-level {
+  position: relative;
+  left: 100px;
+  width: 906px;
+  margin-top: 20px;
+
+  &.network-distribution {
+    left : 0px;
+    & > .product-item {
+      background-color: @ladyFernGreen20pColor;
+    }
+  }
+}
+
+.network-third-level {
+  position: relative;
+  left: 100px;
+  width: 806px;
+  margin-top: 20px;
+
+  .add-devices-button-banner {
+    display: none;
+  }
+}
+
+.network-add-downstream-device-plus-icon {
+  background-color:#FF1493;
+}
+
+.add-devices-button-banner {
+  position: absolute;
+  left: 50px;
+  top: 56px;
+
+  .clickable-icon {
+    width: 3em;
+    height : 3em;
+    color: @ladyFernGreenColor;
+    font-size: medium;
+    padding: 0px;
+  }
+
+  .network-add-downstream-device-arrow-icon {
+    left: -10px;
+    top: 5px;
+    font-size: 25px;
+  }
+
+  .network-add-downstream-device-plus-icon {
+    left: 10px;
+    top: 8px;
+  }
+}
+
+.add-devices-button-banner-invisible {
+  display: none;
+}
+
+.switchboard-organisation .product-description {
+  left: 40px;
+  position: relative;
+}
+
+.dragging {
+  opacity: 0.5;
+}
+
+rect.switchboard-organisation-level-column:hover{
+  fill: #cbcbcb;
+  fill-opacity: 0.1;
+}
+
+rect.switchboard-organisation-level-column{
+  fill: @whiteColor;
+  fill-opacity: 0.1;
+}
+
+.switchboard-organisation-action-button {
+
+}
+
+.switchboard-organisation-zoom-button-area {
+  margin-right : 80px;
+}
+
+.switchboard-organisation-zoom-value-area {
+  width:50px;
+  display: inline-block;
+  text-align: center;
+}
+
+.switchboard-organisation-device-description {
+  font-size: 16px;
+}
+
+.device-references-label:hover{
+  text-decoration: underline;
+}
+
+a.device-references-label {
+  text-overflow: ellipsis;
+  display: block;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #87d200;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.svg-button {
+  cursor:  pointer;
+
+  &:hover {
+    color: @skyBlueColor;
+  }
+
+  i {
+    cursor: pointer;
+  }
+  span {
+    cursor: pointer;
+    padding-right: 10px;
+  }
+}
+
+.network-add-parallel-device-plus-icon {
+  color: @skyBlueColor;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.device-description-label {
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+}
+
+.device-drag {
+  cursor: move;
+//  opacity:0.4;
+}
+
+.device-drag:hover {
+  //opacity:0.7;
+}
+
+.device-delete-label {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+.drop-down-hover {
+  fill:rgba(255,255,255,0.5);
+  visibility:visible;
+}
+
+.drop-down-hover:hover {
+  fill:rgba(255,255,255,0);
+  visibility:visible;
+}
+
+.bottomIncomerButton:hover .add-incomer-label {
+  fill:rgba(66, 180, 230, 1);
+}

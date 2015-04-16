@@ -1,0 +1,168 @@
+﻿<div class="schneider-bar">
+    <div class="bar-container">
+        <img class="schneider-mini-logo" src="images/se-logo-gray-mini.png">
+
+        <ul class="nav navbar-nav pull-right">
+            <li class="btn-group dropdown" data-ng-if="userInfo('authenticated') && isDeveloperMode">
+                <a class="btn app-header-button dropdown-toggle" href="" data-ng-click="refreshToken()"
+                   data-ng-disabled="!userInfo('authenticated')" disabled="disabled">
+                    <span>Exp. : {{sessionExpirationDate()| date:'HH:mm:ss'}}</span>
+                </a>
+            </li>
+
+            <!--<li class="dropdown-toggle">
+
+                <a class="app-header-button dropdown-toggle shell-header-language-dropdown">
+                    <span class="selected-language" translate>{{selectedCountry.name}}</span>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu pull-right" role="menu">
+                    <li data-ng-repeat="country in availableCountries" translate><a href="" data-ng-click="selectCountry(country)">{{country.name}}</a>
+                    </li>
+                </ul>
+            </li>-->
+
+            <li class="dropdown-toggle">
+
+                <a class="app-header-button dropdown-toggle shell-header-language-dropdown">
+                    <span class="selected-language" translate>{{language.langName}}</span>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu pull-right" role="menu">
+                    <li data-ng-repeat="lang in availableLanguages" translate><a href="" data-ng-click="selectLanguage(lang)">{{lang.langName}}</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="btn-group dropdown" data-ng-if="userInfo('authenticated')">
+                <a class="btn app-header-button dropdown-toggle" href="" data-ng-click="logout()"
+                   data-ng-disabled="!userInfo('authenticated')" disabled="disabled">
+                    <span translate>shell-logout</span>
+                </a>
+            </li>
+            <li class="btn-group dropdown">
+                <a class="btn app-header-button dropdown-toggle" href="" data-ng-click="openDiscovers()">
+                    <span translate>shell-discovers</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="app-bar">
+    <div class="bar-container">
+        <a data-ng-click="goToHomePage()" class="app-brand">
+            <div>
+                <img class="app-title" src="images/ecoreallogo.png">
+                <span data-ng-show="isAdmin" translate>
+                    shell-adm-on
+                </span>
+            </div>
+        </a>
+
+        <div data-ng-if="userInfo('authenticated')" class="user-profile-information">
+            <img data-ng-src="{{userInfo('userImage')}}">
+
+            <div class="static-app-header-button">
+                <span class="btn-title static-app-header-button">{{userInfo('name')}}</span>
+                <a class="static-edit-button btn" data-ng-disabled="!userInfo('authenticated')" disabled="disabled"
+                   data-ng-click="editUserProfileInfo()" translate>
+                    shell-edit-profile
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="project-bar">
+    <div class="bar-container">
+        <div class="project-menu">
+            <div class="shell-project-title-area" data-ng-if="!isLandingPage()">
+                <span class="shell-project-title navbar-nav">{{projectName()}}</span>
+            </div>
+
+            <ul class="project-actions nav navbar-nav">
+                <li data-ng-if="isSudo === true">
+                    <a class="open-save has-tooltip" href="#/admin">
+                        Administration
+                    </a>
+                </li>
+
+                <li data-ng-if="!isLandingPage() && blMAvailable()">
+                    <a class="open-save has-tooltip" data-ng-click="saveToBlm()" data-toggle="tooltip"
+                       title="{{'shell-project-save-to-blm' | translate}}">
+                        <i class="fa fa-circle-o-notch fa-spin" data-ng-show="isSavingToBlm" translate></i>
+                        <i class="fa fa-floppy-o"></i>
+                        <span translate>shell-project-save-to-blm</span>
+                    </a>
+                </li>
+
+                <li data-ng-if="!isLandingPage()">
+                    <button class="btn btn-primary dropdown-toggle open-save" data-toggle="dropdown"><span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu open-save-local-dropdown-menu">
+                        <li class="active">
+                            <a class="open-save has-tooltip" data-ng-click="save()" data-toggle="tooltip"
+                                              title="{{'shell-project-save' | translate}}">
+                                <i class="fa fa-download"></i>
+                                <span translate>shell-project-save</span>
+                            </a>
+                            <a data-ng-show="false" id="dlqqp">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li data-ng-if="!isLandingPage()">
+                    <a class="open-save has-tooltip" data-ng-click="editProjectInfos()" data-toggle="tooltip"
+                       title="{{'shell-project-create-new-project' | translate}}">
+                        <i class="fa fa-pencil"></i>
+                        <span translate>shell-project-edit-project</span>
+                    </a>
+                </li>
+
+                <li data-ng-if="!isLandingPage()">
+                    <button class="btn btn-primary dropdown-toggle open-save" data-toggle="dropdown">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+
+                    <ul class="dropdown-menu open-save-local-dropdown-menu">
+                        <li data-ng-if="!isLandingPage()">
+                            <a class="open-save has-tooltip" data-ng-click="createNewProject()"
+                               data-toggle="tooltip" title="{{'shell-project-create-new-project' | translate}}">
+                                <i class="fa fa-file-o"></i>
+                                <span translate>shell-project-create-new-project</span>
+                            </a>
+                        </li>
+
+                        <li data-ng-if="!isLandingPage() && blMAvailable()">
+                            <a class="open-save has-tooltip" data-ng-click="openFromBlm()" data-toggle="tooltip"
+                               title="{{'shell-project-open-from-blm' | translate}}">
+                                <i class="fa fa-folder-open-o"></i>
+                                <span translate>shell-project-open-from-blm</span>
+                            </a>
+                        </li>
+
+                        <li class="active">
+                            <a class="open-save has-tooltip" data-toggle="tooltip"
+                               title="{{'shell-project-load' | translate}}">
+                                <i class="fa fa-upload"></i>
+                                <span translate>shell-project-load</span>
+                            </a>
+                            <!--<div data-load-project data-on-file-load="onFileLoad" data-before-loading="beforeLoading"></div>-->
+                            <div data-load-project data-on-file-load="onFileLoad" data-before-loading="checkProjectDirtyState"></div>
+                        </li>
+
+                        <li data-ng-if="!isLandingPage()">
+                            <a data-ng-href="{{feedbackLink()}}" target="_blank" class="open-save has-tooltip" data-toggle="tooltip">
+                                <i class="fa fa-star-o" ></i>
+                                <span translate>
+                                    shell-feedback
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

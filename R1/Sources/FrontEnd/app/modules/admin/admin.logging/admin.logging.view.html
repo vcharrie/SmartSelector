@@ -1,0 +1,20 @@
+<section class="app-view fill">
+    <div class="panel vertical-fill">
+        <div class="content-wrapper logging vertical-fill admin-page">
+            <div class="page-header">
+                <a href='#/admin'><i class="fa fa-chevron-left"></i></a>
+                <h2>{{'Logging management'}}</h2>
+            </div>
+            <h3 data-ng-show="isLoading"><i class="fa fa-refresh fa-spin"></i>{{' Loading ...'}}</h3>
+            <div data-ng-show="!isLoading">
+                <div class="log-list">
+                    <div data-ng-repeat="logtype in logtypes">
+                        <h1>{{logtype}}</h1>
+                        <div class="log" data-ng-repeat="log in logs[logtype]">{{log}}</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

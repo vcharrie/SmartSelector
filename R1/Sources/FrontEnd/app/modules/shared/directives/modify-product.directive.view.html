@@ -1,0 +1,21 @@
+﻿<div class="modify-product-filter">
+
+    <div data-ng-repeat="characteristic in displayedCharacteristics" class="modify-product-filter-item">
+        <p translate>{{characteristic.name}}</p>
+        <div class="btn-group">
+            <button dropdown-opener data-ng-class="{'combo-selected' : characteristic.selectedValue !== null}" data-ng-disabled="busy" class="btn btn-default dropdown-toggle combo-default modify-product-combo-btn" data-toggle="dropdown">
+                <span class="dropdown-btn-selected-value">{{characteristic.displayValue | formatAndTranslateCaract:getCharacteristicDefinition(characteristic.name)}}</span>
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu modify-product-dropdown-menu">
+                <li data-ng-repeat="value in characteristic.values | orderBy1210ab"><a href="" data-ng-click="onCharacteristicSelected(characteristic, value)">{{value | formatAndTranslateCaract:getCharacteristicDefinition(characteristic.name)}}</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modify-product-buttons-banner btn-group">
+        <button class="btn btn-default" data-ng-click="onClearButtonClick()" translate>configure-eq-clear</button>
+        <button class="btn btn-primary" data-ng-click="onApplyButtonClick()" translate>enclosure-filter-apply</button>
+    </div>
+
+</div>

@@ -1,0 +1,22 @@
+<div class="enclosure-viewer">
+    <a data-ng-show="false" id="dlep"></a>
+    <div data-ng-show="error !== null">
+        <span><i class="fa fa-exclamation-triangle"></i> {{error}}</span>
+    </div>
+    <se-viewer3d data-ng-show="error === null && display3d && hasWebGL" class="render-3d"></se-viewer3d>
+    <div class="loading-indicator-center" data-ng-show="!hasWebGL" translate>viewer3d-missingWebGL</div>
+
+    <span data-ng-show="solution && !isLoading"><enclosure-viewer-toolbar viewer="viewer3d" solution="solution" on-screenshot-generate="onScreenshotGenerate"></enclosure-viewer-toolbar></span>
+    <div>
+        <img class="render-pic" data-ng-src="{{picture}}" data-ng-show="!isLoading && error === null && !display3d && !isGeneratingPicture" style="width: 256px;"/>
+    </div>
+    <div class="loading-indicator-center" data-ng-show="isLoading">
+        <span><i class="fa fa-circle-o-notch fa-spin"></i>&nbsp;<span translate>enclosure-loading-model</span></span>
+    </div>
+    <div class="loading-indicator-center" data-ng-show="isGeneratingPicture">
+        <span><i class="fa fa-circle-o-notch fa-spin"></i>&nbsp;<span translate>enclosure-generating-picture</span></span>
+    </div>
+    <div class="loading-indicator-center" data-ng-show="hasError">
+        <span translate><i class="fa fa-warning"></i>&nbsp;<span translate>enclosure-error-loading-3d</span></span>
+    </div>
+</div>

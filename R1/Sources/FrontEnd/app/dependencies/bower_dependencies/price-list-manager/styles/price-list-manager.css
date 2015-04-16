@@ -1,0 +1,73 @@
+.green-text {
+	color: #4FA600;
+}
+
+.red-text {
+	color: #DC0A0A;
+}
+
+.pricelist-container .pricelist-header{
+  font-weight: bold;
+  border-bottom: 4px solid #4FA600;
+  padding-top : 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.green-button{
+  color: white;
+  background-color: #4FA600;
+}
+
+.green-button:hover{
+  color: white;
+  background-color: #4FA600;
+}
+
+.pricelist-container .green-button:hover{
+  background-color: #8dc55a;
+  color: white;
+}
+
+.green-button:disabled {
+  background-color: #8dc55a;
+  color: white;
+}
+
+.pricelist-container .wizard-step-title {
+  margin-bottom: 15px;
+}
+
+
+.pricelist-container .wizard-step-subtitle {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.pricelist-container .preview_row_odd {
+	background-color: #CBCBCB;
+}
+
+.pricelist-container .preview_row_even {
+	background-color: white;
+}
+
+.pricelist-container .pricelist-wizard-nav {
+	position: relative;
+	top: 20px;
+}
+
+.pricelist-container .price-list-selectable:hover {
+	color: white;
+	background-color: #4FA600;
+}
+
+.pricelist-container .price-list-selected {
+	color: white;
+	background-color: #4FA600;
+}
+
+.modal-header {
+	border-bottom: 4px solid #4FA600;
+}

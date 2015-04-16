@@ -1,0 +1,73 @@
+<div class="family-discount-editor-container"
+	ng-class="{loading: loading}">
+	<div class="pricing-container">
+		<div class="form-container" ng-hide="emptyResults || errors">
+			<h3 class="families" ng-class="{loading: loading}">{{title}}</h3>
+			<form id="pricingForm" name="pricingForm" novalidate
+				class="families-list">
+				<span class="spinner"
+					us-spinner="{radius:30, width:8, length: 16, color: '#4fa600'}"
+					spinner-key="spinner-pricing" spinner-start-active="true"></span>
+				<div class="table-responsive">
+					<table class="table table-striped">
+						<thead>
+							<tr class="column-title">
+								<th ng-class="columnsSize.code" translate>Code</th>
+								<th ng-class="columnsSize.description" translate>Description</th>
+								<th ng-show="displayStartDate" ng-class="columnsSize.dateStart" translate>Validity start</th>
+								<th ng-class="columnsSize.discount" translate>Discount</th>
+								<th ng-class="columnsSize.percent"></th>
+							</tr>
+						</thead>
+						<tbody infinite-scroll-container="'#pricingForm'" infinite-scroll="addToDisplayList()" infinite-scroll-distance="0" infinite-scroll-parent="true">
+							<tr ng-repeat="family in displayList track by $index">
+								<td class="vert-align">{{family.familyCode}}</td>
+								<td class="vert-align">{{family.description}}</td>
+								<td ng-show="displayStartDate" class="vert-align"><input
+									ng-model="family.validityStart" id="date{{$index}})"
+									type="text" class="form-control"
+									ng-click="open($event, $index)" datepicker-popup="dd-MM-yyyy"
+									ng-model="family.validityStart"
+									is-open="datePickers[$index].opened"
+									datepicker-options="dateOptions" ng-required="true"
+									close-text="Close" min-date="family.validityStart" /></td>
+								<td class="vert-align"><input ng-model="family.value"
+									id="discount_{{$index}})" name="discount_{{$index}})"
+									type="text" percent
+									class="form-control" value="{{family.value}}"></td>
+								<td class="vert-align">%</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</form>
+			<br>
+			<div class="row">
+				<div class="col-xs-6">
+					<p class="error-message" ng-show="pricingForm.$error.percent" translate>
+						some numbers are not valid: please enter numbers between 0 and 100
+					</p>
+					<p class="error-message" ng-show="!pricingForm.$valid && !pricingForm.$error.percent" translate>some dates are not valid: please enter date in "dd-MM-yyyy" format</p>
+					<p class="text-center error-message" ng-show="failed">
+						<strong translate>Communication with server error: discounts not saved</strong>
+					</p>
+					<p class="text-center success-message"
+						ng-show="requestSaveMade && !failed">
+						<strong translate>Discounts saved</strong>
+					</p>
+				</div>
+				<div class="col-xs-3 text-center">
+					<button type="button" class="button-se-cancel"
+						ng-click="cancelClicked()" translate>Cancel</button>
+				</div>
+				<div class="col-xs-3 text-center">
+					<button type="button" class="button-se-ok"
+						ng-click="submitClicked()" ng-disabled="!pricingForm.$valid" translate>Submit</button>
+				</div>
+			</div>
+		</div>
+		<div class="row" ng-show="emptyResults">
+			<div class="col-xs-12 text-center error-message" translate>No families available</div>
+		</div>
+	</div>
+</div>

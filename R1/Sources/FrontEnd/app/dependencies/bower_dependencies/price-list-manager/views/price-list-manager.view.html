@@ -1,0 +1,202 @@
+<div>
+	<span us-spinner="{radius:30, width:8, length: 12, top:'20%', color: '#4FA600'}" spinner-key="spinner-0" spinner-start-active="true"></span>
+</div>
+<div id="pricelist-modal">
+    <script type="text/ng-template" id="editListContent.html">
+		<div>
+			<span us-spinner="{radius:30, width:8, length: 12, top:'20%', color: '#4FA600'}" spinner-key="spinner-1" spinner-start-active="false"></span>
+		</div>
+        <div class="modal-header">
+            <h3 class="modal-title green-text" translate>Edit the selected list</h3>
+        </div>
+        <div class="modal-body">
+            <form novalidate name="editForm">
+				<div class="form-group">
+    				<label for="editInputName" translate>Name</label>
+    				<input type="text" class="form-control" id="editInputName" required ng-model="list.name">
+  				</div>
+				<div class="form-group">
+    				<label for="editInputDescription" translate>Description</label>
+    				<input type="text" class="form-control" id="editInputDescription" required ng-model="list.description">
+  				</div>
+				<div class="form-group">
+    				<label for="editInputCurrency" translate>Currency</label>
+    				<select id="editInputCurrency" ng-model="list.currencyCode" ng-options="currency.code as (currency.code + ' (' + currency.symbol + ')') for currency in currencies" class="form-control" required>
+    				</select>
+  				</div>
+			</form>
+        </div>
+        <div class="modal-footer">
+			<div class="col-xs-12 text-right red-text" ng-show="httpError">
+				{{httpErrorMessage}}
+			</div>
+            <button class="btn btn-default btn-md green-button" ng-click="ok()" ng-disabled="!editForm.$valid || loading" translate>OK</button>
+            <button ng-disabled="loading" class="btn btn-default btn-md" ng-click="cancel()" translate>Cancel</button>
+        </div>
+    </script>
+</div>
+<div id="pricelist-container" ng-class="{'loading': loading}">
+
+	<div class="row pricelist-header white-text">
+		<div class="col-xs-8 bg-green" translate>Manage price lists</div>
+		<div class="col-xs-4 bg-green-dark" ng-click="goTo(1)"><span class="glyphicon glyphicon-plus-sign pd-right"></span><span translate>Add new price list</span></div>
+	</div>
+
+	<div class="price-list-content" ng-show="currentStep == 0">
+		<div ng-repeat="list in priceLists">
+				<div ng-class="{'preview_row_odd':$odd,'preview_row_even':$even}" ng-click="listSelection($index)" ng-class="$index%2==0 ? 'preview_row_odd': 'preview_row_even'">
+					<div class="col-xs-8" ng-class="{'bold':list.type==='PUBLIC'}">{{list.overridenName ? list.overridenName : list.name}} {{list.overridenDescription ? list.overridenDescription : list.description}} ({{list.currencyCode}})</div>
+					<div class="col-xs-4" translate><span ng-click="deleteList($index)" class="glyphicon glyphicon-trash pd-right icon-button" ng-show="list.type!=='PUBLIC'"></span><span ng-click="editList($index)" class="glyphicon glyphicon-pencil pd-right icon-button" ng-show="list.type!=='PUBLIC'"></span><span ng-click="importRevisionForList($index)" class="glyphicon glyphicon-upload pd-right icon-button" ng-show="list.type!=='PUBLIC'"></span></div>
+				</div> 
+		
+		
+<!-- 				<div ng-class="{'price-list-selected': $index==currentListSelectedIndex,'preview_row_odd':$odd,'preview_row_even':$even}" class="row price-list-selectable" ng-click="listSelection($index)" ng-class="$index%2==0 ? 'preview_row_odd': 'preview_row_even'">
+					<div class="col-xs-12">{{list.overridenName ? list.overridenName : list.name}} {{list.overridenDescription ? list.overridenDescription : list.description}} ({{list.currencyCode}}) <span ng-show="list.type==='PUBLIC'" class="glyphicon glyphicon-ban-circle"></span>
+						<span ng-click="deleteList($index)" class="glyphicon glyphicon-trash" ng-show="list.type!=='PUBLIC'"></span>
+						<span ng-click="editList($index)" class="glyphicon glyphicon-pencil" ng-show="list.type!=='PUBLIC'"></span>
+						<span ng-click="importRevisionForList($index)" class="glyphicon glyphicon-upload" ng-show="list.type!=='PUBLIC'"></span>
+					</div>
+				</div>  -->
+			</div>
+	</div>
+
+	<div class="price-list-content" ng-show="currentStep == 1">
+		<div class="row">
+			<div class="col-xs-12 green-text wizard-step-title">{{'Import new price list' | translate}} (1/4)</div>
+		</div>
+		<div class="form-group" ng-show="currentStep == 1">
+			<input
+				id="plm-inputFile" type="file" name="excel_file" accept=".xls,.xlsx"
+				onchange="angular.element(this).scope().fileChanged(this.files);"
+				required="true">
+		</div>
+	</div>
+
+	<div class="price-list-content" ng-show="currentStep == 2">
+		<div class="row">
+			<div class="col-xs-12 green-text wizard-step-title">{{'Import new price list' | translate}} (2/4)</div>
+		</div>
+		<form>
+			<div class="form-group">
+				<label for="listName" translate>Name</label> 
+				<input ng-model="listName" type="text" class="form-control" id="listName"
+					ng-disabled="editionMode">
+			</div>
+			<div class="form-group">
+				<label for="listDescription" translate>Description</label> 
+				<input ng-model="listDescription" type="text" class="form-control" id="listDescription" ng-disabled="editionMode">
+			</div>
+			<div class="form-group">
+				<label for="listCurrency" translate>Currency</label> 
+				<select id="listCurrency" ng-model="currentCurrency" ng-options="currency.code + ' (' + currency.symbol + ')' for currency in currencies" class="form-control" ng-disabled="editionMode">
+      				<option value="" translate>Select a currency</option>
+    			</select>
+			</div>
+			<div class="form-group">
+				<label for="listWorksheet" translate>Worksheet</label> 
+				<select id="listWorksheet" ng-change="sheetHasChanged()" ng-model="currentSheet" ng-options="sheet as sheet for sheet in sheets" class="form-control">
+      				<option value="" translate>Select a worksheet</option>
+    			</select>
+			</div>
+			<div class="form-group">
+				<label for="listStart" translate>Headers row number </label> 
+				<input ng-model="headerRowNumber" type="number" class="form-control" id="listStart"
+					placeholder="" ng-disabled="!currentSheet"
+					min="1" step="1">
+			</div>
+		</form> 
+	</div>
+	
+	<div class="price-list-content" ng-show="currentStep == 3">
+		<div class="row">
+			<div class="col-xs-12 green-text wizard-step-title">{{'Import new price list' | translate}} (3/4)</div>
+		</div>
+		<form>
+			<div class="form-group">
+				<label for="refCol" translate>Reference column</label> 
+				<select id="refCol" ng-model="refCol" ng-options="header.value for header in headers" class="form-control">
+      				<option value="" translate>Select the corresponding column</option>
+    			</select>
+			</div>
+			<div class="form-group">
+				<label for="priceCol" translate>Price column</label> 
+				<select id="priceCol" ng-model="priceCol" ng-options="header.value for header in headers" class="form-control">
+      				<option value="" translate>Select the corresponding column</option>
+    			</select>
+			</div>
+		</form> 
+	</div>
+	
+	<div class="price-list-content" ng-show="currentStep == 4">
+		<div class="row">
+			<div class="col-xs-12 green-text wizard-step-title">{{'Import new price list' | translate}} (4/4)</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 wizard-step-subtitle" translate>Preview</div>
+		</div> 
+		<div class="row">
+			<div class="col-xs-8" translate>Reference</div>
+			<div class="col-xs-4" translate>Unit price</div>
+		</div> 
+		<div ng-repeat="previewElement in previewList">
+			<div class="row"  ng-class="$index%2==0 ? 'preview_row_odd': 'preview_row_even'">
+				<div class="col-xs-8">{{previewElement.ref}}</div>
+				<div class="col-xs-4">{{previewElement.price}} {{currentCurrency.symbol}}</div>
+			</div> 
+		</div>
+		<div class="row"  ng-class="previewList.length%2==0 ? 'preview_row_odd': 'preview_row_even'">
+			<div class="col-xs-8">...</div>
+			<div class="col-xs-4">...</div>
+		</div> 
+			
+	</div>
+
+	<div class="row pricelist-wizard-nav" ng-show="currentStep > 0">
+		<div class="col-xs-12 text-right red-text" ng-show="httpError">
+			{{httpErrorMessage}}
+		</div>
+		<div class="col-xs-12 text-right">
+			<button ng-disabled="loading" ng-show="currentStep > 1" type="button" class="btn btn-default btn-md green-button"
+				ng-click="goTo(currentStep-1)">
+				{{'Previous' | translate}} <span class="glyphicon glyphicon-chevron-left"></span>
+			</button>
+			<button ng-show="currentStep == 1" type="button" class="btn btn-default btn-md green-button"
+				ng-disabled="!fileloaded || loading" ng-click="goTo(currentStep+1)">
+				{{'Next' | translate}} <span class="glyphicon glyphicon-chevron-right"></span>
+			</button>
+			<button ng-show="currentStep == 2" type="button" class="btn btn-default btn-md green-button"
+				ng-disabled="loading || !listName || listName==='' || !listDescription || listDescription==='' || !currentCurrency || !currentSheet || !headerRowNumber || isNaN(headerRowNumber)" ng-click="goTo(currentStep+1)">
+				{{'Next' | translate}} <span class="glyphicon glyphicon-chevron-right"></span>
+			</button>
+			<button ng-show="currentStep == 3" type="button" class="btn btn-default btn-md green-button"
+				ng-disabled="loading || !refCol || !priceCol" ng-click="goTo(currentStep+1)">
+				{{'Preview' | translate}} <span class="glyphicon glyphicon-chevron-right"></span>
+			</button>
+			<button ng-disabled="loading" ng-show="currentStep == 4" type="button" class="btn btn-default btn-md green-button"
+				ng-click="import()">
+				{{'Import' | translate}} <span class="glyphicon glyphicon-upload"></span>
+			</button>
+			<button ng-disabled="loading" type="button" class="btn btn-default btn-md"
+				ng-click="goTo(0)" translate>Cancel
+			</button>
+		</div>
+	</div>
+	
+	<div class="row pricelist-wizard-nav" ng-show="currentStep == 0">
+		<div class="col-xs-12 text-right red-text" ng-show="httpError">
+			{{httpErrorMessage}}
+		</div>
+		<div class="col-xs-12 text-right" ng-show="currentListSelected">
+			{{currentListSelected.overridenName ? currentListSelected.overridenName : currentListSelected.name}} {{currentListSelected.overridenDescription ? currentListSelected.overridenDescription : currentListSelected.description}}
+		</div>
+		<div class="col-xs-12 text-right mg-top">
+			<button ng-disabled="loading" type="button" class="btn btn-default btn-md"
+				ng-click="onListCancel()" translate>Cancel
+			</button>
+			<button type="button" class="btn btn-default btn-md blue-button"
+				ng-click="onListValidation()" ng-disabled="loading || !currentListSelected" translate>
+				Ok 
+			</button>
+		</div>
+	</div>
+</div>

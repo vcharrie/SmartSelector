@@ -1,0 +1,125 @@
+.discovers-regular-info-area {
+  display: inline-block;
+  width: 100%;
+  min-height: 515px;
+
+}
+
+.discovers {
+
+}
+
+.adaptative-height {
+  height: auto !important;
+  position: relative;
+  max-height: 270px;
+}
+
+.selected-discover-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: @ladyFernGreenColor;
+  padding-bottom : 5px;
+}
+
+.discovers-detailed-container {
+  position: absolute;
+  width: 67%;
+  height: 95%;
+
+  .carousel img{
+    max-height: 400px;
+  }
+  
+  .carousel-control {
+    color: #000000
+  }
+
+  .carousel-indicators li {
+    border: 1px solid #000000;
+  }
+
+  .carousel-indicators .active {
+    background-color: #000000;
+  }
+
+  .slide-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: @ladyFernGreenColor;
+    padding: 5px;
+    padding-top: 10px;
+  }
+
+  .slide-description {
+    max-height: 80px;
+    overflow: auto;
+    padding-left: 5px;
+  }
+}
+
+.discovers-list-container {
+  position: absolute;
+  right: 0;
+  width: 30%;
+  padding-top: 30px;
+
+  .scrollable {
+    margin-top: 10px;
+  }
+
+  .discover-link {
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding: 5px;
+    height: 70px;
+    background-color: white;
+    margin-right: 10px;
+  }
+
+  .discover-link.selected {
+    background-color: @skyBlueColor20pColor;
+  }
+
+
+  .discover-picture{
+    background-image: url(../images/temp_discover.jpg);
+    width: 70px;
+    height: 60px;
+    float: left;
+    margin-right: 5px;
+    background-repeat: round;
+    border: 1px solid @superLightGreyColor;
+    border-radius : 2px;
+  }
+
+  .discover-title {
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .discover-description {
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .discovers-overview-list-container {
+    padding-bottom: 5px;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  .discover-section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: @ladyFernGreenColor;
+  }
+}
+
+
+
+.discovers-modal-header-icon {
+  position: relative;
+  bottom: 5px;
+}

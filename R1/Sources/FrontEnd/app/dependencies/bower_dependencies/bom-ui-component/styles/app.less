@@ -1,0 +1,270 @@
+@ultraLightGrey1Color: #ededed;
+@whiteColor:  #ffffff;
+@spruceGreenColor: #009530;
+@skyBlueColor: #42b4e6;
+@lightGreyColor: #cbcbcb;
+@blackColor: #333333;
+@ladyFernGreenColor: #4FA600;
+@appBigMargin: 20px;
+@appContentMargin: 20px;
+
+#se-bom-ui {
+	width: 100%;
+	position: relative;
+	height: 100%;
+}
+.se-bom-ui-row {
+		border-radius: 3px;
+		margin: 3px;
+		font-size: 13px;
+		overflow: hidden;
+		vertical-align: top;
+	}
+	.se-bom-ui-row-even {
+		.se-bom-ui-row;
+		background-color: @ultraLightGrey1Color;
+	}
+	.se-bom-ui-row-odd {
+		.se-bom-ui-row;
+		background-color: @whiteColor;
+	}
+	.se-bom-ui-basket-title {
+		font-size: medium;
+		color: @ladyFernGreenColor;
+		font-weight: bold;
+	}
+	.se-bom-ui-header {
+		font-size: small;
+		white-space: nowrap;
+	}
+	.se-bom-ui-table-title-cell {
+		width: 300px;
+		height: 30px;
+		display: block;
+	}
+	.se-bom-ui-part-cell {
+	  color: @skyBlueColor;
+	  font-weight: bold;
+	}
+	.se-bom-ui-products-lists-scrollable-area {
+		position: absolute;
+		top: 40px;
+		bottom: 100px;
+		overflow-y: scroll;
+		width: 100%;
+		border-top: 1px solid @lightGreyColor;
+	}
+	.se-bom-ui-products-list {
+		position: relative;
+		//padding-bottom: 5px;
+		//margin-bottom: 30px;
+		//border-bottom: 1px solid @lightGreyColor;
+	}
+	.se-bom-ui-panel {
+		position: relative;
+	}
+	.se-bom-ui-essential {
+		//text-align: center;
+		//position: absolute;
+		//bottom: 50px;
+		//border-bottom: 1px solid @lightGreyColor;
+		width: 100%;
+	}
+	.se-bom-ui-totalprice-area {
+		font-weight: bold;
+		text-align: right;
+		.se-bom-ui-totalprice-label {
+			padding-right: @appBigMargin;
+			color: @spruceGreenColor;
+		}
+	}
+	.se-bom-ui-basket-subtotal {
+		float: right;
+		margin-top: 10px;
+		margin-right: 10px;
+		font-weight: bold;
+		}
+	.se-bom-ui-basket-price-label {
+		padding-right: @appBigMargin;
+	}
+	.se-bom-ui-indicative-information-label {
+		//position: absolute;
+		//right: 35px;
+		//z-index: 100;
+		font-size: 12px;
+		text-align: right;
+	}
+	.se-bom-ui-indicative-information-label-1 {
+		.se-bom-ui-indicative-information-label;
+		top: 50px;
+	}
+	.se-bom-ui-indicative-information-label-2 {
+		.se-bom-ui-indicative-information-label;
+		top: 50px;
+	}
+	.se-bom-ui-custom-bom-column-1 {
+		width: 12%;
+	}
+	.se-bom-ui-table-prices {
+		width: 100%;
+	}
+	.se_bom_ui_link_disabled {
+		pointer-events: none;
+		cursor: default;
+	}
+	.se-bom-ui-vertical-fill {
+		height: 100%;
+	}
+	.se-bom-ui-content-wrapper {
+		margin: @appContentMargin;
+	}
+	.se-bom-ui-table-tag-title {
+		width: 20%;
+	}
+	.sortable th.positionable-left, .sortable td.positionable-left, .sortable-tag th.positionable-left, .sortable-tag td.positionable-left {
+		border-left: 1px double green;
+	}
+	.sortable th.positionable-right, .sortable td.positionable-right, .sortable-tag th.positionable-right, .sortable-tag td.positionable-right {
+		border-right: 1px double green;
+	}
+	.sortable {
+		border-spacing: 0;
+		width: 100%;
+	}
+	.sortable > thead > tr > th {
+		border: 1px solid #E0E0E0;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+	.sortable > tbody > tr > td {
+		padding: 5px;
+		box-sizing: border-box;
+	}
+	
+	.root-title {
+		color: @blackColor;
+	}
+
+.sortable > thead > tr > th, .sortable-tag > thead > tr > th {
+	border: 1px solid @lightGreyColor;
+	padding: 10px;
+	box-sizing: border-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.sortable > tbody > tr > td, .sortable-tag > tbody > tr > td {
+	padding: 5px;
+	box-sizing: border-box;
+	max-width: 0px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+th, td {
+	box-sizing: border-box;
+}
+
+.subtotal-row {
+	text-align: right;
+	color: @blackColor;
+	font-weight: bold;
+	padding: 10px;
+	border-top: 1px solid @lightGreyColor;
+	.total-value {
+		display: inline-block;
+		width: 100px;
+	}
+}
+
+.subtotal-title {
+	padding-right: 20px;
+}
+
+.movable {
+	cursor: move;
+}
+.col-disabled {
+	background-color: @lightGreyColor;
+	color: @whiteColor;
+}
+
+.click-sortable {
+	cursor: pointer;
+}
+
+.se-bom-ui-scrollable-table {
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+.button-se, .button-se:focus {
+	color: @whiteColor;
+	background-color: @spruceGreenColor;
+}
+
+.button-se:hover {
+	color: @whiteColor;
+	background-color: @ladyFernGreenColor;
+}
+
+#bom-spinner {
+	display: none;
+}
+
+.fixed-header {
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.fixed-header-scrollable {
+	position: absolute;
+	height: 80px;
+	left: 0px;
+	right: 0px;
+	overflow: hidden;
+}	
+
+.print-section {
+	text-align: right;
+	color: @spruceGreenColor;
+	cursor: pointer;
+	display: none;
+	.actions {
+		padding-right: 10px;
+		cursor: pointer;
+	}
+}
+
+.subtotal-in-group {
+	display: none;
+	border-top: none;
+}
+
+.sort-selected {
+	color: @spruceGreenColor;
+}
+
+.se-bom-informations-scrollable {
+	position: absolute;
+	bottom: 0px;
+	height: 90px;
+	left: 0px;
+	right: 0px;
+	overflow: hidden;
+}
+
+.bom-scrollable-scrollable {
+	position: absolute;
+	top: 80px;
+	left: 0px;
+	bottom: 90px;
+	right: 0px;
+	overflow-y: scroll;
+}
+
+.resizing {
+	font-size: 0px;
+}

@@ -1,0 +1,256 @@
+.bom-row {
+  border-radius: 3px;
+  margin: 3px;
+  font-size: 14px;
+  overflow: hidden;
+  vertical-align: top;
+  .user-select(none);
+}
+
+.bom-row-even {
+  .bom-row;
+  background-color: @ultraLightGrey1Color;
+}
+
+.bom-row-odd {
+  .bom-row;
+  background-color: @whiteColor;
+}
+
+.basket-title {
+  font-size: medium;
+  color: @spruceGreenColor;
+  font-weight: bold;
+}
+
+.bom-header {
+  font-size: small;
+}
+
+.bom-table-title-cell {
+  width: 300px;
+  height: 30px;
+  display: block;
+}
+
+.part-cell {
+  color: @skyBlueColor;
+  font-weight: bold;
+}
+
+.bom-products-list td {
+  .user-select(all);
+}
+
+.alnright {
+  text-align: right;
+}
+
+.alnleft {
+  text-align: left;
+}
+
+.alncenter {
+  text-align: center;
+}
+
+.bom-discount-textarea {
+  width: 60px;
+  display: inline-block;
+  height: 25px;
+}
+
+.indicator-searching {
+  display: inline;
+}
+
+.bom-empty-content {
+  height: 90%;
+  width: 100%;
+  border: 1px solid #cbcbcb;
+  .bom-warning-box {
+    margin: 10px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    p {
+      text-align: center;
+      font-size: large;
+    }
+  }
+}
+.bom-products-lists-scrollable-area {
+  position: absolute;
+  top: 40px;
+  bottom: 100px;
+  overflow-y: scroll;
+  width: 100%;
+  border-top: 1px solid @lightGreyColor;
+  border-bottom: 1px solid @lightGreyColor;
+}
+.bom-pace-products-lists-scrollable-area {
+  position: absolute;
+  top: 12px;
+  bottom: 0px;
+  width: 100%;
+
+  span.actions > span{
+    cursor: pointer;
+  }
+}
+
+.bom-products-list {
+  position: relative;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid @lightGreyColor;
+}
+
+.bom-panel {
+  position: relative;
+}
+
+.bom-essential {
+  //text-align: center;
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+}
+
+.bom-totalprice-area {
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  right: 35px;
+
+  .bom-totalprice-label {
+    padding-right: @appBigMargin;
+    color: @spruceGreenColor;
+  }
+}
+.btn-smart-panel {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  z-index: 100;
+  margin-right: 5px;
+
+  .svg-button:hover {
+    color: white;
+  }
+}
+
+.btn-export {
+   display: inline-block;
+   position: relative;
+   top: 10px;
+   min-width: 150px;
+ }
+.btn-discount {
+  display: inline-block;
+  position: relative;
+  z-index: 100;
+}
+.label-price {
+  display: inline-block;
+  position: relative;
+  max-width: 370px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.btn-modify {
+  display: inline-block;
+  position: relative;
+  z-index: 100;
+
+  .svg-button:hover{
+    color: black;
+  }
+}
+.btn-add-item {
+  position: relative;
+  z-index: 100;
+
+  .add-item-label{
+    margin-left: 5px;
+  }
+
+  .svg-button {
+    color: black;
+  }
+}
+
+.btn-caret-discount {
+  display: inline-block;
+  position: relative;
+}
+.bom-default-discount-apply-left {
+  float: left;
+  margin-bottom: 5px;
+}
+.bom-default-discount-apply {
+  margin-bottom: 5px;
+  width:90%;
+}
+
+.bom-basket-subtotal {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.bom-basket-price-label {
+  padding-right: @appBigMargin;
+}
+
+.bom-VAT-exclusion-information-label {
+  position: absolute;
+  right: 35px;
+  top: 35px;
+  z-index: 100;
+  font-size: 12px;
+}
+
+.bom-indicative-information-label {
+  position: absolute;
+  right: 35px;
+  z-index: 100;
+  font-size: 12px;
+}
+
+.bom-indicative-information-label-1 {
+  .bom-indicative-information-label;
+  top: 35px;
+}
+
+.bom-indicative-information-label-2 {
+  .bom-indicative-information-label;
+  top: 50px;
+}
+
+.custom-bom-column-1 {
+  width: 12%;
+}
+
+.bom-add-item{
+  position: relative;
+  top: 10px;
+}
+
+.bom-add-item-plus-icon{
+  color: @skyBlueColor;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.bom-btn-separator{
+  border-left: 2px solid #9fa0a4;
+  display: inline-block;
+  vertical-align: middle;
+  height: 23px;
+  margin: 0px 5px;
+}
+

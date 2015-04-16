@@ -1,0 +1,72 @@
+@background-page: #000;
+@color-page: #fff;
+@background-header: #262626;
+@green-color: #009036;
+@blue-color: #01b6e8;
+@orange-color: #f29400;
+@menu-gray: #363636;
+@easeOutExpo: cubic-bezier(0.19, 1, 0.22, 1);
+
+// Footer
+@start-footer: #fff;
+@end-footer: #e3e3e3;
+@end-social-options: #e1e1e1;
+@footer-color: #626469;
+
+
+// Typo
+@lighter-font: 200;
+@footer-about: #9fa0a4;
+
+@font-size: 0.8125em;
+@font-family: "serounded", "Lucida Grande", Lucida, "Lucida Sans Unicode", sans-serif;
+@line-height: 1.5em;
+
+@font-size-mono: 1em;
+@font-family-mono: 'andale mono','lucida console',monospace;
+@line-height-mono: @line-height;
+
+@text-indent: 50px;
+@margin-bottom: @line-height;
+@color: #333;
+@background-color:#FFFFFF;
+
+@demi-line-height : @line-height / 2;
+@minus-demi-line-height : @demi-line-height * -1;
+@minus-text-indent : @text-indent * -1;
+@demi-text-indent : @text-indent / 2;
+@demi-margin-bottom : @margin-bottom / 2;
+@quart-margin-bottom : @margin-bottom / 4;
+
+@h1-font-size: 2em;
+@h1-line-height: @line-height;
+@h1-margin-bottom: @demi-margin-bottom;
+@h2-font-size: (@line-height + 2) / 2;
+@h2-margin-bottom : @line-height / @h2-font-size;
+@h2-line-height: @h2-margin-bottom * 2;
+@h3-font-size: @line-height;
+@h3-line-height: 1;
+@h3-margin-bottom : 1em;
+@h4-font-size: (@line-height + 1) / 2;
+@h4-margin-bottom : @line-height / @h4-font-size;
+@h4-line-height: @h4-margin-bottom;
+
+@highdpi: ~"print, screen, (-webkit-min-device-pixel-ratio: 1.25), (min-device-pixel-ratio: 1.25), (min-resolution: 2ppx)";
+
+.image-2x(@image, @extension, @width, @height, @repeat: no-repeat, @position: right) {
+  background-image: ~"url(@{image}.@{extension})";
+  background-repeat: ~"@{repeat}";
+
+  background-position: ~"@{position}";
+  @media @highdpi {
+      /* on retina, use image that's scaled by 2 */
+      background-image: ~"url(@{image}@2x.@{extension})";
+      background-size: @width @height;
+  }
+}
+
+.image-2x-safari(@image, @extension, @width, @height, @repeat: no-repeat, @position: right, @safari-x, @safari-y) {
+	background-position-x: @safari-x;
+	background-position-y: @safari-y; 
+	.image-2x(@image, @extension, @width, @height, @repeat, @position);
+}

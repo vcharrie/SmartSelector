@@ -1,0 +1,28 @@
+<section class="app-view fill">
+    <div class="panel vertical-fill">
+        <div class="content-wrapper bom-panel vertical-fill admin-page">
+            <div class="page-header">
+                <h2>Administration</h2>
+            </div>
+            <p>
+                <a class="btn btn-default btn-lg" href="/drawings.html"><i class="fa fa-cubes"></i>{{' Drawings management'}}</a>
+            </p>
+            <p>
+                <a class="btn btn-default btn-lg" href="#/admin/translates"><i class="fa fa-flag"></i>{{' Translations management'}}</a>
+            </p>
+            <p>
+                <a class="btn btn-default btn-lg" href="#/admin/jsonConfiguration"><i class="fa fa-align-left"></i>{{' JSON conf management'}}</a>
+            </p>
+            <p>
+                <a class="btn btn-default btn-lg" href="#/admin/logging"><i class="fa fa-file-text-o"></i>{{' Logging'}}</a>
+            </p>
+            <p>
+                <div class="btn-group">
+                    <a class="btn btn-default" data-ng-class="{'active': isAdmin()}" data-ng-click="toggleAdminMode()">Adminstration mode</a>
+                    <a class="btn btn-default" data-ng-class="{'active': isDeveloper()}" data-ng-click="toggleDeveloperMode()">Developer mode</a>
+                    <a class="btn btn-default" data-ng-class="{'active': isFullscreen()}" data-ng-click="toggleFullscreenMode()">Fullscreen mode</a>
+                </div>
+            </p>
+        </div>
+    </div>
+</section>

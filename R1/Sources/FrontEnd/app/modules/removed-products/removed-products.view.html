@@ -1,0 +1,21 @@
+<div class="wizzard">
+    <img class="modal-close-button" src="images/close.png" data-ng-click="close()" />
+    <div class="modal-header">
+        <h3 class="modal-title" translate>
+            warning-load-project-products-removed
+        </h3>
+    </div>
+    <div class="wizzard-product-list">
+        <div class="list-group table">
+            <div class="colProduct"></div>
+            <div class="list-group-item table-row" data-ng-repeat="productPack in removedProducts" >
+                <product-item class="table-cell product-cell" product="productPack" context="'readonly'"></product-item>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" data-ng-click="close()">
+            dialog-warning-ok
+        </button>
+    </div>
+</div>

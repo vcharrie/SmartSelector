@@ -1,0 +1,105 @@
+.drawing-explore {
+  @menuHeight: 80px;
+
+  .menu-header {
+    height: @menuHeight;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    p {
+      margin-top: @appMediumMargin;
+    }
+  }
+
+  .menu-buttons {
+    margin-top: @appMediumMargin;
+    margin-bottom: @appMediumMargin;
+  }
+
+  .menu-content {
+    position: absolute;
+    bottom: 0;
+    top: @menuHeight + @appMediumMargin;
+    overflow: auto;
+    width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    a {
+      cursor: pointer;
+    }
+
+    .missingRefPointsWarning {
+      color : red ;
+    }
+
+    .missingSymbolWarning{
+      color : blue ;
+    }
+
+    .itemExistWarning{
+      color : black ;
+    }
+  }
+
+  .menu-item-description {
+    display: inline-block;
+    max-width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0.7em;
+    color: @lightGreyColor;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .display-options {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10px;
+    text-align: center;
+  }
+
+  .display-option {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  .refpoint {
+    margin-left: 20px;
+  }
+
+  .model {
+    margin-top: 4px;
+    font-weight: bold;
+  }
+
+  .details-refpoint {
+    height: 30%;
+    margin-bottom: 10px;
+  }
+
+  .details-inspector {
+    height: 68%;
+  }
+
+  .model-title {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .model-dimensions {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}

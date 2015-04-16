@@ -1,0 +1,20 @@
+<div class="enclosure-viewer-toolbar" data-ng-show="viewer && viewer.hasWebGL">
+    <div class="btn-group">
+        <button id="enc-toolbar-screenshot" data-ng-click="takeScreenshot($event)" data-ng-disabled="disableTakeScreenshot" type="button" class="btn btn-default"><i class="fa fa-camera"></i></button>
+        <button data-ng-click="zoomOut()" type="button" class="btn btn-default"><i class="fa fa-search-minus"></i></button>
+        <button data-ng-click="zoomIn()" type="button" class="btn btn-default"><i class="fa fa-search-plus"></i></button>
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-sliders"></i>
+        </button>
+        <ul class="dropdown-menu enclosure-layers-dropdown-menu" role="menu">
+            <layers viewer="viewer"></layers>
+        </ul>
+    </div>
+    <div class="navigation-cross">
+        <button data-ng-click="rotateUp()" type="button" class="btn btn-default up"><i class="fa fa-arrow-up"></i></button>
+        <button data-ng-click="rotateLeft()" type="button" class="btn btn-default middle-left"><i class="fa fa-arrow-left"></i></button>
+        <button id="set-view-front" data-ng-click="setViewFront()" type="button" class="btn btn-default middle-center"><i class="fa fa-home"></i></button>
+        <button data-ng-click="rotateRight()" type="button" class="btn btn-default middle-right"><i class="fa fa-arrow-right"></i></button>
+        <button data-ng-click="rotateDown()" type="button" class="btn btn-default down"><i class="fa fa-arrow-down"></i></button>
+    </div>
+</div>

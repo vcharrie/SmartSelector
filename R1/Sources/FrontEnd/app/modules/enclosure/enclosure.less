@@ -1,0 +1,156 @@
+@import "enclosureFilter.directive.less";
+@import "enclosureViewer.directive.less";
+@import "enclosureViewerToolbar.directive.less";
+@import "enclosureProductItem.less";
+
+.enc-view {
+  position: absolute;
+  bottom: 0px;
+  top: 5px;
+  left: 20px;
+  right: 20px;
+}
+
+.enc-panel {
+  border: 1px solid @lightGreyColor;
+}
+
+.enc-content {
+  height: 100%;
+  width: 70%;
+  .enc-warning-box {
+    margin: 10px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    p {
+      text-align: center;
+      font-size: large;
+    }
+  }
+  .enc-warning-button {
+    position: absolute;
+    right: 30%;
+    z-index: 1;
+    margin-right: 2px;
+    margin-top: 1px;
+  }
+  .enc-viewer {
+    height: 100%;
+  }
+  .enc-details {
+    width: 70%;
+    padding: @appMediumMargin;
+    position: absolute;
+    bottom: 0;
+    button {
+      float: right;
+      margin-top: @appSmallMargin;
+    }
+    table {
+      th, td {
+        min-width: 125px;
+        vertical-align: top;
+        font-size: 12px;
+      }
+      th {
+        text-transform: uppercase;
+        padding-right: @appBigMargin;
+      }
+      .narrow {
+        min-width: 40px;
+      }
+    }
+  }
+  .enc-modify {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.enc-side {
+  border-left: 1px solid @lightGreyColor;
+  float: right;
+  width: 30%;
+  height: 100%;
+  .enc-side-separator {
+    margin: @appSmallMargin;
+    font-weight: bold;
+  }
+  .enc-product {
+    margin: @appSmallMargin;
+  }
+}
+
+.se-config-selection-box {
+  position: relative;
+  width: 240px;
+  max-height: 250px;
+  height: 250px;
+  display: inline-block;
+  float: left;
+  margin: 10px 0px 0px 10px;
+  background-color: #ffffff;
+  color: #009530;
+  box-shadow: 0px 0px 8px 0px #b7b7b7;
+  border: 6px solid #009530;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.se-config-selection-box-content > ul > li > a {
+  color: #333333;
+  width: 100%;
+  display: block;
+  font-family: "serounded";
+  padding: 8px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+
+.se-config-result-block {
+  width: 100%;
+  padding: 0px 5px;
+  display: block;
+  position: relative;
+  background-image: -moz-linear-gradient(180deg, #ececec 0%, #ffffff 33%, #ffffff 57%, #ffffff 100%);
+  background-image: -webkit-linear-gradient(180deg, #ececec 0%, #ffffff 33%, #ffffff 57%, #ffffff 100%);
+  background-image: -ms-linear-gradient(180deg, #ececec 0%, #ffffff 33%, #ffffff 57%, #ffffff 100%);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 1, 0.22);
+}
+
+.se-config-content-referance-img {
+  float: left !important;
+  width: 25%;
+  padding: 2px;
+}
+
+.se-config-block-refrenace-content p {
+  font-family: "serounded";
+  font-weight: normal;
+  color: #333333;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 0px;
+  float: left;
+  width: 70%;
+}
+
+.se-config-block-refrenace-content-form-quantity .form-control {
+  border-radius: 0;
+  padding: 6px;
+  display: inline;
+  height: 30px;
+  width: 30px;
+  font-size: 12px;
+}
+
+
+
+
+

@@ -1,0 +1,116 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"Language: en\n"
+
+#: directive/views/price-list-manager.view.html:38
+msgid "Available price list(s)"
+msgstr ""
+
+#: directive/views/price-list-manager.view.html:161
+#: directive/views/price-list-manager.view.html:176
+#: directive/views/price-list-manager.view.html:25
+msgid "Cancel"
+msgstr ""
+
+#: directive/views/price-list-manager.view.html:32
+msgid "Choose price list"
+msgstr ""
+
+#: directive/views/price-list-manager.view.html:17
+#: directive/views/price-list-manager.view.html:75
+msgid "Currency"
+msgstr ""
+
+#: directive/views/price-list-manager.view.html:13
+msgid "Description"
+msgstr ""
+
+#: directive/views/price-list-manager.view.html:87
+msgid "Headers row number"
+msgstr ""
+
+#: directive/views/price-list-manager.view.html:159
+msgid "Import"
+msgstr ""
+
+#: directive/views/price-list-manager.view.html:117
+#: directive/views/price-list-manager.view.html:54
+#: directive/views/price-list-manager.view.html:66
+#: directive/views/price-list-manager.view.html:97
+msgid "Import new price list"
+msgstr ""
+
+#: directive/views/price-list-manager.view.html:70
+#: directive/views/price-list-manager.view.html:9
+msgid "Name"
+msgstr ""
+
+#: directive/views/price-list-manager.view.html:147
+#: directive/views/price-list-manager.view.html:151
+msgid "Next"
+msgstr ""
+
+#: directive/views/price-list-manager.view.html:24
+msgid "OK"
+msgstr ""
+
+#: directive/views/price-list-manager.view.html:172
+msgid "Ok"
+msgstr ""
+
+#: directive/views/price-list-manager.view.html:120
+#: directive/views/price-list-manager.view.html:155
+msgid "Preview"
+msgstr ""
+
+#: directive/views/price-list-manager.view.html:143
+msgid "Previous"
+msgstr ""
+
+#: directive/views/price-list-manager.view.html:107
+msgid "Price column"
+msgstr ""
+
+#: directive/views/price-list-manager.view.html:123
+msgid "Reference"
+msgstr ""
+
+#: directive/views/price-list-manager.view.html:101
+msgid "Reference column"
+msgstr ""
+
+#: directive/views/price-list-manager.view.html:77
+msgid "Select a currency"
+msgstr ""
+
+#: directive/views/price-list-manager.view.html:83
+msgid "Select a worksheet"
+msgstr ""
+
+#: directive/views/price-list-manager.view.html:103
+#: directive/views/price-list-manager.view.html:109
+msgid "Select the corresponding column"
+msgstr ""
+
+#: directive/views/price-list-manager.view.html:124
+msgid "Unit price"
+msgstr ""
+
+#: directive/views/price-list-manager.view.html:81
+msgid "Worksheet"
+msgstr ""
+
+msgid "Edit the selected list"
+msgstr ""
+
+msgid "Open"
+msgstr ""
+
+msgid "Add new price list"
+msgstr ""
+
+msgid "Manage price lists"
+msgstr ""

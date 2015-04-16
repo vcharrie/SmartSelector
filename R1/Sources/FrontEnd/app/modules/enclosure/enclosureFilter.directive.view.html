@@ -1,0 +1,21 @@
+<div class="enclosure-filter">
+    <div data-ng-repeat="characteristic in characteristics" data-ng-show="!busy" class="enclosure-filter-item fadeInOut">
+        <p>{{characteristic.name | translate}}</p>
+        <div class="btn-group">
+            <button dropdown-opener class="btn btn-default dropdown-toggle combo-default" data-toggle="dropdown" data-ng-click="">
+                <span class="dropdown-btn-selected-value">{{characteristic.displayValue | translate}}</span>
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu enclosure-dropdown-menu">
+                <li data-ng-repeat="value in characteristic.values"><a href="" data-ng-click="onCharacteristicSelected(characteristic, value)">{{value | translate}}</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="btn-group enclosure-buttons-banner fadeInOut" data-ng-show="!busy">
+        <button class="btn btn-default" data-ng-click="clear()" translate>enclosure-filter-clear</button>
+        <button class="btn btn-primary" data-ng-click="apply()" translate>enclosure-filter-apply</button>
+    </div>
+
+    <button class="btn enclosure-close" data-ng-click="close()"><i class="fa fa-times"></i></button>
+
+</div>

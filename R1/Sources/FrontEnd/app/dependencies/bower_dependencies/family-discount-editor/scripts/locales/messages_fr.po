@@ -1,0 +1,56 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 1.7.3\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: fr\n"
+
+#: directive/views/family-discount-editor.view.html:60
+msgid "Cancel"
+msgstr "Annuler"
+
+#: directive/views/family-discount-editor.view.html:15
+msgid "Code"
+msgstr "Code"
+
+#: directive/views/family-discount-editor.view.html:52
+msgid "Communication with server error: discounts not saved"
+msgstr "Erreur de communication avec le serveur: remises non enregistrées"
+
+#: directive/views/family-discount-editor.view.html:16
+msgid "Description"
+msgstr "Description"
+
+#: directive/views/family-discount-editor.view.html:18
+msgid "Discount"
+msgstr "Remise"
+
+#: directive/views/family-discount-editor.view.html:56
+msgid "Discounts saved"
+msgstr "Remises enregistrées"
+
+#: directive/views/family-discount-editor.view.html:64
+msgid "Submit"
+msgstr "Soumettre"
+
+#: directive/views/family-discount-editor.view.html:17
+msgid "Validity start"
+msgstr "Début de validité"
+
+#: directive/views/family-discount-editor.view.html:50
+msgid "some dates are not valid: please enter date in \"dd-MM-yyyy\" format"
+msgstr "Des dates ne sont pas valide: veuillez saisir une date au format \"jj-MM-aaaa\""
+
+#: directive/views/family-discount-editor.view.html:47
+msgid "some numbers are not valid: please enter numbers between 0 and 100"
+msgstr "Des chiffres ne sont pas valides: veuillez saisir des chiffres entre 0 et 100"
+
+msgid "No family available"
+msgstr "Pas de famille disponible"

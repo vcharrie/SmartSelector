@@ -1,0 +1,78 @@
+<section class="app-view fill">
+
+    <div class="home-panel-container">
+        <div class="panel home-panel">
+            <div class="home-actions pull-right">
+                <ul>
+                    <li class="home-create-new-project-area">
+                        <a class="home-actions-button" data-ng-click="createNewProject()">
+                            <span translate>
+                                home-create-new-project-button-label
+                            </span>
+                        </a>
+                    </li>
+                    <li  class="home-load-project-area" data-ng-show="userAuthenticated()">
+                        <a class="home-actions-button" data-ng-disabled="!blMAvailable()" data-ng-click="openBlmProjects()">
+                            <span data-ng-if="!blMAvailable()" translate>
+                            home-blm-project-button-connecting-label
+                            </span>
+                            <span data-ng-if="blMAvailable()" translate>
+                            home-blm-project-button-label
+                            </span>
+                        </a>
+                    </li>
+                    <li class="home-load-project-area">
+                        <a class="home-actions-button">
+                            <span translate>
+                            home-load-project-button-label
+                            </span>
+                        </a>
+                        <div data-load-project data-on-file-load="onFileLoad" data-before-loading="beforeLoading"></div>
+                    </li>
+
+                    <i class="info-icon fa fa-info-circle" data-info-icon-hover-tooltip popover-html="{{homeActionsTooltip}}" popover-placement="left"></i>
+                </ul>
+            </div>
+
+            <div class="home-marketing-area">
+                <span class="home-marketing-title" translate>
+                    home-marketing-title
+                </span>
+                <br />
+                <span class="home-marketing-subtitle" translate>
+                    home-marketing-subtitle
+                </span>
+                <br />
+                <span class="home-marketing-information-text" translate>
+                    home-marketing-information-text
+                </span>
+                <ul class="home-marketing-keywords-list">
+                    <li>
+                        <i class="fa fa-circle"></i>
+                        <span class="home-marketing-keyword" translate>home-marketing-keyword-1</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-circle"></i>
+                        <span class="home-marketing-keyword" translate>home-marketing-keyword-2</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-circle"></i>
+                        <span class="home-marketing-keyword" translate>home-marketing-keyword-3</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-circle"></i>
+                        <span class="home-marketing-keyword" translate>home-marketing-keyword-4</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-circle"></i>
+                        <span class="home-marketing-keyword" translate>home-marketing-keyword-5</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-circle"></i>
+                        <span class="home-marketing-keyword" translate>home-marketing-keyword-6</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

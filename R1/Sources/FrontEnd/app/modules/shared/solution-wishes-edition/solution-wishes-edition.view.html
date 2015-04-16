@@ -1,0 +1,19 @@
+<div class="solution-wishes-edition">
+    <img class="modal-close-button" src="images/close.png" data-ng-click="cancel()" />
+    <div class="modal-header">
+        <h3 class="modal-title">
+            <span translate>enclosure-solution-wishes-title</span>
+        </h3>
+    </div>
+    <div class="modal-body">
+        <p translate>enclosure-search-solution-remove-user-wishes-question</p>
+        <div class="solution-wishes-list">
+            <div data-ng-repeat="characteristic in characteristics">
+                <span>{{characteristic.name | translate}}</span>&nbsp;<span>({{characteristic.displayValue | translate}})</span>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a class="btn btn-info pull-right blue-button" data-ng-click="ok()" translate>OK</a>
+    </div>
+</div>

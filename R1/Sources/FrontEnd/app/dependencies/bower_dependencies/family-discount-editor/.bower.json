@@ -1,0 +1,39 @@
+{
+  "name": "family-discount-editor",
+  "version": "1.0.1",
+  "main": [
+    "dist/family-discount-editor-all-min.js",
+    "dist/family-discount-editor.css"
+  ],
+  "dependencies": {
+    "angular": "~1.2.0",
+    "json3": "~3.3.1",
+    "es5-shim": "~3.1.0",
+    "bootstrap": "~3.2.0",
+    "angular-resource": "~1.2.0",
+    "angular-cookies": "~1.2.0",
+    "angular-sanitize": "~1.2.0",
+    "angular-animate": "~1.2.0",
+    "angular-touch": "~1.2.0",
+    "angular-route": "~1.2.0",
+    "angular-bootstrap": "~0.12.0",
+    "angular-spinner": ">=0.4.0",
+    "angular-base64": "~2.0.2",
+    "ngInfiniteScroll": "~1.2.0",
+    "angular-gettext": "~2.0.0",
+    "big.js": "~3.0.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.0",
+    "angular-scenario": "~1.2.0"
+  },
+  "appPath": "directive",
+  "_cacheHeaders": {
+    "Last-Modified": "Tue, 31 Mar 2015 07:16:16 GMT",
+    "Content-Length": "28975",
+    "Content-Type": "application/zip"
+  },
+  "_source": "http://pace.schneider-electric.com/Downloads/family-discount-editor-sources-1.0.1.zip",
+  "_target": "*",
+  "_originalSource": "http://pace.schneider-electric.com/Downloads/family-discount-editor-sources-1.0.1.zip"
+}

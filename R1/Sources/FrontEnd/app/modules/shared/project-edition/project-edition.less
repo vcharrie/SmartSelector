@@ -1,0 +1,60 @@
+@projectEditionSpanHeight:  25px;
+@projectEditionSpanWidth:  190px;
+@projectEditionRegularInfoDivHeight: 40px;
+@projectEditionNoteAreaHeight: 90px;
+@projectEditionTextareaWidth: 650px;
+
+.project-regular-infos-area {
+    display: inline-block;
+    width: 100%;
+
+    & > div {
+        display: inline-block;
+        width: 100%;
+        height: @projectEditionRegularInfoDivHeight;
+        margin-bottom: @appMediumMargin;
+
+        & > span {
+            display: inline-block;
+            height: @projectEditionSpanHeight;
+            min-width: @projectEditionSpanWidth;
+            color: @ladyFernGreenColor;
+            font-weight: bold;
+            font-size: 18px;
+
+
+        }
+    }
+}
+
+.project-editions-text-input {
+    display: inline-block;
+    width: @projectEditionTextareaWidth;
+    resize: none;
+    border-radius : 0px;
+}
+
+.project-note-area {
+    height: @projectEditionNoteAreaHeight !important;
+
+    & > span {
+        display: inline-block;
+        height: @projectEditionSpanHeight;
+        color: @ladyFernGreenColor;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    & > textarea {
+        display: inline-block;
+        height: 160px; /*for old browsers*/
+        height: calc(3 * @projectEditionRegularInfoDivHeight - @appSmallMargin);
+    }
+}
+.project-edition-red-text {
+    color: @warmRedColor;
+}
+.project-edition-modal-header-icon {
+  position: relative;
+  bottom: 5px;
+}

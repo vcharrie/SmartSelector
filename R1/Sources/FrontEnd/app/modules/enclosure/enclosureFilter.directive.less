@@ -1,0 +1,42 @@
+@enclosure-caract-width: 150px;
+
+.enclosure-filter {
+  border-top: 1px solid @lightGreyColor;
+  background: @ultraLightGrey2Color;
+  padding: @appSmallMargin;
+  margin-right: 2px;
+  margin-bottom: 1px;
+  height: 150px;
+
+  .enclosure-filter-item {
+    display: inline-block;
+    margin-top: 20px;
+
+    .btn {
+      width: @enclosure-caract-width;
+      margin-left: @appMediumMargin;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .enclosure-close {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    border-radius: 3px;
+  }
+}
+
+.enclosure-dropdown-menu {
+  width: @enclosure-caract-width;
+}
+
+.enclosure-buttons-banner {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  margin-left: @appMediumMargin;
+}

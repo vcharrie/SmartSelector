@@ -1,0 +1,55 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 1.7.3\n"
+
+#: directive/views/family-discount-editor.view.html:60
+msgid "Cancel"
+msgstr ""
+
+#: directive/views/family-discount-editor.view.html:15
+msgid "Code"
+msgstr ""
+
+#: directive/views/family-discount-editor.view.html:52
+msgid "Communication with server error: discounts not saved"
+msgstr ""
+
+#: directive/views/family-discount-editor.view.html:16
+msgid "Description"
+msgstr ""
+
+#: directive/views/family-discount-editor.view.html:18
+msgid "Discount"
+msgstr ""
+
+#: directive/views/family-discount-editor.view.html:56
+msgid "Discounts saved"
+msgstr ""
+
+#: directive/views/family-discount-editor.view.html:64
+msgid "Submit"
+msgstr ""
+
+#: directive/views/family-discount-editor.view.html:17
+msgid "Validity start"
+msgstr ""
+
+#: directive/views/family-discount-editor.view.html:50
+msgid "some dates are not valid: please enter date in \"dd-MM-yyyy\" format"
+msgstr ""
+
+#: directive/views/family-discount-editor.view.html:47
+msgid "some numbers are not valid: please enter numbers between 0 and 100"
+msgstr ""
+
+msgid "No family available"
+msgstr ""

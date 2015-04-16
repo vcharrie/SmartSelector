@@ -1,0 +1,152 @@
+<div class="enclosure-modification">
+    <img class="modal-close-button" src="images/close.png" data-ng-click="close(false)" data-ng-show="!errorMessage" />
+    <div class="modal-header">
+        <h3 class="modal-title" data-ng-class="{'no-solution-found-title' : noSolutionFoundInitialState()}">
+            {{modalTitle}}
+        </h3>
+    </div>
+    <div class="modal-body">
+        <div class="enclosure-modification-body" data-ng-show="!isSearchingSolution">
+            <i class="help-button fa fa-question" data-ng-click="help()">
+            </i>
+
+            <span class="enclosure-modification-top-label enclosure-modification-top-label-1 enclosure-modification-top-label-highlighted" data-ng-show="solution === null" translate>
+                enclosure-modification-top-label-no-solution-found
+            </span>
+            <span class="enclosure-modification-top-label enclosure-modification-top-label-1" data-ng-show="solution !== null" translate>
+                enclosure-modification-top-label-1
+            </span>
+            <br/>
+            <span class="enclosure-modification-top-label enclosure-modification-top-label-2" translate>
+                enclosure-modification-top-label-2
+            </span>
+
+            <div class="enclosure-modification-characteristics-section">
+                <span class="enclosure-modification-section-title" translate>
+                    enclosure-modification-project-context-characteristics-title
+                </span>
+
+                <div class="enclosure-modification-characteristics-section-table">
+                    <div>
+                        <div class="enclosure-modification-characteristics-section-table-header" translate>
+                            enclosure-modification-characteristics-table-header-1
+                        </div>
+                        <div class="enclosure-modification-characteristics-section-table-header" translate>
+                            enclosure-modification-characteristics-table-header-2
+                        </div>
+                        <div class="enclosure-modification-characteristics-section-table-header enclosure-modification-characteristics-section-table-header-caret">
+                        </div>
+                        <div class="enclosure-modification-characteristics-section-table-header" translate>
+                            enclosure-modification-characteristics-table-header-3
+                        </div>
+                    </div>
+                    <div data-ng-repeat="characteristic in projectContextCharacteristics" class="enclosure-modification-characteristics-section-table-row">
+                        <div class="enclosure-characteristic-label enclosure-modification-characteristics-section-table-cell">
+                            <p>{{characteristic.name | translate}}</p>
+                        </div>
+                        <div class="enclosure-characteristic-current-value enclosure-modification-characteristics-section-table-cell" data-ng-show="solution">
+                            <p data-ng-hide="solution[characteristic.solutionName] === undefined">{{solution[characteristic.solutionName] | translate}}</p>
+                            <p data-ng-show="solution[characteristic.solutionName] === undefined"> - </p>
+                        </div>
+                        <div class="enclosure-modification-characteristics-section-table-right-caret">
+                            <i class="fa fa-caret-right"></i>
+                        </div>
+                        <div class="enclosure-characteristic-new-filter enclosure-modification-characteristics-section-table-cell btn-group">
+                            <button dropdown-opener class="btn btn-default dropdown-toggle combo-default" data-ng-class="{'combo-selected' : isProjectContextCharacteristicFiltered(characteristic)}" data-toggle="dropdown" data-ng-click="onDropdownOpen(characteristic)">
+                                <span class="dropdown-btn-selected-value">{{characteristic.selectedValue | translate}}</span>
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu enclosure-dropdown-menu">
+                                <li data-ng-repeat="value in characteristic.values|orderBy_Ab1210"><a href="" data-ng-click="onCharacteristicSelected(characteristic, value)">{{value | translate}}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="enclosure-modification-error-message-container" data-ng-show="errorMessage">
+                    <span class="enclosure-modification-error-message">{{errorMessage | translate}}</span>
+                    <i class="info-icon fa fa-info-circle"  data-info-icon-hover-tooltip popover-html="{{enclosureModificationLegendTooltip}}" popover-placement="right" popover-append-to-body="body">
+                    </i>
+                </div>
+
+                <div class="enclosure-modification-legend-message-container" data-ng-show="errorMessage">
+                    <span class="enclosure-modification-legend-message-label enclosure-modification-legend-message-label-title" translate>enclosure-modification-legend-label-title-1</span>
+                    <span class="enclosure-modification-legend-message-label" translate>enclosure-modification-legend-label-1</span>
+                </div>
+                <div class="enclosure-modification-legend-message-container" data-ng-show="errorMessage">
+                    <span class="enclosure-modification-legend-message-label enclosure-modification-legend-message-label-title" translate>enclosure-modification-legend-label-title-2</span>
+                    <span class="enclosure-modification-legend-message-label" translate>enclosure-modification-legend-label-2</span>
+                </div>
+            </div>
+
+            <div class="enclosure-modification-enclosure-characteristics enclosure-modification-characteristics-section" data-ng-show="solution">
+                <span class="enclosure-modification-section-title" translate>
+                    enclosure-modification-enclosure-characteristics-title
+                </span>
+
+                <div class="enclosure-characteristics-table enclosure-modification-characteristics-section-table">
+                    <div>
+                        <div class="enclosure-modification-characteristics-section-table-header" translate>
+                            enclosure-modification-characteristics-table-header-1
+                        </div>
+                        <div class="enclosure-modification-characteristics-section-table-header" translate>
+                            enclosure-modification-characteristics-table-header-2
+                        </div>
+                        <div class="enclosure-modification-characteristics-section-table-header enclosure-modification-characteristics-section-table-header-caret">
+                        </div>
+                        <div class="enclosure-modification-characteristics-section-table-header" translate>
+                            enclosure-modification-characteristics-table-header-3
+                        </div>
+                    </div>
+                    <div data-ng-repeat="characteristic in enclosureCharacteristics" class="enclosure-modification-characteristics-section-table-row">
+                        <div class="enclosure-characteristic-label enclosure-modification-characteristics-section-table-cell">
+                            <p>{{characteristic.name | translate}}</p>
+                        </div>
+                        <div class="enclosure-characteristic-current-value enclosure-modification-characteristics-section-table-cell">
+                            <p data-ng-hide="solution[characteristic.name] === undefined">{{solution[characteristic.name] | translate}}</p>
+                            <p data-ng-show="solution[characteristic.name]=== undefined"> - </p>
+                        </div>
+                        <div class="enclosure-modification-characteristics-section-table-right-caret">
+                            <i class="fa fa-caret-right"></i>
+                        </div>
+                        <div class="enclosure-characteristic-new-filter enclosure-modification-characteristics-section-table-cell btn-group">
+                            <button dropdown-opener class="btn btn-default dropdown-toggle combo-default" data-ng-class="{'combo-selected' : isEnclosureCharacteristicFiltered(characteristic)}" data-toggle="dropdown" data-ng-click="">
+                                <span class="dropdown-btn-selected-value">{{characteristic.displayValue | translate}}</span>
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu enclosure-dropdown-menu">
+                                <li data-ng-repeat="value in characteristic.values|orderBy_Ab1210"><a href="" data-ng-click="onCharacteristicSelected(characteristic, value)">{{value | translate}}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="enclosure-modification-body" data-ng-show="isSearchingSolution">
+            <span class="enclosure-modification-center"><i class="fa fa-circle-o-notch fa-spin"></i>&nbsp;<span translate>enclosure-searching-solution</span></span>
+        </div>
+    </div>
+    <div class="modal-footer" data-ng-show="!isSearchingSolution">
+
+        <span class="enclosure-modification-solution-still-not-found-label" translate>
+            enclosure-modification-solution-still-not-found
+        </span>
+
+        <button class="btn btn-primary" data-ng-click="validate()">
+            OK
+        </button>
+
+        <button class="btn btn-default" data-ng-click="close(false)" data-ng-show="!errorMessage" translate>
+            CANCEL
+        </button>
+
+        <button class="btn btn-default" data-ng-click="close(true)" data-ng-show="errorMessage" translate>
+            enclosure-modification-back-to-switchboard-content
+        </button>
+
+        <button class="btn btn-info" data-ng-click="clear(false)" translate>
+            enclosure-modification-auto
+        </button>
+    </div>
+</div>

@@ -1,0 +1,110 @@
+msgid ""
+msgstr ""
+"Language: es\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+
+#: directive/template/edit-profile.html
+msgid "An email had been sent to your address for verification."
+msgstr "Un correo electrónico ha sido enviado a su dirección para la verificación"
+
+#: directive/template/edit-profile.html
+msgid "Company Name"
+msgstr "Empresa"
+
+#: directive/template/edit-profile.html
+msgid "Connect with:"
+msgstr "Conectar con"
+
+#: directive/template/edit-profile.html
+msgid "Country"
+msgstr "País"
+
+#: directive/template/edit-profile.html
+msgid "Email"
+msgstr "Email"
+
+#: directive/template/edit-profile.html
+msgid "Fields are mandatory"
+msgstr "Campo obligatorio"
+
+#: directive/template/edit-profile.html
+msgid "Given name"
+msgstr "Nombre"
+
+#: directive/template/edit-profile.html
+msgid "Job function"
+msgstr "Función"
+
+#: directive/template/edit-profile.html
+msgid "Language"
+msgstr "Idioma"
+
+#: directive/template/edit-profile.html
+msgid "Partner ID"
+msgstr "Partner ID"
+
+#: directive/template/edit-profile.html
+msgid "Please enter a valid email address"
+msgstr "Introducir un correo electrónico válido"
+
+#: directive/template/edit-profile.html
+msgid "Please enter your Partner Id"
+msgstr "Introducir su Partner Id de Schneider Electric"
+
+#: directive/template/edit-profile.html
+msgid "Please enter your company name"
+msgstr "Introducir su Empresa"
+
+#: directive/template/edit-profile.html
+msgid "Please enter your given name"
+msgstr "Introducir su Nombre"
+
+#: directive/template/edit-profile.html
+msgid "Please enter your surname"
+msgstr "Introducir su Apellido"
+
+#: directive/template/edit-profile.html
+msgid "Send verification mail again."
+msgstr "Enviar el correo electrónico de verificación, otra vez"
+
+#: directive/template/edit-profile.html
+msgid "Submit"
+msgstr "Enviar"
+
+#: directive/template/edit-profile.html
+msgid "Surname"
+msgstr "Apellido"
+
+#: directive/template/edit-profile.html
+msgid "This field is required"
+msgstr "Este campo es obligatorio"
+
+#: directive/template/edit-profile.html
+msgid "You have to enter a valid email."
+msgstr "Introducir un correo electrónico válido"
+
+#: directive/template/edit-profile.html
+msgid "Your company"
+msgstr "Su empresa"
+
+#: directive/template/edit-profile.html
+msgid "Your job"
+msgstr "Su función"
+
+#: directive/template/edit-profile.html
+msgid "Your account"
+msgstr ""
+
+#: directive/src/edit-profile.js
+msgid "Error loading profile"
+msgstr ""
+
+#: directive/src/edit-profile.js
+msgid "Profile successfully updated"
+msgstr ""
+
+#: directive/src/edit-profile.js
+msgid "Error saving profile"
+msgstr ""

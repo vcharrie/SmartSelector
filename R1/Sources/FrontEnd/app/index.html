@@ -1,0 +1,407 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EcorealQQ</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- icons for Apple devices -->
+    <link rel="apple-touch-icon" href="apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72-precomposed">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <!-- build:css css/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="dependencies/bower_dependencies/toastr/toastr.css"/>
+    <link rel="stylesheet" href="dependencies/bower_dependencies/font-awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" href="dependencies/bower_dependencies/animate.css/animate.css"/>
+    <link rel="stylesheet" href="dependencies/bower_dependencies/edit-profile/styles/edit-profile.css"/>
+    <link rel="stylesheet" href="dependencies/bower_dependencies/family-discount-editor/dist/family-discount-editor.css"/>
+    <link rel="stylesheet" href="dependencies/bower_dependencies/price-list-manager/dist/price-list-manager.css"/>
+    <link rel="stylesheet" href="dependencies/bower_dependencies/jquery-ui/themes/ui-lightness/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="dependencies/bower_dependencies/bom-ui-component/dist/bom-ui-component.css"/>
+    <link rel="stylesheet" href="dependencies/BLMWebSDK/styles/blm-websdk.css"/>
+    <link rel="stylesheet" href="dependencies/bower_dependencies/bootstrap/dist/css/bootstrap.min.css"/>
+
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp,app}) css/app.css -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- endbuild -->
+
+</head>
+<body data-ng-app="app">
+
+
+<script type="text/javascript">
+    var stopLoading = false;
+    if (!/*@cc_on!@*/0) {
+        stopLoading = false;
+    }
+    else {
+        stopLoading = true;
+    }
+    if (stopLoading) {
+        var htmlError = '<div class="app-not-supported">'+
+                '<div class="app-not-supported-box">'+
+                '<div class="content-wrapper">'+
+                '<div class="page-header">'+
+                '<h3 class="text-danger">'+
+                '<i class="fa fa-warning fa-2x pull-left"></i>'+
+                'Su navegador no es compatible, con esta aplicación.'+
+                '</h3>'+
+                '</div>'+
+                '<p class="small">'+
+                '<b>'+
+                'Navegadores compatibles:'+
+                '</b> Internet Explorer 11+, Firefox, Chrome, Safari, navegadores integrados en iOS y Android'+
+                '</p>'+
+                ''+
+                '<p>'+
+                '<a href="https://www.google.es/intl/es/chrome/browser/desktop/" class="btn btn-primary">'+
+                'Descargar navegador recomendado'+
+                '</a>'+
+                '</p>'+
+                '</div>'+
+                '</div>'+
+                '<div class="app-not-supported-box">'+
+                '<div class="content-wrapper">'+
+                '<div class="page-header">'+
+                '<h3 class="text-danger">'+
+                '<i class="fa fa-warning fa-2x pull-left"></i>'+
+                'К сожалению, Ваш браузер не поддерживается данным приложением'+
+                '</h3>'+
+                '</div>'+
+                '<p class="small">'+
+                '<b>'+
+                'Поддерживаемые браузеры:'+
+                '</b> Internet Explorer 11+, Firefox, Chrome, Safari, Встроенные браузеры iOS и Android'+
+                '</p>'+
+                ''+
+                '<p>'+
+                '<a href="https://www.google.ru/intl/ru/chrome/browser/desktop/" class="btn btn-primary">'+
+                'Загрузить рекомендуемый браузер'+
+                '</a>'+
+                '</p>'+
+                '</div>'+
+                '</div>'+
+                '<div class="app-not-supported-box">'+
+                '<div class="content-wrapper">'+
+                '<div class="page-header">'+
+                '<h3 class="text-danger">'+
+                '<i class="fa fa-warning fa-2x pull-left"></i>'+
+                'Sorry, your browser is not currently supported by this application.'+
+                '</h3>'+
+                '</div>'+
+                '<p class="small">'+
+                '<b>'+
+                'Supported browsers:'+
+                '</b> Internet Explorer 11+, Firefox, Chrome, Safari, iOS & Android embedded browsers'+
+                '</p>'+
+                ''+
+                '<p>'+
+                '<a href="https://www.google.co.uk/intl/en/chrome/browser/desktop/" class="btn btn-primary">'+
+                'Download recommended browser'+
+                '</a>'+
+                '</p>'+
+                '</div>'+
+                '</div>'+
+                '</div>'+
+                '</div>';
+
+
+        document.write(htmlError + '<script type="text/undefined">');
+    }
+</script>
+<!-- Application splash screen -->
+<!-- TODO: replace by the 'real' splash screen and move into a directive or template? -->
+<div class="app-splash" data-ng-hide="!isLoading">
+    <div class="app-splash-picture"></div>
+</div>
+
+<!-- Application shell -->
+<div class="app-root" data-ng-include="'modules/shell/shell.view.html'"></div>
+<!-- build:js js/vendor.js -->
+<!-- bower:js -->
+<script src="dependencies/bower_dependencies/jquery/jquery.min.js"></script>
+<script src="dependencies/bower_dependencies/jquery-ui/jquery-ui.min.js"></script>
+<script src="dependencies/bower_dependencies/angular/angular.js"></script>
+<script src="dependencies/bower_dependencies/bootstrap/dist/js/bootstrap.js"></script>
+<script src="dependencies/bower_dependencies/angular-resource/angular-resource.js"></script>
+<script src="dependencies/bower_dependencies/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="dependencies/bower_dependencies/angular-cookies/angular-cookies.js"></script>
+<script src="dependencies/bower_dependencies/angular-sanitize/angular-sanitize.js"></script>
+<script src="dependencies/bower_dependencies/angular-route/angular-route.js"></script>
+<script src="dependencies/bower_dependencies/angular-animate/angular-animate.js"></script>
+<script src="dependencies/bower_dependencies/angular-gettext/dist/angular-gettext.js"></script>
+<script src="dependencies/bower_dependencies/angular-base64/angular-base64.js"></script>
+<script src="dependencies/bower_dependencies/angular-spinner/angular-spinner.js"></script>
+<script src="dependencies/bower_dependencies/underscore/underscore.js"></script>
+<script src="dependencies/bower_dependencies/toastr/toastr.js"></script>
+<script src="dependencies/bower_dependencies/moment/moment.js"></script>
+<script src="dependencies/bower_dependencies/angular-local-storage/angular-local-storage.js"></script>
+<script src="dependencies/bower_dependencies/d3/d3.js"></script>
+<script src="dependencies/bower_dependencies/ng-file-upload/angular-file-upload-all.min.js"></script>
+<script src="dependencies/bower_dependencies/bootstrap-filestyle/src/bootstrap-filestyle.js"></script>
+<script src="dependencies/bower_dependencies/three.js/three.min.js"></script>
+<script src="dependencies/bower_dependencies/jquery-mousewheel-stop-propagation/mousewheelStopPropagation.js"></script>
+<script src="dependencies/bower_dependencies/tween.js/src/Tween.js"></script>
+<script src="dependencies/bower_dependencies/viewer3d/dist/viewer-3d_all_min.js"></script>
+<script src="dependencies/bower_dependencies/ngInfiniteScroll/build/ng-infinite-scroll.min.js"></script>
+<script src="dependencies/bower_dependencies/family-discount-editor/dist/family-discount-editor-all-min.js"></script>
+
+
+<script src="dependencies/bower_dependencies/js-xls/dist/xls.full.min.js"></script>
+<script src="dependencies/bower_dependencies/js-xlsx/dist/xlsx.full.min.js"></script>
+<script src="dependencies/bower_dependencies/price-list-manager/dist/price-list-manager-all-min.js"></script>
+
+<script src="dependencies/bower_dependencies/web-ui-commons/src/country.js"></script>
+<script src="dependencies/bower_dependencies/web-ui-commons/src/country-select.js"></script>
+<script src="dependencies/bower_dependencies/web-ui-commons/src/language.js"></script>
+<script src="dependencies/bower_dependencies/web-ui-commons/src/language-select.js"></script>
+<script src="dependencies/bower_dependencies/web-ui-commons/src/jobFunction.js"></script>
+<script src="dependencies/bower_dependencies/edit-profile/scripts/edit-profile.js"></script>
+<script src="dependencies/bower_dependencies/edit-profile/locales/translations.js"></script>
+<script src="dependencies/bower_dependencies/angular-underscore-module/angular-underscore-module.js"></script>
+<script src="dependencies/bower_dependencies/bom-ui-component/dist/bom-ui-component-all-min.js"></script>
+
+
+<script src="dependencies/blmwebsdk/blm-websdk.js"></script>
+<script src="dependencies/blmwebsdk/spimEntityBrowser.js"></script>
+<script src="dependencies/blmwebsdk/services/spim-service.js"></script>
+<script src="dependencies/blmwebsdk/services/user-service.js"></script>
+<script src="dependencies/bower_dependencies/big.js/big.min.js"></script>
+<script src="dependencies/bower_dependencies/spin.js/spin.js"></script>
+
+<!-- endbower -->
+<!--dependencies not handled by bower-->
+
+<!-- endbuild -->
+
+
+<!-- build:js({.tmp,app}) js/app.js -->
+<!-- app -->
+
+<script src="translate/translations.js"></script>
+<script src="app/templates/templates.js"></script>
+<script src="app/app.js"></script>
+<script src="app/config/config.js"></script>
+
+<!-- config -->
+<script src="common/config/config-module.js"></script>
+<script src="common/config/constants/app-constants.js"></script>
+<script src="common/config/constants/api-constants.js"></script>
+<script src="common/config/constants/characteristic-name.js"></script>
+<script src="common/config/constants/range-item-type.js"></script>
+
+<!-- helpers services -->
+<script src="common/helpers/helpers-module.js"></script>
+<script src="common/helpers/services/api-helper-service.js"></script>
+<script src="common/helpers/services/underscore-service.js"></script>
+<script src="common/helpers/services/moment-service.js"></script>
+<script src="common/helpers/services/logger-service.js"></script>
+<script src="common/helpers/services/string-helper-service.js"></script>
+<script src="common/helpers/services/keyboard-shortcuts-service.js"></script>
+<script src="common/helpers/services/admin-service.js"></script>
+<script src="common/helpers/services/threejs-service.js"></script>
+<script src="common/helpers/services/browser-detection-helper-service.js"></script>
+<script src="common/helpers/services/auxiliaries-service.js"></script>
+<script src="common/helpers/services/network-basic-information-helper-service.js"></script>
+
+<!-- d3 wrapper -->
+<script src="common/helpers/services/d3-service.js"></script>
+
+
+<!-- filters -->
+<script src="common/helpers/filters/filterArrays.js"></script>
+<script src="common/helpers/filters/formatPrice.js"></script>
+<script src="common/helpers/filters/formatPercentage.js"></script>
+<script src="common/helpers/filters/filterSelectedCaract.js"></script>
+<script src="common/helpers/filters/sortArrays.js"></script>
+<script src="common/helpers/filters/formatAndTranslateCaract.js"></script>
+<script src="common/helpers/filters/dimensions.js"></script>
+<script src="common/helpers/filters/prefixTranslate.js"></script>
+<script src="common/helpers/filters/unit.js"></script>
+
+<!-- directives -->
+<script src="common/directives/directives-module.js"></script>
+<script src="common/directives/notificationBadge.directive.js"></script>
+<script src="common/directives/focus-me.directive.js"></script>
+<script src="common/directives/dropdown-opener.directive.js"></script>
+<script src="common/directives/display-price-directive.js"></script>
+<script src="common/directives/threejsInspector.directive.js"></script>
+<script src="common/directives/layers.directive.js"></script>
+<script src="common/directives/imageTooltip.directive.js"></script>
+<script src="common/directives/infoTooltip.directive.js"></script>
+<script src="common/directives/ngModelOnblur.directive.js"></script>
+
+<!-- business -->
+<script src="common/business/business-module.js"></script>
+
+<!-- model -->
+<script src="common/model/model-module.js"></script>
+<script src="common/model/factories/basket.js"></script>
+<script src="common/model/factories/part.js"></script>
+<script src="common/model/factories/partPack.js"></script>
+<script src="common/model/factories/product.js"></script>
+<script src="common/model/factories/project.js"></script>
+<script src="common/model/factories/switchboard.js"></script>
+<script src="common/model/factories/switchboardPack.js"></script>
+<script src="common/model/factories/productPack.js"></script>
+<script src="common/model/factories/filter.js"></script>
+<script src="common/model/factories/characteristic.js"></script>
+<script src="common/model/factories/rangeItem.js"></script>
+<script src="common/model/factories/solution.js"></script>
+<script src="common/model/factories/distribution.js"></script>
+<script src="common/model/factories/network.js"></script>
+<script src="common/model/factories/device.js"></script>
+<script src="common/model/factories/warning.js"></script>
+
+<!-- business services -->
+
+<script src="common/business/services/modify-product-service.js"></script>
+
+<script src="common/business/services/project-service.js"></script>
+<script src="common/business/services/save-load-service.js"></script>
+<script src="common/business/services/backward-compatibility-service.js"></script>
+<script src="common/business/services/default-values-historic-service.js"></script>
+<script src="common/business/services/product-configuration-service.js"></script>
+<script src="common/business/services/phase-to-phase-neutral-service.js"></script>
+<script src="common/business/services/switchboard-content-service.js"></script>
+<script src="common/business/services/switchboard-organisation-service.js"></script>
+<script src="common/business/services/network-service.js"></script>
+<script src="common/business/services/translation-service.js"></script>
+<script src="common/business/services/distribution-service.js"></script>
+
+<!-- rest -->
+<script src="common/rest/rest-module.js"></script>
+<script src="common/rest/services/range-service.js"></script>
+<script src="common/rest/services/product-configuration-service.js"></script>
+<script src="common/rest/services/application-configuration-service.js"></script>
+<script src="common/rest/services/search-solution-service.js"></script>
+<script src="common/rest/services/product-price-service.js"></script>
+<script src="common/rest/services/partInfo-service.js"></script>
+<script src="common/rest/services/smart-panel-service.js"></script>
+<script src="common/rest/services/discovers-service.js"></script>
+
+
+<!-- dialog -->
+<script src="common/dialog/services/dialog-service.js"></script>
+<script src="common/dialog/services/errorDialog.js"></script>
+<script src="common/dialog/services/htmlDialog.js"></script>
+<script src="common/dialog/services/warningDialog.js"></script>
+<script src="common/dialog/services/yesNoDialog.js"></script>
+<script src="common/dialog/services/choicesDialog.js"></script>
+<script src="common/dialog/services/actionDialog.js"></script>
+
+
+<!-- shared modules -->
+<script src="modules/shared/shared-module.js"></script>
+<script src="modules/shared/directives/characteristics-selection.directive.js"></script>
+<script src="modules/shared/directives/modify-product.directive.js"></script>
+<script src="modules/shared/directives/productItem.directive.js"></script>
+
+<!-- discount editor -->
+<script src="modules/shared/discount-editor/discount-editor.js"></script>
+<script src="modules/shared/discount-editor/discount-editor-service.js"></script>
+
+
+<!-- edit profile modules -->
+<script src="modules/shared/edit-profile/editProfileDialog.js"></script>
+<script src="modules/shared/edit-profile/profileService.js"></script>
+
+
+<script src="modules/shared/project-edition/project-edition.js"></script>
+<script src="modules/shared/project-edition/project-edition-service.js"></script>
+<script src="modules/shared/auxiliaries-selection/auxiliaries-selection.js"></script>
+<script src="modules/shared/alternative-product-selection/alternative-product-selection-service.js"></script>
+<script src="modules/shared/alternative-product-selection/alternative-product-selection.js"></script>
+<script src="modules/shared/auxiliaries-selection/auxiliaries-selection-service.js"></script>
+<script src="modules/shared/device-configuration/device-configuration.js"></script>
+<script src="modules/shared/device-configuration/device-configuration-service.js"></script>
+<script src="modules/shared/enclosure-modification/enclosure-modification.js"></script>
+<script src="modules/shared/enclosure-modification/enclosure-modification-service.js"></script>
+<script src="modules/shared/detailed-device-modal/detailed-device-modal.js"></script>
+<script src="modules/shared/detailed-device-modal/detailed-device-modal-service.js"></script>
+<script src="modules/shared/distribution-configuration/distribution-configuration.js"></script>
+<script src="modules/shared/distribution-configuration/distribution-configuration-service.js"></script>
+<script src="modules/shared/solution-wishes-edition/solution-wishes-edition.js"></script>
+<script src="modules/shared/quantity-device-modal/quantity-device-modal.js"></script>
+<script src="modules/shared/quantity-device-modal/quantity-device-modal-service.js"></script>
+<script src="modules/shared/add-item-modal/add-item.js"></script>
+<script src="modules/shared/add-item-modal/add-item.directive.js"></script>
+<script src="modules/shared/add-item-modal/add-item-service.js"></script>
+
+<!-- blm browser -->
+<script src="modules/shared/blm-browser/blm-browser.js"></script>
+<script src="modules/shared/blm-browser/blm-browser-service.js"></script>
+
+<!-- user session timeout -->
+<script src="modules/shared/user-session-timeout/user-session-timeout-service.js"></script>
+<script src="modules/shared/user-session-timeout/user-session-timeout.js"></script>
+
+<!-- discovers -->
+<script src="modules/shared/discovers/discovers-service.js"></script>
+<script src="modules/shared/discovers/discovers.js"></script>
+
+
+<!-- other modules -->
+<script src="modules/shell/shell-module.js"></script>
+<script src="modules/shell/loadProject.directive.js"></script>
+<script src="modules/theme/theme.js"></script>
+<script src="modules/home/home.js"></script>
+<script src="modules/switchboard-content/switchboard-content.js"></script>
+<script src="modules/switchboard-organisation/switchboard-organisation-module.js"></script>
+<script src="modules/switchboard-organisation/services/switchboard-organisation-layout-service.js"></script>
+<script src="modules/switchboard-organisation/services/switchboard-organisation-update-service.js"></script>
+<script src="modules/switchboard-organisation/services/switchboard-organisation-network-flat-array-service.js"></script>
+<script src="modules/switchboard-organisation/services/switchboard-organisation-network-decoration-service.js"></script>
+<script src="modules/switchboard-organisation/services/switchboard-organisation-drag-and-drop-service.js"></script>
+<script src="modules/switchboard-organisation/switchboard-organisation.js"></script>
+<script src="modules/enclosure/enclosure.js"></script>
+<script src="modules/enclosure/enclosureViewer.directive.js"></script>
+<script src="modules/enclosure/enclosureFilter.directive.js"></script>
+<script src="modules/enclosure/enclosureViewerToolbar.directive.js"></script>
+<script src="modules/enclosure/enclosureProductItem.directive.js"></script>
+<script src="modules/smart-panel-wizzard/smart-panel-wizzard.js"></script>
+<script src="modules/smart-panel-wizzard/smart-panel-wizzard-service.js"></script>
+<script src="modules/smart-panel-wizzard/services/smart-panel-wizzard-smartify-service.js"></script>
+<script src="modules/removed-products/removed-products.js"></script>
+<script src="modules/removed-products/removed-products-controller.js"></script>
+<script src="modules/removed-products/removed-products-service.js"></script>
+
+<!-- project context -->
+<script src="modules/project-context/project-context.js"></script>
+<!-- product configuration -->
+<script src="modules/product-configuration/product-configuration.js"></script>
+<script src="common/business/services/product-configuration-tracking-service.js"></script>
+<!-- basket -->
+<script src="modules/basket/basket.js"></script>
+<!-- bom -->
+<script src="modules/bom/bom.js"></script>
+<script src="modules/bom/services/bom-tracking-service.js"></script>
+<script src="modules/bom/services/bom-dialog.js"></script>
+<script src="modules/bom/services/bom-dialog-service.js"></script>
+
+<!-- tracking -->
+<script src="common/tracking/tracking-module.js"></script>
+<script src="common/tracking/config/tracking-module-config.js"></script>
+<script src="common/tracking/services/google-analytics-service.js"></script>
+<script src="common/tracking/services/smart-panel-tracking-service.js"></script>
+
+<!-- authentication -->
+<script src="common/helpers/services/login-service.js"></script>
+<!-- blm -->
+<script src="common/helpers/services/blm-service.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>

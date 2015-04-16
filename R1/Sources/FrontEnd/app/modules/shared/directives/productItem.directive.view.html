@@ -1,0 +1,42 @@
+<div class="product-item" data-ng-class="{'selected-product' : select && isSelected(product)}">
+
+    <div class="product-description">
+        <div class="product-part" data-ng-repeat="multiplepart in productpack.product.parts">
+            <div class="div-image">
+                <img class="image" data-ng-src="{{multiplepart.part.image}}" data-image-hover-tooltip/>
+            </div>
+            <div class="part-information">
+                <a class="part-information-title" data-ng-href={{multiplepart.part.dataSheetUrl}} target="_blank"><span data-ng-show="multiplepart.quantity > 1">{{multiplepart.quantity}}x </span>{{multiplepart.part.partCode}}</a>
+                <p class="part-information-description"><span> {{multiplepart.part.longName}} </span><span data-ng-show="isAdmin">({{multiplepart.part.price}} �)</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons-banner">
+        <span class="clickable-icon quantity-button fa-stack fa-lg" data-ng-click="decrementProductToAdd(1)" data-ng-show="quantity">
+            <i class="icon-plus-minus-subtract"></i>
+        </span>
+        <input class="form-control product-item-quantity" type="text" data-ng-model="productpack.quantity" data-ng-model-onblur data-ng-change="quantityUpdated()" data-ng-show="quantity"/>
+
+        <span class="clickable-icon quantity-button fa-stack fa-lg" data-ng-click="incrementProductToAdd(1)" data-ng-show="quantity">
+            <i class="icon-plus-minus-add"></i>
+        </span>
+
+        <button data-ng-show="add" class="btn btn-primary btn-sm product-item-add-button" data-ng-click="addProduct()" translate>configue-eq-add-product</button>
+        <button data-ng-show="add && hasCompatibleAuxiliaries" class="btn btn-primary btn-sm product-item-add-button" data-ng-click="addProductWithAuxiliaries()" translate>configue-eq-add-product-auxiliaries</button>
+        <button data-ng-show="select" class="btn btn-primary btn-sm product-item-add-button" data-ng-click="selectProduct(product)" translate>configue-eq-select-product</button>
+
+        <span data-ng-show="remove" class="clickable-icon remove-icon">
+            <i class="fa fa-trash-o" data-ng-click="removeProduct()"></i>
+        </span>
+
+        <span data-ng-click="modifyProduct($event)" data-ng-class="{'active': modifyMode}" data-ng-show="modify" class="clickable-icon">
+            <i class="fa fa-pencil"></i>
+        </span>
+    </div>
+
+    <div class="modifyDiv fadeDownUp" data-ng-if="modifyMode">
+        <modify-product productitem="productpack"></modify-product>
+    </div>
+
+</div>

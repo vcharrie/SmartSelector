@@ -1,0 +1,13 @@
+<section class="selected-products-view" data-ng-controller="basket">
+    <p class="empty-basket text-warning" data-ng-show="selectedProductsList.length===0" translate>
+        basket-selection-is-empty
+    </p>
+
+    <div class="selected-products-group">
+        <ul class="selected-products">
+            <li class="list-group-item" data-ng-repeat="prod in selectedProductsList">
+                <product-item product="prod" context="'basket'"></product-item>
+            </li>
+        </ul>
+    </div>
+</section>

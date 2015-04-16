@@ -1,0 +1,13 @@
+<div>
+    <img class="modal-close-button" src="images/close.png" data-ng-click="onCloseButtonClick()" />
+    <div class="modal-header">
+        <h3 class="modal-title" translate>dialog-warning-title</h3>
+    </div>
+    <div class="modal-body">
+        {{message}}
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="onYesButtonClick()" translate>dialog-warning-yes</button>
+        <button class="btn btn-default" data-ng-click="onCloseButtonClick()" translate>CANCEL</button>
+    </div>
+</div>

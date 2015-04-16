@@ -1,0 +1,700 @@
+@switchboardManagementContainerLeftPadding: 20px;
+@projectContextCharacteristicButtonMinWidth: 150px;
+
+.project-context-container {
+    position: absolute;
+    //left : 52%;
+    width : 46%;
+    height : 92%;
+    top: 3px;
+
+  .project-context-container-title {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    font-weight: bold;
+  }
+}
+
+.adaptative-height {
+  height: auto !important;
+  max-height: 80%;
+  position: absolute !important;
+  min-height: 100%;
+}
+
+.switchboard-management-container {
+  position: absolute;
+  width : 49%;
+  height : 92%;
+  padding-right: 10px;
+  cursor: pointer;
+
+  .switchboard-top-banner {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    display: inline-flex;
+    top: 3px;
+
+    > .info-icon {
+      margin-top: 6px;
+      display: table;
+
+      > .info-icon-tooltip {
+        left: 39px;
+
+        > .info-icon-tooltip-label {
+          font-size: 14px;
+          max-width: 200px;
+        }
+      }
+
+      .info-icon-arrow-container {
+        left: 25px;
+      }
+    }
+
+    .new-switchboard-button {
+      border: none;
+      background-color: @whiteColor;
+      color: @blackColor;
+      display: inline-block;
+      margin-top: 3px;
+      vertical-align: bottom;
+      text-decoration: none;
+      position: absolute;
+      left: 37%;
+
+      &:hover {
+        color: @skyBlueColor;
+        text-decoration: none;
+        background-image: none;
+        cursor: pointer;
+      }
+      &:focus {
+        text-decoration: none;
+      }
+
+      span {
+        display: inline-block;
+        vertical-align: text-bottom;
+
+        &:hover{
+          cursor: pointer;
+        }
+      }
+
+      > i {
+        color: @skyBlueColor;
+        font-size: 22px;
+        position: relative;
+        top: -1px;
+        right: 4px;
+        margin-right: 3px;
+      }
+    }
+
+    .switchboard-move-arrows {
+      position: absolute;
+      right: 40px;
+      display: inline-block;
+      margin-top: 4px;
+    }
+
+    .switchboard-move-up-arrow {
+    }
+
+    .switchboard-move-down-arrow {
+    }
+  }
+
+  .switchboard-pack {
+
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+
+    .mainSwitchboardPart {
+      width: 460px;
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+
+  .switchboard-selection-area {
+    display: inline;
+  }
+
+  .all-switchboards-in-bom {
+    margin-left: 2px;
+    margin-top: 7px;
+  }
+
+  .switchboard-select-and-label {
+    display: block;
+    overflow: hidden;
+    max-width: 300px;
+    cursor: pointer;
+
+    input {
+      margin: 4px;
+      min-width: 16px;
+      vertical-align: middle;
+    }
+
+    .project-context-switchboard-pack-infos {
+      margin-left:3px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: middle;
+      max-width: 300px;
+      cursor: pointer;
+    }
+
+    .switchboardPackNameLabel {
+      display: inline-block;
+      max-width: 270px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      vertical-align: bottom;
+      cursor: pointer;
+    }
+
+    .switchboardPackPriceLabel {
+      font-style: italic;
+      font-size: 12px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      max-width: 100px;
+      display: inline-block;
+      vertical-align: bottom;
+      cursor: pointer;
+
+      > span {
+        cursor: pointer;
+      }
+    }
+
+    .switchboardPackSmartStatus {
+      color: @honeysuckleOrangeColor;
+      display: inline;
+
+      > i.fa {
+        color: @honeysuckleOrangeColor;
+        cursor: pointer;
+
+        > div.info-icon-tooltip {
+          background-color: @honeysuckleOrangeColor;
+        }
+
+        > div.info-icon-arrow-container {
+          background-color: @honeysuckleOrangeColor;
+
+          > div {
+            border-right-color: @honeysuckleOrangeColor;
+          }
+        }
+      }
+    }
+
+    .switchboardPackPriceLabelSeparator {
+      .switchboardPackPriceLabel;
+      margin-left: 3px;
+    }
+
+    .switchboardPackNoPriceArea {
+      display: inline-block;
+      cursor: pointer;
+
+      > i.fa {
+        color: @skyBlueColor;
+        cursor: pointer;
+      }
+    }
+
+    .info-icon {
+      .info-icon-tooltip {
+        position: absolute;
+        left: auto;
+        top: auto;
+        margin-left: 5px;
+        margin-top: -10px;
+        z-index: 2;
+      }
+
+      .info-icon-arrow-container {
+        z-index: 3;
+
+        .info-icon-arrow-left {
+          margin-left: -12px;
+        }
+
+        .info-icon-arrow-left-border {
+          margin-left: -13px;
+        }
+      }
+    }
+  }
+
+  .switchboard-action-disabled {
+    color: @lightGreyColor;
+  }
+
+  .switchboard-action {
+    color: @gradientGreenColor2;
+    cursor: pointer;
+  }
+
+  .selected-switchboard-item {
+    padding-left: 5px;
+    background-color: @skyBlueColor20pColor;
+    height : 40px;
+    padding-top: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+
+    .switchboard-action[disabled] {
+      color: @lightGreyColor;
+    }
+
+    .switchboard-action:focus {
+      outline: none;
+    }
+  }
+
+  .switchboard-item {
+    padding-left: 5px;
+    height : 40px;
+    background-color: @whiteColor;
+    padding-top: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+
+    .switchboard-action {
+      color: @gradientGreenColor2;
+    }
+
+    .switchboard-action:focus {
+      outline: none;
+    }
+  }
+  .arrow-container {
+    width: 25px;
+    max-width: 25px;
+    display:inline-block;
+    vertical-align: middle;
+    margin-left: -4px;
+    margin-top: -2px;
+
+    .arrow-right {
+      width: 0;
+      height: 0;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-left: 9px solid @skyBlueColor20pColor;
+      margin-top: 16px;
+      z-index: 1;
+      position: relative;
+    }
+    .arrow-right-border {
+      width: 0;
+      height: 0;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-left: 8px solid #cbcbcb;
+      margin-top: -16px;
+      margin-left: 2px;
+    }
+  }
+
+  .switchboard-item-container-selected-for-bom {
+    margin: 2px;
+    border: solid @lightGreyColor 1px;
+    padding : 0;
+    padding-left: 5px;
+    background-color: @gradientGreenColor1;
+    color: black;
+
+    .get-parent-color {
+    }
+  }
+
+  .switchboard-item-container-unselected-for-bom {
+    margin: 2px;
+    border: solid @lightGreyColor 1px;
+    padding : 0;
+    padding-left: 5px;
+    background-color: @lightGreyColor;
+    color: @mediumGreyColor;
+
+    .get-parent-color {
+      color: @mediumGreyColor !important;
+    }
+  }
+
+  .switchboard-actions-buttons {
+    float: right;
+    cursor: pointer;
+
+    button {
+      background: none;
+      border: none;
+      padding: 1px;
+    }
+  }
+
+  .switchboard-price {
+    .pull-right;
+
+    .switchboardPackPriceLabel {
+      font-style: italic;
+      font-size: 12px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      max-width: 100px;
+      display: inline-block;
+      vertical-align: bottom;
+      cursor: pointer;
+
+      > span {
+        cursor: pointer;
+      }
+    }
+
+    .switchboard-price-right-margin{
+      margin-right: 5px;
+    }
+
+    .switchboardPackNoPriceArea {
+      display: inline-block;
+      cursor: pointer;
+      margin-right: 3px;
+
+      .info-icon {
+        .info-icon-tooltip {
+          position: absolute;
+          left: auto;
+          top: auto;
+          margin-left: -228px;
+          width: 200px;
+          min-height: 35px;
+          margin-top: -10px;
+          z-index: 2;
+        }
+
+        .info-icon-arrow-container {
+          z-index: 3;
+
+          .info-icon-arrow-left {
+            border-left: 8px solid @blueColor;
+            border-right: none;
+            margin-left: -38px;
+          }
+
+          .info-icon-arrow-left-border {
+            border-left: 9px solid @blueColor;
+            border-right: none;
+            margin-left: -38px;
+          }
+        }
+      }
+    }
+  }
+
+  .delete-switchboard-button {
+    position: absolute;
+    right : 5px;
+    margin-top: 5px;
+  }
+}
+
+.project-context-dropdown-menu{
+  min-width : @projectContextCharacteristicButtonMinWidth;
+  margin-left: 0px;
+  margin-top: -8px;
+}
+
+.project-context-tips {
+  margin-top: 10px;
+
+  .switchboard-property-label {
+    font-size: 12px;
+  }
+
+  .switchboard-constant-property-field {
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+
+  .switchboard-constant-property-info-icon {
+    display : inline-block;
+    height: 15px;
+
+    .info-icon {
+      vertical-align: middle;
+      position: absolute;
+      margin-top: 2px;
+      display: table;
+
+
+      .info-icon-arrow-container {
+
+        .info-icon-arrow-left {
+          border-left: 8px solid @blueColor;
+          border-right: none;
+          margin-left: -33px;
+          margin-top: -6px;
+        }
+
+        .info-icon-arrow-left-border {
+          border-left: 9px solid @blueColor;
+          border-right: none;
+          margin-left: -33px;
+        }
+      }
+
+      .info-icon-tooltip {
+        top: -220px;
+        left: auto;
+        right: 23px;
+
+        .info-icon-tooltip-label {
+          min-width: 210px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+.project-context-smart-panel-characteristic{
+
+  .switchboard-property-label {
+    font-size: 14px;
+  }
+
+  .switchboard-constant-property-field {
+    font-size: 14px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 150px;
+    text-align: center;
+    vertical-align: bottom;
+  }
+}
+
+.switchboard-property-label {
+  color: black;
+  margin-right: 3px;
+  width: 146px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.switchboard-name {
+  margin-top:10px;
+  margin-bottom:3px;
+
+  .disabled {
+    color : gray !important;
+    cursor: default !important;
+  }
+
+  .field-name {
+    margin-right: 3px;
+    width: 300px;
+    text-align: right;
+    display: inline-block;
+  }
+
+  .switchboard-name-field {
+    padding: 4px;
+    width: 150px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.project-context-characteristics-column {
+  display: inline-block;
+  width: 65%;
+
+  .project-context-characteristic-area {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+
+  .switchboard-type, .switchboard-quantity, .switchboard-form-item {
+
+    .disabled {
+      color : gray !important;
+      cursor: default !important;
+    }
+
+    .field-name {
+      margin-right: 3px;
+      width: 300px;
+      text-align: right;
+      display: inline-block;
+    }
+
+    .switchboard-type-field {
+      padding: 5px;
+      width: @projectContextCharacteristicButtonMinWidth;
+      margin-left: 3px;
+      margin-right: 0px;
+      display: inline-block;
+      vertical-align: middle;
+
+      .btn-group {
+        padding-left: 0px;
+      }
+
+      .dropdown-menu {
+        margin-left: 0px;
+      }
+    }
+
+    .charact-button {
+      min-width: @projectContextCharacteristicButtonMinWidth;
+      font-weight:normal;
+    }
+  }
+
+  .switchboard-quantity{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    .quantity-minus-button {
+      margin-left: 20px;
+    }
+    .product-item-quantity {
+      text-align: center;
+    }
+  }
+
+  .project-context-characteristic {
+    margin-bottom: @appSmallMargin;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    > span {
+      padding-right: 0px;
+      padding-left: 0px;
+      margin-right: 3px;
+      width: 146px;
+      max-width: 146px;
+      display: inline-block;
+      vertical-align: middle;
+
+      .info-icon {
+        position: relative;
+
+        .info-icon-tooltip {
+          margin-left: 28px;
+          margin-top: -30px;
+          left: auto;
+          top: auto;
+          min-width: 150px;
+        }
+      }
+    }
+
+    > .btn-group {
+       min-height: 40px;
+      vertical-align: top;
+
+      .charact-button {
+        min-width: @projectContextCharacteristicButtonMinWidth;
+        font-weight:normal;
+      }
+    }
+  }
+}
+
+.project-context-right-column {
+  display: inline-block;
+  width: 33%;
+  float: right;
+  margin-top: 5px;
+
+  .project-context-compatible-ranges {
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+    .panel-heading {
+      padding: 10px;
+      display: flex;
+      min-height: 65px;
+      text-align: center;
+
+      span {
+        margin: auto;
+      }
+    }
+    .panel-body{
+      min-height: 111px;
+      position: relative;
+      padding-left: 20px;
+      padding-bottom: 5px;
+      padding-top: 10px;
+
+      > .info-icon {
+        position: absolute;
+        top: 3px;
+        right: 3px;
+
+        .info-icon-arrow-container {
+          right: 25px;
+          left: auto;
+
+          .info-icon-arrow-left {
+            border-left: 8px solid @blueColor;
+            border-right: none;
+          }
+
+          .info-icon-arrow-left-border {
+            border-left: 9px solid @blueColor;
+            border-right: none;
+            margin-left: -6px;
+          }
+        }
+
+        .info-icon-tooltip {
+          right: 30px;
+          top: -20px;
+          left: auto;
+          min-width: 200px;
+          font-size: 12x;
+        }
+      }
+
+      > div {
+        padding-bottom: 3px;
+      }
+    }
+  }
+
+  .project-context-clear-button {
+    width: 100%;
+    margin-top: 0px;
+  }
+}
+
+.project-context-wizard-area {
+  position:absolute;
+  right: 0px;
+
+  .btn-go-forward {
+    font-size: 16px;
+    background-color: @skyBlueColor;
+  }
+}

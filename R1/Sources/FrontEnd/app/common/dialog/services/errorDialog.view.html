@@ -1,0 +1,14 @@
+<div class="error-dialog">
+    <img class="modal-close-button" src="images/close.png" data-ng-click="close()"/>
+    <div class="modal-header">
+        <h3 class="modal-title" translate>shared-dialog-error-title</h3>
+    </div>
+    <div class="modal-body">
+
+            <span><i class="fa fa-exclamation-triangle"></i>&nbsp;{{message | translate}}</span>
+
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-default" data-ng-click="close()" translate>dialog-warning-ok</button>
+    </div>
+</div>

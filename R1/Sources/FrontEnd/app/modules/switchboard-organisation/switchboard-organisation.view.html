@@ -1,0 +1,181 @@
+<section class="app-view fill">
+
+    <div class="network-add-incomer-area">
+        <div class="add-incomer-devices-button-banner">
+            <!--Action buttons-->
+            <span class="switchboard-organisation-action-button svg-button" data-ng-click="addIncomerDevice()">
+                <i class="fa fa-plus network-add-parallel-device-plus-icon"></i>
+                <span translate>switchboard-organisation-add-device-level-one</span>
+            </span>
+
+            <span class="switchboard-organisation-action-button svg-button" data-ng-click="clearSwitchboard()">
+                <i class="fa fa-trash-o fa-lg"></i>
+                <span translate>switchboard-organisation-clear-all</span>
+            </span>
+
+            <!--Warning info-->
+            <button class="btn btn-xs btn-warning" data-ng-show="networkWarnings() > 0" data-ng-click="scrollToDeviceError()" >
+                <span>{{networkWarnings()}}</span>
+                <i class="fa fa-warning"></i>
+            </button>
+
+            <!--Zoom buttons-->
+            <div class="switchboard-organisation-zoom-button-area pull-right">
+                <span class="clickable-icon switchboard-organisation-zoom-button svg-button" data-ng-click="dezoom()">
+                    <i class="fa fa-search-minus network-zoom-icon"></i>
+                </span>
+                <div class="switchboard-organisation-zoom-value-area">
+                    <span class="switchboard-organisation-zoom-value">
+                        {{zoomDisplayedValue}} %
+                    </span>
+                </div>
+
+                <span class="clickable-icon switchboard-organisation-zoom-button svg-button" data-ng-click="zoom()">
+                    <i class="fa fa-search-plus network-zoom-icon"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <svg class="svg-container svg-organisation-header" width="0" height="45" viewBox="0 0 0 0" preserveAspectRatio="xMidYMid meet" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <line x1="10" y1="45" x2="1030" y2="45" stroke="#cbcbcb" stroke-width="1" class="switchboard-organisation-level-column-header-bottom-line"></line>
+        <line x1="350" y1="10" x2="350" y2="45" stroke="#cbcbcb" stroke-width="2" stroke-dasharray="10,10" class="switchboard-organisation-level-column-header-separator"></line>
+        <line x1="690" y1="10" x2="690" y2="45" stroke="#cbcbcb" stroke-width="2" stroke-dasharray="10,10" class="switchboard-organisation-level-column-header-separator"></line>
+
+        <text class="switchboard-organisation-level-column-header-label" x="180" y="35" text-anchor="middle" font-size="15px">
+            {{"switchboard-organisation-level-1-header" | translate}}
+        </text>
+        <text class="switchboard-organisation-level-column-header-label" x="520" y="35" text-anchor="middle" font-size="15px">
+            {{"switchboard-organisation-level-2-header" | translate}}
+        </text>
+        <text class="switchboard-organisation-level-column-header-label" x="860" y="35" text-anchor="middle" font-size="15px">
+            {{"switchboard-organisation-level-3-header" | translate}}
+        </text>
+    </svg>
+
+    <div class="switchboard-organisation treeview-panel">
+
+        <svg  class="svg-container svg-organisation-content" width="0" height="0" viewBox="0 0 0 0" preserveAspectRatio="xMidYMid meet" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+
+                <g class="device-container" data-network-type="distribution-template" >
+                    <g class="device-infos-area">
+                        <rect class="bg" x="2" y="30" rx="1" ry="1" width="688" height="85" stroke="#cbcbcb" style="fill:white">
+                        </rect>
+
+                        <image class="device-picture" x="13" y="40" width="70" height="70" xlink:href="images/Logo_SE_Green_RGB-Screen.jpg"></image>
+
+                        <g class="device-text-infos">
+                            <text class="device-references-label svg-button" x="90" y="55" font-family="sans-serif" font-size="16px" font-weight="bold" fill="#87d200">
+                                {{ 'switchboard-organisation-empty-reference-label' | translate }}
+                            </text>
+                            <text  class="device-description-label first-line" x="90" y="80" font-family="sans-serif" font-size="16px" fill="black">
+                                {{ 'switchboard-organisation-empty-description-label' | translate }}
+                            </text>
+                            <text  class="device-description-label second-line" x="90" y="100" font-family="sans-serif" font-size="16px" fill="black">
+                            </text>
+                        </g>
+
+                        <g class="device-intern-actions-panel" >
+                            <!--fa-warning-->
+                            <text class="device-warning-button svg-button" x="13" y="55" font-family="FontAwesome" font-size="22px" fill="#e47f00" style="visibility: hidden">&#xf071;</text>
+                            <!--fa-pencil-->
+                            <text class="device-modify-button svg-button" x="635" y="80" font-family="FontAwesome" font-size="22px" fill="#4fa600">&#xf067;</text>
+                            <!--fa-trash-o-->
+                            <text class="device-delete-button svg-button"  x="662" y="80" font-family="FontAwesome" font-size="22px" fill="#4fa600">&#xf014;</text>
+                        </g>
+
+                    </g>
+                    <g class="device-left-color-banner">
+                        <!--@seedingGreenColor : #87d200-->
+                        <rect x="2" y="30" rx="1" ry="1" width="8" height="85" fill="#87d200">
+                        </rect>
+                    </g>
+
+                    <g class="device-add-children-icon" >
+                        <!--fa-plus-->
+                        <text  x="55" y="137" font-family="FontAwesome" font-size="2em" fill="#42b4e6" class="svg-button">&#xf067;</text>
+                    </g>
+                </g>
+
+                <!-- #region generic template -->
+                <g class="device-container device-drag" data-network-type="generic-template" >
+                    <g class="device-infos-area">
+                        <rect  x="2" y="30" rx="1" ry="1" width="348" height="85" fill="white" stroke="#cbcbcb">
+                        </rect>
+
+                        <image  class="device-picture" x="13" y="40" width="70" height="70" xlink:href="images/Logo_SE_Green_RGB-Screen.jpg"></image>
+                        <g class="device-text-infos">
+
+                            <g class="device-quantity non-draggable-zone svg-button">
+                                <circle class="non-draggable-zone" cx="70" cy="50" r="14" fill="#87d200"></circle>
+                                <!--<rect class="non-draggable-zone" x="90" y="37" rx="20" ry="20" width="26" height="26" fill="#87d200"></rect>-->
+                                <text class="quantity non-draggable-zone" x="70" y="57" font-size="1.4em" fill="white" text-anchor="middle"></text>
+                            </g>
+
+                            <text class="device-references-label non-draggable-zone svg-button" x="90" y="55" font-family="sans-serif" font-size="16px" font-weight="bold" fill="#ff0000">
+                                {{ 'switchboard-organisation-empty-reference-label' | translate }}
+                            </text>
+
+                            <text class="device-basic-information-label first-line" x="90" y="80" font-family="sans-serif" font-size="16px" fill="black">
+                            </text>
+                            <text class="device-basic-information-label second-line" x="90" y="100" font-family="sans-serif" font-size="16px" fill="black">
+                            </text>
+
+                        </g>
+
+                        <g class="device-intern-actions-panel non-draggable-zone" >
+                            <!--fa-warning-->
+                            <text class="device-warning-button non-draggable-zone svg-button" x="13" y="55" font-family="FontAwesome" font-size="22px" fill="#e47f00" style="visibility: hidden">&#xf071;</text>
+                            <!--fa-copy-->
+                            <text class="device-duplicate-button non-draggable-zone svg-button"  x="276" y="58" font-family="FontAwesome" font-size="22px" fill="#4fa600">&#xf0c5;</text>
+                            <!--fa-pencil-->
+                            <text class="device-modify-button non-draggable-zone svg-button"  x="305" y="58" font-family="FontAwesome" font-size="22px" fill="#4fa600">&#xf040;</text>
+                            <!--fa-trash-o-->
+                            <text class="device-delete-button non-draggable-zone svg-button"  x="329" y="58" font-family="FontAwesome" font-size="22px" fill="#4fa600">&#xf014;</text>
+                        </g>
+                    </g>
+                    <g class="device-left-color-banner">
+                        <rect  x="2" y="30" rx="1" ry="1" width="8" height="85" fill="#87d200">
+                        </rect>
+                    </g>
+
+                    <g class="device-add-children-icon non-draggable-zone" >
+                        <line  x1="335" y1="115" x2="335" y2="135" stroke="#cbcbcb" stroke-width="2" cursor="default" class="non-draggable-zone"></line>
+                        <line  x1="335" y1="135" x2="370" y2="135" stroke="#cbcbcb" stroke-width="2" cursor="default" class="non-draggable-zone"></line>
+                        <!--fa-plus-->
+                        <text  x="375" y="147" font-family="FontAwesome" font-size="2em" fill="#42b4e6" class="svg-button non-draggable-zone">&#xf067;</text>
+                    </g>
+
+                    <g class="count" opacity="0.0" style="display:none">
+                        <rect x="2" y="0" width="348" height="20" fill="#0087cd"></rect>
+                        <text class="count" x="175" y="17" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="18px" fill="white"></text>
+                    </g>
+                </g>
+                <!-- endregion -->
+
+                <g class="gridRect" data-row="template">
+                    <rect x="0" y="0" width="0" height="0" stroke="white" stroke-width="1" stroke-opacity="0.2" fill-opacity="0.5" fill="white"></rect>
+                    <text class="xPosition" x="0" y="0" font-size="10" opacity="0.5" text="x="></text>
+                    <text class="yPosition" x="0" y="0" font-size="10" opacity="0.5" text="y="></text>
+                    <text class="gridRow" x="0" y="0" font-size="10" opacity="0.5" text="row="></text>
+                    <text class="gridLevel" x="0" y="0" font-size="10" opacity="0.5" text="level="></text>
+                    <text class="gridDroppable" x="0" y="0" font-size="10" opacity="0.5" text="droppable="></text>
+                    <text class="childIndex" x="0" y="0" font-size="10" opacity="0.5" text="childIndex="></text>
+                    <text class="children" x="0" y="0" font-size="10" opacity="0.5" text="children="></text>
+                </g>
+            </defs>
+
+            <rect x="10" y="0" width="340" height="550" class="switchboard-organisation-level-column"></rect>
+            <line x1="350" y1="0" x2="350" y2="550" stroke="#cbcbcb" stroke-width="2" stroke-dasharray="10,10" class="switchboard-organisation-level-column-separator"></line>
+            <rect x="350" y="0" width="340" height="550" class="switchboard-organisation-level-column"></rect>
+            <line x1="690" y1="0" x2="690" y2="550" stroke="#cbcbcb" stroke-width="2" stroke-dasharray="10,10" class="switchboard-organisation-level-column-separator"></line>
+            <rect x="690" y="0" width="340" height="550" class="switchboard-organisation-level-column"></rect>
+
+            <g class="bottomIncomerButton svg-button">
+                <text  x="80" y="55" font-family="FontAwesome" font-size="2em" fill="#42b4e6">&#xf067;</text>
+                <text  class="add-incomer-label" x="110" y="50" font-size="1em" fill="#000000"></text>
+            </g>
+        </svg>
+    </div>
+</section>

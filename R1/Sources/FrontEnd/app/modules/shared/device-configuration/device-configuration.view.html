@@ -1,0 +1,97 @@
+<div class="device-configuration">
+    <img class="modal-close-button" src="images/close.png" data-ng-click="close()" />
+    <div class="modal-header">
+        <h3 class="modal-title">
+            {{modalTitle}}
+        </h3>
+    </div>
+    <div class="modal-body">
+        <div class="device-configuration-meta-ranges-selection-area">
+
+            <ul class="device-configuration-meta-range-tabs-bar">
+                <li data-ng-repeat="metarange in displayedMetaRanges" class="device-configuration-meta-range-tab" data-ng-class="{selectedMetaRange : selectedMetaRange===metarange}" data-ng-click="selectMetaRange(metarange)">
+                    <a>
+                        {{metarange|translate}}
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="device-configuration-ranges-selection-area">
+                <span data-ng-click="onLeftArrowButtonClick()" data-ng-class="{arrowDisabled : leftArrowDisabled()}" class="arrow-button" data-ng-show="displayedRanges.length > displayedRangeItemsCount"><i class="fa fa-angle-left"></i></span>
+                <div data-ng-repeat="range in displayedRanges" data-ng-if="$index >= firstRangeItemIndex && $index <= lastRangeItemIndex"  data-ng-click="selectRangeItem(range)" class="rangeItem" data-ng-mouseover="range.isHighlighted = true" data-ng-mouseleave="range.isHighlighted = false">
+                    <img class="catalog-picture" data-ng-class="{selected : selectedRangeItem.rangeName === range.rangeName, hovered: range.isHighlighted}" data-ng-src="{{baseUri}}{{range.pictureUrl}}"/>
+                    <div class="two-lines-ellipsed-text">
+                        <span class="catalog-label">{{range.rangeName|translate}}</span>
+                    </div>
+                </div>
+                <span data-ng-click="onRightArrowButtonClick()" data-ng-class="{arrowDisabled : rightArrowDisabled()}" class="arrow-button" data-ng-show="displayedRanges.length > displayedRangeItemsCount"><i class="fa fa-angle-right"></i></span>
+        </div>
+
+        <div class="device-configuration-area">
+            <div class="device-configuration-panel device-configuration-central-panel">
+                <div data-ng-show="productsLoaded">
+                    <div class="product-configuration-top-panel">
+                        <characteristics-selection range="selectedRangeItem" on-products-list-changed="onProductsListChanged" fill-products-list="fillProductsList" hide-clear-button="true" default-product-pack="defaultProductPack"></characteristics-selection>
+                    </div>
+
+                    <div class="loading-indicator-bottom" data-ng-show="!productLoaded">
+                        <span><i class="fa fa-circle-o-notch fa-spin"></i></span>
+                    </div>
+                </div>
+                <div class="loading-indicator" data-ng-show="!productsLoaded">
+                    <span><i class="fa fa-circle-o-notch fa-spin"></i></span>
+                </div>
+            </div>
+
+
+            <div class="device-configuration-bom-panel device-configuration-central-panel">
+                <div class="device-configuration-product-list" data-ng-show="productLoaded">
+                    <ul class="list-group">
+                        <li class="list-group-item" data-ng-repeat="prod in filteredProductsList | orderBy:'getUnitPrice()'">
+                            <product-item product="prod" context="'readonly'"></product-item>
+                        </li>
+                    </ul>
+                </div>
+                <div class="device-advanced-configuration-area" data-ng-show="productsList.length > 0">
+                    <div class="device-advanced-configuration-area-left">
+                        <a data-ng-click="selectAlternativeProductHolder()" data-ng-show="productsList.length > 1 && productLoaded">
+                            <span translate>device-configuration-select-alternative-product</span>
+                        </a>
+                    </div>
+                    <div class="device-advanced-configuration-area-right">
+                        <a data-ng-click="configureAuxiliaries()" data-ng-show="hasCompatibleAuxiliaries && productLoaded">
+                            <span translate>device-configuration-configure-auxiliaries</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <span class="clickable-icon quantity-button fa-stack fa-lg" data-ng-click="decrementQuantity(1)" data-ng-show="productsList.length > 0 && !hasDistribution">
+            <i class="icon-plus-minus-subtract"></i>
+        </span>
+        <input class="form-control product-item-quantity" type="text" maxlength="2" data-ng-model-onblur data-ng-model="currentProductPack.quantity"  data-ng-show="productsList.length > 0 && !hasDistribution"/>
+
+        <span class="clickable-icon quantity-button fa-stack fa-lg" data-ng-click="incrementQuantity(1)" data-ng-show="productsList.length > 0 && !hasDistribution">
+            <i class="icon-plus-minus-add"></i>
+        </span>
+
+        <div class="device-configuration-add-more" data-ng-show="productsList.length > 0 && (requestKey === configureRequestKey)">
+            <input class="form-control device-configuration-add-more" type="checkbox" data-ng-model="addMore" data-ng-click="toggleAddMore()"/>
+            <span translate>device-configuration-add-more-devices</span>
+        </div>
+
+        <button class="btn btn-primary" data-ng-disabled="!productLoaded || productsList.length === 0" data-ng-click="validate()">
+            {{validationLabel}}
+        </button>
+
+        <button class="btn btn-default" data-ng-click="close()" translate>
+            CANCEL
+        </button>
+
+        <button class="btn btn-default" data-ng-click="clearSelectedValues()" translate>
+            configure-eq-clear
+        </button>
+    </div>
+</div>

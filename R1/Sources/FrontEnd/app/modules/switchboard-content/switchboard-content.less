@@ -1,0 +1,79 @@
+@switchboardContentTopPanelHeight: 0px;
+@switchboardContentBottom: 80px;
+@basketLinkHeight: 40px;
+
+.panel-with-internal-padding
+{
+    .panel;
+    padding: 5px;
+}
+
+.vizualize-panel
+{
+    position: absolute;
+    top: @switchboardContentTopPanelHeight;
+    left: @appBodySideMargin;
+    right: @appBodySideMargin;
+    bottom: @switchboardContentBottom;
+}
+
+.product-configuration-panel
+{
+    .vizualize-panel;
+}
+
+.vizualize-panel-outter
+{
+    padding: 0px;
+    overflow: hidden;
+}
+
+.basket-panel
+{
+    .vizualize-panel;
+    top: @switchboardContentTopPanelHeight;
+}
+
+.link-button {
+  margin: @appContentTopMargin @appBigMargin 0px 0px;
+  float: right;
+  position: relative;
+  z-index: 10;
+
+  &:disabled
+  {
+    background-color: @lightGreyColor;
+    border-color: @lightGreyColor;
+  }
+}
+
+.link-basket-button {
+  font-size: 3.5em;
+  margin-top: 35px;
+  width: 110px;
+  color: @trueBlackColor;
+
+  .badge-top {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    .notification-badge {
+      background-color: @ladyFernGreenColor !important;
+      font-size : 15px;
+    }
+  }
+  .badge-bottom {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    .notification-badge {
+      background-color: @skyBlueColor !important;
+      font-size : 15px;
+    }
+  }
+}
+
+.link-configuration-button
+{
+  font-size: 16px;
+}

@@ -1,0 +1,21 @@
+<div class="app-shell" data-ng-controller="drawing-shell">
+    <h1 class="app-main-title"><i class="fa fa-cubes"></i> Drawing management</h1>
+    <section class="app-main-drawings">
+        <div class="projectbar" data-ng-show="!isLandingPage()">
+            <nav class="app-navigation">
+                <div class="navigation-tabs">
+                    <ul>
+                        <li><a href="#/explore" data-ng-class="{active:isActive('/explore')}">Explore</a></li>
+                        <li class="separator" />
+                        <li><a href="#/compose" data-ng-class="{active:isActive('/compose')}">Compose</a></li>
+                        <li class="separator" />
+                        <li><a href="#/test" data-ng-class="{active:isActive('/test')}">Test</a></li>
+                        <li class="separator" />
+                        <li><a href="#/panelling" data-ng-class="{active:isActive('/panelling')}">Panelling</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <section class="app-content" data-ng-view="data-ng-view"></section>
+    </section>
+</div>

@@ -1,0 +1,2140 @@
+[4mInitializing[24m
+Command-line options: [36m--verbose[39m
+
+Reading "Gruntfile.js" Gruntfile...[32mOK[39m
+
+[1mRegistering Gruntfile tasks.[22m
+
+[1mRegistering "grunt-bower-install" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-bower-install\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-bower-install\package.json...[32mOK[39m
+Loading "bower-install.js" tasks...[32mOK[39m
++ [36mbower-install[39m
+
+[1mRegistering "grunt-concurrent" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-concurrent\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-concurrent\package.json...[32mOK[39m
+Loading "concurrent.js" tasks...[32mOK[39m
++ [36mconcurrent[39m
+
+[1mRegistering "grunt-connect-proxy" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-connect-proxy\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-connect-proxy\package.json...[32mOK[39m
+Loading "connect_proxy.js" tasks...[32mOK[39m
++ [36mconfigureProxies[39m
+
+[1mRegistering "grunt-contrib-clean" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-clean\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-clean\package.json...[32mOK[39m
+Loading "clean.js" tasks...[32mOK[39m
++ [36mclean[39m
+
+[1mRegistering "grunt-contrib-coffee" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-coffee\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-coffee\package.json...[32mOK[39m
+Loading "coffee.js" tasks...[32mOK[39m
++ [36mcoffee[39m
+
+[1mRegistering "grunt-contrib-compass" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-compass\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-compass\package.json...[32mOK[39m
+Loading "compass.js" tasks...[32mOK[39m
++ [36mcompass[39m
+
+[1mRegistering "grunt-contrib-compress" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-compress\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-compress\package.json...[32mOK[39m
+Loading "compress.js" tasks...[32mOK[39m
++ [36mcompress[39m
+
+[1mRegistering "grunt-contrib-concat" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-concat\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-concat\package.json...[32mOK[39m
+Loading "concat.js" tasks...[32mOK[39m
++ [36mconcat[39m
+
+[1mRegistering "grunt-contrib-connect" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-connect\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-connect\package.json...[32mOK[39m
+Loading "connect.js" tasks...[32mOK[39m
++ [36mconnect[39m
+
+[1mRegistering "grunt-contrib-copy" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-copy\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-copy\package.json...[32mOK[39m
+Loading "copy.js" tasks...[32mOK[39m
++ [36mcopy[39m
+
+[1mRegistering "grunt-contrib-cssmin" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-cssmin\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-cssmin\package.json...[32mOK[39m
+Loading "cssmin.js" tasks...[32mOK[39m
++ [36mcssmin[39m
+
+[1mRegistering "grunt-contrib-htmlmin" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-htmlmin\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-htmlmin\package.json...[32mOK[39m
+Loading "htmlmin.js" tasks...[32mOK[39m
++ [36mhtmlmin[39m
+
+[1mRegistering "grunt-contrib-jshint" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-jshint\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-jshint\package.json...[32mOK[39m
+Loading "jshint.js" tasks...[32mOK[39m
++ [36mjshint[39m
+
+[1mRegistering "grunt-contrib-less" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-less\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-less\package.json...[32mOK[39m
+Loading "less.js" tasks...[32mOK[39m
++ [36mless[39m
+
+[1mRegistering "grunt-contrib-uglify" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-uglify\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-uglify\package.json...[32mOK[39m
+Loading "uglify.js" tasks...[32mOK[39m
++ [36muglify[39m
+
+[1mRegistering "grunt-contrib-watch" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-watch\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-watch\package.json...[32mOK[39m
+Loading "watch.js" tasks...[32mOK[39m
++ [36mwatch[39m
+
+[1mRegistering "grunt-html2js" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-html2js\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-html2js\package.json...[32mOK[39m
+Loading "html2js.js" tasks...[32mOK[39m
++ [36mhtml2js[39m
+
+[1mRegistering "grunt-karma" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-karma\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-karma\package.json...[32mOK[39m
+Loading "grunt-karma.js" tasks...[32mOK[39m
++ [36mkarma[39m
+
+[1mRegistering "grunt-newer" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-newer\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-newer\package.json...[32mOK[39m
+Loading "newer.js" tasks...[32mOK[39m
++ [36many-newer[39m, [36mnewer[39m, [36mnewer-reconfigure[39m, [36mnewer-timestamp[39m
+
+[1mRegistering "grunt-ngmin" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-ngmin\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-ngmin\package.json...[32mOK[39m
+Loading "ngmin.js" tasks...[32mOK[39m
++ [36mngmin[39m
+
+[1mRegistering "grunt-open" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-open\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-open\package.json...[32mOK[39m
+Loading "open.js" tasks...[32mOK[39m
++ [36mopen[39m
+
+[1mRegistering "grunt-rev" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-rev\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-rev\package.json...[32mOK[39m
+Loading "rev.js" tasks...[32mOK[39m
++ [36mrev[39m
+
+[1mRegistering "grunt-string-replace" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-string-replace\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-string-replace\package.json...[32mOK[39m
+Loading "string-replace.js" tasks...[32mOK[39m
++ [36mstring-replace[39m
+
+[1mRegistering "grunt-svgmin" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-svgmin\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-svgmin\package.json...[32mOK[39m
+Loading "svgmin.js" tasks...[32mOK[39m
++ [36msvgmin[39m
+
+[1mRegistering "grunt-usemin" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-usemin\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-usemin\package.json...[32mOK[39m
+Loading "usemin.js" tasks...[32mOK[39m
++ [36musemin[39m, [36museminPrepare[39m
+
+[1mRegistering "grunt-string-replace" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-string-replace\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-string-replace\package.json...[32mOK[39m
+Loading "string-replace.js" tasks...[32mOK[39m
++ [36mstring-replace[39m
+
+[1mRegistering "grunt-contrib-compress" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-compress\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-compress\package.json...[32mOK[39m
+Loading "compress.js" tasks...[32mOK[39m
++ [36mcompress[39m
+
+[1mRegistering "grunt-http" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-http\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-http\package.json...[32mOK[39m
+Loading "http.js" tasks...[32mOK[39m
++ [36mhttp[39m
+
+[1mRegistering "grunt-shell-spawn" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-shell-spawn\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-shell-spawn\package.json...[32mOK[39m
+Loading "shell.js" tasks...[32mOK[39m
++ [36mshell[39m
+
+[1mRegistering "grunt-html2js" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-html2js\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-html2js\package.json...[32mOK[39m
+Loading "html2js.js" tasks...[32mOK[39m
++ [36mhtml2js[39m
+
+[1mRegistering "grunt-angular-gettext" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-angular-gettext\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-angular-gettext\package.json...[32mOK[39m
+Loading "compile.js" tasks...[32mOK[39m
++ [36mnggettext_compile[39m
+Loading "extract.js" tasks...[32mOK[39m
++ [36mnggettext_extract[39m
+Initializing config...[32mOK[39m
+Loading "Gruntfile.js" tasks...[32mOK[39m
++ [36mbower[39m, [36mbuild[39m, [36mcompDist[39m, [36mcompDistLinux[39m, [36mdefault[39m, [36moptionTest[39m, [36mserve[39m, [36mserver[39m, [36mstartServerForTest[39m, [36mtest[39m, [36mtest-continuous[39m, [36mtest-integration[39m
+
+Running tasks: [36mbuild[39m
+
+[4mRunning "build" task[24m
+
+[4mRunning "clean:dist" (clean) task[24m
+Verifying property [36mclean.dist[39m exists in config...[32mOK[39m
+Files: [36m.tmp[39m, [36mdist/.htaccess[39m, [36mdist/apple-touch-icon-144x144-precomposed.png[39m, [36mdist/apple-touch-icon-72x72-precomposed.png[39m, [36mdist/apple-touch-icon-precomposed.png[39m, [36mdist/drawings.html[39m, [36mdist/favicon.ico[39m, [36mdist/fonts[39m, [36mdist/images[39m, [36mdist/index.html[39m, [36mdist/robots.txt[39m
+Options: [36mforce=false[39m, [36mno-write=false[39m
+Options: [36mforce=false[39m, [36mno-write=false[39m
+Cleaning .tmp...[32mOK[39m
+Cleaning dist/.htaccess...[32mOK[39m
+Cleaning dist/apple-touch-icon-144x144-precomposed.png...[32mOK[39m
+Cleaning dist/apple-touch-icon-72x72-precomposed.png...[32mOK[39m
+Cleaning dist/apple-touch-icon-precomposed.png...[32mOK[39m
+Cleaning dist/drawings.html...[32mOK[39m
+Cleaning dist/favicon.ico...[32mOK[39m
+Cleaning dist/fonts...[32mOK[39m
+Cleaning dist/images...[32mOK[39m
+Cleaning dist/index.html...[32mOK[39m
+Cleaning dist/robots.txt...[32mOK[39m
+
+[4mRunning "copy:saveTemplate" (copy) task[24m
+Verifying property [36mcopy.saveTemplate[39m exists in config...[32mOK[39m
+Files: [36mapp/app/templates/templates.js[39m -> [36m.tmp/app/app/templates/templates.js[39m
+Options: [36mprocessContent=false[39m, [36mprocessContentExclude=[][39m
+Options: [36mprocessContent=false[39m, [36mprocessContentExclude=[][39m
+Copying [36mapp/app/templates/templates.js[39m -> [36m.tmp/app/app/templates/templates.js[39m
+Reading app/app/templates/templates.js...[32mOK[39m
+Writing .tmp/app/app/templates/templates.js...[32mOK[39m
+Copied [36m1[39m files
+
+[4mRunning "nggettext_compile" task[24m
+
+[4mRunning "nggettext_compile:all" (nggettext_compile) task[24m
+Verifying property [36mnggettext_compile.all[39m exists in config...[32mOK[39m
+Files: [36m../../Documents/Data/Global/Translates/frontend_en.po[39m, [36m../../Documents/Data/Global/Translates/frontend_es.po[39m, [36m../../Documents/Data/Global/Translates/frontend_ru.po[39m -> [36mapp/translate/translations.js[39m
+Options: [36m(none)[39m
+Reading ../../Documents/Data/Global/Translates/frontend_en.po...[32mOK[39m
+Reading ../../Documents/Data/Global/Translates/frontend_es.po...[32mOK[39m
+Reading ../../Documents/Data/Global/Translates/frontend_ru.po...[32mOK[39m
+Writing app/translate/translations.js...[32mOK[39m
+
+[4mRunning "html2js" task[24m
+
+[4mRunning "html2js:main" (html2js) task[24m
+Verifying property [36mhtml2js.main[39m exists in config...[32mOK[39m
+Files: [36mapp/modules/admin/admin.home/admin.home.view.html[39m, [36mapp/modules/admin/admin.jsonConfiguration/admin.jsonConfiguration.view.html[39m, [36mapp/modules/admin/admin.logging/admin.logging.view.html[39m, [36mapp/modules/admin/admin.translates/admin.translates.view.html[39m, [36mapp/modules/basket/basket.view.html[39m, [36mapp/modules/bom/bom.full.view.html[39m, [36mapp/modules/bom/bom.view.html[39m, [36mapp/modules/bom/services/bom-dialog.view.html[39m, [36mapp/modules/drawing/drawing.compose/drawing.compose.view.html[39m, [36mapp/modules/drawing/drawing.explore/drawing.explore.view.html[39m, [36mapp/modules/drawing/drawing.panelling/drawing.panelling.view.html[39m, [36mapp/modules/drawing/drawing.shell/drawing.shell.view.html[39m, [36mapp/modules/drawing/drawing.test/drawing.test.view.html[39m, [36mapp/modules/enclosure/enclosure.view.html[39m, [36mapp/modules/enclosure/enclosureFilter.directive.view.html[39m, [36mapp/modules/enclosure/enclosureProductItem.view.html[39m, [36mapp/modules/enclosure/enclosureViewer.view.html[39m, [36mapp/modules/enclosure/enclosureViewerToolbar.directive.view.html[39m, [36mapp/modules/home/home.view.html[39m, [36mapp/modules/product-configuration/product-configuration.view.html[39m, [36mapp/modules/project-context/project-context.view.html[39m, [36mapp/modules/removed-products/removed-products.view.html[39m, [36mapp/modules/shared/add-item-modal/add-item.view.html[39m, [36mapp/modules/shared/alternative-product-selection/alternative-product-selection.view.html[39m, [36mapp/modules/shared/auxiliaries-selection/auxiliaries-selection.view.html[39m, [36mapp/modules/shared/blm-browser/blm-browser.view.html[39m, [36mapp/modules/shared/detailed-device-modal/detailed-device-modal.view.html[39m, [36mapp/modules/shared/device-configuration/device-configuration.view.html[39m, [36mapp/modules/shared/directives/characteristics-selection.directive.view.html[39m, [36mapp/modules/shared/directives/modify-product.directive.view.html[39m, [36mapp/modules/shared/directives/productItem.directive.view.html[39m, [36mapp/modules/shared/discount-editor/discount-editor.view.html[39m, [36mapp/modules/shared/discovers/discovers.view.html[39m, [36mapp/modules/shared/distribution-configuration/distribution-configuration.view.html[39m, [36mapp/modules/shared/edit-profile/editProfileDialog.view.html[39m, [36mapp/modules/shared/enclosure-modification/enclosure-modification.view.html[39m, [36mapp/modules/shared/project-edition/project-edition.view.html[39m, [36mapp/modules/shared/quantity-device-modal/quantity-device-modal.view.html[39m, [36mapp/modules/shared/solution-wishes-edition/solution-wishes-edition.view.html[39m, [36mapp/modules/shared/user-session-timeout/user-session-timeout.view.html[39m, [36mapp/modules/shell/footer.view.html[39m, [36mapp/modules/shell/header.view.html[39m, [36mapp/modules/shell/shell.view.html[39m, [36mapp/modules/smart-panel-wizzard/smart-panel-wizzard.view.html[39m, [36mapp/modules/switchboard-content/switchboard-content.view.html[39m, [36mapp/modules/switchboard-organisation/switchboard-organisation.view.html[39m, [36mapp/modules/theme/theme.view.html[39m, [36mapp/common/dialog/services/actionDialog.view.html[39m, [36mapp/common/dialog/services/choicesDialog.view.html[39m, [36mapp/common/dialog/services/errorDialog.view.html[39m, [36mapp/common/dialog/services/htmlDialog.view.html[39m, [36mapp/common/dialog/services/warningDialog.view.html[39m, [36mapp/common/dialog/services/yesNoDialog.view.html[39m, [36mapp/common/directives/layers.directive.view.html[39m, [36mapp/common/directives/threejsInspector.directive.view.html[39m, [36mapp/dependencies/BLMWebSDK/template/blm-websdk.html[39m -> [36mapp/app/templates/templates.js[39m
+Options: [36mbase="../FrontEnd/app/"[39m, [36mmodule="templates-main"[39m, [36mquoteChar="\""[39m, [36mfileHeaderString=""[39m, [36mfileFooterString=""[39m, [36mindentString="  "[39m, [36mtarget="js"[39m, [36mhtmlmin={"collapseBooleanAttributes":true,"collapseWhitespace":true,"removeAttributeQuotes":true,"removeComments":true,"removeEmptyAttributes":true,"removeRedundantAttributes":true,"removeScriptTypeAttributes":true,"removeStyleLinkTypeAttributes":true}[39m, [36mprocess=false[39m, [36mjade={"pretty":true}[39m, [36msingleModule=false[39m
+Reading app/modules/admin/admin.home/admin.home.view.html...[32mOK[39m
+Reading app/modules/admin/admin.jsonConfiguration/admin.jsonConfiguration.view.html...[32mOK[39m
+Reading app/modules/admin/admin.logging/admin.logging.view.html...[32mOK[39m
+Reading app/modules/admin/admin.translates/admin.translates.view.html...[32mOK[39m
+Reading app/modules/basket/basket.view.html...[32mOK[39m
+Reading app/modules/bom/bom.full.view.html...[32mOK[39m
+Reading app/modules/bom/bom.view.html...[32mOK[39m
+Reading app/modules/bom/services/bom-dialog.view.html...[32mOK[39m
+Reading app/modules/drawing/drawing.compose/drawing.compose.view.html...[32mOK[39m
+Reading app/modules/drawing/drawing.explore/drawing.explore.view.html...[32mOK[39m
+Reading app/modules/drawing/drawing.panelling/drawing.panelling.view.html...[32mOK[39m
+Reading app/modules/drawing/drawing.shell/drawing.shell.view.html...[32mOK[39m
+Reading app/modules/drawing/drawing.test/drawing.test.view.html...[32mOK[39m
+Reading app/modules/enclosure/enclosure.view.html...[32mOK[39m
+Reading app/modules/enclosure/enclosureFilter.directive.view.html...[32mOK[39m
+Reading app/modules/enclosure/enclosureProductItem.view.html...[32mOK[39m
+Reading app/modules/enclosure/enclosureViewer.view.html...[32mOK[39m
+Reading app/modules/enclosure/enclosureViewerToolbar.directive.view.html...[32mOK[39m
+Reading app/modules/home/home.view.html...[32mOK[39m
+Reading app/modules/product-configuration/product-configuration.view.html...[32mOK[39m
+Reading app/modules/project-context/project-context.view.html...[32mOK[39m
+Reading app/modules/removed-products/removed-products.view.html...[32mOK[39m
+Reading app/modules/shared/add-item-modal/add-item.view.html...[32mOK[39m
+Reading app/modules/shared/alternative-product-selection/alternative-product-selection.view.html...[32mOK[39m
+Reading app/modules/shared/auxiliaries-selection/auxiliaries-selection.view.html...[32mOK[39m
+Reading app/modules/shared/blm-browser/blm-browser.view.html...[32mOK[39m
+Reading app/modules/shared/detailed-device-modal/detailed-device-modal.view.html...[32mOK[39m
+Reading app/modules/shared/device-configuration/device-configuration.view.html...[32mOK[39m
+Reading app/modules/shared/directives/characteristics-selection.directive.view.html...[32mOK[39m
+Reading app/modules/shared/directives/modify-product.directive.view.html...[32mOK[39m
+Reading app/modules/shared/directives/productItem.directive.view.html...[32mOK[39m
+Reading app/modules/shared/discount-editor/discount-editor.view.html...[32mOK[39m
+Reading app/modules/shared/discovers/discovers.view.html...[32mOK[39m
+Reading app/modules/shared/distribution-configuration/distribution-configuration.view.html...[32mOK[39m
+Reading app/modules/shared/edit-profile/editProfileDialog.view.html...[32mOK[39m
+Reading app/modules/shared/enclosure-modification/enclosure-modification.view.html...[32mOK[39m
+Reading app/modules/shared/project-edition/project-edition.view.html...[32mOK[39m
+Reading app/modules/shared/quantity-device-modal/quantity-device-modal.view.html...[32mOK[39m
+Reading app/modules/shared/solution-wishes-edition/solution-wishes-edition.view.html...[32mOK[39m
+Reading app/modules/shared/user-session-timeout/user-session-timeout.view.html...[32mOK[39m
+Reading app/modules/shell/footer.view.html...[32mOK[39m
+Reading app/modules/shell/header.view.html...[32mOK[39m
+Reading app/modules/shell/shell.view.html...[32mOK[39m
+Reading app/modules/smart-panel-wizzard/smart-panel-wizzard.view.html...[32mOK[39m
+Reading app/modules/switchboard-content/switchboard-content.view.html...[32mOK[39m
+Reading app/modules/switchboard-organisation/switchboard-organisation.view.html...[32mOK[39m
+Reading app/modules/theme/theme.view.html...[32mOK[39m
+Reading app/common/dialog/services/actionDialog.view.html...[32mOK[39m
+Reading app/common/dialog/services/choicesDialog.view.html...[32mOK[39m
+Reading app/common/dialog/services/errorDialog.view.html...[32mOK[39m
+Reading app/common/dialog/services/htmlDialog.view.html...[32mOK[39m
+Reading app/common/dialog/services/warningDialog.view.html...[32mOK[39m
+Reading app/common/dialog/services/yesNoDialog.view.html...[32mOK[39m
+Reading app/common/directives/layers.directive.view.html...[32mOK[39m
+Reading app/common/directives/threejsInspector.directive.view.html...[32mOK[39m
+Reading app/dependencies/BLMWebSDK/template/blm-websdk.html...[32mOK[39m
+Writing app/app/templates/templates.js...[32mOK[39m
+Successfully converted [32m56[39m html templates to js.
+
+[4mRunning "useminPrepare" task[24m
+
+[4mRunning "useminPrepare:html" (useminPrepare) task[24m
+Verifying property [36museminPrepare.html[39m exists in config...[32mOK[39m
+Files: [36mapp/drawings.html[39m, [36mapp/index.html[39m -> [36mhtml[39m
+Options: [36mdest="dist"[39m
+Going through [36mapp/drawings.html[39m, [36mapp/index.html[39m to update the config
+Looking for build script HTML comment blocks
+
+[1mConfiguration is now:[22m
+
+[1m  concat:[22m
+  { generated: 
+   { files: 
+      [ { dest: [32m'.tmp\\concat\\css\\vendor.css'[39m,
+          src: 
+           [ [32m'app\\dependencies\\bower_dependencies\\toastr\\toastr.css'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\font-awesome\\css\\font-awesome.css'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\animate.css\\animate.css'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\bootstrap\\dist\\css\\bootstrap.min.css'[39m ] },
+        { dest: [32m'.tmp\\concat\\css\\app.css'[39m,
+          src: [ [32m'{.tmp,app}\\css\\app.css'[39m ] },
+        { dest: [32m'.tmp\\concat\\js\\vendor.js'[39m,
+          src: 
+           [ [32m'app\\dependencies\\bower_dependencies\\jquery\\jquery.min.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\angular\\angular.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\bootstrap\\dist\\js\\bootstrap.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\angular-resource\\angular-resource.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\angular-bootstrap\\ui-bootstrap-tpls.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\angular-cookies\\angular-cookies.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\angular-sanitize\\angular-sanitize.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\angular-route\\angular-route.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\angular-animate\\angular-animate.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\angular-gettext\\dist\\angular-gettext.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\angular-base64\\angular-base64.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\angular-spinner\\angular-spinner.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\underscore\\underscore.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\toastr\\toastr.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\moment\\moment.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\angular-local-storage\\angular-local-storage.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\d3\\d3.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\ng-file-upload\\angular-file-upload-all.min.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\bootstrap-filestyle\\src\\bootstrap-filestyle.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\three.js\\three.min.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\jquery-mousewheel-stop-propagation\\mousewheelStopPropagation.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\tween.js\\src\\Tween.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\viewer3d\\dist\\viewer-3d_all_min.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\ngInfiniteScroll\\build\\ng-infinite-scroll.min.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\family-discount-editor\\dist\\family-discount-editor-all-min.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\price-list-manager\\dist\\price-list-manager-all-min.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\web-ui-commons\\src\\country.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\web-ui-commons\\src\\country-select.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\web-ui-commons\\src\\language.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\web-ui-commons\\src\\language-select.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\web-ui-commons\\src\\jobFunction.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\big.js\\big.min.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\spin.js\\spin.js'[39m,
+             [32m'app\\dependencies\\BLMWebSDK\\blm-websdk.js'[39m,
+             [32m'app\\dependencies\\BLMWebSDK\\spimEntityBrowser.js'[39m,
+             [32m'app\\dependencies\\BLMWebSDK\\services\\spim-service.js'[39m,
+             [32m'app\\dependencies\\BLMWebSDK\\services\\user-service.js'[39m ] },
+        { dest: [32m'.tmp\\concat\\js\\drawings.js'[39m,
+          src: 
+           [ [32m'{.tmp,app}\\translate\\translations.js'[39m,
+             [32m'{.tmp,app}\\app\\templates\\templates.js'[39m,
+             [32m'{.tmp,app}\\app\\drawing.js'[39m,
+             [32m'{.tmp,app}\\app\\config\\config.js'[39m,
+             [32m'{.tmp,app}\\common\\config\\config-module.js'[39m,
+             [32m'{.tmp,app}\\common\\config\\constants\\app-constants.js'[39m,
+             [32m'{.tmp,app}\\common\\config\\constants\\api-constants.js'[39m,
+             [32m'{.tmp,app}\\common\\config\\constants\\characteristic-name.js'[39m,
+             [32m'{.tmp,app}\\common\\config\\constants\\range-item-type.js'[39m,
+             [32m'{.tmp,app}\\common\\directives\\directives-module.js'[39m,
+             [32m'{.tmp,app}\\common\\directives\\notificationBadge.directive.js'[39m,
+             [32m'{.tmp,app}\\common\\directives\\focus-me.directive.js'[39m,
+             [32m'{.tmp,app}\\common\\directives\\dropdown-opener.directive.js'[39m,
+             [32m'{.tmp,app}\\common\\directives\\display-price-directive.js'[39m,
+             [32m'{.tmp,app}\\common\\directives\\threejsInspector.directive.js'[39m,
+             [32m'{.tmp,app}\\common\\directives\\layers.directive.js'[39m,
+             [32m'{.tmp,app}\\common\\directives\\imageTooltip.directive.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\helpers-module.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\services\\api-helper-service.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\services\\underscore-service.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\services\\moment-service.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\services\\logger-service.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\services\\string-helper-service.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\services\\keyboard-shortcuts-service.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\services\\admin-service.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\services\\threejs-service.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\services\\auxiliaries-service.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\filters\\filterArrays.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\filters\\formatPrice.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\filters\\formatPercentage.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\filters\\filterSelectedCaract.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\filters\\sortArrays.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\filters\\formatAndTranslateCaract.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\filters\\dimensions.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\filters\\prefixTranslate.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\filters\\unit.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\business-module.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\model-module.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\basket.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\part.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\partPack.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\product.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\project.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\switchboard.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\switchboardPack.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\productPack.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\filter.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\characteristic.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\rangeItem.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\solution.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\distribution.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\network.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\device.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\warning.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\services\\modify-product-service.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\services\\project-service.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\services\\save-load-service.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\services\\backward-compatibility-service.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\services\\default-values-historic-service.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\services\\product-configuration-service.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\services\\phase-to-phase-neutral-service.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\services\\switchboard-content-service.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\services\\switchboard-organisation-service.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\services\\network-service.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\services\\translation-service.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\services\\distribution-service.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\services\\product-configuration-tracking-service.js'[39m,
+             [32m'{.tmp,app}\\common\\rest\\rest-module.js'[39m,
+             [32m'{.tmp,app}\\common\\rest\\services\\range-service.js'[39m,
+             [32m'{.tmp,app}\\common\\rest\\services\\product-configuration-service.js'[39m,
+             [32m'{.tmp,app}\\common\\rest\\services\\application-configuration-service.js'[39m,
+             [32m'{.tmp,app}\\common\\rest\\services\\search-solution-service.js'[39m,
+             [32m'{.tmp,app}\\common\\rest\\services\\product-price-service.js'[39m,
+             [32m'{.tmp,app}\\common\\rest\\services\\partInfo-service.js'[39m,
+             [32m'{.tmp,app}\\common\\dialog\\services\\dialog-service.js'[39m,
+             [32m'{.tmp,app}\\common\\dialog\\services\\errorDialog.js'[39m,
+             [32m'{.tmp,app}\\common\\dialog\\services\\htmlDialog.js'[39m,
+             [32m'{.tmp,app}\\common\\dialog\\services\\warningDialog.js'[39m,
+             [32m'{.tmp,app}\\common\\dialog\\services\\yesNoDialog.js'[39m,
+             [32m'{.tmp,app}\\modules\\drawing\\drawing-service.js'[39m,
+             [32m'{.tmp,app}\\modules\\drawing\\drawing-module.js'[39m,
+             [32m'{.tmp,app}\\modules\\drawing\\drawing.shell\\drawing.shell.js'[39m,
+             [32m'{.tmp,app}\\modules\\drawing\\drawing.explore\\drawing.explore.js'[39m,
+             [32m'{.tmp,app}\\modules\\drawing\\drawing.compose\\drawing.compose.js'[39m,
+             [32m'{.tmp,app}\\modules\\drawing\\drawing.test\\drawing.test.js'[39m,
+             [32m'{.tmp,app}\\modules\\drawing\\drawing.panelling\\drawing.panelling.js'[39m,
+             [32m'{.tmp,app}\\common\\tracking\\tracking-module.js'[39m,
+             [32m'{.tmp,app}\\common\\tracking\\config\\tracking-module-config.js'[39m,
+             [32m'{.tmp,app}\\common\\tracking\\services\\google-analytics-service.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\services\\login-service.js'[39m ] },
+        { dest: [32m'.tmp\\concat\\css\\vendor.css'[39m,
+          src: 
+           [ [32m'app\\dependencies\\bower_dependencies\\toastr\\toastr.css'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\font-awesome\\css\\font-awesome.css'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\animate.css\\animate.css'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\edit-profile\\styles\\edit-profile.css'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\family-discount-editor\\dist\\family-discount-editor.css'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\price-list-manager\\dist\\price-list-manager.css'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\jquery-ui\\themes\\ui-lightness\\jquery-ui.min.css'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\bom-ui-component\\dist\\bom-ui-component.css'[39m,
+             [32m'app\\dependencies\\BLMWebSDK\\styles\\blm-websdk.css'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\bootstrap\\dist\\css\\bootstrap.min.css'[39m ] },
+        { dest: [32m'.tmp\\concat\\css\\app.css'[39m,
+          src: [ [32m'{.tmp,app}\\css\\app.css'[39m ] },
+        { dest: [32m'.tmp\\concat\\js\\vendor.js'[39m,
+          src: 
+           [ [32m'app\\dependencies\\bower_dependencies\\jquery\\jquery.min.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\jquery-ui\\jquery-ui.min.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\angular\\angular.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\bootstrap\\dist\\js\\bootstrap.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\angular-resource\\angular-resource.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\angular-bootstrap\\ui-bootstrap-tpls.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\angular-cookies\\angular-cookies.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\angular-sanitize\\angular-sanitize.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\angular-route\\angular-route.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\angular-animate\\angular-animate.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\angular-gettext\\dist\\angular-gettext.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\angular-base64\\angular-base64.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\angular-spinner\\angular-spinner.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\underscore\\underscore.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\toastr\\toastr.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\moment\\moment.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\angular-local-storage\\angular-local-storage.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\d3\\d3.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\ng-file-upload\\angular-file-upload-all.min.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\bootstrap-filestyle\\src\\bootstrap-filestyle.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\three.js\\three.min.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\jquery-mousewheel-stop-propagation\\mousewheelStopPropagation.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\tween.js\\src\\Tween.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\viewer3d\\dist\\viewer-3d_all_min.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\ngInfiniteScroll\\build\\ng-infinite-scroll.min.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\family-discount-editor\\dist\\family-discount-editor-all-min.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\js-xls\\dist\\xls.full.min.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\js-xlsx\\dist\\xlsx.full.min.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\price-list-manager\\dist\\price-list-manager-all-min.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\web-ui-commons\\src\\country.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\web-ui-commons\\src\\country-select.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\web-ui-commons\\src\\language.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\web-ui-commons\\src\\language-select.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\web-ui-commons\\src\\jobFunction.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\edit-profile\\scripts\\edit-profile.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\edit-profile\\locales\\translations.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\angular-underscore-module\\angular-underscore-module.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\bom-ui-component\\dist\\bom-ui-component-all-min.js'[39m,
+             [32m'app\\dependencies\\blmwebsdk\\blm-websdk.js'[39m,
+             [32m'app\\dependencies\\blmwebsdk\\spimEntityBrowser.js'[39m,
+             [32m'app\\dependencies\\blmwebsdk\\services\\spim-service.js'[39m,
+             [32m'app\\dependencies\\blmwebsdk\\services\\user-service.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\big.js\\big.min.js'[39m,
+             [32m'app\\dependencies\\bower_dependencies\\spin.js\\spin.js'[39m ] },
+        { dest: [32m'.tmp\\concat\\js\\app.js'[39m,
+          src: 
+           [ [32m'{.tmp,app}\\translate\\translations.js'[39m,
+             [32m'{.tmp,app}\\app\\templates\\templates.js'[39m,
+             [32m'{.tmp,app}\\app\\app.js'[39m,
+             [32m'{.tmp,app}\\app\\config\\config.js'[39m,
+             [32m'{.tmp,app}\\common\\config\\config-module.js'[39m,
+             [32m'{.tmp,app}\\common\\config\\constants\\app-constants.js'[39m,
+             [32m'{.tmp,app}\\common\\config\\constants\\api-constants.js'[39m,
+             [32m'{.tmp,app}\\common\\config\\constants\\characteristic-name.js'[39m,
+             [32m'{.tmp,app}\\common\\config\\constants\\range-item-type.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\helpers-module.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\services\\api-helper-service.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\services\\underscore-service.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\services\\moment-service.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\services\\logger-service.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\services\\string-helper-service.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\services\\keyboard-shortcuts-service.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\services\\admin-service.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\services\\threejs-service.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\services\\browser-detection-helper-service.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\services\\auxiliaries-service.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\services\\network-basic-information-helper-service.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\services\\d3-service.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\filters\\filterArrays.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\filters\\formatPrice.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\filters\\formatPercentage.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\filters\\filterSelectedCaract.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\filters\\sortArrays.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\filters\\formatAndTranslateCaract.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\filters\\dimensions.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\filters\\prefixTranslate.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\filters\\unit.js'[39m,
+             [32m'{.tmp,app}\\common\\directives\\directives-module.js'[39m,
+             [32m'{.tmp,app}\\common\\directives\\notificationBadge.directive.js'[39m,
+             [32m'{.tmp,app}\\common\\directives\\focus-me.directive.js'[39m,
+             [32m'{.tmp,app}\\common\\directives\\dropdown-opener.directive.js'[39m,
+             [32m'{.tmp,app}\\common\\directives\\display-price-directive.js'[39m,
+             [32m'{.tmp,app}\\common\\directives\\threejsInspector.directive.js'[39m,
+             [32m'{.tmp,app}\\common\\directives\\layers.directive.js'[39m,
+             [32m'{.tmp,app}\\common\\directives\\imageTooltip.directive.js'[39m,
+             [32m'{.tmp,app}\\common\\directives\\infoTooltip.directive.js'[39m,
+             [32m'{.tmp,app}\\common\\directives\\ngModelOnblur.directive.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\business-module.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\model-module.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\basket.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\part.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\partPack.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\product.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\project.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\switchboard.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\switchboardPack.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\productPack.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\filter.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\characteristic.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\rangeItem.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\solution.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\distribution.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\network.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\device.js'[39m,
+             [32m'{.tmp,app}\\common\\model\\factories\\warning.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\services\\modify-product-service.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\services\\project-service.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\services\\save-load-service.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\services\\backward-compatibility-service.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\services\\default-values-historic-service.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\services\\product-configuration-service.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\services\\phase-to-phase-neutral-service.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\services\\switchboard-content-service.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\services\\switchboard-organisation-service.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\services\\network-service.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\services\\translation-service.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\services\\distribution-service.js'[39m,
+             [32m'{.tmp,app}\\common\\rest\\rest-module.js'[39m,
+             [32m'{.tmp,app}\\common\\rest\\services\\range-service.js'[39m,
+             [32m'{.tmp,app}\\common\\rest\\services\\product-configuration-service.js'[39m,
+             [32m'{.tmp,app}\\common\\rest\\services\\application-configuration-service.js'[39m,
+             [32m'{.tmp,app}\\common\\rest\\services\\search-solution-service.js'[39m,
+             [32m'{.tmp,app}\\common\\rest\\services\\product-price-service.js'[39m,
+             [32m'{.tmp,app}\\common\\rest\\services\\partInfo-service.js'[39m,
+             [32m'{.tmp,app}\\common\\rest\\services\\smart-panel-service.js'[39m,
+             [32m'{.tmp,app}\\common\\rest\\services\\discovers-service.js'[39m,
+             [32m'{.tmp,app}\\common\\dialog\\services\\dialog-service.js'[39m,
+             [32m'{.tmp,app}\\common\\dialog\\services\\errorDialog.js'[39m,
+             [32m'{.tmp,app}\\common\\dialog\\services\\htmlDialog.js'[39m,
+             [32m'{.tmp,app}\\common\\dialog\\services\\warningDialog.js'[39m,
+             [32m'{.tmp,app}\\common\\dialog\\services\\yesNoDialog.js'[39m,
+             [32m'{.tmp,app}\\common\\dialog\\services\\choicesDialog.js'[39m,
+             [32m'{.tmp,app}\\common\\dialog\\services\\actionDialog.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\shared-module.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\directives\\characteristics-selection.directive.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\directives\\modify-product.directive.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\directives\\productItem.directive.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\discount-editor\\discount-editor.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\discount-editor\\discount-editor-service.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\edit-profile\\editProfileDialog.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\edit-profile\\profileService.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\project-edition\\project-edition.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\project-edition\\project-edition-service.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\auxiliaries-selection\\auxiliaries-selection.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\alternative-product-selection\\alternative-product-selection-service.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\alternative-product-selection\\alternative-product-selection.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\auxiliaries-selection\\auxiliaries-selection-service.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\device-configuration\\device-configuration.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\device-configuration\\device-configuration-service.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\enclosure-modification\\enclosure-modification.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\enclosure-modification\\enclosure-modification-service.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\detailed-device-modal\\detailed-device-modal.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\detailed-device-modal\\detailed-device-modal-service.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\distribution-configuration\\distribution-configuration.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\distribution-configuration\\distribution-configuration-service.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\solution-wishes-edition\\solution-wishes-edition.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\quantity-device-modal\\quantity-device-modal.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\quantity-device-modal\\quantity-device-modal-service.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\add-item-modal\\add-item.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\add-item-modal\\add-item.directive.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\add-item-modal\\add-item-service.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\blm-browser\\blm-browser.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\blm-browser\\blm-browser-service.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\user-session-timeout\\user-session-timeout-service.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\user-session-timeout\\user-session-timeout.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\discovers\\discovers-service.js'[39m,
+             [32m'{.tmp,app}\\modules\\shared\\discovers\\discovers.js'[39m,
+             [32m'{.tmp,app}\\modules\\shell\\shell-module.js'[39m,
+             [32m'{.tmp,app}\\modules\\shell\\loadProject.directive.js'[39m,
+             [32m'{.tmp,app}\\modules\\theme\\theme.js'[39m,
+             [32m'{.tmp,app}\\modules\\home\\home.js'[39m,
+             [32m'{.tmp,app}\\modules\\switchboard-content\\switchboard-content.js'[39m,
+             [32m'{.tmp,app}\\modules\\switchboard-organisation\\switchboard-organisation-module.js'[39m,
+             [32m'{.tmp,app}\\modules\\switchboard-organisation\\services\\switchboard-organisation-layout-service.js'[39m,
+             [32m'{.tmp,app}\\modules\\switchboard-organisation\\services\\switchboard-organisation-update-service.js'[39m,
+             [32m'{.tmp,app}\\modules\\switchboard-organisation\\services\\switchboard-organisation-network-flat-array-service.js'[39m,
+             [32m'{.tmp,app}\\modules\\switchboard-organisation\\services\\switchboard-organisation-network-decoration-service.js'[39m,
+             [32m'{.tmp,app}\\modules\\switchboard-organisation\\services\\switchboard-organisation-drag-and-drop-service.js'[39m,
+             [32m'{.tmp,app}\\modules\\switchboard-organisation\\switchboard-organisation.js'[39m,
+             [32m'{.tmp,app}\\modules\\enclosure\\enclosure.js'[39m,
+             [32m'{.tmp,app}\\modules\\enclosure\\enclosureViewer.directive.js'[39m,
+             [32m'{.tmp,app}\\modules\\enclosure\\enclosureFilter.directive.js'[39m,
+             [32m'{.tmp,app}\\modules\\enclosure\\enclosureViewerToolbar.directive.js'[39m,
+             [32m'{.tmp,app}\\modules\\enclosure\\enclosureProductItem.directive.js'[39m,
+             [32m'{.tmp,app}\\modules\\smart-panel-wizzard\\smart-panel-wizzard.js'[39m,
+             [32m'{.tmp,app}\\modules\\smart-panel-wizzard\\smart-panel-wizzard-service.js'[39m,
+             [32m'{.tmp,app}\\modules\\smart-panel-wizzard\\services\\smart-panel-wizzard-smartify-service.js'[39m,
+             [32m'{.tmp,app}\\modules\\removed-products\\removed-products.js'[39m,
+             [32m'{.tmp,app}\\modules\\removed-products\\removed-products-controller.js'[39m,
+             [32m'{.tmp,app}\\modules\\removed-products\\removed-products-service.js'[39m,
+             [32m'{.tmp,app}\\modules\\project-context\\project-context.js'[39m,
+             [32m'{.tmp,app}\\modules\\product-configuration\\product-configuration.js'[39m,
+             [32m'{.tmp,app}\\common\\business\\services\\product-configuration-tracking-service.js'[39m,
+             [32m'{.tmp,app}\\modules\\basket\\basket.js'[39m,
+             [32m'{.tmp,app}\\modules\\bom\\bom.js'[39m,
+             [32m'{.tmp,app}\\modules\\bom\\services\\bom-tracking-service.js'[39m,
+             [32m'{.tmp,app}\\modules\\bom\\services\\bom-dialog.js'[39m,
+             [32m'{.tmp,app}\\modules\\bom\\services\\bom-dialog-service.js'[39m,
+             [32m'{.tmp,app}\\common\\tracking\\tracking-module.js'[39m,
+             [32m'{.tmp,app}\\common\\tracking\\config\\tracking-module-config.js'[39m,
+             [32m'{.tmp,app}\\common\\tracking\\services\\google-analytics-service.js'[39m,
+             [32m'{.tmp,app}\\common\\tracking\\services\\smart-panel-tracking-service.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\services\\login-service.js'[39m,
+             [32m'{.tmp,app}\\common\\helpers\\services\\blm-service.js'[39m ] } ] } }
+
+[1m  uglify:[22m
+  { generated: 
+   { files: 
+      [ { dest: [32m'dist\\js\\vendor.js'[39m,
+          src: [ [32m'.tmp\\concat\\js\\vendor.js'[39m ] },
+        { dest: [32m'dist\\js\\drawings.js'[39m,
+          src: [ [32m'.tmp\\concat\\js\\drawings.js'[39m ] },
+        { dest: [32m'dist\\js\\vendor.js'[39m,
+          src: [ [32m'.tmp\\concat\\js\\vendor.js'[39m ] },
+        { dest: [32m'dist\\js\\app.js'[39m,
+          src: [ [32m'.tmp\\concat\\js\\app.js'[39m ] } ] } }
+
+[1m  cssmin:[22m
+  { generated: 
+   { files: 
+      [ { dest: [32m'dist\\css\\vendor.css'[39m,
+          src: [ [32m'.tmp\\concat\\css\\vendor.css'[39m ] },
+        { dest: [32m'dist\\css\\app.css'[39m,
+          src: [ [32m'.tmp\\concat\\css\\app.css'[39m ] },
+        { dest: [32m'dist\\css\\vendor.css'[39m,
+          src: [ [32m'.tmp\\concat\\css\\vendor.css'[39m ] },
+        { dest: [32m'dist\\css\\app.css'[39m,
+          src: [ [32m'.tmp\\concat\\css\\app.css'[39m ] } ] } }
+
+[4mRunning "concurrent:dist" (concurrent) task[24m
+Verifying property [36mconcurrent.dist[39m exists in config...[32mOK[39m
+Files: [33m[no src][39m -> [36mdist[39m
+Options: [36mlimit=2[39m, [36mlogConcurrentOutput[39m
+[4mInitializing[24m
+Command-line options: [36m--verbose[39m
+[4mInitializing[24m
+Command-line options: [36m--verbose[39m
+
+Reading "Gruntfile.js" Gruntfile...[32mOK[39m
+
+[1mRegistering Gruntfile tasks.[22m
+
+Reading "Gruntfile.js" Gruntfile...[32mOK[39m
+
+[1mRegistering Gruntfile tasks.[22m
+
+[1mRegistering "grunt-bower-install" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-bower-install\package.json...
+[1mRegistering "grunt-bower-install" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-bower-install\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-bower-install\package.json...[32mOK[39m
+[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-bower-install\package.json...[32mOK[39m
+Loading "bower-install.js" tasks...[32mOK[39m
++ [36mbower-install[39m
+
+[1mRegistering "grunt-concurrent" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-concurrent\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-concurrent\package.json...[32mOK[39m
+Loading "bower-install.js" tasks...[32mOK[39m
++ [36mbower-install[39m
+
+[1mRegistering "grunt-concurrent" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-concurrent\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-concurrent\package.json...[32mOK[39m
+Loading "concurrent.js" tasks...[32mOK[39m
+Loading "concurrent.js" tasks...[32mOK[39m
++ [36mconcurrent[39m
+
+[1mRegistering "grunt-connect-proxy" local Npm module tasks.[22m
++ [36mconcurrent[39m
+
+[1mRegistering "grunt-connect-proxy" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-connect-proxy\package.json...Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-connect-proxy\package.json...[32mOK[39m
+[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-connect-proxy\package.json...Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-connect-proxy\package.json...[32mOK[39m
+[32mOK[39m
+Loading "connect_proxy.js" tasks...[32mOK[39m
++ [36mconfigureProxies[39m
+
+[1mRegistering "grunt-contrib-clean" local Npm module tasks.[22m
+Loading "connect_proxy.js" tasks...[32mOK[39m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-clean\package.json...+ [36mconfigureProxies[39m
+
+[1mRegistering "grunt-contrib-clean" local Npm module tasks.[22m
+[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-clean\package.json...Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-clean\package.json...[32mOK[39m
+[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-clean\package.json...[32mOK[39m
+Loading "clean.js" tasks...[32mOK[39m
++ [36mclean[39m
+
+[1mRegistering "grunt-contrib-coffee" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-coffee\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-coffee\package.json...Loading "clean.js" tasks...[32mOK[39m
+[32mOK[39m
++ [36mclean[39m
+
+[1mRegistering "grunt-contrib-coffee" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-coffee\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-coffee\package.json...[32mOK[39m
+Loading "coffee.js" tasks...[32mOK[39m
++ [36mcoffee[39m
+Loading "coffee.js" tasks...
+[32mOK[39m
+[1mRegistering "grunt-contrib-compass" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-compass\package.json...+ [36mcoffee[39m
+
+[1mRegistering "grunt-contrib-compass" local Npm module tasks.[22m
+[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-compass\package.json...[32mOK[39m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-compass\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-compass\package.json...[32mOK[39m
+Loading "compass.js" tasks...[32mOK[39m
+Loading "compass.js" tasks...[32mOK[39m
++ [36mcompass[39m
+
++ [36mcompass[39m
+[1mRegistering "grunt-contrib-compress" local Npm module tasks.[22m
+
+[1mRegistering "grunt-contrib-compress" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-compress\package.json...Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-compress\package.json...[32mOK[39m
+[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-compress\package.json...Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-compress\package.json...[32mOK[39m
+[32mOK[39m
+Loading "compress.js" tasks...[32mOK[39m
++ [36mcompress[39m
+
+[1mRegistering "grunt-contrib-concat" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-concat\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-concat\package.json...[32mOK[39m
+Loading "concat.js" tasks...[32mOK[39m
++ [36mconcat[39m
+
+[1mRegistering "grunt-contrib-connect" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-connect\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-connect\package.json...[32mOK[39m
+Loading "compress.js" tasks...[32mOK[39m
++ [36mcompress[39m
+
+[1mRegistering "grunt-contrib-concat" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-concat\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-concat\package.json...[32mOK[39m
+Loading "concat.js" tasks...[32mOK[39m
++ [36mconcat[39m
+
+[1mRegistering "grunt-contrib-connect" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-connect\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-connect\package.json...[32mOK[39m
+Loading "connect.js" tasks...[32mOK[39m
++ [36mconnect[39m
+
+[1mRegistering "grunt-contrib-copy" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-copy\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-copy\package.json...[32mOK[39m
+Loading "copy.js" tasks...[32mOK[39m
++ [36mcopy[39m
+
+[1mRegistering "grunt-contrib-cssmin" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-cssmin\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-cssmin\package.json...[32mOK[39m
+Loading "connect.js" tasks...[32mOK[39m
++ [36mconnect[39m
+
+[1mRegistering "grunt-contrib-copy" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-copy\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-copy\package.json...[32mOK[39m
+Loading "copy.js" tasks...[32mOK[39m
++ [36mcopy[39m
+
+[1mRegistering "grunt-contrib-cssmin" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-cssmin\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-cssmin\package.json...[32mOK[39m
+Loading "cssmin.js" tasks...[32mOK[39m
++ [36mcssmin[39m
+
+[1mRegistering "grunt-contrib-htmlmin" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-htmlmin\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-htmlmin\package.json...[32mOK[39m
+Loading "cssmin.js" tasks...[32mOK[39m
++ [36mcssmin[39m
+
+[1mRegistering "grunt-contrib-htmlmin" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-htmlmin\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-htmlmin\package.json...[32mOK[39m
+Loading "htmlmin.js" tasks...[32mOK[39m
++ [36mhtmlmin[39m
+
+[1mRegistering "grunt-contrib-jshint" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-jshint\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-jshint\package.json...[32mOK[39m
+Loading "htmlmin.js" tasks...[32mOK[39m
++ [36mhtmlmin[39m
+
+[1mRegistering "grunt-contrib-jshint" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-jshint\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-jshint\package.json...[32mOK[39m
+Loading "jshint.js" tasks...[32mOK[39m
++ [36mjshint[39m
+
+[1mRegistering "grunt-contrib-less" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-less\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-less\package.json...[32mOK[39m
+Loading "jshint.js" tasks...[32mOK[39m
++ [36mjshint[39m
+
+[1mRegistering "grunt-contrib-less" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-less\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-less\package.json...[32mOK[39m
+Loading "less.js" tasks...[32mOK[39m
++ [36mless[39m
+
+[1mRegistering "grunt-contrib-uglify" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-uglify\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-uglify\package.json...[32mOK[39m
+Loading "less.js" tasks...[32mOK[39m
++ [36mless[39m
+
+[1mRegistering "grunt-contrib-uglify" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-uglify\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-uglify\package.json...[32mOK[39m
+Loading "uglify.js" tasks...[32mOK[39m
++ [36muglify[39m
+
+[1mRegistering "grunt-contrib-watch" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-watch\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-watch\package.json...[32mOK[39m
+Loading "uglify.js" tasks...[32mOK[39m
++ [36muglify[39m
+
+[1mRegistering "grunt-contrib-watch" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-watch\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-watch\package.json...[32mOK[39m
+Loading "watch.js" tasks...[32mOK[39m
++ [36mwatch[39m
+
+[1mRegistering "grunt-html2js" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-html2js\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-html2js\package.json...[32mOK[39m
+Loading "watch.js" tasks...[32mOK[39m
++ [36mwatch[39m
+
+[1mRegistering "grunt-html2js" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-html2js\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-html2js\package.json...[32mOK[39m
+Loading "html2js.js" tasks...[32mOK[39m
++ [36mhtml2js[39m
+
+[1mRegistering "grunt-karma" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-karma\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-karma\package.json...[32mOK[39m
+Loading "html2js.js" tasks...[32mOK[39m
++ [36mhtml2js[39m
+
+[1mRegistering "grunt-karma" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-karma\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-karma\package.json...[32mOK[39m
+Loading "grunt-karma.js" tasks...[32mOK[39m
++ [36mkarma[39m
+
+[1mRegistering "grunt-newer" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-newer\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-newer\package.json...[32mOK[39m
+Loading "newer.js" tasks...[32mOK[39m
++ [36many-newer[39m, [36mnewer[39m, [36mnewer-reconfigure[39m, [36mnewer-timestamp[39m
+
+[1mRegistering "grunt-ngmin" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-ngmin\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-ngmin\package.json...Loading "grunt-karma.js" tasks...[32mOK[39m
+[32mOK[39m
++ [36mkarma[39m
+
+[1mRegistering "grunt-newer" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-newer\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-newer\package.json...[32mOK[39m
+Loading "newer.js" tasks...[32mOK[39m
++ [36many-newer[39m, [36mnewer[39m, [36mnewer-reconfigure[39m, [36mnewer-timestamp[39m
+
+[1mRegistering "grunt-ngmin" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-ngmin\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-ngmin\package.json...[32mOK[39m
+Loading "ngmin.js" tasks...[32mOK[39m
++ [36mngmin[39m
+
+[1mRegistering "grunt-open" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-open\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-open\package.json...[32mOK[39m
+Loading "ngmin.js" tasks...[32mOK[39m
++ [36mngmin[39m
+
+[1mRegistering "grunt-open" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-open\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-open\package.json...[32mOK[39m
+Loading "open.js" tasks...[32mOK[39m
++ [36mopen[39m
+
+[1mRegistering "grunt-rev" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-rev\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-rev\package.json...[32mOK[39m
+Loading "rev.js" tasks...[32mOK[39m
++ [36mrev[39m
+
+[1mRegistering "grunt-string-replace" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-string-replace\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-string-replace\package.json...[32mOK[39m
+Loading "open.js" tasks...[32mOK[39m
++ [36mopen[39m
+
+[1mRegistering "grunt-rev" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-rev\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-rev\package.json...[32mOK[39m
+Loading "rev.js" tasks...[32mOK[39m
++ [36mrev[39m
+
+[1mRegistering "grunt-string-replace" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-string-replace\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-string-replace\package.json...[32mOK[39m
+Loading "string-replace.js" tasks...[32mOK[39m
++ [36mstring-replace[39m
+
+[1mRegistering "grunt-svgmin" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-svgmin\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-svgmin\package.json...[32mOK[39m
+Loading "string-replace.js" tasks...[32mOK[39m
++ [36mstring-replace[39m
+
+[1mRegistering "grunt-svgmin" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-svgmin\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-svgmin\package.json...[32mOK[39m
+Loading "svgmin.js" tasks...[32mOK[39m
++ [36msvgmin[39m
+
+[1mRegistering "grunt-usemin" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-usemin\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-usemin\package.json...[32mOK[39m
+Loading "svgmin.js" tasks...[32mOK[39m
++ [36msvgmin[39m
+
+[1mRegistering "grunt-usemin" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-usemin\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-usemin\package.json...[32mOK[39m
+Loading "usemin.js" tasks...[32mOK[39m
++ [36musemin[39m, [36museminPrepare[39m
+Loading "usemin.js" tasks...[32mOK[39m
++ [36musemin[39m, [36museminPrepare[39m
+
+[1mRegistering "grunt-string-replace" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-string-replace\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-string-replace\package.json...[32mOK[39m
+Loading "string-replace.js" tasks...[32mOK[39m
++ [36mstring-replace[39m
+
+[1mRegistering "grunt-contrib-compress" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-compress\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-compress\package.json...[32mOK[39m
+Loading "compress.js" tasks...[32mOK[39m
++ [36mcompress[39m
+
+[1mRegistering "grunt-http" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-http\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-http\package.json...[32mOK[39m
+
+[1mRegistering "grunt-string-replace" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-string-replace\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-string-replace\package.json...[32mOK[39m
+Loading "string-replace.js" tasks...[32mOK[39m
++ [36mstring-replace[39m
+
+[1mRegistering "grunt-contrib-compress" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-compress\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-contrib-compress\package.json...[32mOK[39m
+Loading "compress.js" tasks...[32mOK[39m
++ [36mcompress[39m
+
+[1mRegistering "grunt-http" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-http\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-http\package.json...[32mOK[39m
+Loading "http.js" tasks...[32mOK[39m
++ [36mhttp[39m
+
+[1mRegistering "grunt-shell-spawn" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-shell-spawn\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-shell-spawn\package.json...[32mOK[39m
+Loading "shell.js" tasks...[32mOK[39m
++ [36mshell[39m
+
+[1mRegistering "grunt-html2js" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-html2js\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-html2js\package.json...[32mOK[39m
+Loading "http.js" tasks...[32mOK[39m
++ [36mhttp[39m
+
+[1mRegistering "grunt-shell-spawn" local Npm module tasks.[22m
+Loading "html2js.js" tasks...[32mOK[39m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-shell-spawn\package.json...+ [36mhtml2js[39m
+
+[1mRegistering "grunt-angular-gettext" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-angular-gettext\package.json...[32mOK[39m
+[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-shell-spawn\package.json...Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-angular-gettext\package.json...[32mOK[39m
+[32mOK[39m
+Loading "shell.js" tasks...[32mOK[39m
++ [36mshell[39m
+
+[1mRegistering "grunt-html2js" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-html2js\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-html2js\package.json...[32mOK[39m
+Loading "html2js.js" tasks...[32mOK[39m
++ [36mhtml2js[39m
+
+[1mRegistering "grunt-angular-gettext" local Npm module tasks.[22m
+Reading C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-angular-gettext\package.json...[32mOK[39m
+Parsing C:\QuickQuotation-Git\R1\Sources\FrontEnd\node_modules\grunt-angular-gettext\package.json...[32mOK[39m
+Loading "compile.js" tasks...[32mOK[39m
++ [36mnggettext_compile[39m
+Loading "extract.js" tasks...[32mOK[39m
++ [36mnggettext_extract[39m
+Loading "compile.js" tasks...[32mOK[39m
++ [36mnggettext_compile[39m
+Initializing config...[32mOK[39m
+Loading "extract.js" tasks...[32mOK[39m
++ [36mnggettext_extract[39m
+Loading "Gruntfile.js" tasks...[32mOK[39m
++ [36mbower[39m, [36mbuild[39m, [36mcompDist[39m, [36mcompDistLinux[39m, [36mdefault[39m, [36moptionTest[39m, [36mserve[39m, [36mserver[39m, [36mstartServerForTest[39m, [36mtest[39m, [36mtest-continuous[39m, [36mtest-integration[39m
+
+Initializing config...Running tasks: [36msvgmin[39m
+[32mOK[39m
+Loading "Gruntfile.js" tasks...
+[4mRunning "svgmin" task[24m
+[32mOK[39m
++ [36mbower[39m, [36mbuild[39m, [36mcompDist[39m, [36mcompDistLinux[39m, [36mdefault[39m, [36moptionTest[39m, [36mserve[39m, [36mserver[39m, [36mstartServerForTest[39m, [36mtest[39m, [36mtest-continuous[39m, [36mtest-integration[39m
+
+Running tasks: [36mless[39m
+
+[4mRunning "svgmin:dist" (svgmin) task[24m
+Verifying property [36msvgmin.dist[39m exists in config...
+[4mRunning "less" task[24m
+[32mOK[39m
+
+[4mRunning "less:dist" (less) task[24m
+Verifying property [36mless.dist[39m exists in config...[32mOK[39m
+Files: [36mapp/app/app.less[39m -> [36m.tmp/css/app.css[39m
+Options: [36mstrictImports[39m, [36mrelativeUrls=false[39m, [36msourceMap[39m, [36msourceMapFilename=".tmp/css/app.css.map"[39m, [36msourceMapURL="app.css.map"[39m
+Reading app/app/app.less...[32mOK[39m
+Files: [36mapp/images/fullincomer.svg[39m -> [36mdist/images/fullincomer.svg[39m
+Files: [36mapp/images/fulloutgoer.svg[39m -> [36mdist/images/fulloutgoer.svg[39m
+Options: [36m(none)[39m
+Reading app/images/fullincomer.svg...[32mOK[39m
+✔ app/images/fullincomer.svg (saved 6.3kB 81%)
+Writing dist/images/fullincomer.svg...[32mOK[39m
+Reading app/images/fulloutgoer.svg...[32mOK[39m
+✔ app/images/fulloutgoer.svg (saved 4.0kB 86%)
+Writing dist/images/fulloutgoer.svg...[32mOK[39m
+
+[32mDone, without errors.[39m
+    
+
+Writing .tmp/css/app.css.map...[32mOK[39m
+File .tmp/css/app.css.map created.
+Writing .tmp/css/app.css...[32mOK[39m
+File .tmp/css/app.css created.
+
+[32mDone, without errors.[39m
+    
+
+
+[4mRunning "concat" task[24m
+
+[4mRunning "concat:generated" (concat) task[24m
+Verifying property [36mconcat.generated[39m exists in config...[32mOK[39m
+Files: [36mapp/dependencies/bower_dependencies/toastr/toastr.css[39m, [36mapp/dependencies/bower_dependencies/font-awesome/css/font-awesome.css[39m, [36mapp/dependencies/bower_dependencies/animate.css/animate.css[39m, [36mapp/dependencies/bower_dependencies/bootstrap/dist/css/bootstrap.min.css[39m -> [36m.tmp\concat\css\vendor.css[39m
+Files: [36m.tmp/css/app.css[39m -> [36m.tmp\concat\css\app.css[39m
+Files: [36mapp/dependencies/bower_dependencies/jquery/jquery.min.js[39m, [36mapp/dependencies/bower_dependencies/angular/angular.js[39m, [36mapp/dependencies/bower_dependencies/bootstrap/dist/js/bootstrap.js[39m, [36mapp/dependencies/bower_dependencies/angular-resource/angular-resource.js[39m, [36mapp/dependencies/bower_dependencies/angular-bootstrap/ui-bootstrap-tpls.js[39m, [36mapp/dependencies/bower_dependencies/angular-cookies/angular-cookies.js[39m, [36mapp/dependencies/bower_dependencies/angular-sanitize/angular-sanitize.js[39m, [36mapp/dependencies/bower_dependencies/angular-route/angular-route.js[39m, [36mapp/dependencies/bower_dependencies/angular-animate/angular-animate.js[39m, [36mapp/dependencies/bower_dependencies/angular-gettext/dist/angular-gettext.js[39m, [36mapp/dependencies/bower_dependencies/angular-base64/angular-base64.js[39m, [36mapp/dependencies/bower_dependencies/angular-spinner/angular-spinner.js[39m, [36mapp/dependencies/bower_dependencies/underscore/underscore.js[39m, [36mapp/dependencies/bower_dependencies/toastr/toastr.js[39m, [36mapp/dependencies/bower_dependencies/moment/moment.js[39m, [36mapp/dependencies/bower_dependencies/angular-local-storage/angular-local-storage.js[39m, [36mapp/dependencies/bower_dependencies/d3/d3.js[39m, [36mapp/dependencies/bower_dependencies/ng-file-upload/angular-file-upload-all.min.js[39m, [36mapp/dependencies/bower_dependencies/bootstrap-filestyle/src/bootstrap-filestyle.js[39m, [36mapp/dependencies/bower_dependencies/three.js/three.min.js[39m, [36mapp/dependencies/bower_dependencies/jquery-mousewheel-stop-propagation/mousewheelStopPropagation.js[39m, [36mapp/dependencies/bower_dependencies/tween.js/src/Tween.js[39m, [36mapp/dependencies/bower_dependencies/viewer3d/dist/viewer-3d_all_min.js[39m, [36mapp/dependencies/bower_dependencies/ngInfiniteScroll/build/ng-infinite-scroll.min.js[39m, [36mapp/dependencies/bower_dependencies/family-discount-editor/dist/family-discount-editor-all-min.js[39m, [36mapp/dependencies/bower_dependencies/price-list-manager/dist/price-list-manager-all-min.js[39m, [36mapp/dependencies/bower_dependencies/web-ui-commons/src/country.js[39m, [36mapp/dependencies/bower_dependencies/web-ui-commons/src/country-select.js[39m, [36mapp/dependencies/bower_dependencies/web-ui-commons/src/language.js[39m, [36mapp/dependencies/bower_dependencies/web-ui-commons/src/language-select.js[39m, [36mapp/dependencies/bower_dependencies/web-ui-commons/src/jobFunction.js[39m, [36mapp/dependencies/bower_dependencies/big.js/big.min.js[39m, [36mapp/dependencies/bower_dependencies/spin.js/spin.js[39m, [36mapp/dependencies/BLMWebSDK/blm-websdk.js[39m, [36mapp/dependencies/BLMWebSDK/spimEntityBrowser.js[39m, [36mapp/dependencies/BLMWebSDK/services/spim-service.js[39m, [36mapp/dependencies/BLMWebSDK/services/user-service.js[39m -> [36m.tmp\concat\js\vendor.js[39m
+Files: [36mapp/translate/translations.js[39m, [36mapp/app/templates/templates.js[39m, [36mapp/app/drawing.js[39m, [36mapp/app/config/config.js[39m, [36mapp/common/config/config-module.js[39m, [36mapp/common/config/constants/app-constants.js[39m, [36mapp/common/config/constants/api-constants.js[39m, [36mapp/common/config/constants/characteristic-name.js[39m, [36mapp/common/config/constants/range-item-type.js[39m, [36mapp/common/directives/directives-module.js[39m, [36mapp/common/directives/notificationBadge.directive.js[39m, [36mapp/common/directives/focus-me.directive.js[39m, [36mapp/common/directives/dropdown-opener.directive.js[39m, [36mapp/common/directives/display-price-directive.js[39m, [36mapp/common/directives/threejsInspector.directive.js[39m, [36mapp/common/directives/layers.directive.js[39m, [36mapp/common/directives/imageTooltip.directive.js[39m, [36mapp/common/helpers/helpers-module.js[39m, [36mapp/common/helpers/services/api-helper-service.js[39m, [36mapp/common/helpers/services/underscore-service.js[39m, [36mapp/common/helpers/services/moment-service.js[39m, [36mapp/common/helpers/services/logger-service.js[39m, [36mapp/common/helpers/services/string-helper-service.js[39m, [36mapp/common/helpers/services/keyboard-shortcuts-service.js[39m, [36mapp/common/helpers/services/admin-service.js[39m, [36mapp/common/helpers/services/threejs-service.js[39m, [36mapp/common/helpers/services/auxiliaries-service.js[39m, [36mapp/common/helpers/filters/filterArrays.js[39m, [36mapp/common/helpers/filters/formatPrice.js[39m, [36mapp/common/helpers/filters/formatPercentage.js[39m, [36mapp/common/helpers/filters/filterSelectedCaract.js[39m, [36mapp/common/helpers/filters/sortArrays.js[39m, [36mapp/common/helpers/filters/formatAndTranslateCaract.js[39m, [36mapp/common/helpers/filters/dimensions.js[39m, [36mapp/common/helpers/filters/prefixTranslate.js[39m, [36mapp/common/helpers/filters/unit.js[39m, [36mapp/common/business/business-module.js[39m, [36mapp/common/model/model-module.js[39m, [36mapp/common/model/factories/basket.js[39m, [36mapp/common/model/factories/part.js[39m, [36mapp/common/model/factories/partPack.js[39m, [36mapp/common/model/factories/product.js[39m, [36mapp/common/model/factories/project.js[39m, [36mapp/common/model/factories/switchboard.js[39m, [36mapp/common/model/factories/switchboardPack.js[39m, [36mapp/common/model/factories/productPack.js[39m, [36mapp/common/model/factories/filter.js[39m, [36mapp/common/model/factories/characteristic.js[39m, [36mapp/common/model/factories/rangeItem.js[39m, [36mapp/common/model/factories/solution.js[39m, [36mapp/common/model/factories/distribution.js[39m, [36mapp/common/model/factories/network.js[39m, [36mapp/common/model/factories/device.js[39m, [36mapp/common/model/factories/warning.js[39m, [36mapp/common/business/services/modify-product-service.js[39m, [36mapp/common/business/services/project-service.js[39m, [36mapp/common/business/services/save-load-service.js[39m, [36mapp/common/business/services/backward-compatibility-service.js[39m, [36mapp/common/business/services/default-values-historic-service.js[39m, [36mapp/common/business/services/product-configuration-service.js[39m, [36mapp/common/business/services/phase-to-phase-neutral-service.js[39m, [36mapp/common/business/services/switchboard-content-service.js[39m, [36mapp/common/business/services/switchboard-organisation-service.js[39m, [36mapp/common/business/services/network-service.js[39m, [36mapp/common/business/services/translation-service.js[39m, [36mapp/common/business/services/distribution-service.js[39m, [36mapp/common/business/services/product-configuration-tracking-service.js[39m, [36mapp/common/rest/rest-module.js[39m, [36mapp/common/rest/services/range-service.js[39m, [36mapp/common/rest/services/product-configuration-service.js[39m, [36mapp/common/rest/services/application-configuration-service.js[39m, [36mapp/common/rest/services/search-solution-service.js[39m, [36mapp/common/rest/services/product-price-service.js[39m, [36mapp/common/rest/services/partInfo-service.js[39m, [36mapp/common/dialog/services/dialog-service.js[39m, [36mapp/common/dialog/services/errorDialog.js[39m, [36mapp/common/dialog/services/htmlDialog.js[39m, [36mapp/common/dialog/services/warningDialog.js[39m, [36mapp/common/dialog/services/yesNoDialog.js[39m, [36mapp/modules/drawing/drawing-service.js[39m, [36mapp/modules/drawing/drawing-module.js[39m, [36mapp/modules/drawing/drawing.shell/drawing.shell.js[39m, [36mapp/modules/drawing/drawing.explore/drawing.explore.js[39m, [36mapp/modules/drawing/drawing.compose/drawing.compose.js[39m, [36mapp/modules/drawing/drawing.test/drawing.test.js[39m, [36mapp/modules/drawing/drawing.panelling/drawing.panelling.js[39m, [36mapp/common/tracking/tracking-module.js[39m, [36mapp/common/tracking/config/tracking-module-config.js[39m, [36mapp/common/tracking/services/google-analytics-service.js[39m, [36mapp/common/helpers/services/login-service.js[39m -> [36m.tmp\concat\js\drawings.js[39m
+Files: [36mapp/dependencies/bower_dependencies/toastr/toastr.css[39m, [36mapp/dependencies/bower_dependencies/font-awesome/css/font-awesome.css[39m, [36mapp/dependencies/bower_dependencies/animate.css/animate.css[39m, [36mapp/dependencies/bower_dependencies/edit-profile/styles/edit-profile.css[39m, [36mapp/dependencies/bower_dependencies/family-discount-editor/dist/family-discount-editor.css[39m, [36mapp/dependencies/bower_dependencies/price-list-manager/dist/price-list-manager.css[39m, [36mapp/dependencies/bower_dependencies/jquery-ui/themes/ui-lightness/jquery-ui.min.css[39m, [36mapp/dependencies/bower_dependencies/bom-ui-component/dist/bom-ui-component.css[39m, [36mapp/dependencies/BLMWebSDK/styles/blm-websdk.css[39m, [36mapp/dependencies/bower_dependencies/bootstrap/dist/css/bootstrap.min.css[39m -> [36m.tmp\concat\css\vendor.css[39m
+Files: [36m.tmp/css/app.css[39m -> [36m.tmp\concat\css\app.css[39m
+Files: [36mapp/dependencies/bower_dependencies/jquery/jquery.min.js[39m, [36mapp/dependencies/bower_dependencies/jquery-ui/jquery-ui.min.js[39m, [36mapp/dependencies/bower_dependencies/angular/angular.js[39m, [36mapp/dependencies/bower_dependencies/bootstrap/dist/js/bootstrap.js[39m, [36mapp/dependencies/bower_dependencies/angular-resource/angular-resource.js[39m, [36mapp/dependencies/bower_dependencies/angular-bootstrap/ui-bootstrap-tpls.js[39m, [36mapp/dependencies/bower_dependencies/angular-cookies/angular-cookies.js[39m, [36mapp/dependencies/bower_dependencies/angular-sanitize/angular-sanitize.js[39m, [36mapp/dependencies/bower_dependencies/angular-route/angular-route.js[39m, [36mapp/dependencies/bower_dependencies/angular-animate/angular-animate.js[39m, [36mapp/dependencies/bower_dependencies/angular-gettext/dist/angular-gettext.js[39m, [36mapp/dependencies/bower_dependencies/angular-base64/angular-base64.js[39m, [36mapp/dependencies/bower_dependencies/angular-spinner/angular-spinner.js[39m, [36mapp/dependencies/bower_dependencies/underscore/underscore.js[39m, [36mapp/dependencies/bower_dependencies/toastr/toastr.js[39m, [36mapp/dependencies/bower_dependencies/moment/moment.js[39m, [36mapp/dependencies/bower_dependencies/angular-local-storage/angular-local-storage.js[39m, [36mapp/dependencies/bower_dependencies/d3/d3.js[39m, [36mapp/dependencies/bower_dependencies/ng-file-upload/angular-file-upload-all.min.js[39m, [36mapp/dependencies/bower_dependencies/bootstrap-filestyle/src/bootstrap-filestyle.js[39m, [36mapp/dependencies/bower_dependencies/three.js/three.min.js[39m, [36mapp/dependencies/bower_dependencies/jquery-mousewheel-stop-propagation/mousewheelStopPropagation.js[39m, [36mapp/dependencies/bower_dependencies/tween.js/src/Tween.js[39m, [36mapp/dependencies/bower_dependencies/viewer3d/dist/viewer-3d_all_min.js[39m, [36mapp/dependencies/bower_dependencies/ngInfiniteScroll/build/ng-infinite-scroll.min.js[39m, [36mapp/dependencies/bower_dependencies/family-discount-editor/dist/family-discount-editor-all-min.js[39m, [36mapp/dependencies/bower_dependencies/js-xls/dist/xls.full.min.js[39m, [36mapp/dependencies/bower_dependencies/js-xlsx/dist/xlsx.full.min.js[39m, [36mapp/dependencies/bower_dependencies/price-list-manager/dist/price-list-manager-all-min.js[39m, [36mapp/dependencies/bower_dependencies/web-ui-commons/src/country.js[39m, [36mapp/dependencies/bower_dependencies/web-ui-commons/src/country-select.js[39m, [36mapp/dependencies/bower_dependencies/web-ui-commons/src/language.js[39m, [36mapp/dependencies/bower_dependencies/web-ui-commons/src/language-select.js[39m, [36mapp/dependencies/bower_dependencies/web-ui-commons/src/jobFunction.js[39m, [36mapp/dependencies/bower_dependencies/edit-profile/scripts/edit-profile.js[39m, [36mapp/dependencies/bower_dependencies/edit-profile/locales/translations.js[39m, [36mapp/dependencies/bower_dependencies/angular-underscore-module/angular-underscore-module.js[39m, [36mapp/dependencies/bower_dependencies/bom-ui-component/dist/bom-ui-component-all-min.js[39m, [36mapp/dependencies/blmwebsdk/blm-websdk.js[39m, [36mapp/dependencies/blmwebsdk/spimEntityBrowser.js[39m, [36mapp/dependencies/blmwebsdk/services/spim-service.js[39m, [36mapp/dependencies/blmwebsdk/services/user-service.js[39m, [36mapp/dependencies/bower_dependencies/big.js/big.min.js[39m, [36mapp/dependencies/bower_dependencies/spin.js/spin.js[39m -> [36m.tmp\concat\js\vendor.js[39m
+Files: [36mapp/translate/translations.js[39m, [36mapp/app/templates/templates.js[39m, [36mapp/app/app.js[39m, [36mapp/app/config/config.js[39m, [36mapp/common/config/config-module.js[39m, [36mapp/common/config/constants/app-constants.js[39m, [36mapp/common/config/constants/api-constants.js[39m, [36mapp/common/config/constants/characteristic-name.js[39m, [36mapp/common/config/constants/range-item-type.js[39m, [36mapp/common/helpers/helpers-module.js[39m, [36mapp/common/helpers/services/api-helper-service.js[39m, [36mapp/common/helpers/services/underscore-service.js[39m, [36mapp/common/helpers/services/moment-service.js[39m, [36mapp/common/helpers/services/logger-service.js[39m, [36mapp/common/helpers/services/string-helper-service.js[39m, [36mapp/common/helpers/services/keyboard-shortcuts-service.js[39m, [36mapp/common/helpers/services/admin-service.js[39m, [36mapp/common/helpers/services/threejs-service.js[39m, [36mapp/common/helpers/services/browser-detection-helper-service.js[39m, [36mapp/common/helpers/services/auxiliaries-service.js[39m, [36mapp/common/helpers/services/network-basic-information-helper-service.js[39m, [36mapp/common/helpers/services/d3-service.js[39m, [36mapp/common/helpers/filters/filterArrays.js[39m, [36mapp/common/helpers/filters/formatPrice.js[39m, [36mapp/common/helpers/filters/formatPercentage.js[39m, [36mapp/common/helpers/filters/filterSelectedCaract.js[39m, [36mapp/common/helpers/filters/sortArrays.js[39m, [36mapp/common/helpers/filters/formatAndTranslateCaract.js[39m, [36mapp/common/helpers/filters/dimensions.js[39m, [36mapp/common/helpers/filters/prefixTranslate.js[39m, [36mapp/common/helpers/filters/unit.js[39m, [36mapp/common/directives/directives-module.js[39m, [36mapp/common/directives/notificationBadge.directive.js[39m, [36mapp/common/directives/focus-me.directive.js[39m, [36mapp/common/directives/dropdown-opener.directive.js[39m, [36mapp/common/directives/display-price-directive.js[39m, [36mapp/common/directives/threejsInspector.directive.js[39m, [36mapp/common/directives/layers.directive.js[39m, [36mapp/common/directives/imageTooltip.directive.js[39m, [36mapp/common/directives/infoTooltip.directive.js[39m, [36mapp/common/directives/ngModelOnblur.directive.js[39m, [36mapp/common/business/business-module.js[39m, [36mapp/common/model/model-module.js[39m, [36mapp/common/model/factories/basket.js[39m, [36mapp/common/model/factories/part.js[39m, [36mapp/common/model/factories/partPack.js[39m, [36mapp/common/model/factories/product.js[39m, [36mapp/common/model/factories/project.js[39m, [36mapp/common/model/factories/switchboard.js[39m, [36mapp/common/model/factories/switchboardPack.js[39m, [36mapp/common/model/factories/productPack.js[39m, [36mapp/common/model/factories/filter.js[39m, [36mapp/common/model/factories/characteristic.js[39m, [36mapp/common/model/factories/rangeItem.js[39m, [36mapp/common/model/factories/solution.js[39m, [36mapp/common/model/factories/distribution.js[39m, [36mapp/common/model/factories/network.js[39m, [36mapp/common/model/factories/device.js[39m, [36mapp/common/model/factories/warning.js[39m, [36mapp/common/business/services/modify-product-service.js[39m, [36mapp/common/business/services/project-service.js[39m, [36mapp/common/business/services/save-load-service.js[39m, [36mapp/common/business/services/backward-compatibility-service.js[39m, [36mapp/common/business/services/default-values-historic-service.js[39m, [36mapp/common/business/services/product-configuration-service.js[39m, [36mapp/common/business/services/phase-to-phase-neutral-service.js[39m, [36mapp/common/business/services/switchboard-content-service.js[39m, [36mapp/common/business/services/switchboard-organisation-service.js[39m, [36mapp/common/business/services/network-service.js[39m, [36mapp/common/business/services/translation-service.js[39m, [36mapp/common/business/services/distribution-service.js[39m, [36mapp/common/rest/rest-module.js[39m, [36mapp/common/rest/services/range-service.js[39m, [36mapp/common/rest/services/product-configuration-service.js[39m, [36mapp/common/rest/services/application-configuration-service.js[39m, [36mapp/common/rest/services/search-solution-service.js[39m, [36mapp/common/rest/services/product-price-service.js[39m, [36mapp/common/rest/services/partInfo-service.js[39m, [36mapp/common/rest/services/smart-panel-service.js[39m, [36mapp/common/rest/services/discovers-service.js[39m, [36mapp/common/dialog/services/dialog-service.js[39m, [36mapp/common/dialog/services/errorDialog.js[39m, [36mapp/common/dialog/services/htmlDialog.js[39m, [36mapp/common/dialog/services/warningDialog.js[39m, [36mapp/common/dialog/services/yesNoDialog.js[39m, [36mapp/common/dialog/services/choicesDialog.js[39m, [36mapp/common/dialog/services/actionDialog.js[39m, [36mapp/modules/shared/shared-module.js[39m, [36mapp/modules/shared/directives/characteristics-selection.directive.js[39m, [36mapp/modules/shared/directives/modify-product.directive.js[39m, [36mapp/modules/shared/directives/productItem.directive.js[39m, [36mapp/modules/shared/discount-editor/discount-editor.js[39m, [36mapp/modules/shared/discount-editor/discount-editor-service.js[39m, [36mapp/modules/shared/edit-profile/editProfileDialog.js[39m, [36mapp/modules/shared/edit-profile/profileService.js[39m, [36mapp/modules/shared/project-edition/project-edition.js[39m, [36mapp/modules/shared/project-edition/project-edition-service.js[39m, [36mapp/modules/shared/auxiliaries-selection/auxiliaries-selection.js[39m, [36mapp/modules/shared/alternative-product-selection/alternative-product-selection-service.js[39m, [36mapp/modules/shared/alternative-product-selection/alternative-product-selection.js[39m, [36mapp/modules/shared/auxiliaries-selection/auxiliaries-selection-service.js[39m, [36mapp/modules/shared/device-configuration/device-configuration.js[39m, [36mapp/modules/shared/device-configuration/device-configuration-service.js[39m, [36mapp/modules/shared/enclosure-modification/enclosure-modification.js[39m, [36mapp/modules/shared/enclosure-modification/enclosure-modification-service.js[39m, [36mapp/modules/shared/detailed-device-modal/detailed-device-modal.js[39m, [36mapp/modules/shared/detailed-device-modal/detailed-device-modal-service.js[39m, [36mapp/modules/shared/distribution-configuration/distribution-configuration.js[39m, [36mapp/modules/shared/distribution-configuration/distribution-configuration-service.js[39m, [36mapp/modules/shared/solution-wishes-edition/solution-wishes-edition.js[39m, [36mapp/modules/shared/quantity-device-modal/quantity-device-modal.js[39m, [36mapp/modules/shared/quantity-device-modal/quantity-device-modal-service.js[39m, [36mapp/modules/shared/add-item-modal/add-item.js[39m, [36mapp/modules/shared/add-item-modal/add-item.directive.js[39m, [36mapp/modules/shared/add-item-modal/add-item-service.js[39m, [36mapp/modules/shared/blm-browser/blm-browser.js[39m, [36mapp/modules/shared/blm-browser/blm-browser-service.js[39m, [36mapp/modules/shared/user-session-timeout/user-session-timeout-service.js[39m, [36mapp/modules/shared/user-session-timeout/user-session-timeout.js[39m, [36mapp/modules/shared/discovers/discovers-service.js[39m, [36mapp/modules/shared/discovers/discovers.js[39m, [36mapp/modules/shell/shell-module.js[39m, [36mapp/modules/shell/loadProject.directive.js[39m, [36mapp/modules/theme/theme.js[39m, [36mapp/modules/home/home.js[39m, [36mapp/modules/switchboard-content/switchboard-content.js[39m, [36mapp/modules/switchboard-organisation/switchboard-organisation-module.js[39m, [36mapp/modules/switchboard-organisation/services/switchboard-organisation-layout-service.js[39m, [36mapp/modules/switchboard-organisation/services/switchboard-organisation-update-service.js[39m, [36mapp/modules/switchboard-organisation/services/switchboard-organisation-network-flat-array-service.js[39m, [36mapp/modules/switchboard-organisation/services/switchboard-organisation-network-decoration-service.js[39m, [36mapp/modules/switchboard-organisation/services/switchboard-organisation-drag-and-drop-service.js[39m, [36mapp/modules/switchboard-organisation/switchboard-organisation.js[39m, [36mapp/modules/enclosure/enclosure.js[39m, [36mapp/modules/enclosure/enclosureViewer.directive.js[39m, [36mapp/modules/enclosure/enclosureFilter.directive.js[39m, [36mapp/modules/enclosure/enclosureViewerToolbar.directive.js[39m, [36mapp/modules/enclosure/enclosureProductItem.directive.js[39m, [36mapp/modules/smart-panel-wizzard/smart-panel-wizzard.js[39m, [36mapp/modules/smart-panel-wizzard/smart-panel-wizzard-service.js[39m, [36mapp/modules/smart-panel-wizzard/services/smart-panel-wizzard-smartify-service.js[39m, [36mapp/modules/removed-products/removed-products.js[39m, [36mapp/modules/removed-products/removed-products-controller.js[39m, [36mapp/modules/removed-products/removed-products-service.js[39m, [36mapp/modules/project-context/project-context.js[39m, [36mapp/modules/product-configuration/product-configuration.js[39m, [36mapp/common/business/services/product-configuration-tracking-service.js[39m, [36mapp/modules/basket/basket.js[39m, [36mapp/modules/bom/bom.js[39m, [36mapp/modules/bom/services/bom-tracking-service.js[39m, [36mapp/modules/bom/services/bom-dialog.js[39m, [36mapp/modules/bom/services/bom-dialog-service.js[39m, [36mapp/common/tracking/tracking-module.js[39m, [36mapp/common/tracking/config/tracking-module-config.js[39m, [36mapp/common/tracking/services/google-analytics-service.js[39m, [36mapp/common/tracking/services/smart-panel-tracking-service.js[39m, [36mapp/common/helpers/services/login-service.js[39m, [36mapp/common/helpers/services/blm-service.js[39m -> [36m.tmp\concat\js\app.js[39m
+Options: [36mseparator="\r\n"[39m, [36mbanner=""[39m, [36mfooter=""[39m, [36mstripBanners=false[39m, [36mprocess=false[39m
+Reading app/dependencies/bower_dependencies/toastr/toastr.css...[32mOK[39m
+Reading app/dependencies/bower_dependencies/font-awesome/css/font-awesome.css...[32mOK[39m
+Reading app/dependencies/bower_dependencies/animate.css/animate.css...[32mOK[39m
+Reading app/dependencies/bower_dependencies/bootstrap/dist/css/bootstrap.min.css...[32mOK[39m
+Writing .tmp\concat\css\vendor.css...[32mOK[39m
+File ".tmp\concat\css\vendor.css" created.
+Reading .tmp/css/app.css...[32mOK[39m
+Writing .tmp\concat\css\app.css...[32mOK[39m
+File ".tmp\concat\css\app.css" created.
+Reading app/dependencies/bower_dependencies/jquery/jquery.min.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/angular/angular.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/bootstrap/dist/js/bootstrap.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/angular-resource/angular-resource.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/angular-bootstrap/ui-bootstrap-tpls.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/angular-cookies/angular-cookies.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/angular-sanitize/angular-sanitize.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/angular-route/angular-route.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/angular-animate/angular-animate.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/angular-gettext/dist/angular-gettext.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/angular-base64/angular-base64.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/angular-spinner/angular-spinner.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/underscore/underscore.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/toastr/toastr.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/moment/moment.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/angular-local-storage/angular-local-storage.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/d3/d3.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/ng-file-upload/angular-file-upload-all.min.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/bootstrap-filestyle/src/bootstrap-filestyle.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/three.js/three.min.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/jquery-mousewheel-stop-propagation/mousewheelStopPropagation.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/tween.js/src/Tween.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/viewer3d/dist/viewer-3d_all_min.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/ngInfiniteScroll/build/ng-infinite-scroll.min.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/family-discount-editor/dist/family-discount-editor-all-min.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/price-list-manager/dist/price-list-manager-all-min.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/web-ui-commons/src/country.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/web-ui-commons/src/country-select.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/web-ui-commons/src/language.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/web-ui-commons/src/language-select.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/web-ui-commons/src/jobFunction.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/big.js/big.min.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/spin.js/spin.js...[32mOK[39m
+Reading app/dependencies/BLMWebSDK/blm-websdk.js...[32mOK[39m
+Reading app/dependencies/BLMWebSDK/spimEntityBrowser.js...[32mOK[39m
+Reading app/dependencies/BLMWebSDK/services/spim-service.js...[32mOK[39m
+Reading app/dependencies/BLMWebSDK/services/user-service.js...[32mOK[39m
+Writing .tmp\concat\js\vendor.js...[32mOK[39m
+File ".tmp\concat\js\vendor.js" created.
+Reading app/translate/translations.js...[32mOK[39m
+Reading app/app/templates/templates.js...[32mOK[39m
+Reading app/app/drawing.js...[32mOK[39m
+Reading app/app/config/config.js...[32mOK[39m
+Reading app/common/config/config-module.js...[32mOK[39m
+Reading app/common/config/constants/app-constants.js...[32mOK[39m
+Reading app/common/config/constants/api-constants.js...[32mOK[39m
+Reading app/common/config/constants/characteristic-name.js...[32mOK[39m
+Reading app/common/config/constants/range-item-type.js...[32mOK[39m
+Reading app/common/directives/directives-module.js...[32mOK[39m
+Reading app/common/directives/notificationBadge.directive.js...[32mOK[39m
+Reading app/common/directives/focus-me.directive.js...[32mOK[39m
+Reading app/common/directives/dropdown-opener.directive.js...[32mOK[39m
+Reading app/common/directives/display-price-directive.js...[32mOK[39m
+Reading app/common/directives/threejsInspector.directive.js...[32mOK[39m
+Reading app/common/directives/layers.directive.js...[32mOK[39m
+Reading app/common/directives/imageTooltip.directive.js...[32mOK[39m
+Reading app/common/helpers/helpers-module.js...[32mOK[39m
+Reading app/common/helpers/services/api-helper-service.js...[32mOK[39m
+Reading app/common/helpers/services/underscore-service.js...[32mOK[39m
+Reading app/common/helpers/services/moment-service.js...[32mOK[39m
+Reading app/common/helpers/services/logger-service.js...[32mOK[39m
+Reading app/common/helpers/services/string-helper-service.js...[32mOK[39m
+Reading app/common/helpers/services/keyboard-shortcuts-service.js...[32mOK[39m
+Reading app/common/helpers/services/admin-service.js...[32mOK[39m
+Reading app/common/helpers/services/threejs-service.js...[32mOK[39m
+Reading app/common/helpers/services/auxiliaries-service.js...[32mOK[39m
+Reading app/common/helpers/filters/filterArrays.js...[32mOK[39m
+Reading app/common/helpers/filters/formatPrice.js...[32mOK[39m
+Reading app/common/helpers/filters/formatPercentage.js...[32mOK[39m
+Reading app/common/helpers/filters/filterSelectedCaract.js...[32mOK[39m
+Reading app/common/helpers/filters/sortArrays.js...[32mOK[39m
+Reading app/common/helpers/filters/formatAndTranslateCaract.js...[32mOK[39m
+Reading app/common/helpers/filters/dimensions.js...[32mOK[39m
+Reading app/common/helpers/filters/prefixTranslate.js...[32mOK[39m
+Reading app/common/helpers/filters/unit.js...[32mOK[39m
+Reading app/common/business/business-module.js...[32mOK[39m
+Reading app/common/model/model-module.js...[32mOK[39m
+Reading app/common/model/factories/basket.js...[32mOK[39m
+Reading app/common/model/factories/part.js...[32mOK[39m
+Reading app/common/model/factories/partPack.js...[32mOK[39m
+Reading app/common/model/factories/product.js...[32mOK[39m
+Reading app/common/model/factories/project.js...[32mOK[39m
+Reading app/common/model/factories/switchboard.js...[32mOK[39m
+Reading app/common/model/factories/switchboardPack.js...[32mOK[39m
+Reading app/common/model/factories/productPack.js...[32mOK[39m
+Reading app/common/model/factories/filter.js...[32mOK[39m
+Reading app/common/model/factories/characteristic.js...[32mOK[39m
+Reading app/common/model/factories/rangeItem.js...[32mOK[39m
+Reading app/common/model/factories/solution.js...[32mOK[39m
+Reading app/common/model/factories/distribution.js...[32mOK[39m
+Reading app/common/model/factories/network.js...[32mOK[39m
+Reading app/common/model/factories/device.js...[32mOK[39m
+Reading app/common/model/factories/warning.js...[32mOK[39m
+Reading app/common/business/services/modify-product-service.js...[32mOK[39m
+Reading app/common/business/services/project-service.js...[32mOK[39m
+Reading app/common/business/services/save-load-service.js...[32mOK[39m
+Reading app/common/business/services/backward-compatibility-service.js...[32mOK[39m
+Reading app/common/business/services/default-values-historic-service.js...[32mOK[39m
+Reading app/common/business/services/product-configuration-service.js...[32mOK[39m
+Reading app/common/business/services/phase-to-phase-neutral-service.js...[32mOK[39m
+Reading app/common/business/services/switchboard-content-service.js...[32mOK[39m
+Reading app/common/business/services/switchboard-organisation-service.js...[32mOK[39m
+Reading app/common/business/services/network-service.js...[32mOK[39m
+Reading app/common/business/services/translation-service.js...[32mOK[39m
+Reading app/common/business/services/distribution-service.js...[32mOK[39m
+Reading app/common/business/services/product-configuration-tracking-service.js...[32mOK[39m
+Reading app/common/rest/rest-module.js...[32mOK[39m
+Reading app/common/rest/services/range-service.js...[32mOK[39m
+Reading app/common/rest/services/product-configuration-service.js...[32mOK[39m
+Reading app/common/rest/services/application-configuration-service.js...[32mOK[39m
+Reading app/common/rest/services/search-solution-service.js...[32mOK[39m
+Reading app/common/rest/services/product-price-service.js...[32mOK[39m
+Reading app/common/rest/services/partInfo-service.js...[32mOK[39m
+Reading app/common/dialog/services/dialog-service.js...[32mOK[39m
+Reading app/common/dialog/services/errorDialog.js...[32mOK[39m
+Reading app/common/dialog/services/htmlDialog.js...[32mOK[39m
+Reading app/common/dialog/services/warningDialog.js...[32mOK[39m
+Reading app/common/dialog/services/yesNoDialog.js...[32mOK[39m
+Reading app/modules/drawing/drawing-service.js...[32mOK[39m
+Reading app/modules/drawing/drawing-module.js...[32mOK[39m
+Reading app/modules/drawing/drawing.shell/drawing.shell.js...[32mOK[39m
+Reading app/modules/drawing/drawing.explore/drawing.explore.js...[32mOK[39m
+Reading app/modules/drawing/drawing.compose/drawing.compose.js...[32mOK[39m
+Reading app/modules/drawing/drawing.test/drawing.test.js...[32mOK[39m
+Reading app/modules/drawing/drawing.panelling/drawing.panelling.js...[32mOK[39m
+Reading app/common/tracking/tracking-module.js...[32mOK[39m
+Reading app/common/tracking/config/tracking-module-config.js...[32mOK[39m
+Reading app/common/tracking/services/google-analytics-service.js...[32mOK[39m
+Reading app/common/helpers/services/login-service.js...[32mOK[39m
+Writing .tmp\concat\js\drawings.js...[32mOK[39m
+File ".tmp\concat\js\drawings.js" created.
+Reading app/dependencies/bower_dependencies/toastr/toastr.css...[32mOK[39m
+Reading app/dependencies/bower_dependencies/font-awesome/css/font-awesome.css...[32mOK[39m
+Reading app/dependencies/bower_dependencies/animate.css/animate.css...[32mOK[39m
+Reading app/dependencies/bower_dependencies/edit-profile/styles/edit-profile.css...[32mOK[39m
+Reading app/dependencies/bower_dependencies/family-discount-editor/dist/family-discount-editor.css...[32mOK[39m
+Reading app/dependencies/bower_dependencies/price-list-manager/dist/price-list-manager.css...[32mOK[39m
+Reading app/dependencies/bower_dependencies/jquery-ui/themes/ui-lightness/jquery-ui.min.css...[32mOK[39m
+Reading app/dependencies/bower_dependencies/bom-ui-component/dist/bom-ui-component.css...[32mOK[39m
+Reading app/dependencies/BLMWebSDK/styles/blm-websdk.css...[32mOK[39m
+Reading app/dependencies/bower_dependencies/bootstrap/dist/css/bootstrap.min.css...[32mOK[39m
+Writing .tmp\concat\css\vendor.css...[32mOK[39m
+File ".tmp\concat\css\vendor.css" created.
+Reading .tmp/css/app.css...[32mOK[39m
+Writing .tmp\concat\css\app.css...[32mOK[39m
+File ".tmp\concat\css\app.css" created.
+Reading app/dependencies/bower_dependencies/jquery/jquery.min.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/jquery-ui/jquery-ui.min.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/angular/angular.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/bootstrap/dist/js/bootstrap.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/angular-resource/angular-resource.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/angular-bootstrap/ui-bootstrap-tpls.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/angular-cookies/angular-cookies.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/angular-sanitize/angular-sanitize.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/angular-route/angular-route.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/angular-animate/angular-animate.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/angular-gettext/dist/angular-gettext.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/angular-base64/angular-base64.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/angular-spinner/angular-spinner.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/underscore/underscore.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/toastr/toastr.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/moment/moment.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/angular-local-storage/angular-local-storage.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/d3/d3.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/ng-file-upload/angular-file-upload-all.min.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/bootstrap-filestyle/src/bootstrap-filestyle.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/three.js/three.min.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/jquery-mousewheel-stop-propagation/mousewheelStopPropagation.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/tween.js/src/Tween.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/viewer3d/dist/viewer-3d_all_min.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/ngInfiniteScroll/build/ng-infinite-scroll.min.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/family-discount-editor/dist/family-discount-editor-all-min.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/js-xls/dist/xls.full.min.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/js-xlsx/dist/xlsx.full.min.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/price-list-manager/dist/price-list-manager-all-min.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/web-ui-commons/src/country.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/web-ui-commons/src/country-select.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/web-ui-commons/src/language.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/web-ui-commons/src/language-select.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/web-ui-commons/src/jobFunction.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/edit-profile/scripts/edit-profile.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/edit-profile/locales/translations.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/angular-underscore-module/angular-underscore-module.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/bom-ui-component/dist/bom-ui-component-all-min.js...[32mOK[39m
+Reading app/dependencies/blmwebsdk/blm-websdk.js...[32mOK[39m
+Reading app/dependencies/blmwebsdk/spimEntityBrowser.js...[32mOK[39m
+Reading app/dependencies/blmwebsdk/services/spim-service.js...[32mOK[39m
+Reading app/dependencies/blmwebsdk/services/user-service.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/big.js/big.min.js...[32mOK[39m
+Reading app/dependencies/bower_dependencies/spin.js/spin.js...[32mOK[39m
+Writing .tmp\concat\js\vendor.js...[32mOK[39m
+File ".tmp\concat\js\vendor.js" created.
+Reading app/translate/translations.js...[32mOK[39m
+Reading app/app/templates/templates.js...[32mOK[39m
+Reading app/app/app.js...[32mOK[39m
+Reading app/app/config/config.js...[32mOK[39m
+Reading app/common/config/config-module.js...[32mOK[39m
+Reading app/common/config/constants/app-constants.js...[32mOK[39m
+Reading app/common/config/constants/api-constants.js...[32mOK[39m
+Reading app/common/config/constants/characteristic-name.js...[32mOK[39m
+Reading app/common/config/constants/range-item-type.js...[32mOK[39m
+Reading app/common/helpers/helpers-module.js...[32mOK[39m
+Reading app/common/helpers/services/api-helper-service.js...[32mOK[39m
+Reading app/common/helpers/services/underscore-service.js...[32mOK[39m
+Reading app/common/helpers/services/moment-service.js...[32mOK[39m
+Reading app/common/helpers/services/logger-service.js...[32mOK[39m
+Reading app/common/helpers/services/string-helper-service.js...[32mOK[39m
+Reading app/common/helpers/services/keyboard-shortcuts-service.js...[32mOK[39m
+Reading app/common/helpers/services/admin-service.js...[32mOK[39m
+Reading app/common/helpers/services/threejs-service.js...[32mOK[39m
+Reading app/common/helpers/services/browser-detection-helper-service.js...[32mOK[39m
+Reading app/common/helpers/services/auxiliaries-service.js...[32mOK[39m
+Reading app/common/helpers/services/network-basic-information-helper-service.js...[32mOK[39m
+Reading app/common/helpers/services/d3-service.js...[32mOK[39m
+Reading app/common/helpers/filters/filterArrays.js...[32mOK[39m
+Reading app/common/helpers/filters/formatPrice.js...[32mOK[39m
+Reading app/common/helpers/filters/formatPercentage.js...[32mOK[39m
+Reading app/common/helpers/filters/filterSelectedCaract.js...[32mOK[39m
+Reading app/common/helpers/filters/sortArrays.js...[32mOK[39m
+Reading app/common/helpers/filters/formatAndTranslateCaract.js...[32mOK[39m
+Reading app/common/helpers/filters/dimensions.js...[32mOK[39m
+Reading app/common/helpers/filters/prefixTranslate.js...[32mOK[39m
+Reading app/common/helpers/filters/unit.js...[32mOK[39m
+Reading app/common/directives/directives-module.js...[32mOK[39m
+Reading app/common/directives/notificationBadge.directive.js...[32mOK[39m
+Reading app/common/directives/focus-me.directive.js...[32mOK[39m
+Reading app/common/directives/dropdown-opener.directive.js...[32mOK[39m
+Reading app/common/directives/display-price-directive.js...[32mOK[39m
+Reading app/common/directives/threejsInspector.directive.js...[32mOK[39m
+Reading app/common/directives/layers.directive.js...[32mOK[39m
+Reading app/common/directives/imageTooltip.directive.js...[32mOK[39m
+Reading app/common/directives/infoTooltip.directive.js...[32mOK[39m
+Reading app/common/directives/ngModelOnblur.directive.js...[32mOK[39m
+Reading app/common/business/business-module.js...[32mOK[39m
+Reading app/common/model/model-module.js...[32mOK[39m
+Reading app/common/model/factories/basket.js...[32mOK[39m
+Reading app/common/model/factories/part.js...[32mOK[39m
+Reading app/common/model/factories/partPack.js...[32mOK[39m
+Reading app/common/model/factories/product.js...[32mOK[39m
+Reading app/common/model/factories/project.js...[32mOK[39m
+Reading app/common/model/factories/switchboard.js...[32mOK[39m
+Reading app/common/model/factories/switchboardPack.js...[32mOK[39m
+Reading app/common/model/factories/productPack.js...[32mOK[39m
+Reading app/common/model/factories/filter.js...[32mOK[39m
+Reading app/common/model/factories/characteristic.js...[32mOK[39m
+Reading app/common/model/factories/rangeItem.js...[32mOK[39m
+Reading app/common/model/factories/solution.js...[32mOK[39m
+Reading app/common/model/factories/distribution.js...[32mOK[39m
+Reading app/common/model/factories/network.js...[32mOK[39m
+Reading app/common/model/factories/device.js...[32mOK[39m
+Reading app/common/model/factories/warning.js...[32mOK[39m
+Reading app/common/business/services/modify-product-service.js...[32mOK[39m
+Reading app/common/business/services/project-service.js...[32mOK[39m
+Reading app/common/business/services/save-load-service.js...[32mOK[39m
+Reading app/common/business/services/backward-compatibility-service.js...[32mOK[39m
+Reading app/common/business/services/default-values-historic-service.js...[32mOK[39m
+Reading app/common/business/services/product-configuration-service.js...[32mOK[39m
+Reading app/common/business/services/phase-to-phase-neutral-service.js...[32mOK[39m
+Reading app/common/business/services/switchboard-content-service.js...[32mOK[39m
+Reading app/common/business/services/switchboard-organisation-service.js...[32mOK[39m
+Reading app/common/business/services/network-service.js...[32mOK[39m
+Reading app/common/business/services/translation-service.js...[32mOK[39m
+Reading app/common/business/services/distribution-service.js...[32mOK[39m
+Reading app/common/rest/rest-module.js...[32mOK[39m
+Reading app/common/rest/services/range-service.js...[32mOK[39m
+Reading app/common/rest/services/product-configuration-service.js...[32mOK[39m
+Reading app/common/rest/services/application-configuration-service.js...[32mOK[39m
+Reading app/common/rest/services/search-solution-service.js...[32mOK[39m
+Reading app/common/rest/services/product-price-service.js...[32mOK[39m
+Reading app/common/rest/services/partInfo-service.js...[32mOK[39m
+Reading app/common/rest/services/smart-panel-service.js...[32mOK[39m
+Reading app/common/rest/services/discovers-service.js...[32mOK[39m
+Reading app/common/dialog/services/dialog-service.js...[32mOK[39m
+Reading app/common/dialog/services/errorDialog.js...[32mOK[39m
+Reading app/common/dialog/services/htmlDialog.js...[32mOK[39m
+Reading app/common/dialog/services/warningDialog.js...[32mOK[39m
+Reading app/common/dialog/services/yesNoDialog.js...[32mOK[39m
+Reading app/common/dialog/services/choicesDialog.js...[32mOK[39m
+Reading app/common/dialog/services/actionDialog.js...[32mOK[39m
+Reading app/modules/shared/shared-module.js...[32mOK[39m
+Reading app/modules/shared/directives/characteristics-selection.directive.js...[32mOK[39m
+Reading app/modules/shared/directives/modify-product.directive.js...[32mOK[39m
+Reading app/modules/shared/directives/productItem.directive.js...[32mOK[39m
+Reading app/modules/shared/discount-editor/discount-editor.js...[32mOK[39m
+Reading app/modules/shared/discount-editor/discount-editor-service.js...[32mOK[39m
+Reading app/modules/shared/edit-profile/editProfileDialog.js...[32mOK[39m
+Reading app/modules/shared/edit-profile/profileService.js...[32mOK[39m
+Reading app/modules/shared/project-edition/project-edition.js...[32mOK[39m
+Reading app/modules/shared/project-edition/project-edition-service.js...[32mOK[39m
+Reading app/modules/shared/auxiliaries-selection/auxiliaries-selection.js...[32mOK[39m
+Reading app/modules/shared/alternative-product-selection/alternative-product-selection-service.js...[32mOK[39m
+Reading app/modules/shared/alternative-product-selection/alternative-product-selection.js...[32mOK[39m
+Reading app/modules/shared/auxiliaries-selection/auxiliaries-selection-service.js...[32mOK[39m
+Reading app/modules/shared/device-configuration/device-configuration.js...[32mOK[39m
+Reading app/modules/shared/device-configuration/device-configuration-service.js...[32mOK[39m
+Reading app/modules/shared/enclosure-modification/enclosure-modification.js...[32mOK[39m
+Reading app/modules/shared/enclosure-modification/enclosure-modification-service.js...[32mOK[39m
+Reading app/modules/shared/detailed-device-modal/detailed-device-modal.js...[32mOK[39m
+Reading app/modules/shared/detailed-device-modal/detailed-device-modal-service.js...[32mOK[39m
+Reading app/modules/shared/distribution-configuration/distribution-configuration.js...[32mOK[39m
+Reading app/modules/shared/distribution-configuration/distribution-configuration-service.js...[32mOK[39m
+Reading app/modules/shared/solution-wishes-edition/solution-wishes-edition.js...[32mOK[39m
+Reading app/modules/shared/quantity-device-modal/quantity-device-modal.js...[32mOK[39m
+Reading app/modules/shared/quantity-device-modal/quantity-device-modal-service.js...[32mOK[39m
+Reading app/modules/shared/add-item-modal/add-item.js...[32mOK[39m
+Reading app/modules/shared/add-item-modal/add-item.directive.js...[32mOK[39m
+Reading app/modules/shared/add-item-modal/add-item-service.js...[32mOK[39m
+Reading app/modules/shared/blm-browser/blm-browser.js...[32mOK[39m
+Reading app/modules/shared/blm-browser/blm-browser-service.js...[32mOK[39m
+Reading app/modules/shared/user-session-timeout/user-session-timeout-service.js...[32mOK[39m
+Reading app/modules/shared/user-session-timeout/user-session-timeout.js...[32mOK[39m
+Reading app/modules/shared/discovers/discovers-service.js...[32mOK[39m
+Reading app/modules/shared/discovers/discovers.js...[32mOK[39m
+Reading app/modules/shell/shell-module.js...[32mOK[39m
+Reading app/modules/shell/loadProject.directive.js...[32mOK[39m
+Reading app/modules/theme/theme.js...[32mOK[39m
+Reading app/modules/home/home.js...[32mOK[39m
+Reading app/modules/switchboard-content/switchboard-content.js...[32mOK[39m
+Reading app/modules/switchboard-organisation/switchboard-organisation-module.js...[32mOK[39m
+Reading app/modules/switchboard-organisation/services/switchboard-organisation-layout-service.js...[32mOK[39m
+Reading app/modules/switchboard-organisation/services/switchboard-organisation-update-service.js...[32mOK[39m
+Reading app/modules/switchboard-organisation/services/switchboard-organisation-network-flat-array-service.js...[32mOK[39m
+Reading app/modules/switchboard-organisation/services/switchboard-organisation-network-decoration-service.js...[32mOK[39m
+Reading app/modules/switchboard-organisation/services/switchboard-organisation-drag-and-drop-service.js...[32mOK[39m
+Reading app/modules/switchboard-organisation/switchboard-organisation.js...[32mOK[39m
+Reading app/modules/enclosure/enclosure.js...[32mOK[39m
+Reading app/modules/enclosure/enclosureViewer.directive.js...[32mOK[39m
+Reading app/modules/enclosure/enclosureFilter.directive.js...[32mOK[39m
+Reading app/modules/enclosure/enclosureViewerToolbar.directive.js...[32mOK[39m
+Reading app/modules/enclosure/enclosureProductItem.directive.js...[32mOK[39m
+Reading app/modules/smart-panel-wizzard/smart-panel-wizzard.js...[32mOK[39m
+Reading app/modules/smart-panel-wizzard/smart-panel-wizzard-service.js...[32mOK[39m
+Reading app/modules/smart-panel-wizzard/services/smart-panel-wizzard-smartify-service.js...[32mOK[39m
+Reading app/modules/removed-products/removed-products.js...[32mOK[39m
+Reading app/modules/removed-products/removed-products-controller.js...[32mOK[39m
+Reading app/modules/removed-products/removed-products-service.js...[32mOK[39m
+Reading app/modules/project-context/project-context.js...[32mOK[39m
+Reading app/modules/product-configuration/product-configuration.js...[32mOK[39m
+Reading app/common/business/services/product-configuration-tracking-service.js...[32mOK[39m
+Reading app/modules/basket/basket.js...[32mOK[39m
+Reading app/modules/bom/bom.js...[32mOK[39m
+Reading app/modules/bom/services/bom-tracking-service.js...[32mOK[39m
+Reading app/modules/bom/services/bom-dialog.js...[32mOK[39m
+Reading app/modules/bom/services/bom-dialog-service.js...[32mOK[39m
+Reading app/common/tracking/tracking-module.js...[32mOK[39m
+Reading app/common/tracking/config/tracking-module-config.js...[32mOK[39m
+Reading app/common/tracking/services/google-analytics-service.js...[32mOK[39m
+Reading app/common/tracking/services/smart-panel-tracking-service.js...[32mOK[39m
+Reading app/common/helpers/services/login-service.js...[32mOK[39m
+Reading app/common/helpers/services/blm-service.js...[32mOK[39m
+Writing .tmp\concat\js\app.js...[32mOK[39m
+File ".tmp\concat\js\app.js" created.
+
+[4mRunning "ngmin" task[24m
+
+[4mRunning "ngmin:dist" (ngmin) task[24m
+Verifying property [36mngmin.dist[39m exists in config...[32mOK[39m
+Files: [36m.tmp/concat/js/app.js[39m -> [36m.tmp/concat/js/app.js[39m
+Files: [36m.tmp/concat/js/drawings.js[39m -> [36m.tmp/concat/js/drawings.js[39m
+Files: [36m.tmp/concat/js/vendor.js[39m -> [36m.tmp/concat/js/vendor.js[39m
+ngminifying [36m.tmp/concat/js/app.js[39m, [36m.tmp/concat/js/drawings.js[39m, [36m.tmp/concat/js/vendor.js[39m
+Reading .tmp/concat/js/app.js...[32mOK[39m
+Writing .tmp/concat/js/app.js...[32mOK[39m
+Reading .tmp/concat/js/drawings.js...[32mOK[39m
+Writing .tmp/concat/js/drawings.js...[32mOK[39m
+Reading .tmp/concat/js/vendor.js...[32mOK[39m
+Writing .tmp/concat/js/vendor.js...[32mOK[39m
+
+[4mRunning "copy:dist" (copy) task[24m
+Verifying property [36mcopy.dist[39m exists in config...[32mOK[39m
+Files: [36mapp/apple-touch-icon-144x144-precomposed.png[39m -> [36mdist/apple-touch-icon-144x144-precomposed.png[39m
+Files: [36mapp/apple-touch-icon-72x72-precomposed.png[39m -> [36mdist/apple-touch-icon-72x72-precomposed.png[39m
+Files: [36mapp/apple-touch-icon-precomposed.png[39m -> [36mdist/apple-touch-icon-precomposed.png[39m
+Files: [36mapp/favicon.ico[39m -> [36mdist/favicon.ico[39m
+Files: [36mapp/robots.txt[39m -> [36mdist/robots.txt[39m
+Files: [36mapp/.htaccess[39m -> [36mdist/.htaccess[39m
+Files: [36mapp/drawings.html[39m -> [36mdist/drawings.html[39m
+Files: [36mapp/index.html[39m -> [36mdist/index.html[39m
+Files: [36mapp/fonts/arlrdbd.eot[39m -> [36mdist/fonts/arlrdbd.eot[39m
+Files: [36mapp/fonts/arlrdbd.svg[39m -> [36mdist/fonts/arlrdbd.svg[39m
+Files: [36mapp/fonts/arlrdbd.ttf[39m -> [36mdist/fonts/arlrdbd.ttf[39m
+Files: [36mapp/fonts/arlrdbd.woff[39m -> [36mdist/fonts/arlrdbd.woff[39m
+Files: [36mapp/fonts/plus-minus-font.eot[39m -> [36mdist/fonts/plus-minus-font.eot[39m
+Files: [36mapp/fonts/plus-minus-font.svg[39m -> [36mdist/fonts/plus-minus-font.svg[39m
+Files: [36mapp/fonts/plus-minus-font.ttf[39m -> [36mdist/fonts/plus-minus-font.ttf[39m
+Files: [36mapp/fonts/plus-minus-font.woff[39m -> [36mdist/fonts/plus-minus-font.woff[39m
+Files: [36mapp/images/Logo_SE_Green_RGB-Screen.jpg[39m -> [36mdist/images/Logo_SE_Green_RGB-Screen.jpg[39m
+Files: [36mapp/images/app-footer-logo.png[39m -> [36mdist/images/app-footer-logo.png[39m
+Files: [36mapp/images/app-icon.png[39m -> [36mdist/images/app-icon.png[39m
+Files: [36mapp/images/app-splash.png[39m -> [36mdist/images/app-splash.png[39m
+Files: [36mapp/images/clock.png[39m -> [36mdist/images/clock.png[39m
+Files: [36mapp/images/close.png[39m -> [36mdist/images/close.png[39m
+Files: [36mapp/images/cloud.png[39m -> [36mdist/images/cloud.png[39m
+Files: [36mapp/images/distribution_linergy_DS.png[39m -> [36mdist/images/distribution_linergy_DS.png[39m
+Files: [36mapp/images/distribution_linergy_DX.png[39m -> [36mdist/images/distribution_linergy_DX.png[39m
+Files: [36mapp/images/ecoreallogo.bck.png[39m -> [36mdist/images/ecoreallogo.bck.png[39m
+Files: [36mapp/images/ecoreallogo.png[39m -> [36mdist/images/ecoreallogo.png[39m
+Files: [36mapp/images/edit-profile/facebook-disabled.png[39m -> [36mdist/images/edit-profile/facebook-disabled.png[39m
+Files: [36mapp/images/edit-profile/facebook.png[39m -> [36mdist/images/edit-profile/facebook.png[39m
+Files: [36mapp/images/edit-profile/google-disabled.png[39m -> [36mdist/images/edit-profile/google-disabled.png[39m
+Files: [36mapp/images/edit-profile/google.png[39m -> [36mdist/images/edit-profile/google.png[39m
+Files: [36mapp/images/edit-profile/linkedin-disabled.png[39m -> [36mdist/images/edit-profile/linkedin-disabled.png[39m
+Files: [36mapp/images/edit-profile/linkedin.png[39m -> [36mdist/images/edit-profile/linkedin.png[39m
+Files: [36mapp/images/edit-profile/mini-facebook.png[39m -> [36mdist/images/edit-profile/mini-facebook.png[39m
+Files: [36mapp/images/edit-profile/mini-twitter.png[39m -> [36mdist/images/edit-profile/mini-twitter.png[39m
+Files: [36mapp/images/edit-profile/schneider-logo.png[39m -> [36mdist/images/edit-profile/schneider-logo.png[39m
+Files: [36mapp/images/edit-profile/twitter-disabled.png[39m -> [36mdist/images/edit-profile/twitter-disabled.png[39m
+Files: [36mapp/images/edit-profile/twitter.png[39m -> [36mdist/images/edit-profile/twitter.png[39m
+Files: [36mapp/images/education.png[39m -> [36mdist/images/education.png[39m
+Files: [36mapp/images/euro.png[39m -> [36mdist/images/euro.png[39m
+Files: [36mapp/images/icon.png[39m -> [36mdist/images/icon.png[39m
+Files: [36mapp/images/image_home_page.jpg[39m -> [36mdist/images/image_home_page.jpg[39m
+Files: [36mapp/images/image_landing_page.png[39m -> [36mdist/images/image_landing_page.png[39m
+Files: [36mapp/images/image_landing_page_fullscreen.jpg[39m -> [36mdist/images/image_landing_page_fullscreen.jpg[39m
+Files: [36mapp/images/image_landing_page_fullscreen_resized.jpg[39m -> [36mdist/images/image_landing_page_fullscreen_resized.jpg[39m
+Files: [36mapp/images/isbusy.gif[39m -> [36mdist/images/isbusy.gif[39m
+Files: [36mapp/images/logoEcoreal.png[39m -> [36mdist/images/logoEcoreal.png[39m
+Files: [36mapp/images/project_icon.png[39m -> [36mdist/images/project_icon.png[39m
+Files: [36mapp/images/rouble.png[39m -> [36mdist/images/rouble.png[39m
+Files: [36mapp/images/se-logo-gray-mini.png[39m -> [36mdist/images/se-logo-gray-mini.png[39m
+Files: [36mapp/images/settings.png[39m -> [36mdist/images/settings.png[39m
+Files: [36mapp/images/swb-range.png[39m -> [36mdist/images/swb-range.png[39m
+Files: [36mapp/images/temp_discover.jpg[39m -> [36mdist/images/temp_discover.jpg[39m
+Files: [36mapp/images/user-phantom.jpg[39m -> [36mdist/images/user-phantom.jpg[39m
+Files: [36mapp/dependencies/bower_dependencies/font-awesome/fonts/FontAwesome.otf[39m -> [36mdist/fonts/FontAwesome.otf[39m
+Files: [36mapp/dependencies/bower_dependencies/font-awesome/fonts/fontawesome-webfont.eot[39m -> [36mdist/fonts/fontawesome-webfont.eot[39m
+Files: [36mapp/dependencies/bower_dependencies/font-awesome/fonts/fontawesome-webfont.svg[39m -> [36mdist/fonts/fontawesome-webfont.svg[39m
+Files: [36mapp/dependencies/bower_dependencies/font-awesome/fonts/fontawesome-webfont.ttf[39m -> [36mdist/fonts/fontawesome-webfont.ttf[39m
+Files: [36mapp/dependencies/bower_dependencies/font-awesome/fonts/fontawesome-webfont.woff[39m -> [36mdist/fonts/fontawesome-webfont.woff[39m
+Files: [36mapp/dependencies/bower_dependencies/bootstrap/dist/fonts/glyphicons-halflings-regular.eot[39m -> [36mdist/fonts/glyphicons-halflings-regular.eot[39m
+Files: [36mapp/dependencies/bower_dependencies/bootstrap/dist/fonts/glyphicons-halflings-regular.svg[39m -> [36mdist/fonts/glyphicons-halflings-regular.svg[39m
+Files: [36mapp/dependencies/bower_dependencies/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf[39m -> [36mdist/fonts/glyphicons-halflings-regular.ttf[39m
+Files: [36mapp/dependencies/bower_dependencies/bootstrap/dist/fonts/glyphicons-halflings-regular.woff[39m -> [36mdist/fonts/glyphicons-halflings-regular.woff[39m
+Files: [36mapp/fonts/arlrdbd.eot[39m -> [36mdist/fonts/arlrdbd.eot[39m
+Files: [36mapp/fonts/arlrdbd.svg[39m -> [36mdist/fonts/arlrdbd.svg[39m
+Files: [36mapp/fonts/arlrdbd.ttf[39m -> [36mdist/fonts/arlrdbd.ttf[39m
+Files: [36mapp/fonts/arlrdbd.woff[39m -> [36mdist/fonts/arlrdbd.woff[39m
+Files: [36mapp/fonts/plus-minus-font.eot[39m -> [36mdist/fonts/plus-minus-font.eot[39m
+Files: [36mapp/fonts/plus-minus-font.svg[39m -> [36mdist/fonts/plus-minus-font.svg[39m
+Files: [36mapp/fonts/plus-minus-font.ttf[39m -> [36mdist/fonts/plus-minus-font.ttf[39m
+Files: [36mapp/fonts/plus-minus-font.woff[39m -> [36mdist/fonts/plus-minus-font.woff[39m
+Options: [36mprocessContent=false[39m, [36mprocessContentExclude=[][39m
+Options: [36mprocessContent=false[39m, [36mprocessContentExclude=[][39m
+Copying [36mapp/apple-touch-icon-144x144-precomposed.png[39m -> [36mdist/apple-touch-icon-144x144-precomposed.png[39m
+Reading app/apple-touch-icon-144x144-precomposed.png...[32mOK[39m
+Writing dist/apple-touch-icon-144x144-precomposed.png...[32mOK[39m
+Copying [36mapp/apple-touch-icon-72x72-precomposed.png[39m -> [36mdist/apple-touch-icon-72x72-precomposed.png[39m
+Reading app/apple-touch-icon-72x72-precomposed.png...[32mOK[39m
+Writing dist/apple-touch-icon-72x72-precomposed.png...[32mOK[39m
+Copying [36mapp/apple-touch-icon-precomposed.png[39m -> [36mdist/apple-touch-icon-precomposed.png[39m
+Reading app/apple-touch-icon-precomposed.png...[32mOK[39m
+Writing dist/apple-touch-icon-precomposed.png...[32mOK[39m
+Copying [36mapp/favicon.ico[39m -> [36mdist/favicon.ico[39m
+Reading app/favicon.ico...[32mOK[39m
+Writing dist/favicon.ico...[32mOK[39m
+Copying [36mapp/robots.txt[39m -> [36mdist/robots.txt[39m
+Reading app/robots.txt...[32mOK[39m
+Writing dist/robots.txt...[32mOK[39m
+Copying [36mapp/.htaccess[39m -> [36mdist/.htaccess[39m
+Reading app/.htaccess...[32mOK[39m
+Writing dist/.htaccess...[32mOK[39m
+Copying [36mapp/drawings.html[39m -> [36mdist/drawings.html[39m
+Reading app/drawings.html...[32mOK[39m
+Writing dist/drawings.html...[32mOK[39m
+Copying [36mapp/index.html[39m -> [36mdist/index.html[39m
+Reading app/index.html...[32mOK[39m
+Writing dist/index.html...[32mOK[39m
+Copying [36mapp/fonts/arlrdbd.eot[39m -> [36mdist/fonts/arlrdbd.eot[39m
+Reading app/fonts/arlrdbd.eot...[32mOK[39m
+Writing dist/fonts/arlrdbd.eot...[32mOK[39m
+Copying [36mapp/fonts/arlrdbd.svg[39m -> [36mdist/fonts/arlrdbd.svg[39m
+Reading app/fonts/arlrdbd.svg...[32mOK[39m
+Writing dist/fonts/arlrdbd.svg...[32mOK[39m
+Copying [36mapp/fonts/arlrdbd.ttf[39m -> [36mdist/fonts/arlrdbd.ttf[39m
+Reading app/fonts/arlrdbd.ttf...[32mOK[39m
+Writing dist/fonts/arlrdbd.ttf...[32mOK[39m
+Copying [36mapp/fonts/arlrdbd.woff[39m -> [36mdist/fonts/arlrdbd.woff[39m
+Reading app/fonts/arlrdbd.woff...[32mOK[39m
+Writing dist/fonts/arlrdbd.woff...[32mOK[39m
+Copying [36mapp/fonts/plus-minus-font.eot[39m -> [36mdist/fonts/plus-minus-font.eot[39m
+Reading app/fonts/plus-minus-font.eot...[32mOK[39m
+Writing dist/fonts/plus-minus-font.eot...[32mOK[39m
+Copying [36mapp/fonts/plus-minus-font.svg[39m -> [36mdist/fonts/plus-minus-font.svg[39m
+Reading app/fonts/plus-minus-font.svg...[32mOK[39m
+Writing dist/fonts/plus-minus-font.svg...[32mOK[39m
+Copying [36mapp/fonts/plus-minus-font.ttf[39m -> [36mdist/fonts/plus-minus-font.ttf[39m
+Reading app/fonts/plus-minus-font.ttf...[32mOK[39m
+Writing dist/fonts/plus-minus-font.ttf...[32mOK[39m
+Copying [36mapp/fonts/plus-minus-font.woff[39m -> [36mdist/fonts/plus-minus-font.woff[39m
+Reading app/fonts/plus-minus-font.woff...[32mOK[39m
+Writing dist/fonts/plus-minus-font.woff...[32mOK[39m
+Copying [36mapp/images/Logo_SE_Green_RGB-Screen.jpg[39m -> [36mdist/images/Logo_SE_Green_RGB-Screen.jpg[39m
+Reading app/images/Logo_SE_Green_RGB-Screen.jpg...[32mOK[39m
+Writing dist/images/Logo_SE_Green_RGB-Screen.jpg...[32mOK[39m
+Copying [36mapp/images/app-footer-logo.png[39m -> [36mdist/images/app-footer-logo.png[39m
+Reading app/images/app-footer-logo.png...[32mOK[39m
+Writing dist/images/app-footer-logo.png...[32mOK[39m
+Copying [36mapp/images/app-icon.png[39m -> [36mdist/images/app-icon.png[39m
+Reading app/images/app-icon.png...[32mOK[39m
+Writing dist/images/app-icon.png...[32mOK[39m
+Copying [36mapp/images/app-splash.png[39m -> [36mdist/images/app-splash.png[39m
+Reading app/images/app-splash.png...[32mOK[39m
+Writing dist/images/app-splash.png...[32mOK[39m
+Copying [36mapp/images/clock.png[39m -> [36mdist/images/clock.png[39m
+Reading app/images/clock.png...[32mOK[39m
+Writing dist/images/clock.png...[32mOK[39m
+Copying [36mapp/images/close.png[39m -> [36mdist/images/close.png[39m
+Reading app/images/close.png...[32mOK[39m
+Writing dist/images/close.png...[32mOK[39m
+Copying [36mapp/images/cloud.png[39m -> [36mdist/images/cloud.png[39m
+Reading app/images/cloud.png...[32mOK[39m
+Writing dist/images/cloud.png...[32mOK[39m
+Copying [36mapp/images/distribution_linergy_DS.png[39m -> [36mdist/images/distribution_linergy_DS.png[39m
+Reading app/images/distribution_linergy_DS.png...[32mOK[39m
+Writing dist/images/distribution_linergy_DS.png...[32mOK[39m
+Copying [36mapp/images/distribution_linergy_DX.png[39m -> [36mdist/images/distribution_linergy_DX.png[39m
+Reading app/images/distribution_linergy_DX.png...[32mOK[39m
+Writing dist/images/distribution_linergy_DX.png...[32mOK[39m
+Copying [36mapp/images/ecoreallogo.bck.png[39m -> [36mdist/images/ecoreallogo.bck.png[39m
+Reading app/images/ecoreallogo.bck.png...[32mOK[39m
+Writing dist/images/ecoreallogo.bck.png...[32mOK[39m
+Copying [36mapp/images/ecoreallogo.png[39m -> [36mdist/images/ecoreallogo.png[39m
+Reading app/images/ecoreallogo.png...[32mOK[39m
+Writing dist/images/ecoreallogo.png...[32mOK[39m
+Copying [36mapp/images/edit-profile/facebook-disabled.png[39m -> [36mdist/images/edit-profile/facebook-disabled.png[39m
+Reading app/images/edit-profile/facebook-disabled.png...[32mOK[39m
+Writing dist/images/edit-profile/facebook-disabled.png...[32mOK[39m
+Copying [36mapp/images/edit-profile/facebook.png[39m -> [36mdist/images/edit-profile/facebook.png[39m
+Reading app/images/edit-profile/facebook.png...[32mOK[39m
+Writing dist/images/edit-profile/facebook.png...[32mOK[39m
+Copying [36mapp/images/edit-profile/google-disabled.png[39m -> [36mdist/images/edit-profile/google-disabled.png[39m
+Reading app/images/edit-profile/google-disabled.png...[32mOK[39m
+Writing dist/images/edit-profile/google-disabled.png...[32mOK[39m
+Copying [36mapp/images/edit-profile/google.png[39m -> [36mdist/images/edit-profile/google.png[39m
+Reading app/images/edit-profile/google.png...[32mOK[39m
+Writing dist/images/edit-profile/google.png...[32mOK[39m
+Copying [36mapp/images/edit-profile/linkedin-disabled.png[39m -> [36mdist/images/edit-profile/linkedin-disabled.png[39m
+Reading app/images/edit-profile/linkedin-disabled.png...[32mOK[39m
+Writing dist/images/edit-profile/linkedin-disabled.png...[32mOK[39m
+Copying [36mapp/images/edit-profile/linkedin.png[39m -> [36mdist/images/edit-profile/linkedin.png[39m
+Reading app/images/edit-profile/linkedin.png...[32mOK[39m
+Writing dist/images/edit-profile/linkedin.png...[32mOK[39m
+Copying [36mapp/images/edit-profile/mini-facebook.png[39m -> [36mdist/images/edit-profile/mini-facebook.png[39m
+Reading app/images/edit-profile/mini-facebook.png...[32mOK[39m
+Writing dist/images/edit-profile/mini-facebook.png...[32mOK[39m
+Copying [36mapp/images/edit-profile/mini-twitter.png[39m -> [36mdist/images/edit-profile/mini-twitter.png[39m
+Reading app/images/edit-profile/mini-twitter.png...[32mOK[39m
+Writing dist/images/edit-profile/mini-twitter.png...[32mOK[39m
+Copying [36mapp/images/edit-profile/schneider-logo.png[39m -> [36mdist/images/edit-profile/schneider-logo.png[39m
+Reading app/images/edit-profile/schneider-logo.png...[32mOK[39m
+Writing dist/images/edit-profile/schneider-logo.png...[32mOK[39m
+Copying [36mapp/images/edit-profile/twitter-disabled.png[39m -> [36mdist/images/edit-profile/twitter-disabled.png[39m
+Reading app/images/edit-profile/twitter-disabled.png...[32mOK[39m
+Writing dist/images/edit-profile/twitter-disabled.png...[32mOK[39m
+Copying [36mapp/images/edit-profile/twitter.png[39m -> [36mdist/images/edit-profile/twitter.png[39m
+Reading app/images/edit-profile/twitter.png...[32mOK[39m
+Writing dist/images/edit-profile/twitter.png...[32mOK[39m
+Copying [36mapp/images/education.png[39m -> [36mdist/images/education.png[39m
+Reading app/images/education.png...[32mOK[39m
+Writing dist/images/education.png...[32mOK[39m
+Copying [36mapp/images/euro.png[39m -> [36mdist/images/euro.png[39m
+Reading app/images/euro.png...[32mOK[39m
+Writing dist/images/euro.png...[32mOK[39m
+Copying [36mapp/images/icon.png[39m -> [36mdist/images/icon.png[39m
+Reading app/images/icon.png...[32mOK[39m
+Writing dist/images/icon.png...[32mOK[39m
+Copying [36mapp/images/image_home_page.jpg[39m -> [36mdist/images/image_home_page.jpg[39m
+Reading app/images/image_home_page.jpg...[32mOK[39m
+Writing dist/images/image_home_page.jpg...[32mOK[39m
+Copying [36mapp/images/image_landing_page.png[39m -> [36mdist/images/image_landing_page.png[39m
+Reading app/images/image_landing_page.png...[32mOK[39m
+Writing dist/images/image_landing_page.png...[32mOK[39m
+Copying [36mapp/images/image_landing_page_fullscreen.jpg[39m -> [36mdist/images/image_landing_page_fullscreen.jpg[39m
+Reading app/images/image_landing_page_fullscreen.jpg...[32mOK[39m
+Writing dist/images/image_landing_page_fullscreen.jpg...[32mOK[39m
+Copying [36mapp/images/image_landing_page_fullscreen_resized.jpg[39m -> [36mdist/images/image_landing_page_fullscreen_resized.jpg[39m
+Reading app/images/image_landing_page_fullscreen_resized.jpg...[32mOK[39m
+Writing dist/images/image_landing_page_fullscreen_resized.jpg...[32mOK[39m
+Copying [36mapp/images/isbusy.gif[39m -> [36mdist/images/isbusy.gif[39m
+Reading app/images/isbusy.gif...[32mOK[39m
+Writing dist/images/isbusy.gif...[32mOK[39m
+Copying [36mapp/images/logoEcoreal.png[39m -> [36mdist/images/logoEcoreal.png[39m
+Reading app/images/logoEcoreal.png...[32mOK[39m
+Writing dist/images/logoEcoreal.png...[32mOK[39m
+Copying [36mapp/images/project_icon.png[39m -> [36mdist/images/project_icon.png[39m
+Reading app/images/project_icon.png...[32mOK[39m
+Writing dist/images/project_icon.png...[32mOK[39m
+Copying [36mapp/images/rouble.png[39m -> [36mdist/images/rouble.png[39m
+Reading app/images/rouble.png...[32mOK[39m
+Writing dist/images/rouble.png...[32mOK[39m
+Copying [36mapp/images/se-logo-gray-mini.png[39m -> [36mdist/images/se-logo-gray-mini.png[39m
+Reading app/images/se-logo-gray-mini.png...[32mOK[39m
+Writing dist/images/se-logo-gray-mini.png...[32mOK[39m
+Copying [36mapp/images/settings.png[39m -> [36mdist/images/settings.png[39m
+Reading app/images/settings.png...[32mOK[39m
+Writing dist/images/settings.png...[32mOK[39m
+Copying [36mapp/images/swb-range.png[39m -> [36mdist/images/swb-range.png[39m
+Reading app/images/swb-range.png...[32mOK[39m
+Writing dist/images/swb-range.png...[32mOK[39m
+Copying [36mapp/images/temp_discover.jpg[39m -> [36mdist/images/temp_discover.jpg[39m
+Reading app/images/temp_discover.jpg...[32mOK[39m
+Writing dist/images/temp_discover.jpg...[32mOK[39m
+Copying [36mapp/images/user-phantom.jpg[39m -> [36mdist/images/user-phantom.jpg[39m
+Reading app/images/user-phantom.jpg...[32mOK[39m
+Writing dist/images/user-phantom.jpg...[32mOK[39m
+Copying [36mapp/dependencies/bower_dependencies/font-awesome/fonts/FontAwesome.otf[39m -> [36mdist/fonts/FontAwesome.otf[39m
+Reading app/dependencies/bower_dependencies/font-awesome/fonts/FontAwesome.otf...[32mOK[39m
+Writing dist/fonts/FontAwesome.otf...[32mOK[39m
+Copying [36mapp/dependencies/bower_dependencies/font-awesome/fonts/fontawesome-webfont.eot[39m -> [36mdist/fonts/fontawesome-webfont.eot[39m
+Reading app/dependencies/bower_dependencies/font-awesome/fonts/fontawesome-webfont.eot...[32mOK[39m
+Writing dist/fonts/fontawesome-webfont.eot...[32mOK[39m
+Copying [36mapp/dependencies/bower_dependencies/font-awesome/fonts/fontawesome-webfont.svg[39m -> [36mdist/fonts/fontawesome-webfont.svg[39m
+Reading app/dependencies/bower_dependencies/font-awesome/fonts/fontawesome-webfont.svg...[32mOK[39m
+Writing dist/fonts/fontawesome-webfont.svg...[32mOK[39m
+Copying [36mapp/dependencies/bower_dependencies/font-awesome/fonts/fontawesome-webfont.ttf[39m -> [36mdist/fonts/fontawesome-webfont.ttf[39m
+Reading app/dependencies/bower_dependencies/font-awesome/fonts/fontawesome-webfont.ttf...[32mOK[39m
+Writing dist/fonts/fontawesome-webfont.ttf...[32mOK[39m
+Copying [36mapp/dependencies/bower_dependencies/font-awesome/fonts/fontawesome-webfont.woff[39m -> [36mdist/fonts/fontawesome-webfont.woff[39m
+Reading app/dependencies/bower_dependencies/font-awesome/fonts/fontawesome-webfont.woff...[32mOK[39m
+Writing dist/fonts/fontawesome-webfont.woff...[32mOK[39m
+Copying [36mapp/dependencies/bower_dependencies/bootstrap/dist/fonts/glyphicons-halflings-regular.eot[39m -> [36mdist/fonts/glyphicons-halflings-regular.eot[39m
+Reading app/dependencies/bower_dependencies/bootstrap/dist/fonts/glyphicons-halflings-regular.eot...[32mOK[39m
+Writing dist/fonts/glyphicons-halflings-regular.eot...[32mOK[39m
+Copying [36mapp/dependencies/bower_dependencies/bootstrap/dist/fonts/glyphicons-halflings-regular.svg[39m -> [36mdist/fonts/glyphicons-halflings-regular.svg[39m
+Reading app/dependencies/bower_dependencies/bootstrap/dist/fonts/glyphicons-halflings-regular.svg...[32mOK[39m
+Writing dist/fonts/glyphicons-halflings-regular.svg...[32mOK[39m
+Copying [36mapp/dependencies/bower_dependencies/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf[39m -> [36mdist/fonts/glyphicons-halflings-regular.ttf[39m
+Reading app/dependencies/bower_dependencies/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf...[32mOK[39m
+Writing dist/fonts/glyphicons-halflings-regular.ttf...[32mOK[39m
+Copying [36mapp/dependencies/bower_dependencies/bootstrap/dist/fonts/glyphicons-halflings-regular.woff[39m -> [36mdist/fonts/glyphicons-halflings-regular.woff[39m
+Reading app/dependencies/bower_dependencies/bootstrap/dist/fonts/glyphicons-halflings-regular.woff...[32mOK[39m
+Writing dist/fonts/glyphicons-halflings-regular.woff...[32mOK[39m
+Copying [36mapp/fonts/arlrdbd.eot[39m -> [36mdist/fonts/arlrdbd.eot[39m
+Reading app/fonts/arlrdbd.eot...[32mOK[39m
+Writing dist/fonts/arlrdbd.eot...[32mOK[39m
+Copying [36mapp/fonts/arlrdbd.svg[39m -> [36mdist/fonts/arlrdbd.svg[39m
+Reading app/fonts/arlrdbd.svg...[32mOK[39m
+Writing dist/fonts/arlrdbd.svg...[32mOK[39m
+Copying [36mapp/fonts/arlrdbd.ttf[39m -> [36mdist/fonts/arlrdbd.ttf[39m
+Reading app/fonts/arlrdbd.ttf...[32mOK[39m
+Writing dist/fonts/arlrdbd.ttf...[32mOK[39m
+Copying [36mapp/fonts/arlrdbd.woff[39m -> [36mdist/fonts/arlrdbd.woff[39m
+Reading app/fonts/arlrdbd.woff...[32mOK[39m
+Writing dist/fonts/arlrdbd.woff...[32mOK[39m
+Copying [36mapp/fonts/plus-minus-font.eot[39m -> [36mdist/fonts/plus-minus-font.eot[39m
+Reading app/fonts/plus-minus-font.eot...[32mOK[39m
+Writing dist/fonts/plus-minus-font.eot...[32mOK[39m
+Copying [36mapp/fonts/plus-minus-font.svg[39m -> [36mdist/fonts/plus-minus-font.svg[39m
+Reading app/fonts/plus-minus-font.svg...[32mOK[39m
+Writing dist/fonts/plus-minus-font.svg...[32mOK[39m
+Copying [36mapp/fonts/plus-minus-font.ttf[39m -> [36mdist/fonts/plus-minus-font.ttf[39m
+Reading app/fonts/plus-minus-font.ttf...[32mOK[39m
+Writing dist/fonts/plus-minus-font.ttf...[32mOK[39m
+Copying [36mapp/fonts/plus-minus-font.woff[39m -> [36mdist/fonts/plus-minus-font.woff[39m
+Reading app/fonts/plus-minus-font.woff...[32mOK[39m
+Writing dist/fonts/plus-minus-font.woff...[32mOK[39m
+Copied [36m71[39m files
+
+[4mRunning "cssmin" task[24m
+
+[4mRunning "cssmin:generated" (cssmin) task[24m
+Verifying property [36mcssmin.generated[39m exists in config...[32mOK[39m
+Files: [36m.tmp/concat/css/vendor.css[39m -> [36mdist\css\vendor.css[39m
+Files: [36m.tmp/concat/css/app.css[39m -> [36mdist\css\app.css[39m
+Files: [36m.tmp/concat/css/vendor.css[39m -> [36mdist\css\vendor.css[39m
+Files: [36m.tmp/concat/css/app.css[39m -> [36mdist\css\app.css[39m
+Options: [36mreport=false[39m
+Reading .tmp/concat/css/vendor.css...[32mOK[39m
+Reading .tmp/concat/css/vendor.css...[32mOK[39m
+Writing dist\css\vendor.css...[32mOK[39m
+File dist\css\vendor.css created.
+Reading .tmp/concat/css/app.css...[32mOK[39m
+Reading .tmp/concat/css/app.css...[32mOK[39m
+Writing dist\css\app.css...[32mOK[39m
+File dist\css\app.css created.
+Reading .tmp/concat/css/vendor.css...[32mOK[39m
+Reading .tmp/concat/css/vendor.css...[32mOK[39m
+Writing dist\css\vendor.css...[32mOK[39m
+File dist\css\vendor.css created.
+Reading .tmp/concat/css/app.css...[32mOK[39m
+Reading .tmp/concat/css/app.css...[32mOK[39m
+Writing dist\css\app.css...[32mOK[39m
+File dist\css\app.css created.
+
+[4mRunning "string-replace:dist" (string-replace) task[24m
+Verifying property [36mstring-replace.dist[39m exists in config...[32mOK[39m
+Files: [36m.tmp/concat/js/app.js[39m -> [36m.tmp/concat/js/app.js[39m
+Options: [36mreplacements=[{"pattern":"{grunt.buildInfo}"},{"pattern":"'baseUri': '',"}][39m
+Reading .tmp/concat/js/app.js...[32mOK[39m
+undefined
+No update of baseUrl
+Writing .tmp/concat/js/app.js...[32mOK[39m
+
+[4mRunning "uglify" task[24m
+
+[4mRunning "uglify:generated" (uglify) task[24m
+Verifying property [36muglify.generated[39m exists in config...[32mOK[39m
+Files: [36m.tmp/concat/js/vendor.js[39m -> [36mdist\js\vendor.js[39m
+Files: [36m.tmp/concat/js/drawings.js[39m -> [36mdist\js\drawings.js[39m
+Files: [36m.tmp/concat/js/vendor.js[39m -> [36mdist\js\vendor.js[39m
+Files: [36m.tmp/concat/js/app.js[39m -> [36mdist\js\app.js[39m
+Options: [36mbanner=""[39m, [36mfooter=""[39m, [36mcompress={"warnings":false}[39m, [36mmangle={}[39m, [36mbeautify=false[39m, [36mreport=false[39m
+Minifying with UglifyJS...Reading .tmp/concat/js/vendor.js...[32mOK[39m
+[32mOK[39m
+Writing dist\js\vendor.js...[32mOK[39m
+File "dist\js\vendor.js" created.
+Minifying with UglifyJS...Reading .tmp/concat/js/drawings.js...[32mOK[39m
+[32mOK[39m
+Writing dist\js\drawings.js...[32mOK[39m
+File "dist\js\drawings.js" created.
+Minifying with UglifyJS...Reading .tmp/concat/js/vendor.js...[32mOK[39m
+[32mOK[39m
+Writing dist\js\vendor.js...[32mOK[39m
+File "dist\js\vendor.js" created.
+Minifying with UglifyJS...Reading .tmp/concat/js/app.js...[32mOK[39m
+[32mOK[39m
+Writing dist\js\app.js...[32mOK[39m
+File "dist\js\app.js" created.
+
+[4mRunning "rev" task[24m
+
+[4mRunning "rev:dist" (rev) task[24m
+Verifying property [36mrev.dist[39m exists in config...[32mOK[39m
+Files: [36mdist/js/app.js[39m, [36mdist/js/drawings.js[39m, [36mdist/js/vendor.js[39m, [36mdist/css/app.css[39m, [36mdist/css/vendor.css[39m, [36mdist/fonts/FontAwesome.otf[39m, [36mdist/fonts/arlrdbd.eot[39m, [36mdist/fonts/arlrdbd.svg[39m, [36mdist/fonts/arlrdbd.ttf[39m, [36mdist/fonts/arlrdbd.woff[39m, [36mdist/fonts/fontawesome-webfont.eot[39m, [36mdist/fonts/fontawesome-webfont.svg[39m, [36mdist/fonts/fontawesome-webfont.ttf[39m, [36mdist/fonts/fontawesome-webfont.woff[39m, [36mdist/fonts/glyphicons-halflings-regular.eot[39m, [36mdist/fonts/glyphicons-halflings-regular.svg[39m, [36mdist/fonts/glyphicons-halflings-regular.ttf[39m, [36mdist/fonts/glyphicons-halflings-regular.woff[39m, [36mdist/fonts/plus-minus-font.eot[39m, [36mdist/fonts/plus-minus-font.svg[39m, [36mdist/fonts/plus-minus-font.ttf[39m, [36mdist/fonts/plus-minus-font.woff[39m -> [36msrc[39m
+Options: [36malgorithm="md5"[39m, [36mlength=8[39m
+Hashing dist/js/app.js...Reading dist/js/app.js...[32mOK[39m
+[32mOK[39m
+[32m>> [39m45b20c31dcecf835565ee2201b5a32b7
+dist/js/app.js [32m>> [39m45b20c31.app.js
+Hashing dist/js/drawings.js...Reading dist/js/drawings.js...[32mOK[39m
+[32mOK[39m
+[32m>> [39mc2aab00db1b551fdd8c132906fdfad47
+dist/js/drawings.js [32m>> [39mc2aab00d.drawings.js
+Hashing dist/js/vendor.js...Reading dist/js/vendor.js...[32mOK[39m
+[32mOK[39m
+[32m>> [39m3f357f952289e1547fcbae317d6a25bf
+dist/js/vendor.js [32m>> [39m3f357f95.vendor.js
+Hashing dist/css/app.css...Reading dist/css/app.css...[32mOK[39m
+[32mOK[39m
+[32m>> [39md31e4f4e970b46d0ba827a078f7d4dc5
+dist/css/app.css [32m>> [39md31e4f4e.app.css
+Hashing dist/css/vendor.css...Reading dist/css/vendor.css...[32mOK[39m
+[32mOK[39m
+[32m>> [39md50b9e6943653702d4ae48cfc25498f2
+dist/css/vendor.css [32m>> [39md50b9e69.vendor.css
+Hashing dist/fonts/FontAwesome.otf...Reading dist/fonts/FontAwesome.otf...[32mOK[39m
+[32mOK[39m
+[32m>> [39m543846b5c20a1570cc74cb4ff6892057
+dist/fonts/FontAwesome.otf [32m>> [39m543846b5.FontAwesome.otf
+Hashing dist/fonts/arlrdbd.eot...Reading dist/fonts/arlrdbd.eot...[32mOK[39m
+[32mOK[39m
+[32m>> [39m89ac8262c82880be45e009f6f3c3ed04
+dist/fonts/arlrdbd.eot [32m>> [39m89ac8262.arlrdbd.eot
+Hashing dist/fonts/arlrdbd.svg...Reading dist/fonts/arlrdbd.svg...[32mOK[39m
+[32mOK[39m
+[32m>> [39m871b0a5702347e582abddf35f5bc4b66
+dist/fonts/arlrdbd.svg [32m>> [39m871b0a57.arlrdbd.svg
+Hashing dist/fonts/arlrdbd.ttf...Reading dist/fonts/arlrdbd.ttf...[32mOK[39m
+[32mOK[39m
+[32m>> [39m9b23c2e2e12e218e7c95ef44d1de7ecb
+dist/fonts/arlrdbd.ttf [32m>> [39m9b23c2e2.arlrdbd.ttf
+Hashing dist/fonts/arlrdbd.woff...Reading dist/fonts/arlrdbd.woff...[32mOK[39m
+[32mOK[39m
+[32m>> [39m657074bf7045318608c35aa537d5efe1
+dist/fonts/arlrdbd.woff [32m>> [39m657074bf.arlrdbd.woff
+Hashing dist/fonts/fontawesome-webfont.eot...Reading dist/fonts/fontawesome-webfont.eot...[32mOK[39m
+[32mOK[39m
+[32m>> [39m906d33f80501d712d813b8f9162a2262
+dist/fonts/fontawesome-webfont.eot [32m>> [39m906d33f8.fontawesome-webfont.eot
+Hashing dist/fonts/fontawesome-webfont.svg...Reading dist/fonts/fontawesome-webfont.svg...[32mOK[39m
+[32mOK[39m
+[32m>> [39m776d58f453c8fe5d6a89e9c31ee223ff
+dist/fonts/fontawesome-webfont.svg [32m>> [39m776d58f4.fontawesome-webfont.svg
+Hashing dist/fonts/fontawesome-webfont.ttf...Reading dist/fonts/fontawesome-webfont.ttf...[32mOK[39m
+[32mOK[39m
+[32m>> [39m370c636dad7ad8edffe7d267607dbb08
+dist/fonts/fontawesome-webfont.ttf [32m>> [39m370c636d.fontawesome-webfont.ttf
+Hashing dist/fonts/fontawesome-webfont.woff...Reading dist/fonts/fontawesome-webfont.woff...[32mOK[39m
+[32mOK[39m
+[32m>> [39m3f97f72dbf831644d64c013d134f28aa
+dist/fonts/fontawesome-webfont.woff [32m>> [39m3f97f72d.fontawesome-webfont.woff
+Hashing dist/fonts/glyphicons-halflings-regular.eot...Reading dist/fonts/glyphicons-halflings-regular.eot...[32mOK[39m
+[32mOK[39m
+[32m>> [39m2ad0632bb83f205697c95ff6f69c206b
+dist/fonts/glyphicons-halflings-regular.eot [32m>> [39m2ad0632b.glyphicons-halflings-regular.eot
+Hashing dist/fonts/glyphicons-halflings-regular.svg...Reading dist/fonts/glyphicons-halflings-regular.svg...[32mOK[39m
+[32mOK[39m
+[32m>> [39m0a5c48c69a25a93e37ed62db813387fa
+dist/fonts/glyphicons-halflings-regular.svg [32m>> [39m0a5c48c6.glyphicons-halflings-regular.svg
+Hashing dist/fonts/glyphicons-halflings-regular.ttf...Reading dist/fonts/glyphicons-halflings-regular.ttf...[32mOK[39m
+[32mOK[39m
+[32m>> [39m4dab103b8358b887f391be20596cc4da
+dist/fonts/glyphicons-halflings-regular.ttf [32m>> [39m4dab103b.glyphicons-halflings-regular.ttf
+Hashing dist/fonts/glyphicons-halflings-regular.woff...Reading dist/fonts/glyphicons-halflings-regular.woff...[32mOK[39m
+[32mOK[39m
+[32m>> [39ma0537a78c84bd5011a3b82319771c2ad
+dist/fonts/glyphicons-halflings-regular.woff [32m>> [39ma0537a78.glyphicons-halflings-regular.woff
+Hashing dist/fonts/plus-minus-font.eot...Reading dist/fonts/plus-minus-font.eot...[32mOK[39m
+[32mOK[39m
+[32m>> [39mc875dbf26bf6f45624d9d3ec755cffb0
+dist/fonts/plus-minus-font.eot [32m>> [39mc875dbf2.plus-minus-font.eot
+Hashing dist/fonts/plus-minus-font.svg...Reading dist/fonts/plus-minus-font.svg...[32mOK[39m
+[32mOK[39m
+[32m>> [39mb9c47c57ca0d757fad43518ce91099a9
+dist/fonts/plus-minus-font.svg [32m>> [39mb9c47c57.plus-minus-font.svg
+Hashing dist/fonts/plus-minus-font.ttf...Reading dist/fonts/plus-minus-font.ttf...[32mOK[39m
+[32mOK[39m
+[32m>> [39mf17185977c71ee49ad7d9747c5befdc8
+dist/fonts/plus-minus-font.ttf [32m>> [39mf1718597.plus-minus-font.ttf
+Hashing dist/fonts/plus-minus-font.woff...Reading dist/fonts/plus-minus-font.woff...[32mOK[39m
+[32mOK[39m
+[32m>> [39m7430072e7c6cd1c48b82d2ee3b73917b
+dist/fonts/plus-minus-font.woff [32m>> [39m7430072e.plus-minus-font.woff
+
+[4mRunning "usemin" task[24m
+
+[4mRunning "usemin:html" (usemin) task[24m
+Verifying property [36musemin.html[39m exists in config...[32mOK[39m
+Files: [36mdist/drawings.html[39m, [36mdist/index.html[39m -> [36mhtml[39m
+Options: [36mtype="html"[39m, [36massetsDirs=["dist","dist/fonts","dist/images"][39m, [36mpatterns={"cssfonts":[[{},"update the CSS to reference revved fonts"]]}[39m
+
+[1mProcessing as HTML - dist/drawings.html[22m
+Update the HTML to reference our concat/min/revved script files
+<script src="js/vendor.js" changed to <script src="js/3f357f95.vendor.js"
+<script src="js/drawings.js" changed to <script src="js/c2aab00d.drawings.js"
+Update the HTML with the new css filenames
+<link rel="stylesheet" href="css/vendor.css" changed to <link rel="stylesheet" href="css/d50b9e69.vendor.css"
+<link rel="stylesheet" href="css/app.css" changed to <link rel="stylesheet" href="css/d31e4f4e.app.css"
+Update the HTML with the new img filenames
+Update the HTML with data-main tags
+Update the HTML with data-* tags
+Update the HTML with background imgs, case there is some inline style
+Update the HTML with anchors images
+Update the HTML with reference in input
+Writing dist/drawings.html...[32mOK[39m
+
+[1mProcessing as HTML - dist/index.html[22m
+Update the HTML to reference our concat/min/revved script files
+<script src="js/vendor.js" changed to <script src="js/3f357f95.vendor.js"
+<script src="js/app.js" changed to <script src="js/45b20c31.app.js"
+Update the HTML with the new css filenames
+<link rel="stylesheet" href="css/vendor.css" changed to <link rel="stylesheet" href="css/d50b9e69.vendor.css"
+<link rel="stylesheet" href="css/app.css" changed to <link rel="stylesheet" href="css/d31e4f4e.app.css"
+Update the HTML with the new img filenames
+Update the HTML with data-main tags
+Update the HTML with data-* tags
+Update the HTML with background imgs, case there is some inline style
+Update the HTML with anchors images
+Update the HTML with reference in input
+Writing dist/index.html...[32mOK[39m
+
+[4mRunning "usemin:css" (usemin) task[24m
+Verifying property [36musemin.css[39m exists in config...[32mOK[39m
+Files: [36mdist/css/d31e4f4e.app.css[39m, [36mdist/css/d50b9e69.vendor.css[39m, [36m.tmp/css/app.css[39m -> [36mcss[39m
+Options: [36mtype="css"[39m, [36massetsDirs=["dist","dist/fonts","dist/images"][39m, [36mpatterns={"cssfonts":[[{},"update the CSS to reference revved fonts"]]}[39m
+
+[1mProcessing as CSS - dist/css/d31e4f4e.app.css[22m
+Update the CSS to reference our revved images
+url(../fonts/arlrdbd.eot) changed to url(../fonts/89ac8262.arlrdbd.eot)
+url(../fonts/arlrdbd.eot) changed to url(../fonts/89ac8262.arlrdbd.eot)
+url(../fonts/arlrdbd.woff) changed to url(../fonts/657074bf.arlrdbd.woff)
+url(../fonts/arlrdbd.ttf) changed to url(../fonts/9b23c2e2.arlrdbd.ttf)
+Writing dist/css/d31e4f4e.app.css...[32mOK[39m
+
+[1mProcessing as CSS - dist/css/d50b9e69.vendor.css[22m
+Update the CSS to reference our revved images
+url(../fonts/arlrdbd.eot) changed to url(../fonts/89ac8262.arlrdbd.eot)
+url(../fonts/arlrdbd.eot) changed to url(../fonts/89ac8262.arlrdbd.eot)
+url(../fonts/arlrdbd.woff) changed to url(../fonts/657074bf.arlrdbd.woff)
+url(../fonts/arlrdbd.ttf) changed to url(../fonts/9b23c2e2.arlrdbd.ttf)
+url(../fonts/arlrdbd.eot) changed to url(../fonts/89ac8262.arlrdbd.eot)
+url(../fonts/arlrdbd.eot) changed to url(../fonts/89ac8262.arlrdbd.eot)
+url(../fonts/arlrdbd.woff) changed to url(../fonts/657074bf.arlrdbd.woff)
+url(../fonts/arlrdbd.ttf) changed to url(../fonts/9b23c2e2.arlrdbd.ttf)
+url(../fonts/glyphicons-halflings-regular.eot) changed to url(../fonts/2ad0632b.glyphicons-halflings-regular.eot)
+url(../fonts/glyphicons-halflings-regular.woff) changed to url(../fonts/a0537a78.glyphicons-halflings-regular.woff)
+url(../fonts/glyphicons-halflings-regular.ttf) changed to url(../fonts/4dab103b.glyphicons-halflings-regular.ttf)
+Writing dist/css/d50b9e69.vendor.css...[32mOK[39m
+
+[1mProcessing as CSS - .tmp/css/app.css[22m
+Update the CSS to reference our revved images
+url('../fonts/arlrdbd.eot') changed to url('../fonts/89ac8262.arlrdbd.eot')
+url('../fonts/arlrdbd.eot') changed to url('../fonts/89ac8262.arlrdbd.eot')
+url('../fonts/arlrdbd.woff') changed to url('../fonts/657074bf.arlrdbd.woff')
+url('../fonts/arlrdbd.ttf') changed to url('../fonts/9b23c2e2.arlrdbd.ttf')
+Writing .tmp/css/app.css...[32mOK[39m
+
+[4mRunning "usemin:cssfonts" (usemin) task[24m
+Verifying property [36musemin.cssfonts[39m exists in config...[32mOK[39m
+Files: [36mdist/css/d31e4f4e.app.css[39m, [36mdist/css/d50b9e69.vendor.css[39m, [36m.tmp/css/app.css[39m -> [36mcssfonts[39m
+Options: [36mtype="cssfonts"[39m, [36massetsDirs=["dist","dist/fonts","dist/images"][39m, [36mpatterns={"cssfonts":[[{},"update the CSS to reference revved fonts"]]}[39m
+
+[1mProcessing as CSSFONTS - dist/css/d31e4f4e.app.css[22m
+update the CSS to reference revved fonts
+url(../fonts/fontawesome-webfont.eot? changed to url(../fonts/906d33f8.fontawesome-webfont.eot?
+url(../fonts/fontawesome-webfont.eot? changed to url(../fonts/906d33f8.fontawesome-webfont.eot?
+url(../fonts/fontawesome-webfont.woff? changed to url(../fonts/3f97f72d.fontawesome-webfont.woff?
+url(../fonts/fontawesome-webfont.ttf? changed to url(../fonts/370c636d.fontawesome-webfont.ttf?
+url(../fonts/fontawesome-webfont.svg? changed to url(../fonts/776d58f4.fontawesome-webfont.svg?
+url(../fonts/plus-minus-font.eot? changed to url(../fonts/c875dbf2.plus-minus-font.eot?
+url(../fonts/plus-minus-font.eot? changed to url(../fonts/c875dbf2.plus-minus-font.eot?
+url(../fonts/plus-minus-font.woff? changed to url(../fonts/7430072e.plus-minus-font.woff?
+url(../fonts/plus-minus-font.ttf? changed to url(../fonts/f1718597.plus-minus-font.ttf?
+url(../fonts/plus-minus-font.svg? changed to url(../fonts/b9c47c57.plus-minus-font.svg?
+url(../fonts/arlrdbd.svg# changed to url(../fonts/871b0a57.arlrdbd.svg#
+Writing dist/css/d31e4f4e.app.css...[32mOK[39m
+
+[1mProcessing as CSSFONTS - dist/css/d50b9e69.vendor.css[22m
+update the CSS to reference revved fonts
+url(../fonts/fontawesome-webfont.eot? changed to url(../fonts/906d33f8.fontawesome-webfont.eot?
+url(../fonts/fontawesome-webfont.eot? changed to url(../fonts/906d33f8.fontawesome-webfont.eot?
+url(../fonts/fontawesome-webfont.woff? changed to url(../fonts/3f97f72d.fontawesome-webfont.woff?
+url(../fonts/fontawesome-webfont.ttf? changed to url(../fonts/370c636d.fontawesome-webfont.ttf?
+url(../fonts/fontawesome-webfont.svg? changed to url(../fonts/776d58f4.fontawesome-webfont.svg?
+url(../fonts/arlrdbd.svg# changed to url(../fonts/871b0a57.arlrdbd.svg#
+url(../fonts/arlrdbd.svg# changed to url(../fonts/871b0a57.arlrdbd.svg#
+url(../fonts/glyphicons-halflings-regular.eot? changed to url(../fonts/2ad0632b.glyphicons-halflings-regular.eot?
+url(../fonts/glyphicons-halflings-regular.svg# changed to url(../fonts/0a5c48c6.glyphicons-halflings-regular.svg#
+Writing dist/css/d50b9e69.vendor.css...[32mOK[39m
+
+[1mProcessing as CSSFONTS - .tmp/css/app.css[22m
+update the CSS to reference revved fonts
+url('../fonts/fontawesome-webfont.eot? changed to url('../fonts/906d33f8.fontawesome-webfont.eot?
+url('../fonts/fontawesome-webfont.eot? changed to url('../fonts/906d33f8.fontawesome-webfont.eot?
+url('../fonts/fontawesome-webfont.woff? changed to url('../fonts/3f97f72d.fontawesome-webfont.woff?
+url('../fonts/fontawesome-webfont.ttf? changed to url('../fonts/370c636d.fontawesome-webfont.ttf?
+url('../fonts/fontawesome-webfont.svg? changed to url('../fonts/776d58f4.fontawesome-webfont.svg?
+url('../fonts/plus-minus-font.eot? changed to url('../fonts/c875dbf2.plus-minus-font.eot?
+url('../fonts/plus-minus-font.eot? changed to url('../fonts/c875dbf2.plus-minus-font.eot?
+url('../fonts/plus-minus-font.woff? changed to url('../fonts/7430072e.plus-minus-font.woff?
+url('../fonts/plus-minus-font.ttf? changed to url('../fonts/f1718597.plus-minus-font.ttf?
+url('../fonts/plus-minus-font.svg? changed to url('../fonts/b9c47c57.plus-minus-font.svg?
+url('../fonts/arlrdbd.svg# changed to url('../fonts/871b0a57.arlrdbd.svg#
+Writing .tmp/css/app.css...[32mOK[39m
+
+[4mRunning "copy:restoreTemplate" (copy) task[24m
+Verifying property [36mcopy.restoreTemplate[39m exists in config...[32mOK[39m
+Files: [36m.tmp/app/app/templates/templates.js[39m -> [36mapp/app/templates/templates.js[39m
+Options: [36mprocessContent=false[39m, [36mprocessContentExclude=[][39m
+Options: [36mprocessContent=false[39m, [36mprocessContentExclude=[][39m
+Copying [36m.tmp/app/app/templates/templates.js[39m -> [36mapp/app/templates/templates.js[39m
+Reading .tmp/app/app/templates/templates.js...[32mOK[39m
+Writing app/app/templates/templates.js...[32mOK[39m
+Copied [36m1[39m files
+
+[32mDone, without errors.[39m
+
+
+Execution Time (2015-04-15 14:47:23 UTC)
+loading tasks           328ms  0%
+build                     1ms  0%
+clean:dist               44ms  0%
+copy:saveTemplate        14ms  0%
+nggettext_compile         0ms  0%
+nggettext_compile:all    54ms  0%
+html2js                   0ms  0%
+html2js:main            223ms  0%
+useminPrepare             1ms  0%
+useminPrepare:html       57ms  0%
+concurrent:dist          4.4s  ■ 2%
+concat                    1ms  0%
+concat:generated        923ms  0%
+ngmin                     0ms  0%
+ngmin:dist             126.7s  ■■■■■■■■■■■■■■■■■■■■■■■■ 59%
+copy:dist               281ms  0%
+cssmin                    1ms  0%
+cssmin:generated        744ms  0%
+string-replace:dist     149ms  0%
+uglify                    1ms  0%
+uglify:generated        79.2s  ■■■■■■■■■■■■■■■ 37%
+rev                       0ms  0%
+rev:dist                 59ms  0%
+usemin                    1ms  0%
+usemin:html              60ms  0%
+usemin:css              151ms  0%
+usemin:cssfonts          92ms  0%
+copy:restoreTemplate     11ms  0%
+Total 213.6s

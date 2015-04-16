@@ -1,0 +1,54 @@
+﻿<section class="fill" data-ng-controller="productConfiguration">
+    <div class="basket-area">
+        <!-- <button type="button" class="btn btn-sm btn-info basket-area-button" data-ng-if="displaySelection" data-ng-click="onDisplayBasketButtonClick()">
+            {{"configue-eq-display-basket"|translate}}
+            <i class="fa fa-chevron-right"></i>
+        </button>-->
+
+    </div>
+    <div class="catalog-panel horizontal-fill">
+        <span data-ng-click="onLeftArrowButtonClick()" data-ng-class="{arrowDisabled : leftArrowDisabled()}" class="arrow-button"><i class="fa fa-angle-left"></i></span>
+        <div data-ng-repeat="range in ranges" data-ng-if="$index >= firstRangeItemIndex && $index <= lastRangeItemIndex"  data-ng-click="selectRangeItem(range)" class="rangeItem">
+            <img class="catalog-picture" data-ng-class="{selected : selectedRangeItem===range || range.isHighlighted}" data-ng-src="{{baseUri}}{{range.pictureUrl}}"/>
+            <span class="catalog-label" data-ng-mouseover="range.isHighlighted = true" data-ng-mouseleave="range.isHighlighted = false" translate>{{range.rangeName}}</span>
+        </div>
+        <span data-ng-click="onRightArrowButtonClick()" data-ng-class="{arrowDisabled : rightArrowDisabled()}" class="arrow-button"><i class="fa fa-angle-right"></i></span>
+    </div>
+
+    <div class="configure-panel">
+        <div class="vertical-fill" data-ng-show="productsLoaded">
+            <div class="product-configuration-top-panel">
+                <characteristics-selection range="selectedRangeItem" on-products-list-changed="onProductsListChanged" fill-products-list="fillProductsList"></characteristics-selection>
+            </div>
+            <div class="vertical-fill" data-ng-show="productLoaded">
+                <div class="proposed-equipment-list">
+                    <ul class="list-group">
+                        <li class="list-group-item" data-ng-repeat="prod in filteredProductsList | orderBy:'getUnitPrice()'">
+                            <product-item product="prod" context="'configuration'"></product-item>
+                        </li>
+                    </ul>
+                </div>
+                <div class="otherProductsArea" data-ng-show="productsList.length > 1 && filteredProductsList.length === 1" >
+                    <span translate>
+                        switchboard-content-products-found-pre-label
+                    </span>
+                    <span>
+                        {{productsList.length - 1}}
+                    </span>
+                    <span translate>
+                        switchboard-content-products-found-post-label
+                    </span>
+                    <a data-ng-click="onShowAllProducts()">
+                        <span translate>switchboard-content-show-all-products</span>
+                    </a>
+                </div>
+            </div>
+            <div class="loading-indicator-bottom" data-ng-show="!productLoaded">
+                <span><i class="fa fa-circle-o-notch fa-spin"></i></span>
+            </div>
+        </div>
+        <div class="loading-indicator" data-ng-show="!productsLoaded">
+            <span><i class="fa fa-circle-o-notch fa-spin"></i></span>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,40 @@
+<div class="container-fluid" data-ng-if="range">
+
+    <div class="empty-section-area" data-ng-show="isEmptySection">
+        <span class="empty-section-label" translate>
+            auxiliaries-selection-empty-section
+        </span>
+    </div>
+
+    <div class="characts-list">
+        <div class="caract-line" data-ng-repeat="mainCharacteristic in range.displayedMainCharacteristics" data-ng-if="canBeDisplayed(possibleValues[mainCharacteristic.name])">
+            <div class="caract-label">
+                {{mainCharacteristic.name|translate}}
+            </div>
+
+            <div class="caract-select-group" data-ng-if="!isEmptySection">
+                <button dropdown-opener data-ng-class="{'combo-selected' : isSelected(mainCharacteristic.name)}" class="combo-default dropdown-toggle caract-select" data-toggle="dropdown" data-ng-disabled="busy" data-ng-click="unselectCaract(mainCharacteristic.name)">
+                    <span class="dropdown-btn-selected-value">
+                        {{ defaultValues | extractCharact:mainCharacteristic.name | formatAndTranslateCaract:mainCharacteristic }}
+                    </span>
+                    <span class="combo-caret"></span>
+                </button>
+                <ul class="product-configuration-dropdown-menu dropdown-menu">
+                    <li data-ng-repeat="caractValue in possibleValues[mainCharacteristic.name]|orderBy1210ab:true">
+                        <a href="" data-ng-click="onCharacteristicSelected(mainCharacteristic.name, caractValue)">
+                            <span class="dropdown-btn-possible-value">
+                                {{caractValue|formatAndTranslateCaract:mainCharacteristic}}
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="caract-banner" data-ng-if="range.mainCharacteristics && !hideClearButton">
+            <button class="btn btn-default" data-ng-click="onClearButtonClick()">
+                <span translate>configure-eq-clear</span>
+            </button>
+        </div>
+    </div>
+</div>

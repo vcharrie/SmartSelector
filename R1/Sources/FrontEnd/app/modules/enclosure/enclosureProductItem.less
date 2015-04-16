@@ -1,0 +1,44 @@
+.enc-product-item {
+  margin-left: -5px;
+  margin-right: -5px;
+  padding: 10px;
+
+  &:hover {
+    background: @ultraLightGrey3Color;
+    transition: background .15s;
+  }
+
+  .enc-product-item-image {
+
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+
+    img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+  .enc-product-item-part {
+    display: inline-block;
+    width: 78%;
+    cursor: pointer;
+    .user-select(none);
+    .enc-product-item-part-title {
+      color: @ladyFernGreenColor;
+      font-weight: bold;
+    }
+    .enc-product-item-part-description {
+    }
+
+  }
+}
+
+.enc-product-item-selected {
+  background: @ultraLightGrey1Color;
+  transition: background .15s;
+  &:hover {
+    background: @ultraLightGrey1Color;
+    transition: background .15s;
+  }
+}

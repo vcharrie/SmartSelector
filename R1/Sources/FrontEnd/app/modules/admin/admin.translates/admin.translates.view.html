@@ -1,0 +1,46 @@
+<section class="app-view fill">
+    <div class="panel vertical-fill">
+        <div class="content-wrapper translates vertical-fill admin-page">
+            <div class="page-header">
+                <a href='#/admin'> <i class="fa fa-chevron-left"></i></a>
+                <h2>{{'Translations management'}}</h2>
+            </div>
+            <div class="content">
+                <div class="content-left">
+                    <div class="menu-header">
+                        <input class="form-control" type="text" placeholder="Enter filter..." data-ng-model="searchTranslation"></input>
+                    </div>
+                    <div class="menu-content">
+
+                        <button class="btn btn-default form-control" data-ng-click="addTranslation()"><i class="fa fa-plus-square-o"></i>{{' Add a new translation'}}</button>
+
+                        <button class="btn btn-default form-control" data-ng-click="saveTranslations()"><i class="fa fa-floppy-o"></i>{{' Save all translations'}}</button>
+
+                    </div>
+                </div>
+                <div class="content-center">
+                    <h3 data-ng-show="isLoading"><i class="fa fa-refresh fa-spin"></i>{{' Loading ...'}}</h3>
+                    <div data-ng-show="!isLoading">
+                        <div class="menu-header translation-large-width">
+                            <div class="menu-header col-xs-2">Traduction id</div>
+                            <div class="menu-header col-xs-2" data-ng-repeat="language in avaliableLanguages">{{language}}</div>
+                        </div>
+                        <div class="menu-content translation-large-width">
+                            <div class="row" data-ng-repeat="languageValue in selectedLanguageValues | toArray | filter:searchTranslation">
+                                <div class="col-xs-2">
+                                    <a href="" data-ng-attr-title="remove {{languageValue.id}}" data-ng-click="deleteTranslation(languageValue.id)"><i class="fa fa-ban"></i>{{' '}}</a>
+                                    <input data-ng-attr-title="{{languageValue.id}}" class="form-control fieldName" type="text" data-ng-attr-title="{{languageValue.id}}" data-ng-model="languageValue.id" />
+
+                                </div>
+                                <div class="col-xs-2" data-ng-repeat="language in avaliableLanguages">
+                                    <input class="form-control" type="text" data-ng-attr-title="{{languageValue.trads[language].value +' v('+languageValue.trads[language].version+')'}}" data-ng-model="languageValue.trads[language].value" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

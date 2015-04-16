@@ -1,0 +1,180 @@
+<section class="app-view fill">
+    <div class="panel scrollable">
+        <!--<div class="container-fluid switchboard-management-container">
+            <div class="switchboard-top-banner">
+                <i class="info-icon fa fa-info-circle" data-info-icon-hover-tooltip popover-html="{{allSwitchboardsInTheBomTooltip}}" popover-placement="right" popover-append-to-body="body">
+                </i>
+                <input type="checkbox" data-ng-model="allSelected" data-ng-click="selectAllForBom();" class="all-switchboards-in-bom"/>
+
+                <a class="new-switchboard-button" data-ng-click="createSwitchboard()">
+                    <i class="fa fa-plus">
+                    </i>
+                    <span translate>new-switchboard-button-label</span>
+                </a>
+                <div class="switchboard-move-arrows">
+                    <a class="switchboard-move-up-arrow" data-ng-class="isFirstSwitchboard(project.selectedSwitchboardPack) || switchboardPacks.length === 1 ? 'switchboard-action-disabled' : 'switchboard-action'" data-ng-click="moveUpSwitchboard(project.selectedSwitchboardPack, $event)"><i class="fa fa-arrow-up fa-lg"></i></a>
+                    <a class="switchboard-move-down-arrow" data-ng-class="isLastSwitchboard(project.selectedSwitchboardPack) || switchboardPacks.length === 1 ? 'switchboard-action-disabled' : 'switchboard-action'" data-ng-click="moveDownSwitchboard(project.selectedSwitchboardPack, $event)"><i class="fa fa-arrow-down fa-lg"></i></a>
+                </div>
+            </div>-->
+            <div class="scrollable adaptative-height">
+                <!--<div class="switchboard-pack" data-ng-repeat="switchboardPack in switchboardPacks | filter: additionalItemSwitchboardPackFilter">
+                    <div class="mainSwitchboardPart" data-ng-class="isSwitchboardSelectedForBom(switchboardPack) ? 'switchboard-item-container-selected-for-bom' : 'switchboard-item-container-unselected-for-bom'">
+                        <div data-ng-class="isSwitchboardSelected(switchboardPack) ? 'selected-switchboard-item' : 'switchboard-item'" data-ng-click="selectSwitchboard(switchboardPack)">
+                            <div class="switchboard-actions-buttons">
+                                <button data-ng-click="duplicateSwitchboard(switchboardPack, $event)" class="switchboard-action get-parent-color"><i class="fa fa-files-o fa-lg"></i></button>
+                                <button data-ng-disabled="switchboardPacks.length===1" data-ng-click="deleteSwitchboard(switchboardPack, $event)" class="switchboard-action"><i class="fa fa-trash-o fa-lg"></i></button>
+                            </div>
+                            <div class="switchboard-price">
+                                <span class="switchboardPackPriceLabel switchboard-price-right-margin" data-ng-if="isSwitchboardPriceValid(switchboardPack)">{{switchboardPack.switchboard.getNetPrice() | formatPrice }} {{currency}}</span>
+
+                                <div class="switchboardPackNoPriceArea"data-ng-if="!isSwitchboardPriceValid(switchboardPack)" >
+                                    <span class="switchboardPackPriceLabel" translate>project-context-switchboard-no-price-label</span>
+
+                                    <i class="info-icon fa fa-info-circle" data-info-icon-hover-tooltip popover-html="{{projectContextSwitchboardPriceTooltip}}" popover-placement="left" popover-append-to-body="body">
+                                    </i>
+                                </div>
+                            </div>
+                            <div class="switchboard-select-and-label">
+                                <input data-ng-model="switchboardPack.isSelectedForBom" type="checkbox" data-ng-click="stopPropagation($event);updateAreAllSelectedValue();"/>
+                                <span class="project-context-switchboard-pack-infos">
+                                    <span data-ng-if="switchboardPack.quantity > 1"> {{switchboardPack.quantity}}x </span>
+                                    <div class="switchboardPackSmartStatus" data-ng-if="switchboardPack.switchboard.getSmartStatus() == 'HYBRID'">
+                                        <i class="info-icon fa fa-exclamation-triangle">
+                                            <div class="info-icon-arrow-container">
+                                                <div class="info-icon-arrow-left"></div>
+                                                <div class="info-icon-arrow-left-border"></div>
+                                            </div>
+                                            <div class="info-icon-tooltip">
+                                                <span class="info-icon-tooltip-label" translate>SMARTPANEL_SOLUTION_DIRTY</span>
+                                            </div>
+                                        </i>
+                                    </div>
+                                    <span data-ng-if="switchboardPack.switchboard.getSmartStatus() == 'SMART'" translate>smart-panel-status-indicator</span>
+                                    <span class="switchboardPackNameLabel">{{switchboardPack.switchboard.name}}</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow-container">
+                        <div class="arrow-right" data-ng-if="isSwitchboardSelected(switchboardPack)"></div>
+                        <div class="arrow-right-border" data-ng-if="isSwitchboardSelected(switchboardPack)"></div>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+        <div class="container-fluid project-context-container">
+
+            <!--<span class="project-context-container-title" translate>
+                project-context-container-title
+            </span>-->
+
+            <div class="loading-indicator" data-ng-show="switchboardSelectionLoading">
+                <span><i class="fa fa-circle-o-notch fa-spin"></i></span>
+            </div>
+
+            <div class="fill" data-ng-show="!switchboardSelectionLoading">
+                <div class="project-context-right-column">
+                    <div class="panel project-context-compatible-ranges" data-ng-class="{'panel-danger' : !ranges || ranges.length === 0, 'panel-success' : ranges.length > 0}">
+                        <div class="panel-heading">
+                            <span translate>
+                                project-context-compatibles-ranges
+                            </span>
+                        </div>
+                        <div class="panel-body">
+
+                            <i class="info-icon fa fa-info-circle" data-info-icon-hover-tooltip popover-html="{{projectContextCompatibleRangesTooltip}}" popover-placement="left" popover-append-to-body="body">
+                            </i>
+
+                            <div data-ng-repeat="range in ranges">
+                                <span>{{range|translate}}</span>
+                            </div>
+                            <span data-ng-show="!ranges || ranges.length === 0" translate>
+                                project-context-no-compatibles-ranges-warning
+                            </span>
+                        </div>
+                    </div>
+                    <button class="project-context-clear-button btn btn-default" data-ng-click="resetContextCharacteristics()" translate>configure-eq-clear</button>
+                </div>
+
+                <div class="project-context-characteristics-column">
+                    <div class="switchboard-name">
+                        <div class="switchboard-property-label" translate>project-context-power-field-label</div>
+                        <input class="switchboard-name-field" type="text" data-ng-model="project.selectedSwitchboardPack.switchboard.name"/>
+                    </div>
+
+                    <div class="project-context-characteristic-area">
+                        <!--<div class="project-context-characteristic row">
+                            <span translate>
+                                project-context-power-field-label
+
+                                 <i class="info-icon fa fa-info-circle" data-ng-show="characteristic.displayTooltip"  data-info-icon-hover-tooltip popover-html="to be completed" popover-placement="right" popover-append-to-body="body">
+                                 </i>
+                            </span>
+
+                            <div class="btn-group">
+                                <button class="combo-selected dropdown-toggle charact-button" data-toggle="dropdown" data-ng-click="onDropdownOpen(characteristic)">
+                                    <span class="dropdown-btn-selected-value">Auto</span>
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu project-context-dropdown-menu">
+                                    <li data-ng-repeat="value in characteristic.values|orderBy_Ab1210">
+                                        <a href="" data-ng-click="onCharacteristicSelected(characteristic, value, true, true)">
+                                            {{value | unit:characteristic.unit}}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>-->
+                        <div class="project-context-characteristic row" data-ng-repeat="characteristic in characteristics()">
+                            <span>
+                                {{characteristic.name|translate}}
+
+                                 <i class="info-icon fa fa-info-circle" data-ng-show="characteristic.displayTooltip"  data-info-icon-hover-tooltip popover-html="{{characteristicRatedCurrentTooltip}}" popover-placement="right" popover-append-to-body="body">
+                                 </i>
+                            </span>
+
+                            <div class="btn-group">
+                                <button class="combo-selected dropdown-toggle charact-button" data-toggle="dropdown" data-ng-click="onDropdownOpen(characteristic)">
+                                    <span class="dropdown-btn-selected-value">{{characteristic.selectedValue | unit:characteristic.unit}}</span>
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu project-context-dropdown-menu">
+                                    <li data-ng-repeat="value in characteristic.values|orderBy_Ab1210">
+                                        <a href="" data-ng-click="onCharacteristicSelected(characteristic, value, true, true)">
+                                            {{value | unit:characteristic.unit}}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-context-tips project-context-smart-panel-characteristic">
+                        <div class="switchboard-property-label" translate>smart-panel-ready</div>
+                        <div class="switchboard-constant-property-field">
+                            <span data-ng-if="project.selectedSwitchboardPack.switchboard.getSmartStatus() == 'SMART'" translate>smart-panel-ready-yes</span>
+                            <span data-ng-if="project.selectedSwitchboardPack.switchboard.getSmartStatus() != 'SMART'" translate>smart-panel-ready-no</span>
+                        </div>
+                    </div>
+
+                    <div class="project-context-tips">
+
+                        <div class="switchboard-property-label" translate>operational_voltage</div>
+                        <div class="switchboard-constant-property-field" translate>380-415 V / 220-240 V</div>
+                        <div class="switchboard-constant-property-info-icon">
+                            <i class="info-icon fa fa-info-circle" data-info-icon-hover-tooltip popover-html="{{projectContextRatedOperationalVoltageTooltip}}" popover-placement="left" popover-append-to-body="false" popover-additional-class="rated-operational-voltage-popover">
+                            </i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-context-wizard-area">
+                <button type="button" class="btn btn-sm btn-info btn-go-forward" data-ng-click="onGoForward()">
+                    <span translate>project-context-wizard-button-next-step</span>
+                    <i class="fa fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+</div>
+</section>

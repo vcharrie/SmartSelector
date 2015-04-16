@@ -1,0 +1,44 @@
+﻿@modify-product-caract-width: 120px;
+@modify-product-caract-height: 30px;
+
+.modify-product-filter {
+    margin: 3px;
+
+    .modify-product-filter-item {
+        display: inline-block;
+        min-width: @modify-product-caract-width;
+        position: relative;
+        float: left;
+
+        .btn {
+            min-width: @modify-product-caract-width;
+            height: @modify-product-caract-height;
+            margin-left: @appSmallMargin;
+        }
+
+        p {
+            font-size: 12px;
+            text-align: center;
+            margin-bottom : 0px;
+        }
+    }
+
+    .btn-group {
+        
+    }
+}
+
+.modify-product-dropdown-menu {
+    min-width : @modify-product-caract-width;
+    margin-left: @appSmallMargin;
+}
+
+.drop-up {
+  bottom: @modify-product-caract-height;
+  top: auto;
+}
+
+.modify-product-buttons-banner {
+    margin-left: @appMediumMargin;
+    margin-top: 17px; // top margin to be vertically align with other dropdown menus
+}

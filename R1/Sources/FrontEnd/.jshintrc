@@ -1,0 +1,41 @@
+{
+  "globalstrict" : true,
+  "node": true,
+  "browser": true,
+  "esnext": true,
+  "bitwise": true,
+  "camelcase": true,
+  "curly": true,
+  "eqeqeq": true,
+  "immed": true,
+  "indent": false,
+  "latedef": true,
+  "newcap": true,
+  "noarg": true,
+  "quotmark": "single",
+  "regexp": true,
+  "undef": true,
+  "unused": true,
+  "strict": true,
+  "trailing": true,
+  "smarttabs": true,
+  "globals": {
+    "window" : true,
+    // AngularJS
+    "describe" : true,
+    "angular" : true,
+    "beforeEach" : true,
+    "module" : true,
+    "inject" : true,
+    // Jasmine
+    "jasmine" : true,
+    "afterEach" : true,
+    "expect" : true,
+    "it" : true,
+    "spyOn" : true,
+    // Toastr
+    "toastr": true,
+	// JQuery
+	 "$":true
+  }
+}

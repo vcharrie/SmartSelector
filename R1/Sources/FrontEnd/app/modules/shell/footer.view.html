@@ -1,0 +1,56 @@
+<div class="app-footer-container">
+    <div class="footer-logo-container">
+        <a target="_blank" data-ng-href="{{schneiderWebsiteLink()}}"><img class="app-icon" src="images/Logo_SE_Green_RGB-Screen.jpg" alt="app icon" /></a>
+    </div>
+
+    <div class="pull-right">
+        <span class="footer-schneider-copyright">&copy; Schneider Electric</span>
+        <!--span class="small">{{'APP_COPYRIGHT' | translate}}</span-->
+        <div class="footer-developper-infos" data-ng-if="isDeveloperMode">
+            <span class="small">(build {{buildInfo}})</span>
+            <span class="small" data-ng-if="!isProjectDirty()">.</span>
+            <span class="small" data-ng-if="isProjectDirty()">*</span>
+            <span class="small" data-ng-if="!isSolutionDirty()">.</span>
+            <span class="small" data-ng-if="isSolutionDirty()">*</span>
+        </div>
+    </div>
+
+    <div class="footer-links-container">
+        <div class="footer-links-section">
+            <div class="footer-links-column">
+                <span class="footer-links-section-title" translate>footer-links-section-1</span>
+                <br>
+                <a target="_blank" class="app-footer-link app-footer-link-bottom-left" data-ng-href="{{rapsodyLink()}}" translate>footer-solutions-app-link-1</a>
+            </div>
+            <div class="footer-links-column">
+                <a target="_blank" class="app-footer-link" data-ng-href="{{ecodialLink()}}" translate>footer-solutions-app-link-2</a>
+                <br>
+                <a target="_blank" data-ng-show="showCloudStorageLink" class="app-footer-link" data-ng-href="{{blmLink()}}" translate>footer-solutions-app-link-3</a>
+            </div>
+            <div class="footer-links-column">
+                <a target="_blank" data-ng-show="showSmartPanelLink" class="app-footer-link" data-ng-href="{{smartPanelLink()}}" translate>
+                    footer-solutions-app-link-4
+                </a>
+            </div>
+        </div>
+        <div class="footer-links-section">
+            <div class="footer-links-column">
+                <span class="footer-links-section-title" translate>footer-links-section-2</span>
+                <br>
+                <a target="_blank" class="app-footer-link" data-ng-href="{{privacyPolicyLink()}}" translate>footer-privacy-policy</a>
+            </div>
+            <div class="footer-links-column">
+                <a data-ng-show="showCGU" class="app-footer-link" data-ng-click="openCGU()" translate>footer-general-using-condition</a>
+                <br>
+                <a target="_blank" class="app-footer-link app-footer-link-bottom-left" data-ng-href="{{headerCccLink()}}" translate>shell-customer-care-center-link</a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+

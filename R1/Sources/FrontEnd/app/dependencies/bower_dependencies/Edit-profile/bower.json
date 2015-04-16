@@ -1,0 +1,15 @@
+{
+	"name": "Edit-profile",
+	"version": "0.0.1",
+	"ignore": [
+	    "bower.json"
+	],
+	"dependencies": {
+        "angular-gettext": "~1.1.0",
+        "web-ui-commons": "http://pace.schneider-electric.com/Downloads/web-ui-commons-sources-0.0.1.zip"
+    },
+	"devDependencies": {
+		"bootstrap": ">= 3.0.3",
+        "angular-mocks": "~1.2.0"
+	}
+}

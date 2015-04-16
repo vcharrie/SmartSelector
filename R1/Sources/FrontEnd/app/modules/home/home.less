@@ -1,0 +1,214 @@
+@home-banner-top: 0px;
+@home-banner-height : 150px;
+@home-icon-size : 50px;
+@home-white-space-under-banner-size: 5px;
+
+@home-panel-height : 270px;
+@home-panel-width : 875px;
+@home-panel-bottom : 30px;
+@home-panel-left : 65px;
+
+@home-marketing-area-width : 550px;
+@home-marketing-area-height : 225px;
+@home-marketing-area-top : 20px;
+@home-marketing-area-left : 20px;
+
+@home-actions-width: 300px;
+@home-actions-top : 65px;
+@home-actions-left : 0px;
+@home-actions-label-size : 20px;
+
+
+.home-panel-container {
+  width: @appGlobalWidth;
+  margin: auto;
+  height: 100%;
+  position: relative;
+}
+
+.home-title {
+    font-size: 24px;
+    color: @spruceGreenColor;
+    font-weight: bold;
+    font-family: @titleFontFamily;
+}
+
+.home-bold-extract {
+    color: @spruceGreenColor;
+    font-weight: bold;
+}
+
+//.home-banner {
+//    position: absolute;
+//    top: @home-banner-top;
+//    left: 0px;
+//    right: 0px;
+//    height: @home-banner-height;
+//    background-color: black;
+//    background-size:contain;
+//    //background-image: url(../images/image_home_page_Prisma_P.JPG);
+//    background-position: center;
+//    background-repeat: no-repeat;
+//}
+
+.home-banner-picture {
+    .horizontal-fill;
+    margin: auto;
+    display: block;
+}
+
+.home-marketing-area {
+    position: relative;
+    width: @home-marketing-area-width;
+    height: @home-marketing-area-height;
+    top: @home-marketing-area-top;
+    left: @home-marketing-area-left;
+    padding-right: 10px;
+    border-right : 2px solid @lightGreyColor;
+
+    .home-marketing-title {
+        .home-title;
+    }
+
+    .home-marketing-subtitle {
+        .home-title;
+        color: @ladyFernGreenColor;
+    }
+
+    .home-marketing-information-text {
+        font-size: 12px;
+        display: inline-block;
+
+    }
+}
+
+.home-marketing-keywords-list {
+  margin-top: @appMediumMargin;
+  height: 60px;
+  padding-left: 0px;
+
+  & li {
+    float: left;
+    width: 50%;
+    color: @spruceGreenColor;
+    list-style: none;
+    padding-bottom: 5px;
+
+    & .fa {
+      bottom: 3px;
+      position: relative;
+      font-size: smaller;
+    }
+  }
+
+  .home-marketing-keyword {
+    font-weight: bold;
+    font-size: 12px;
+    font-family: @textFontFamily;
+    color: @trueBlackColor;
+    max-width: 80%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+.home-actions {
+  position: relative;
+  width: @home-actions-width;
+  top: @home-actions-top;
+  left: @home-actions-left;
+
+  padding-bottom: @appMediumMargin;
+  padding-right: @appMediumMargin;
+  margin: @appMediumMargin;
+
+  > ul {
+    list-style: none;
+
+    > li {
+      margin-bottom: 15px;
+      box-shadow: 0 10px 5px -5px @superLightGreyColor;
+    }
+
+    > li:last-child {
+      box-shadow: none;
+    }
+
+    > .info-icon {
+      position: absolute;
+      top: 60px;
+      left: 15px;
+      font-size: 20px;
+
+      .info-icon-arrow-container {
+        right: 25px;
+        left: auto;
+
+        .info-icon-arrow-left {
+          border-left: 8px solid @blueColor;
+          border-right: none;
+        }
+
+        .info-icon-arrow-left-border {
+          border-left: 9px solid @blueColor;
+          border-right: none;
+          margin-left: -6px;
+        }
+      }
+
+      .info-icon-tooltip {
+        right: 30px;
+        top: -20px;
+        left: auto;
+        min-width: 200px;
+        font-size: 12x;
+      }
+    }
+  }
+}
+
+.home-actions-button {
+    .btn;
+    .btn-primary;
+    font-size : 20px;
+    display: block;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom : @appMediumMargin;
+    border : none;
+    border-radius: 0px;
+    text-align : center;
+    background-color: @skyBlueColor;
+    color:@whiteColor;
+
+    &:hover {
+      background-image: linear-gradient(to bottom, @skyBlueColor 0%, @blueColor 100%);
+    }
+
+    & i {
+      .fa-2x;
+    }
+
+    & span {
+      font-size : 20px;
+      font-weight: bold;
+      position: relative;
+      cursor: pointer;
+    }
+}
+
+.home-create-new-project-area > .home-actions-button {
+  background-color: @spruceGreenColor;
+  &:hover {
+    background-image: linear-gradient(to bottom, @spruceGreenColor 0%, @darkSpruceGreenColor 100%);
+  }
+}
+
+.home-panel {
+  position: absolute;
+  height: @home-panel-height;
+  width : @home-panel-width;
+  bottom: @home-panel-bottom;
+  left: @home-panel-left;
+  border-radius: 0px;
+}

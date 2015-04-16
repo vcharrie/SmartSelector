@@ -1,0 +1,23 @@
+{
+  "name": "big.js",
+  "main": "big.js",
+  "license": "MIT",
+  "ignore": [
+    ".*",
+    "doc",
+    "perf",
+    "test",
+    "*.json"
+  ],
+  "homepage": "https://github.com/MikeMcl/big.js",
+  "version": "3.0.1",
+  "_release": "3.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v3.0.1",
+    "commit": "befa9634a1ce2a87ddd2b5e4e085bc8477f186df"
+  },
+  "_source": "https://github.com/MikeMcl/big.js.git",
+  "_target": "~3.0.0",
+  "_originalSource": "big.js"
+}

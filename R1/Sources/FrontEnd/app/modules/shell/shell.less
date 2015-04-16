@@ -1,0 +1,635 @@
+// =================
+// Application Shell
+// =================
+
+@appGlobalWidth: 1024px;
+@appSideBackgroundColor: @whiteColor;
+@projectBarHeight: 30px;
+@schneiderBarHeight: 25px;
+@appBarHeight: 55px;
+@appHeaderSidePadding : 0px;
+
+// Global style
+// -------------
+html, body
+{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100%;
+    // for a more 'native' look on mobile devices
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-scroll-chaining: none;
+    -ms-touch-action: none;
+}
+
+html
+{
+    //width: @appGlobalWidth;
+    min-width: @appMinWidth;
+    min-height: @appMinHeight;
+    background: @appSideBackgroundColor;
+    margin: auto;
+    overflow: auto;
+}
+
+body
+{
+    font-size: @appTextFontSize;
+    font-family: @appTextFontFamily;
+    background: @appSideBackgroundColor;
+    overflow: hidden;
+    height:100%;
+}
+
+::selection
+{
+    background-color: @appSelectionColor;
+}
+
+div, span
+{
+    cursor: default;
+
+    a > &, button > &
+    {
+        cursor: pointer;
+    }
+
+    .disabled > &, .disabled > &
+    {
+        cursor: default;
+    }
+}
+
+// Simple helper classes
+// ---------------------
+// Spacing
+.space-left
+{
+    margin-left: @appSmallMargin;
+}
+
+.space-right
+{
+    margin-right: @appSmallMargin;
+}
+
+.content-wrapper
+{
+    margin: @appContentMargin;
+}
+
+// Content sizing
+.fill
+{
+    width: 100%;
+    height: 100%;
+}
+
+.vertical-fill
+{
+    height: 100%;
+}
+
+.horizontal-fill
+{
+    width: 100%;
+}
+
+.scrollable
+{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+// Typography
+.text-uppercase
+{
+    text-transform: uppercase;
+}
+
+// App header
+// -------------------
+.app-header
+{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    filter: none !important;
+    // Override default navbar
+    > .schneider-bar
+    {
+        background-color: @trueBlackColor;
+        border: 0;
+        //font-size: @appTextEmphasisFontSize;
+        margin-bottom: 0;
+        padding-left : @appHeaderSidePadding;
+        padding-right : @appHeaderSidePadding;
+        height: @schneiderBarHeight;
+    }
+    .schneider-bar > ul {
+      height: 100%;
+    }
+    // Override responsiveness
+    .schneider-bar > ul > li
+    {
+        height: 100%;
+        float: left;
+    }
+
+  > .app-bar {
+      position: relative;
+      height: @appBarHeight;
+      background-color: @anthraciteGreyColor;
+      padding-left : @appHeaderSidePadding;
+      padding-right : @appHeaderSidePadding;
+  }
+}
+
+.app-brand
+{
+    float: left;
+    margin-left: @appMediumMargin;
+    //margin-top: 8px;
+
+    &:hover, &:focus
+    {
+        text-decoration: none;
+    }
+}
+
+.app-title
+{
+  margin-left: @appMediumMargin;
+  margin-right: @appMediumMargin;
+  margin-top: @appMediumMargin;
+  height: 30px;
+}
+
+.app-icon
+{
+    float: left;
+    vertical-align: top;
+    height: @appFooterIconHeight;
+}
+
+.app-header-separator
+{
+    border-left: 1px solid @spruceGreenColor;
+    height: (@appHeaderHeight - @appSmallMargin * 2);
+    margin: @appSmallMargin @appMediumMargin 0 @appMediumMargin;
+}
+
+.app-header-icon
+{
+    font-size: 18px;
+}
+
+.app-header-panel
+{
+    margin: 0 @appMediumMargin;
+}
+
+.app-header-panel-row + .app-header-panel-row
+{
+    margin-top: 3px;
+}
+
+.app-header-locale
+{
+    font-size: @appTextFontSize;
+    margin-top: 6px;
+    line-height: 1.5;
+}
+
+// App shell
+// ---------
+.app-shell
+{
+    margin: 0 auto;
+    width: 100%;
+    height:100%;
+}
+
+// App main
+// --------
+.app-main
+{
+    position: absolute;
+    top: @appBarHeight + @schneiderBarHeight + @projectBarHeight;
+    bottom: @appFooterHeight+@appWizardHeight;
+    background-color: @appContentBackgroundColor;
+    width: @appGlobalWidth;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0px;
+}
+
+// App navigation
+// --------------
+.app-navigation
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: @appNavHeight;
+    margin-top: @appSmallMargin;
+}
+
+// App content
+// -----------
+.app-content
+{
+    position: absolute;
+    top: @appNavHeight;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: @appMediumMargin;
+}
+
+// App view
+// --------
+.app-view
+{
+    padding: 0px @appContentMargin;
+}
+// App view
+// --------
+
+
+
+// TODO: add scrollbar theme!
+
+
+
+
+
+
+// TODO: move code below into a separate navigation module
+
+// Navigation tabs
+// ---------------
+@navTabsHeight: 30px;
+@navTabsBackgroundColor: @whiteColor;
+
+@navTabsButtonHeight: 38px;
+@navTabsButtonWidth: 200px;
+@navTabsButtonBackgroundColor: @mediumGreyColor;
+@navTabsButtonBackgroundActiveColor: @ladyFernGreenColor;
+@navTabsButtonTextColor: @whiteColor;
+@navTabsButtonTextActiveColor: @whiteColor;
+@navTabsButtonTextPadding: 10px;
+
+.navigation-tabs
+{
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  height: @navTabsHeight;
+  background-color: @navTabsBackgroundColor;
+  border-bottom: 2px solid @ladyFernGreenColor;
+
+
+  > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: table;
+    width: 100%;
+    height: 100%;
+
+
+    > li {
+      display: table-cell;
+      vertical-align: bottom;
+      background-color: @navTabsButtonBackgroundColor;
+      position: relative;
+      height: 100%;
+
+      > a, > div {
+        text-align: center;
+        display: block;
+        height: 100%;
+        line-height: @navTabsButtonHeight;
+        padding: 0 @navTabsButtonTextPadding;
+        color: @navTabsButtonTextColor;
+          background-color: @navTabsButtonBackgroundColor;
+          .text-overflow();
+          font-size: 17px;
+
+        > span {
+          vertical-align : text-top;
+        }
+      }
+
+      > .fixed {
+          width: @navTabsButtonWidth;
+      }
+
+      > .disabled {
+        .opacity(0.4);
+        background-color: @navTabsButtonBackgroundColor;
+        cursor: default;
+      }
+    }
+
+    > .navigation-tab-element:hover {
+      > .navigation-tab-link {
+        //background-color: mix(@navTabsButtonBackgroundColor, @whiteColor, 70%);
+        background-color: @navTabsButtonBackgroundActiveColor;
+        text-decoration: none;
+        color: @navTabsButtonTextColor;
+      }
+
+      > .disabled {
+        .opacity(0.4);
+        //background-color: @navTabsButtonBackgroundColor;
+        background-color: @navTabsButtonBackgroundActiveColor;
+        cursor: default;
+      }
+    }
+
+    > .navigation-tab-element.active:hover {
+      background-color: @navTabsButtonBackgroundActiveColor;
+      color: @navTabsButtonTextActiveColor;
+      text-decoration: none;
+    }
+
+    > .navigation-tab-element.active > .navigation-tab-link {
+      background-color: @navTabsButtonBackgroundActiveColor;
+      color: @navTabsButtonTextActiveColor;
+      text-decoration: none;
+    }
+
+    > .navigation-tab-element.active:hover > .navigation-tab-link {
+      background-color: @navTabsButtonBackgroundActiveColor;
+      color: @navTabsButtonTextActiveColor;
+      text-decoration: none;
+    }
+  }
+
+
+
+  .menu-separator
+  {
+      border-left: 1px solid @whiteColor;
+  }
+
+  .tools
+  {
+      height: @navTabsHeight;
+      line-height: @navTabsHeight;
+      margin: 0 @appSmallMargin;
+  }
+
+  .theme-window-link
+  {
+      margin: @appSmallMargin;
+  }
+}
+
+// Navigation submenu
+// ------------------
+@navSubHeight: @navTabsHeight;
+@navSubBackgroundColor: @whiteColor;
+@navSubSeparatorColor: @lightGreyColor;
+
+@navSubButtonHeight: @navTabsHeight;
+@navSubButtonWidth: 140px;
+@navSubButtonTextColor: @anthraciteGreyColor;
+@navSubButtonTextActiveColor: @skyBlueColor;
+@navSubButtonTextHoverColor: @darkGreyColor;
+
+.navigation-submenu
+{
+    position: absolute;
+    top: @navTabsHeight;
+    left: 0;
+    right: 0;
+    height: @navSubHeight;
+    background-color: @navSubBackgroundColor;
+    border-bottom: 1px solid @navSubSeparatorColor;
+
+    > ul
+    {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        > li
+        {
+            float: left;
+            margin: 0 @appMediumMargin;
+
+            > a
+            {
+                display: block;
+                height: @navSubButtonHeight;
+                line-height: @navSubButtonHeight;
+                color: @navSubButtonTextColor;
+                border-bottom: 2px solid transparent;
+                text-transform: uppercase;
+                transition: color .3s, border-bottom-color .3s;
+            }
+
+            &.fixed > a
+            {
+                width: @navSubButtonWidth;
+                .text-overflow();
+            }
+
+            &.active > a, &.active:hover > a
+            {
+                font-weight: 600;
+                color: @navSubButtonTextActiveColor;
+                border-bottom-color: @navSubButtonTextActiveColor;
+                text-decoration: none;
+                cursor: default;
+            }
+
+            &:hover > a
+            {
+                color: @navSubButtonTextHoverColor;
+                border-bottom-color: @navSubButtonTextHoverColor;
+                text-decoration: none;
+            }
+
+            &.disabled > a, &.disabled:hover > a
+            {
+                .opacity(0.4);
+                color: @navSubButtonTextColor;
+                border-bottom: none;
+                cursor: default;
+            }
+        }
+    }
+
+    .separator
+    {
+        display: inline-block;
+        border-left: 1px solid mix(@navSubBackgroundColor, @trueBlackColor, 80%);
+        border-right: 1px solid mix(@navSubBackgroundColor, @whiteColor, 60%);
+        height: (@navSubButtonHeight - @appMediumMargin);
+        margin: (@appMediumMargin / 2) @appMediumMargin 0 @appMediumMargin;
+    }
+
+    .separator-nav
+    {
+        margin-left: @appSmallMargin;
+        margin-right: 0;
+    }
+
+    .tools
+    {
+        height: @navSubHeight;
+        line-height: @navSubHeight;
+        margin: 0 @appSmallMargin;
+    }
+}
+
+.app-header-button {
+  height: 100%;
+  text-align: left;
+  padding: 5px @appMediumMargin 0px @appMediumMargin !important;
+  color: @whiteColor;
+  cursor: pointer;
+  border-radius : 0px;
+
+  > .btn-title {
+    float: left; // fix for Firefox
+  }
+
+  > .caret {
+    float: right;
+    margin-top: 7px;
+    margin-left: 2px;
+  }
+
+  &:hover {
+      background-color: @whiteColor !important;
+      color: @spruceGreenColor !important;
+  }
+
+  &[disabled] {
+    background-color: @blackColor !important;
+    color: @mediumGreyColor;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+.header-dropdown-menu-element-focused {
+  background-color: @whiteColor !important;
+  background-image: none;
+  color: @spruceGreenColor;
+}
+
+.navbar-nav .dropdown-menu {
+    border: none;
+    border-radius : 0px;
+
+    > li > a:hover, > li > a:focus {
+      .header-dropdown-menu-element-focused;
+      text-decoration : underline;
+    }
+}
+
+.navbar-nav .open > a{
+  .header-dropdown-menu-element-focused;
+}
+
+.navbar-nav .open > button > span {
+  border-top-color: @spruceGreenColor !important;
+}
+
+// Application Footer
+// ------------------
+@appFooterColor: @whiteColor;
+@appFooterIconHeight: 40px;
+
+.app-footer
+{
+  position: absolute;
+  bottom: 0;
+  height: @appFooterHeight;
+  width : 100%;
+  color: @appTextLighterColor;
+  background-color: @appFooterColor;
+  padding-top: @appSmallMargin;
+}
+
+
+.app-footer-container {
+  position: relative;
+  width: @appGlobalWidth;
+  margin: auto;
+  display: table;
+  padding: 0 20px 0 20px;
+}
+
+
+.footer-container {
+  display: inline-block;
+}
+
+.footer-logo-container {
+   .footer-container;
+   padding-right: @appMediumMargin;
+   vertical-align: top;
+ }
+
+.footer-links-container {
+  .footer-container;
+}
+
+.footer-links-column {
+  display: table-cell;
+  padding-left: 20px;
+
+  table-layout: fixed;
+  white-space: nowrap;
+  max-width: 191px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.footer-links-section {
+  display: inline-block;
+
+  .footer-links-section-title {
+    color: @spruceGreenColor;
+  }
+}
+
+.app-footer-link-bottom-left {
+  margin-left : 0px ! important;
+}
+
+.app-footer-link {
+  color: @mediumGreyColor;
+  cursor: pointer;
+  //in order to put some space between links
+  line-height: 20px;
+  font-size:12px;
+  display:inline;
+}
+
+.footer-developper-infos {
+}
+
+.footer-schneider-copyright{
+  color: @mediumGreyColor;
+  line-height: 20px;
+  font-size:12px;
+}
